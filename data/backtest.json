@@ -1,0 +1,22 @@
+{
+  "city": "Manila",
+  "horizon_h": 24,
+  "results": [
+    {
+      "model": "HistGradientBoosting (ours)",
+      "mae": 7.611,
+      "r2": 0.1956
+    },
+    {
+      "model": "persistence (naive t+24=t)",
+      "mae": 8.326,
+      "r2": -0.0499
+    },
+    {
+      "model": "climatology (train mean)",
+      "mae": 8.882,
+      "r2": -0.0
+    }
+  ],
+  "lift_vs_persistence_pct": 8.6
+}
