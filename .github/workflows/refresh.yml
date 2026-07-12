@@ -1,0 +1,38 @@
+name: Refresh forecasts
+
+on:
+  schedule:
+    - cron: "20 * * * *" # hourly at :20 (Open-Meteo updates on the hour)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      # scikit-learn pinned to the version that pickled the models
+      - run: pip install "pandas>=2.3" "numpy>=1.26" "scikit-learn==1.9.0" "requests>=2.31" "pyarrow>=15.0"
+
+      - name: Generate forecasts
+        run: python ml/forecast.py
+
+      - name: Commit updated forecasts.json
+        run: |
+          git config user.name "Zeref538"
+          git config user.email "238805789+Zeref538@users.noreply.github.com"
+          git add web/public/forecasts.json
+          git diff --cached --quiet && echo "no changes" || \
+            (git commit -m "chore: hourly forecast refresh" && git push)
