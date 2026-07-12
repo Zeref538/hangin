@@ -182,14 +182,54 @@ header.hero .tagline em { color: var(--ink); }
   background: linear-gradient(90deg, rgba(77, 163, 255, 0.16), rgba(77, 163, 255, 0.05));
   border-color: rgba(77, 163, 255, 0.45);
 }
-.cityselect {
-  flex: 1 1 180px; min-height: 46px;
-  font: inherit; font-size: 14.5px; color: var(--ink);
-  padding: 11px 13px; border-radius: 12px;
-  border: 1px solid var(--border); background: var(--surface-solid);
-  cursor: pointer;
+/* searchable city picker */
+.citysearch { position: relative; flex: 1 1 220px; }
+.citysearch .mag {
+  position: absolute; left: 13px; top: 50%; transform: translateY(-50%);
+  color: var(--muted); pointer-events: none;
 }
-.cityselect:focus-visible { outline: 2px solid var(--actual); outline-offset: 2px; }
+.citysearch input {
+  width: 100%; min-height: 46px;
+  font: inherit; font-size: 14.5px; color: var(--ink);
+  padding: 11px 13px 11px 36px; border-radius: 12px;
+  border: 1px solid var(--border); background: var(--surface-solid);
+}
+.citysearch input::placeholder { color: var(--muted); }
+.citysearch input:focus-visible { outline: 2px solid var(--actual); outline-offset: 2px; }
+.citymenu {
+  position: absolute; z-index: 1300; top: calc(100% + 6px); left: 0; right: 0;
+  max-height: 280px; overflow-y: auto;
+  background: var(--surface-solid); border: 1px solid var(--border-strong);
+  border-radius: 12px; padding: 6px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+.citymenu button {
+  display: flex; justify-content: space-between; align-items: center; gap: 8px;
+  width: 100%; font: inherit; font-size: 14px; text-align: left;
+  padding: 9px 11px; min-height: 42px;
+  border-radius: 9px; border: none; background: transparent;
+  color: var(--ink); cursor: pointer;
+}
+.citymenu button:hover { background: rgba(255, 255, 255, 0.06); }
+.citymenu button.active { background: rgba(77, 163, 255, 0.12); font-weight: 600; }
+.citymenu .empty { padding: 12px; font-size: 13px; color: var(--muted); }
+
+/* simple/expert toggle */
+.trust h2 { justify-content: space-between; }
+.mode {
+  display: inline-flex; gap: 2px; padding: 3px;
+  border: 1px solid var(--border-strong); border-radius: 9px;
+  background: rgba(255, 255, 255, 0.03);
+}
+.mode button {
+  font: inherit; font-size: 12px; font-weight: 600; letter-spacing: 0.02em;
+  padding: 5px 12px; min-height: 28px; border-radius: 7px; border: none;
+  background: transparent; color: var(--muted); cursor: pointer;
+  text-transform: none;
+  transition: background 150ms ease, color 150ms ease;
+}
+.mode button.on { background: rgba(77, 163, 255, 0.18); color: var(--ink); }
+.mode button:focus-visible { outline: 2px solid var(--actual); outline-offset: 1px; }
 .citylist button {
   display: flex; justify-content: space-between; align-items: center; gap: 8px;
   font: inherit; font-size: 14.5px; text-align: left;

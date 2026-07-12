@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import CityMap from "./CityMap.jsx";
 import ForecastChart from "./ForecastChart.jsx";
 import { catMeta, fmtTime, horizonLabel } from "./aqi.js";
@@ -133,56 +133,144 @@ function DataPanel({ backtest }) {
   );
 }
 
+function CitySearch({ cities, activeId, onPick }) {
+  const [q, setQ] = useState("");
+  const [open, setOpen] = useState(false);
+  const boxRef = useRef(null);
+
+  useEffect(() => {
+    const close = (e) => {
+      if (boxRef.current && !boxRef.current.contains(e.target)) setOpen(false);
+    };
+    document.addEventListener("pointerdown", close);
+    return () => document.removeEventListener("pointerdown", close);
+  }, []);
+
+  const matches = useMemo(() => {
+    const all = [...cities].sort((a, b) => a.name.localeCompare(b.name));
+    const s = q.trim().toLowerCase();
+    return s ? all.filter((c) => c.name.toLowerCase().includes(s)) : all;
+  }, [cities, q]);
+
+  const choose = (id) => { onPick(id); setOpen(false); setQ(""); };
+
+  return (
+    <div className="citysearch" ref={boxRef}>
+      <svg className="mag" width="15" height="15" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" />
+      </svg>
+      <input type="search" placeholder="Search all 29 cities…" value={q}
+             aria-label="Search cities"
+             onFocus={() => setOpen(true)}
+             onChange={(e) => { setQ(e.target.value); setOpen(true); }}
+             onKeyDown={(e) => {
+               if (e.key === "Enter" && matches.length) choose(matches[0].id);
+               if (e.key === "Escape") setOpen(false);
+             }} />
+      {open && (
+        <div className="citymenu" role="listbox">
+          {matches.length === 0 && <div className="empty">No city matches "{q}"</div>}
+          {matches.map((c) => {
+            const meta = catMeta(c.now.category);
+            return (
+              <button key={c.id} role="option" aria-selected={c.id === activeId}
+                      className={c.id === activeId ? "active" : ""}
+                      onClick={() => choose(c.id)}>
+                <span>{c.name}{c.featured ? " ★" : ""}</span>
+                <span className="pill" style={{ background: meta.bg }}>
+                  {c.now.aqi} · {meta.word}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// µg/m³ -> "air score points" at the clean end of the scale (AQI 0–50 spans
+// 0–12 µg/m³), a fair approximation at typical PH levels.
+const toPoints = (ug) => Math.round(ug * (50 / 12));
+
 function TrustPanel({ backtest }) {
+  const [expert, setExpert] = useState(false);
   const h12 = backtest.horizons.find((h) => h.horizon_h === 12);
   const bestLift = Math.max(...backtest.horizons.map((h) => h.lift_pct));
   return (
     <div className="card trust">
-      <h2>Can you trust these predictions?</h2>
-      <p className="big">
-        We tested the model on months of past data it had never seen: we made it
-        "predict" days it didn't know, then compared against what actually happened.
-        Its 12-hour predictions were off by about <b>{h12.model_mae.toFixed(1)} µg/m³
-        on average</b> — a small fraction of the gap between "clean" and "risky" air.
-      </p>
-      <p className="big">
-        Is that good? The lazy alternative — assuming the air just stays the way it
-        is right now — misses by {h12.persistence_mae.toFixed(1)} µg/m³. Our model is
-        up to <b>{bestLift}% more accurate</b> than that, and its edge is biggest
-        6–24 hours ahead: exactly when a heads-up is actually useful.
-      </p>
-      <details>
-        <summary>See the full test numbers</summary>
-        <table className="bt">
-          <thead>
-            <tr>
-              <th>Prediction</th>
-              <th>Our average miss</th>
-              <th>"No change" guess misses by</th>
-              <th>We're better by</th>
-            </tr>
-          </thead>
-          <tbody>
-            {backtest.horizons.map((h) => (
-              <tr key={h.horizon_h}>
-                <td>{horizonLabel(h.horizon_h).toLowerCase()}</td>
-                <td>{h.model_mae.toFixed(2)} µg/m³</td>
-                <td>{h.persistence_mae.toFixed(2)} µg/m³</td>
-                <td className="lift">+{h.lift_pct}%</td>
+      <h2>
+        Can you trust these predictions?
+        <span className="mode" role="tablist" aria-label="Explanation level">
+          <button role="tab" aria-selected={!expert}
+                  className={expert ? "" : "on"} onClick={() => setExpert(false)}>
+            Simple
+          </button>
+          <button role="tab" aria-selected={expert}
+                  className={expert ? "on" : ""} onClick={() => setExpert(true)}>
+            Expert
+          </button>
+        </span>
+      </h2>
+
+      {!expert ? (
+        <>
+          <p className="big">
+            We made the model "predict" months of past days it had never seen, then
+            checked its answers. Looking half a day ahead, its guess for the air
+            score was off by only about <b>{toPoints(h12.model_mae)} points out of
+            500</b> on average — roughly the difference between a score of 30 and{" "}
+            {30 + toPoints(h12.model_mae)}, which you wouldn't even feel.
+          </p>
+          <p className="big">
+            And compared to simply assuming "the air will stay like it is now", our
+            predictions are up to <b>{bestLift}% more accurate</b> — with the biggest
+            edge 6–24 hours ahead, exactly when a heads-up helps you plan.
+          </p>
+          <p className="btnote">
+            Verified on the 5 big metros using 2022–2024 data. The other 24 cities
+            use the same model but weren't part of that test.
+          </p>
+        </>
+      ) : (
+        <>
+          <p className="big">
+            Chronological backtest, last 20% of 2022–2024 held out (~17k hourly
+            samples across the 5 metros), pooled HistGradientBoostingRegressor per
+            horizon vs. a persistence baseline. At +12h: <b>MAE{" "}
+            {h12.model_mae.toFixed(2)} µg/m³</b> vs. persistence{" "}
+            {h12.persistence_mae.toFixed(2)} µg/m³.
+          </p>
+          <table className="bt">
+            <thead>
+              <tr>
+                <th>Horizon</th><th>Model MAE (µg/m³)</th><th>R²</th>
+                <th>Persistence MAE</th><th>Lift</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
-        <p className="btnote">
-          Tested on 2022–2024 data for all 5 cities, always predicting "forward in
-          time" so the model can never peek at the answer. "Miss" is the mean
-          absolute error in micrograms of PM2.5 per cubic meter of air. Honest
-          caveat: for 1 hour ahead, the lazy guess is nearly as good — the model
-          really earns its keep further out. Accuracy was verified on the 5 big
-          metros; the other 24 cities use the same model but weren't part of
-          that test.
-        </p>
-      </details>
+            </thead>
+            <tbody>
+              {backtest.horizons.map((h) => (
+                <tr key={h.horizon_h}>
+                  <td>+{h.horizon_h}h</td>
+                  <td>{h.model_mae.toFixed(2)}</td>
+                  <td>{h.model_r2.toFixed(2)}</td>
+                  <td>{h.persistence_mae.toFixed(2)}</td>
+                  <td className="lift">+{h.lift_pct}%</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p className="btnote">
+            Strictly forward-in-time evaluation — no leakage; features use only
+            data available at prediction time. Persistence ≈ model at +1h (as
+            expected for a slow-mixing process); the model's edge grows with
+            horizon. Metrics computed on the 5 training metros only; the 24 extra
+            cities are served by the same pooled model (lat/lon features) without
+            city-specific verification.
+          </p>
+        </>
+      )}
     </div>
   );
 }
@@ -251,18 +339,7 @@ export default function App() {
                 </button>
               );
             })}
-            <select className="cityselect" aria-label="More cities"
-                    value={city.featured ? "" : city.id}
-                    onChange={(e) => e.target.value && pick(e.target.value)}>
-              <option value="">More cities…</option>
-              {data.cities.filter((c) => !c.featured)
-                .sort((a, b) => a.name.localeCompare(b.name))
-                .map((c) => (
-                  <option key={c.id} value={c.id}>
-                    {c.name} — {c.now.aqi} · {catMeta(c.now.category).word}
-                  </option>
-                ))}
-            </select>
+            <CitySearch cities={data.cities} activeId={city.id} onPick={pick} />
           </div>
         </div>
 
