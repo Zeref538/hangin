@@ -141,12 +141,11 @@ header.hero .tagline em { color: var(--ink); }
   padding: 8px 12px; font-size: 11.5px; color: var(--ink-2);
 }
 .maplegend .cap { font-weight: 650; color: var(--ink); }
-.maplegend .swatches { display: inline-flex; align-items: center; gap: 6px; }
-.maplegend i {
-  width: 12px; height: 12px; border-radius: 4px; display: inline-block;
-  margin-left: 6px;
+.maplegend .ramp {
+  width: 96px; height: 10px; border-radius: 5px; display: inline-block;
+  background: linear-gradient(90deg, #a3dea5, #2ea05a, #becd46, #f5d442, #f5a35c, #e66767);
 }
-.maplegend i:first-child { margin-left: 0; }
+.maplegend .ends { font-size: 11px; }
 .leaflet-container { height: 100%; width: 100%; background: #0b0f14; font: inherit; }
 .leaflet-control-attribution {
   background: rgba(11, 15, 20, 0.75) !important;
@@ -167,6 +166,10 @@ header.hero .tagline em { color: var(--ink); }
 }
 .citymarker:hover { transform: scale(1.12); }
 .citymarker.active { outline: 3px solid rgba(255, 255, 255, 0.4); outline-offset: 2px; }
+.citymarker.mini {
+  border-width: 1.5px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3), 0 0 10px 1px var(--mk, rgba(77,163,255,.5));
+}
 
 .citylist { display: flex; flex-direction: column; gap: 6px; margin-top: 14px; }
 .citylist.row { flex-direction: row; flex-wrap: wrap; gap: 10px; }
@@ -179,6 +182,14 @@ header.hero .tagline em { color: var(--ink); }
   background: linear-gradient(90deg, rgba(77, 163, 255, 0.16), rgba(77, 163, 255, 0.05));
   border-color: rgba(77, 163, 255, 0.45);
 }
+.cityselect {
+  flex: 1 1 180px; min-height: 46px;
+  font: inherit; font-size: 14.5px; color: var(--ink);
+  padding: 11px 13px; border-radius: 12px;
+  border: 1px solid var(--border); background: var(--surface-solid);
+  cursor: pointer;
+}
+.cityselect:focus-visible { outline: 2px solid var(--actual); outline-offset: 2px; }
 .citylist button {
   display: flex; justify-content: space-between; align-items: center; gap: 8px;
   font: inherit; font-size: 14.5px; text-align: left;

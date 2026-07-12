@@ -1,23 +1,20 @@
 {
- "generated_at": "2026-07-12T10:56:06Z",
+ "generated_at": "2026-07-12T11:12:39Z",
  "cities": [
   {
    "id": "manila",
    "name": "Manila",
    "lat": 14.6,
    "lon": 120.98,
+   "featured": true,
    "now": {
-    "time": "2026-07-12T18:00",
-    "pm2_5": 8.1,
-    "aqi": 34,
+    "time": "2026-07-12T19:00",
+    "pm2_5": 8.0,
+    "aqi": 33,
     "category": "Good",
     "advice": "Air quality is good \u2014 enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-07-10T19:00",
-     "pm2_5": 8.7
-    },
     {
      "time": "2026-07-10T20:00",
      "pm2_5": 11.0
@@ -205,33 +202,37 @@
     {
      "time": "2026-07-12T18:00",
      "pm2_5": 8.1
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 8.0
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 8.6,
-     "aqi": 36,
+     "pm2_5": 9.8,
+     "aqi": 41,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 10.5,
-     "aqi": 44,
+     "pm2_5": 9.3,
+     "aqi": 39,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 9.0,
-     "aqi": 37,
+     "pm2_5": 9.2,
+     "aqi": 38,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 12.4,
+     "pm2_5": 12.5,
      "aqi": 52,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
@@ -243,18 +244,15 @@
    "name": "Quezon City",
    "lat": 14.68,
    "lon": 121.05,
+   "featured": true,
    "now": {
-    "time": "2026-07-12T18:00",
-    "pm2_5": 6.1,
-    "aqi": 25,
+    "time": "2026-07-12T19:00",
+    "pm2_5": 7.1,
+    "aqi": 30,
     "category": "Good",
     "advice": "Air quality is good \u2014 enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-07-10T19:00",
-     "pm2_5": 7.4
-    },
     {
      "time": "2026-07-10T20:00",
      "pm2_5": 9.3
@@ -442,34 +440,38 @@
     {
      "time": "2026-07-12T18:00",
      "pm2_5": 6.1
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 7.1
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 6.8,
-     "aqi": 28,
+     "pm2_5": 9.5,
+     "aqi": 40,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 7.2,
+     "pm2_5": 7.3,
      "aqi": 30,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 6.3,
-     "aqi": 26,
+     "pm2_5": 6.5,
+     "aqi": 27,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 9.4,
-     "aqi": 39,
+     "pm2_5": 9.7,
+     "aqi": 41,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
@@ -480,18 +482,15 @@
    "name": "Cebu City",
    "lat": 10.32,
    "lon": 123.9,
+   "featured": true,
    "now": {
-    "time": "2026-07-12T18:00",
-    "pm2_5": 10.6,
-    "aqi": 44,
+    "time": "2026-07-12T19:00",
+    "pm2_5": 11.7,
+    "aqi": 49,
     "category": "Good",
     "advice": "Air quality is good \u2014 enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-07-10T19:00",
-     "pm2_5": 3.8
-    },
     {
      "time": "2026-07-10T20:00",
      "pm2_5": 9.5
@@ -679,34 +678,38 @@
     {
      "time": "2026-07-12T18:00",
      "pm2_5": 10.6
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 11.7
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 10.7,
-     "aqi": 45,
-     "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "pm2_5": 13.8,
+     "aqi": 55,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 11.7,
-     "aqi": 49,
+     "pm2_5": 10.5,
+     "aqi": 44,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 9.5,
-     "aqi": 40,
+     "pm2_5": 8.4,
+     "aqi": 35,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 8.9,
-     "aqi": 37,
+     "pm2_5": 9.1,
+     "aqi": 38,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
@@ -717,18 +720,15 @@
    "name": "Davao City",
    "lat": 7.19,
    "lon": 125.46,
+   "featured": true,
    "now": {
-    "time": "2026-07-12T18:00",
-    "pm2_5": 7.8,
-    "aqi": 32,
+    "time": "2026-07-12T19:00",
+    "pm2_5": 8.8,
+    "aqi": 37,
     "category": "Good",
     "advice": "Air quality is good \u2014 enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-07-10T19:00",
-     "pm2_5": 6.1
-    },
     {
      "time": "2026-07-10T20:00",
      "pm2_5": 8.2
@@ -916,34 +916,38 @@
     {
      "time": "2026-07-12T18:00",
      "pm2_5": 7.8
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 8.8
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 8.3,
-     "aqi": 34,
+     "pm2_5": 10.8,
+     "aqi": 45,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 8.9,
-     "aqi": 37,
+     "pm2_5": 9.1,
+     "aqi": 38,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 8.7,
-     "aqi": 36,
+     "pm2_5": 9.4,
+     "aqi": 39,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 10.9,
-     "aqi": 45,
+     "pm2_5": 11.3,
+     "aqi": 47,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
@@ -954,18 +958,15 @@
    "name": "Baguio",
    "lat": 16.41,
    "lon": 120.6,
+   "featured": true,
    "now": {
-    "time": "2026-07-12T18:00",
+    "time": "2026-07-12T19:00",
     "pm2_5": 3.2,
     "aqi": 13,
     "category": "Good",
     "advice": "Air quality is good \u2014 enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-07-10T19:00",
-     "pm2_5": 3.9
-    },
     {
      "time": "2026-07-10T20:00",
      "pm2_5": 6.2
@@ -1153,36 +1154,5752 @@
     {
      "time": "2026-07-12T18:00",
      "pm2_5": 3.2
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 3.2
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 3.3,
-     "aqi": 14,
+     "pm2_5": 4.2,
+     "aqi": 18,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
      "pm2_5": 4.2,
-     "aqi": 17,
+     "aqi": 18,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 3.3,
+     "pm2_5": 3.4,
      "aqi": 14,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 4.5,
-     "aqi": 19,
+     "pm2_5": 4.9,
+     "aqi": 20,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    }
+   ]
+  },
+  {
+   "id": "angeles",
+   "name": "Angeles",
+   "lat": 15.15,
+   "lon": 120.59,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 7.2,
+    "aqi": 30,
+    "category": "Good",
+    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 12.0
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 14.5
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 12.6
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 10.3
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 9.9
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 9.8
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 10.2
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 9.0
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 9.4
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 9.9
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 12.7
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 9.7
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 7.4
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 6.3
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 4.4
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 4.4
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 5.5
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 6.6
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 8.8
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 12.0
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 11.1
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 11.5
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 11.9
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 11.3
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 11.1
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 10.9
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 9.0
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 6.9
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 7.2
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 9.5
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 10.0
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 7.1
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 6.4
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 5.7
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 5.1
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 5.5
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 6.6
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 7.2
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 9.2,
+     "aqi": 38,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 7.2,
+     "aqi": 30,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 8.2,
+     "aqi": 34,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 11.6,
+     "aqi": 48,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    }
+   ]
+  },
+  {
+   "id": "bacolod",
+   "name": "Bacolod",
+   "lat": 10.68,
+   "lon": 122.95,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 12.2,
+    "aqi": 51,
+    "category": "Moderate",
+    "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 6.4
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 5.5
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 4.7
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 4.7
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 4.3
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 4.3
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 4.4
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 3.9
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 3.9
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 4.3
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 4.4
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 4.4
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 5.5
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 6.5
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 6.3
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 6.4
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 7.2
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 8.9
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 8.3
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 6.9
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 6.8
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 7.2
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 7.4
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 6.1
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 7.8
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 7.6
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 7.1
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 7.1
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 7.8
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 9.0
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 9.5
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 9.6
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 10.0
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 10.4
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 10.5
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 12.2
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 14.1,
+     "aqi": 55,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 10.3,
+     "aqi": 43,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 9.1,
+     "aqi": 38,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 14.3,
+     "aqi": 56,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    }
+   ]
+  },
+  {
+   "id": "batangas",
+   "name": "Batangas City",
+   "lat": 13.76,
+   "lon": 121.06,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 8.1,
+    "aqi": 34,
+    "category": "Good",
+    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 6.3
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 6.2
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 3.5
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 3.6
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 3.4
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 3.5
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 3.8
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 3.7
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 3.6
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 3.6
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 3.5
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 3.8
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 3.7
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 3.8
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 3.9
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 3.8
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 4.3
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 4.3
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 4.1
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 3.4
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 3.0
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 3.0
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 8.6
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 8.5
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 7.6
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 7.6
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 7.2
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 6.4
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 6.2
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 6.5
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 8.1
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 10.7,
+     "aqi": 45,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 9.0,
+     "aqi": 38,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 6.6,
+     "aqi": 28,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 9.3,
+     "aqi": 39,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    }
+   ]
+  },
+  {
+   "id": "butuan",
+   "name": "Butuan",
+   "lat": 8.95,
+   "lon": 125.54,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 12.6,
+    "aqi": 52,
+    "category": "Moderate",
+    "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 5.7
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 5.6
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 6.1
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 6.2
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 6.2
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 6.7
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 8.1
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 7.4
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 6.8
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 7.7
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 8.3
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 9.1
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 8.8
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 9.2
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 10.0
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 12.5
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 13.6
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 18.3
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 22.4
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 25.3
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 26.1
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 21.4
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 18.9
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 18.3
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 17.3
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 16.4
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 16.5
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 15.8
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 12.9
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 16.1
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 14.1
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 12.5
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 11.7
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 11.3
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 11.1
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 11.2
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 11.7
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 12.8
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 12.9
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 13.8
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 12.6
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 15.3,
+     "aqi": 58,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 14.0,
+     "aqi": 55,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 13.4,
+     "aqi": 54,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 13.1,
+     "aqi": 53,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    }
+   ]
+  },
+  {
+   "id": "cagayan_de_oro",
+   "name": "Cagayan de Oro",
+   "lat": 8.48,
+   "lon": 124.65,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 21.7,
+    "aqi": 71,
+    "category": "Moderate",
+    "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 14.4
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 13.2
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 11.8
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 11.5
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 7.3
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 7.3
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 8.7
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 8.0
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 8.5
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 8.6
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 8.9
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 8.8
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 6.7
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 6.2
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 6.2
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 7.2
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 8.4
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 8.7
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 10.4
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 13.2
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 14.9
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 31.0
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 33.3
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 32.6
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 24.9
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 19.8
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 18.9
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 19.1
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 19.8
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 20.8
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 21.4
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 20.8
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 20.2
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 26.8
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 20.0
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 17.0
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 15.6
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 15.6
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 16.0
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 16.3
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 17.7
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 17.6
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 18.0
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 21.1
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 21.7
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 24.1,
+     "aqi": 76,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 19.7,
+     "aqi": 67,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 16.6,
+     "aqi": 60,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 19.6,
+     "aqi": 67,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    }
+   ]
+  },
+  {
+   "id": "cotabato",
+   "name": "Cotabato City",
+   "lat": 7.22,
+   "lon": 124.25,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 27.5,
+    "aqi": 83,
+    "category": "Moderate",
+    "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 18.5
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 17.5
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 14.5
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 17.1
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 18.7
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 16.8
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 18.3
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 18.3
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 17.8
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 18.5
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 23.1
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 19.0
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 12.4
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 12.1
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 12.2
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 12.9
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 13.6
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 13.7
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 13.6
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 13.8
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 14.1
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 15.4
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 24.9
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 36.0
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 50.6
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 54.8
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 61.0
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 64.0
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 66.1
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 72.9
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 77.1
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 77.8
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 78.2
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 80.8
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 79.4
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 56.2
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 54.2
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 34.3
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 27.0
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 21.4
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 18.2
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 17.9
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 18.6
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 19.4
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 19.2
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 19.9
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 22.1
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 27.5
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 31.3,
+     "aqi": 91,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 19.0,
+     "aqi": 65,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 20.1,
+     "aqi": 68,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 27.2,
+     "aqi": 83,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    }
+   ]
+  },
+  {
+   "id": "dagupan",
+   "name": "Dagupan",
+   "lat": 16.04,
+   "lon": 120.33,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 15.3,
+    "aqi": 58,
+    "category": "Moderate",
+    "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 16.1
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 14.1
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 15.8
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 12.5
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 9.8
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 10.4
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 11.6
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 12.4
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 12.8
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 17.2
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 22.5
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 14.8
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 12.5
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 10.5
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 10.0
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 9.3
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 6.9
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 8.0
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 9.4
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 10.7
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 11.9
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 17.6
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 20.5
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 20.1
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 19.8
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 20.3
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 20.4
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 19.6
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 18.4
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 17.0
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 15.7
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 13.6
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 9.7
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 11.1
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 12.3
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 10.9
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 12.3
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 12.9
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 11.3
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 10.9
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 11.3
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 10.7
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 12.1
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 12.5
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 14.0
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 15.3
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 17.1,
+     "aqi": 62,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 13.1,
+     "aqi": 53,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 12.0,
+     "aqi": 51,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 19.9,
+     "aqi": 67,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    }
+   ]
+  },
+  {
+   "id": "dumaguete",
+   "name": "Dumaguete",
+   "lat": 9.31,
+   "lon": 123.31,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 10.5,
+    "aqi": 44,
+    "category": "Good",
+    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 10.1
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 8.4
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 7.8
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 7.1
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 6.9
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 6.7
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 6.2
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 5.6
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 4.7
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 4.3
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 4.1
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 5.0
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 4.7
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 7.1
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 7.8
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 7.7
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 7.4
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 8.1
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 7.8
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 8.3
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 8.1
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 8.0
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 8.2
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 8.8
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 9.2
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 9.5
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 9.5
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 9.6
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 9.7
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 9.5
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 10.5
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 13.4,
+     "aqi": 54,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 10.6,
+     "aqi": 44,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 9.0,
+     "aqi": 38,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 13.8,
+     "aqi": 55,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    }
+   ]
+  },
+  {
+   "id": "general_santos",
+   "name": "General Santos",
+   "lat": 6.11,
+   "lon": 125.17,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 11.6,
+    "aqi": 48,
+    "category": "Good",
+    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 6.4
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 6.3
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 5.5
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 5.1
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 6.7
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 9.5
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 10.6
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 10.4
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 11.9
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 12.9
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 11.0
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 9.4
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 9.1
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 9.2
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 9.3
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 8.8
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 8.3
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 7.3
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 6.9
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 8.9
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 9.9
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 10.1
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 10.4
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 10.3
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 10.2
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 9.6
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 9.3
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 9.4
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 10.0
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 10.6
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 11.4
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 8.1
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 8.6
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 8.1
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 7.4
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 6.8
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 6.8
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 6.9
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 7.1
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 7.5
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 9.1
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 11.6
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 14.6,
+     "aqi": 56,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 11.8,
+     "aqi": 49,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 10.9,
+     "aqi": 46,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 13.0,
+     "aqi": 53,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    }
+   ]
+  },
+  {
+   "id": "iligan",
+   "name": "Iligan",
+   "lat": 8.23,
+   "lon": 124.24,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 23.5,
+    "aqi": 75,
+    "category": "Moderate",
+    "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 8.9
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 8.6
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 8.8
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 8.2
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 7.1
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 6.5
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 7.1
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 7.6
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 7.2
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 7.1
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 7.1
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 7.8
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 8.5
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 9.0
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 9.4
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 10.1
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 10.5
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 10.9
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 10.8
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 10.8
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 10.9
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 11.6
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 13.6
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 15.9
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 20.1
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 22.1
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 24.3
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 25.0
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 24.5
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 24.7
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 25.0
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 25.0
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 25.6
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 26.0
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 25.7
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 24.9
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 32.7
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 26.4
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 24.6
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 23.3
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 22.5
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 22.4
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 21.8
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 21.4
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 21.1
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 21.3
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 22.1
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 23.5
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 26.1,
+     "aqi": 80,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 23.0,
+     "aqi": 74,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 20.5,
+     "aqi": 69,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 19.0,
+     "aqi": 65,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    }
+   ]
+  },
+  {
+   "id": "iloilo",
+   "name": "Iloilo City",
+   "lat": 10.72,
+   "lon": 122.56,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 10.6,
+    "aqi": 44,
+    "category": "Good",
+    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 5.6
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 5.7
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 5.7
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 5.6
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 5.4
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 5.7
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 5.7
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 4.7
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 4.1
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 4.3
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 5.0
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 4.7
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 5.7
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 6.2
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 6.1
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 6.6
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 7.5
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 8.0
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 7.1
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 4.7
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 7.2
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 7.7
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 6.9
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 6.4
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 6.3
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 6.1
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 6.5
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 9.1
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 9.0
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 8.8
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 9.7
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 10.4
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 10.2
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 10.6
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 11.5,
+     "aqi": 48,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 7.8,
+     "aqi": 32,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 8.0,
+     "aqi": 33,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 11.1,
+     "aqi": 46,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    }
+   ]
+  },
+  {
+   "id": "laoag",
+   "name": "Laoag",
+   "lat": 18.2,
+   "lon": 120.59,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 5.6,
+    "aqi": 23,
+    "category": "Good",
+    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 15.8
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 14.6
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 13.7
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 13.0
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 11.8
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 11.7
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 11.4
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 10.2
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 10.5
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 10.4
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 11.1
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 10.3
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 12.5
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 12.5
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 12.5
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 12.0
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 11.2
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 9.6
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 7.7
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 6.6
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 5.6
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 5.5
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 5.5
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 7.6
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 7.6
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 7.4
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 8.1
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 8.4
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 8.7
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 9.0
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 9.3
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 9.2
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 8.4
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 7.2
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 5.6
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 7.0,
+     "aqi": 29,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 8.1,
+     "aqi": 34,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 8.7,
+     "aqi": 36,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 11.3,
+     "aqi": 47,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    }
+   ]
+  },
+  {
+   "id": "legazpi",
+   "name": "Legazpi",
+   "lat": 13.14,
+   "lon": 123.74,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 10.0,
+    "aqi": 42,
+    "category": "Good",
+    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 3.3
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 3.0
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 2.9
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 2.8
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 2.7
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 2.6
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 2.7
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 2.7
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 2.8
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 2.9
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 3.0
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 3.0
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 2.6
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 2.8
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 3.0
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 3.3
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 3.2
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 3.1
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 2.9
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 3.0
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 3.1
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 3.0
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 3.1
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 3.1
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 3.5
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 3.4
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 3.6
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 3.6
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 3.8
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 3.8
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 3.9
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 7.7
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 7.4
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 7.3
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 7.2
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 6.8
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 6.5
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 6.4
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 6.1
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 6.1
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 10.0
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 12.1,
+     "aqi": 51,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 9.7,
+     "aqi": 40,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 8.8,
+     "aqi": 37,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 12.3,
+     "aqi": 51,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    }
+   ]
+  },
+  {
+   "id": "lucena",
+   "name": "Lucena",
+   "lat": 13.94,
+   "lon": 121.62,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 10.0,
+    "aqi": 42,
+    "category": "Good",
+    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 4.4
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 3.9
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 4.5
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 3.9
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 3.5
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 3.6
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 3.9
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 4.4
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 3.8
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 3.9
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 3.8
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 5.0
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 5.6
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 5.5
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 5.1
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 4.7
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 4.7
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 4.4
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 8.5
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 7.8
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 8.1
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 8.9
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 9.0
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 8.9
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 9.1
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 8.8
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 8.3
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 8.7
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 10.0
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 11.2,
+     "aqi": 47,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 9.6,
+     "aqi": 40,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 7.9,
+     "aqi": 33,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 10.4,
+     "aqi": 43,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    }
+   ]
+  },
+  {
+   "id": "naga",
+   "name": "Naga",
+   "lat": 13.62,
+   "lon": 123.19,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 8.0,
+    "aqi": 33,
+    "category": "Good",
+    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 3.6
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 3.4
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 3.1
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 2.9
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 2.9
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 3.1
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 3.2
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 3.1
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 3.2
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 3.3
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 3.0
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 2.6
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 2.8
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 2.6
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 2.8
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 2.7
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 2.6
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 2.7
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 2.5
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 2.4
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 2.5
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 2.8
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 3.0
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 3.6
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 3.3
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 3.1
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 2.9
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 3.4
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 3.6
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 3.7
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 3.7
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 3.7
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 4.3
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 6.1
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 5.6
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 5.7
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 5.7
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 5.6
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 5.7
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 5.4
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 5.0
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 5.1
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 6.5
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 8.0
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 9.1,
+     "aqi": 38,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 7.2,
+     "aqi": 30,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 8.9,
+     "aqi": 37,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 9.0,
+     "aqi": 37,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    }
+   ]
+  },
+  {
+   "id": "olongapo",
+   "name": "Olongapo",
+   "lat": 14.83,
+   "lon": 120.28,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 5.3,
+    "aqi": 22,
+    "category": "Good",
+    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 5.5
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 6.3
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 6.4
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 6.2
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 5.6
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 6.7
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 6.6
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 4.7
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 3.6
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 3.9
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 4.5
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 5.0
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 6.3
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 6.6
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 6.1
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 7.1
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 5.7
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 4.5
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 3.9
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 4.1
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 4.4
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 5.0
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 5.1
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 6.5
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 5.1
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 5.1
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 5.1
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 5.0
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 5.3
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 6.6,
+     "aqi": 27,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 6.5,
+     "aqi": 27,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 9.2,
+     "aqi": 38,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 10.5,
+     "aqi": 44,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    }
+   ]
+  },
+  {
+   "id": "puerto_princesa",
+   "name": "Puerto Princesa",
+   "lat": 9.74,
+   "lon": 118.74,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 11.6,
+    "aqi": 48,
+    "category": "Good",
+    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 8.6
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 8.8
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 8.5
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 7.8
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 7.3
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 6.8
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 6.1
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 6.1
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 6.1
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 6.5
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 6.3
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 5.5
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 6.4
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 7.1
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 7.7
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 7.6
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 7.5
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 7.5
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 7.6
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 8.3
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 10.1
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 10.0
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 7.6
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 8.6
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 9.3
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 10.4
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 10.5
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 10.7
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 11.5
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 11.8
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 11.7
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 10.4
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 9.7
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 9.0
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 9.2
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 9.9
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 10.4
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 10.8
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 10.8
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 10.3
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 10.5
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 11.2
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 11.6
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 13.5,
+     "aqi": 54,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 12.0,
+     "aqi": 51,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 13.9,
+     "aqi": 55,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 14.2,
+     "aqi": 55,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    }
+   ]
+  },
+  {
+   "id": "roxas",
+   "name": "Roxas",
+   "lat": 11.59,
+   "lon": 122.75,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 14.8,
+    "aqi": 57,
+    "category": "Moderate",
+    "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 7.2
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 7.3
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 6.6
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 5.7
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 5.6
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 5.5
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 4.1
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 4.4
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 4.7
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 4.3
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 6.7
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 6.5
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 6.5
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 6.9
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 7.3
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 7.4
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 7.6
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 7.4
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 6.8
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 9.4
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 8.1
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 7.3
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 6.8
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 6.5
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 7.4
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 8.4
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 8.8
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 9.8
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 11.5
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 14.8
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 16.1,
+     "aqi": 59,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 11.7,
+     "aqi": 49,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 10.5,
+     "aqi": 44,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 15.7,
+     "aqi": 59,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    }
+   ]
+  },
+  {
+   "id": "surigao",
+   "name": "Surigao",
+   "lat": 9.79,
+   "lon": 125.49,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 13.7,
+    "aqi": 54,
+    "category": "Moderate",
+    "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 5.5
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 5.6
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 6.1
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 6.1
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 6.8
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 7.3
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 6.9
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 6.6
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 6.7
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 6.8
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 7.8
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 7.5
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 6.9
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 6.7
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 6.7
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 6.8
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 6.8
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 7.8
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 8.8
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 9.7
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 11.0
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 18.6
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 19.3
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 22.2
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 24.0
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 24.4
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 23.7
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 24.4
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 25.9
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 27.2
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 27.7
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 26.0
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 17.0
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 17.8
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 15.9
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 14.3
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 13.4
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 13.0
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 12.7
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 12.7
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 13.1
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 13.3
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 13.4
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 14.1
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 13.7
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 18.1,
+     "aqi": 64,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 16.5,
+     "aqi": 60,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 14.1,
+     "aqi": 55,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 15.2,
+     "aqi": 57,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    }
+   ]
+  },
+  {
+   "id": "tacloban",
+   "name": "Tacloban",
+   "lat": 11.24,
+   "lon": 125.0,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 12.9,
+    "aqi": 53,
+    "category": "Moderate",
+    "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 5.7
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 6.5
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 7.4
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 7.6
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 7.4
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 6.4
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 5.5
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 5.0
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 4.7
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 5.1
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 6.9
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 6.8
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 6.5
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 5.4
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 5.6
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 6.3
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 6.7
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 7.4
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 8.1
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 8.2
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 8.7
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 9.5
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 10.3
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 10.8
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 11.0
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 11.0
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 10.6
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 9.6
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 8.8
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 8.4
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 12.0
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 12.1
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 12.5
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 13.1
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 13.9
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 14.8
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 14.9
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 15.1
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 15.1
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 14.4
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 13.3
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 12.9
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 15.2,
+     "aqi": 58,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 13.0,
+     "aqi": 53,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 11.6,
+     "aqi": 48,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 12.6,
+     "aqi": 52,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    }
+   ]
+  },
+  {
+   "id": "tagbilaran",
+   "name": "Tagbilaran",
+   "lat": 9.65,
+   "lon": 123.85,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 14.2,
+    "aqi": 55,
+    "category": "Moderate",
+    "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 10.3
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 8.1
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 7.6
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 6.9
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 6.3
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 5.6
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 5.0
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 4.5
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 3.3
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 3.3
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 3.3
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 3.3
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 3.6
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 4.7
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 5.1
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 5.0
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 5.0
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 5.1
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 6.2
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 6.3
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 7.1
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 8.1
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 8.9
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 9.0
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 8.7
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 8.4
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 8.1
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 8.1
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 8.0
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 7.7
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 10.2
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 10.4
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 10.4
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 10.2
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 9.6
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 9.7
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 9.5
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 9.4
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 9.5
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 10.0
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 11.2
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 14.2
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 16.1,
+     "aqi": 59,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 12.1,
+     "aqi": 51,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 9.1,
+     "aqi": 38,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 14.3,
+     "aqi": 56,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    }
+   ]
+  },
+  {
+   "id": "tuguegarao",
+   "name": "Tuguegarao",
+   "lat": 17.61,
+   "lon": 121.73,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 10.2,
+    "aqi": 42,
+    "category": "Good",
+    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 11.2
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 11.5
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 16.5
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 20.7
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 21.4
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 22.1
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 19.8
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 19.8
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 21.9
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 25.7
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 29.9
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 24.2
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 14.5
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 9.2
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 7.5
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 6.8
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 6.1
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 5.4
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 4.3
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 3.7
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 3.4
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 3.7
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 8.2
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 9.3
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 12.9
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 16.7
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 18.0
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 18.9
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 20.3
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 21.4
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 22.1
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 22.2
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 22.6
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 23.9
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 21.7
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 14.5
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 12.5
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 9.5
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 7.8
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 8.6
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 8.4
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 8.5
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 9.2
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 10.2
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 13.8,
+     "aqi": 55,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 14.5,
+     "aqi": 56,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 13.7,
+     "aqi": 54,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 11.3,
+     "aqi": 47,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    }
+   ]
+  },
+  {
+   "id": "vigan",
+   "name": "Vigan",
+   "lat": 17.57,
+   "lon": 120.39,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 4.1,
+    "aqi": 17,
+    "category": "Good",
+    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 9.2
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 8.2
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 7.4
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 6.7
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 5.5
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 6.2
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 6.4
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 5.6
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 5.7
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 5.5
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 5.5
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 5.4
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 5.4
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 3.9
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 3.5
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 3.7
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 3.0
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 3.5
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 3.7
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 3.8
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 3.4
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 3.4
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 3.9
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 3.9
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 3.6
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 3.8
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 4.1
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 4.1
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 4.1
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 4.4
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 5.4
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 6.9
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 6.9
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 7.2
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 6.8
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 6.3
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 4.1
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 4.1
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 4.7,
+     "aqi": 20,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 5.6,
+     "aqi": 24,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 6.6,
+     "aqi": 27,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 7.7,
+     "aqi": 32,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    }
+   ]
+  },
+  {
+   "id": "zamboanga",
+   "name": "Zamboanga",
+   "lat": 6.91,
+   "lon": 122.08,
+   "featured": false,
+   "now": {
+    "time": "2026-07-12T19:00",
+    "pm2_5": 9.7,
+    "aqi": 40,
+    "category": "Good",
+    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+   },
+   "history": [
+    {
+     "time": "2026-07-10T20:00",
+     "pm2_5": 14.3
+    },
+    {
+     "time": "2026-07-10T21:00",
+     "pm2_5": 13.7
+    },
+    {
+     "time": "2026-07-10T22:00",
+     "pm2_5": 11.8
+    },
+    {
+     "time": "2026-07-10T23:00",
+     "pm2_5": 12.1
+    },
+    {
+     "time": "2026-07-11T00:00",
+     "pm2_5": 11.8
+    },
+    {
+     "time": "2026-07-11T01:00",
+     "pm2_5": 12.1
+    },
+    {
+     "time": "2026-07-11T02:00",
+     "pm2_5": 11.4
+    },
+    {
+     "time": "2026-07-11T03:00",
+     "pm2_5": 10.4
+    },
+    {
+     "time": "2026-07-11T04:00",
+     "pm2_5": 9.8
+    },
+    {
+     "time": "2026-07-11T05:00",
+     "pm2_5": 9.7
+    },
+    {
+     "time": "2026-07-11T06:00",
+     "pm2_5": 9.6
+    },
+    {
+     "time": "2026-07-11T07:00",
+     "pm2_5": 9.4
+    },
+    {
+     "time": "2026-07-11T08:00",
+     "pm2_5": 9.6
+    },
+    {
+     "time": "2026-07-11T09:00",
+     "pm2_5": 9.8
+    },
+    {
+     "time": "2026-07-11T10:00",
+     "pm2_5": 9.8
+    },
+    {
+     "time": "2026-07-11T11:00",
+     "pm2_5": 8.9
+    },
+    {
+     "time": "2026-07-11T12:00",
+     "pm2_5": 8.4
+    },
+    {
+     "time": "2026-07-11T13:00",
+     "pm2_5": 7.7
+    },
+    {
+     "time": "2026-07-11T14:00",
+     "pm2_5": 7.1
+    },
+    {
+     "time": "2026-07-11T15:00",
+     "pm2_5": 6.8
+    },
+    {
+     "time": "2026-07-11T16:00",
+     "pm2_5": 6.7
+    },
+    {
+     "time": "2026-07-11T17:00",
+     "pm2_5": 7.1
+    },
+    {
+     "time": "2026-07-11T18:00",
+     "pm2_5": 7.4
+    },
+    {
+     "time": "2026-07-11T19:00",
+     "pm2_5": 7.6
+    },
+    {
+     "time": "2026-07-11T20:00",
+     "pm2_5": 9.7
+    },
+    {
+     "time": "2026-07-11T21:00",
+     "pm2_5": 9.0
+    },
+    {
+     "time": "2026-07-11T22:00",
+     "pm2_5": 9.2
+    },
+    {
+     "time": "2026-07-11T23:00",
+     "pm2_5": 9.9
+    },
+    {
+     "time": "2026-07-12T00:00",
+     "pm2_5": 9.7
+    },
+    {
+     "time": "2026-07-12T01:00",
+     "pm2_5": 9.6
+    },
+    {
+     "time": "2026-07-12T02:00",
+     "pm2_5": 9.6
+    },
+    {
+     "time": "2026-07-12T03:00",
+     "pm2_5": 9.7
+    },
+    {
+     "time": "2026-07-12T04:00",
+     "pm2_5": 10.0
+    },
+    {
+     "time": "2026-07-12T05:00",
+     "pm2_5": 9.5
+    },
+    {
+     "time": "2026-07-12T06:00",
+     "pm2_5": 9.8
+    },
+    {
+     "time": "2026-07-12T07:00",
+     "pm2_5": 11.2
+    },
+    {
+     "time": "2026-07-12T08:00",
+     "pm2_5": 13.2
+    },
+    {
+     "time": "2026-07-12T09:00",
+     "pm2_5": 13.8
+    },
+    {
+     "time": "2026-07-12T10:00",
+     "pm2_5": 13.9
+    },
+    {
+     "time": "2026-07-12T11:00",
+     "pm2_5": 13.7
+    },
+    {
+     "time": "2026-07-12T12:00",
+     "pm2_5": 12.9
+    },
+    {
+     "time": "2026-07-12T13:00",
+     "pm2_5": 12.3
+    },
+    {
+     "time": "2026-07-12T14:00",
+     "pm2_5": 11.6
+    },
+    {
+     "time": "2026-07-12T15:00",
+     "pm2_5": 10.7
+    },
+    {
+     "time": "2026-07-12T16:00",
+     "pm2_5": 10.5
+    },
+    {
+     "time": "2026-07-12T17:00",
+     "pm2_5": 10.5
+    },
+    {
+     "time": "2026-07-12T18:00",
+     "pm2_5": 9.9
+    },
+    {
+     "time": "2026-07-12T19:00",
+     "pm2_5": 9.7
+    }
+   ],
+   "forecast": [
+    {
+     "horizon_h": 1,
+     "pm2_5": 12.6,
+     "aqi": 52,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 11.3,
+     "aqi": 47,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 11.9,
+     "aqi": 50,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 13.3,
+     "aqi": 53,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
    ]
   }
@@ -1191,97 +6908,97 @@
   {
    "lat": 4.0,
    "lon": 116.0,
-   "pm2_5": 9.7
+   "pm2_5": 7.1
   },
   {
    "lat": 4.0,
    "lon": 117.0,
-   "pm2_5": 14.6
+   "pm2_5": 14.1
   },
   {
    "lat": 4.0,
    "lon": 118.0,
-   "pm2_5": 18.8
+   "pm2_5": 18.5
   },
   {
    "lat": 4.0,
    "lon": 119.0,
-   "pm2_5": 14.9
+   "pm2_5": 15.2
   },
   {
    "lat": 4.0,
    "lon": 120.0,
-   "pm2_5": 16.4
+   "pm2_5": 16.0
   },
   {
    "lat": 4.0,
    "lon": 121.0,
-   "pm2_5": 12.8
+   "pm2_5": 12.5
   },
   {
    "lat": 4.0,
    "lon": 122.0,
-   "pm2_5": 10.5
+   "pm2_5": 10.3
   },
   {
    "lat": 4.0,
    "lon": 123.0,
-   "pm2_5": 11.3
+   "pm2_5": 11.2
   },
   {
    "lat": 4.0,
    "lon": 124.0,
-   "pm2_5": 10.9
+   "pm2_5": 10.8
   },
   {
    "lat": 4.0,
    "lon": 125.0,
-   "pm2_5": 10.7
+   "pm2_5": 10.6
   },
   {
    "lat": 4.0,
    "lon": 126.0,
-   "pm2_5": 10.0
+   "pm2_5": 9.9
   },
   {
    "lat": 4.0,
    "lon": 127.0,
-   "pm2_5": 9.8
+   "pm2_5": 9.7
   },
   {
    "lat": 5.0,
    "lon": 116.0,
-   "pm2_5": 13.4
+   "pm2_5": 14.7
   },
   {
    "lat": 5.0,
    "lon": 117.0,
-   "pm2_5": 11.7
+   "pm2_5": 12.3
   },
   {
    "lat": 5.0,
    "lon": 118.0,
-   "pm2_5": 15.5
+   "pm2_5": 16.9
   },
   {
    "lat": 5.0,
    "lon": 119.0,
-   "pm2_5": 15.4
+   "pm2_5": 14.8
   },
   {
    "lat": 5.0,
    "lon": 120.0,
-   "pm2_5": 15.9
+   "pm2_5": 15.8
   },
   {
    "lat": 5.0,
    "lon": 121.0,
-   "pm2_5": 14.0
+   "pm2_5": 13.9
   },
   {
    "lat": 5.0,
    "lon": 122.0,
-   "pm2_5": 12.3
+   "pm2_5": 12.2
   },
   {
    "lat": 5.0,
@@ -1291,7 +7008,7 @@
   {
    "lat": 5.0,
    "lon": 124.0,
-   "pm2_5": 11.2
+   "pm2_5": 10.9
   },
   {
    "lat": 5.0,
@@ -1306,57 +7023,57 @@
   {
    "lat": 5.0,
    "lon": 127.0,
-   "pm2_5": 12.5
+   "pm2_5": 10.3
   },
   {
    "lat": 6.0,
    "lon": 116.0,
-   "pm2_5": 17.5
+   "pm2_5": 18.6
   },
   {
    "lat": 6.0,
    "lon": 117.0,
-   "pm2_5": 12.5
+   "pm2_5": 13.2
   },
   {
    "lat": 6.0,
    "lon": 118.0,
-   "pm2_5": 15.6
+   "pm2_5": 15.9
   },
   {
    "lat": 6.0,
    "lon": 119.0,
-   "pm2_5": 16.3
+   "pm2_5": 16.5
   },
   {
    "lat": 6.0,
    "lon": 120.0,
-   "pm2_5": 16.8
+   "pm2_5": 16.5
   },
   {
    "lat": 6.0,
    "lon": 121.0,
-   "pm2_5": 12.6
+   "pm2_5": 12.4
   },
   {
    "lat": 6.0,
    "lon": 122.0,
-   "pm2_5": 11.4
+   "pm2_5": 11.5
   },
   {
    "lat": 6.0,
    "lon": 123.0,
-   "pm2_5": 11.8
+   "pm2_5": 12.0
   },
   {
    "lat": 6.0,
    "lon": 124.0,
-   "pm2_5": 10.7
+   "pm2_5": 10.2
   },
   {
    "lat": 6.0,
    "lon": 125.0,
-   "pm2_5": 9.1
+   "pm2_5": 11.6
   },
   {
    "lat": 6.0,
@@ -1366,12 +7083,12 @@
   {
    "lat": 6.0,
    "lon": 127.0,
-   "pm2_5": 9.6
+   "pm2_5": 9.5
   },
   {
    "lat": 7.0,
    "lon": 116.0,
-   "pm2_5": 17.0
+   "pm2_5": 16.5
   },
   {
    "lat": 7.0,
@@ -1381,297 +7098,297 @@
   {
    "lat": 7.0,
    "lon": 118.0,
-   "pm2_5": 16.8
+   "pm2_5": 16.6
   },
   {
    "lat": 7.0,
    "lon": 119.0,
-   "pm2_5": 13.3
+   "pm2_5": 13.9
   },
   {
    "lat": 7.0,
    "lon": 120.0,
-   "pm2_5": 16.3
+   "pm2_5": 17.0
   },
   {
    "lat": 7.0,
    "lon": 121.0,
-   "pm2_5": 12.7
+   "pm2_5": 12.8
   },
   {
    "lat": 7.0,
    "lon": 122.0,
-   "pm2_5": 8.0
+   "pm2_5": 8.3
   },
   {
    "lat": 7.0,
    "lon": 123.0,
-   "pm2_5": 11.3
+   "pm2_5": 11.1
   },
   {
    "lat": 7.0,
    "lon": 124.0,
-   "pm2_5": 13.7
+   "pm2_5": 13.1
   },
   {
    "lat": 7.0,
    "lon": 125.0,
-   "pm2_5": 7.8
+   "pm2_5": 7.7
   },
   {
    "lat": 7.0,
    "lon": 126.0,
-   "pm2_5": 7.1
+   "pm2_5": 7.7
   },
   {
    "lat": 7.0,
    "lon": 127.0,
-   "pm2_5": 10.1
+   "pm2_5": 9.8
   },
   {
    "lat": 8.0,
    "lon": 116.0,
-   "pm2_5": 15.7
+   "pm2_5": 14.6
   },
   {
    "lat": 8.0,
    "lon": 117.0,
-   "pm2_5": 14.0
+   "pm2_5": 13.9
   },
   {
    "lat": 8.0,
    "lon": 118.0,
-   "pm2_5": 16.6
+   "pm2_5": 16.8
   },
   {
    "lat": 8.0,
    "lon": 119.0,
+   "pm2_5": 12.7
+  },
+  {
+   "lat": 8.0,
+   "lon": 120.0,
+   "pm2_5": 15.3
+  },
+  {
+   "lat": 8.0,
+   "lon": 121.0,
    "pm2_5": 12.6
   },
   {
    "lat": 8.0,
-   "lon": 120.0,
-   "pm2_5": 14.9
-  },
-  {
-   "lat": 8.0,
-   "lon": 121.0,
-   "pm2_5": 12.5
-  },
-  {
-   "lat": 8.0,
    "lon": 122.0,
-   "pm2_5": 11.8
+   "pm2_5": 11.3
   },
   {
    "lat": 8.0,
    "lon": 123.0,
-   "pm2_5": 11.7
+   "pm2_5": 13.4
   },
   {
    "lat": 8.0,
    "lon": 124.0,
-   "pm2_5": 15.5
+   "pm2_5": 18.9
   },
   {
    "lat": 8.0,
    "lon": 125.0,
-   "pm2_5": 8.6
+   "pm2_5": 8.5
   },
   {
    "lat": 8.0,
    "lon": 126.0,
-   "pm2_5": 10.9
+   "pm2_5": 9.2
   },
   {
    "lat": 8.0,
    "lon": 127.0,
-   "pm2_5": 12.5
+   "pm2_5": 11.6
   },
   {
    "lat": 9.0,
    "lon": 116.0,
-   "pm2_5": 13.8
+   "pm2_5": 12.9
   },
   {
    "lat": 9.0,
    "lon": 117.0,
-   "pm2_5": 13.6
+   "pm2_5": 13.9
   },
   {
    "lat": 9.0,
    "lon": 118.0,
-   "pm2_5": 6.7
+   "pm2_5": 7.1
   },
   {
    "lat": 9.0,
    "lon": 119.0,
-   "pm2_5": 14.0
-  },
-  {
-   "lat": 9.0,
-   "lon": 120.0,
-   "pm2_5": 13.7
-  },
-  {
-   "lat": 9.0,
-   "lon": 121.0,
-   "pm2_5": 13.1
-  },
-  {
-   "lat": 9.0,
-   "lon": 122.0,
    "pm2_5": 14.3
   },
   {
    "lat": 9.0,
-   "lon": 123.0,
-   "pm2_5": 9.5
+   "lon": 120.0,
+   "pm2_5": 14.0
   },
   {
    "lat": 9.0,
-   "lon": 124.0,
+   "lon": 121.0,
+   "pm2_5": 13.0
+  },
+  {
+   "lat": 9.0,
+   "lon": 122.0,
+   "pm2_5": 14.4
+  },
+  {
+   "lat": 9.0,
+   "lon": 123.0,
    "pm2_5": 10.5
   },
   {
    "lat": 9.0,
-   "lon": 125.0,
-   "pm2_5": 17.6
-  },
-  {
-   "lat": 9.0,
-   "lon": 126.0,
-   "pm2_5": 7.4
-  },
-  {
-   "lat": 9.0,
-   "lon": 127.0,
-   "pm2_5": 15.3
-  },
-  {
-   "lat": 10.0,
-   "lon": 116.0,
-   "pm2_5": 12.0
-  },
-  {
-   "lat": 10.0,
-   "lon": 117.0,
-   "pm2_5": 14.0
-  },
-  {
-   "lat": 10.0,
-   "lon": 118.0,
-   "pm2_5": 8.9
-  },
-  {
-   "lat": 10.0,
-   "lon": 119.0,
-   "pm2_5": 10.9
-  },
-  {
-   "lat": 10.0,
-   "lon": 120.0,
-   "pm2_5": 15.1
-  },
-  {
-   "lat": 10.0,
-   "lon": 121.0,
-   "pm2_5": 13.2
-  },
-  {
-   "lat": 10.0,
-   "lon": 122.0,
-   "pm2_5": 15.0
-  },
-  {
-   "lat": 10.0,
-   "lon": 123.0,
-   "pm2_5": 9.2
-  },
-  {
-   "lat": 10.0,
    "lon": 124.0,
-   "pm2_5": 11.1
+   "pm2_5": 11.2
   },
   {
-   "lat": 10.0,
+   "lat": 9.0,
    "lon": 125.0,
-   "pm2_5": 16.2
+   "pm2_5": 17.1
   },
   {
-   "lat": 10.0,
+   "lat": 9.0,
    "lon": 126.0,
-   "pm2_5": 12.4
-  },
-  {
-   "lat": 10.0,
-   "lon": 127.0,
-   "pm2_5": 14.3
-  },
-  {
-   "lat": 11.0,
-   "lon": 116.0,
-   "pm2_5": 13.6
-  },
-  {
-   "lat": 11.0,
-   "lon": 117.0,
-   "pm2_5": 10.3
-  },
-  {
-   "lat": 11.0,
-   "lon": 118.0,
-   "pm2_5": 11.5
-  },
-  {
-   "lat": 11.0,
-   "lon": 119.0,
    "pm2_5": 6.2
   },
   {
-   "lat": 11.0,
+   "lat": 9.0,
+   "lon": 127.0,
+   "pm2_5": 15.5
+  },
+  {
+   "lat": 10.0,
+   "lon": 116.0,
+   "pm2_5": 13.0
+  },
+  {
+   "lat": 10.0,
+   "lon": 117.0,
+   "pm2_5": 14.8
+  },
+  {
+   "lat": 10.0,
+   "lon": 118.0,
+   "pm2_5": 9.3
+  },
+  {
+   "lat": 10.0,
+   "lon": 119.0,
+   "pm2_5": 11.6
+  },
+  {
+   "lat": 10.0,
    "lon": 120.0,
-   "pm2_5": 9.5
+   "pm2_5": 15.4
   },
   {
-   "lat": 11.0,
+   "lat": 10.0,
    "lon": 121.0,
-   "pm2_5": 11.1
+   "pm2_5": 12.7
   },
   {
-   "lat": 11.0,
+   "lat": 10.0,
    "lon": 122.0,
-   "pm2_5": 11.1
+   "pm2_5": 13.7
   },
   {
-   "lat": 11.0,
+   "lat": 10.0,
    "lon": 123.0,
-   "pm2_5": 10.8
+   "pm2_5": 12.5
   },
   {
-   "lat": 11.0,
+   "lat": 10.0,
    "lon": 124.0,
-   "pm2_5": 12.2
+   "pm2_5": 14.2
   },
   {
-   "lat": 11.0,
+   "lat": 10.0,
    "lon": 125.0,
-   "pm2_5": 13.3
+   "pm2_5": 14.8
+  },
+  {
+   "lat": 10.0,
+   "lon": 126.0,
+   "pm2_5": 11.5
+  },
+  {
+   "lat": 10.0,
+   "lon": 127.0,
+   "pm2_5": 14.9
   },
   {
    "lat": 11.0,
-   "lon": 126.0,
+   "lon": 116.0,
    "pm2_5": 12.6
   },
   {
    "lat": 11.0,
+   "lon": 117.0,
+   "pm2_5": 11.2
+  },
+  {
+   "lat": 11.0,
+   "lon": 118.0,
+   "pm2_5": 11.0
+  },
+  {
+   "lat": 11.0,
+   "lon": 119.0,
+   "pm2_5": 6.0
+  },
+  {
+   "lat": 11.0,
+   "lon": 120.0,
+   "pm2_5": 10.2
+  },
+  {
+   "lat": 11.0,
+   "lon": 121.0,
+   "pm2_5": 12.0
+  },
+  {
+   "lat": 11.0,
+   "lon": 122.0,
+   "pm2_5": 11.2
+  },
+  {
+   "lat": 11.0,
+   "lon": 123.0,
+   "pm2_5": 12.0
+  },
+  {
+   "lat": 11.0,
+   "lon": 124.0,
+   "pm2_5": 10.7
+  },
+  {
+   "lat": 11.0,
+   "lon": 125.0,
+   "pm2_5": 12.9
+  },
+  {
+   "lat": 11.0,
+   "lon": 126.0,
+   "pm2_5": 12.4
+  },
+  {
+   "lat": 11.0,
    "lon": 127.0,
-   "pm2_5": 10.9
+   "pm2_5": 11.2
   },
   {
    "lat": 12.0,
    "lon": 116.0,
-   "pm2_5": 16.6
+   "pm2_5": 15.9
   },
   {
    "lat": 12.0,
@@ -1681,72 +7398,72 @@
   {
    "lat": 12.0,
    "lon": 118.0,
-   "pm2_5": 10.2
+   "pm2_5": 10.1
   },
   {
    "lat": 12.0,
    "lon": 119.0,
-   "pm2_5": 9.3
+   "pm2_5": 9.4
   },
   {
    "lat": 12.0,
    "lon": 120.0,
-   "pm2_5": 5.5
+   "pm2_5": 6.0
   },
   {
    "lat": 12.0,
    "lon": 121.0,
-   "pm2_5": 8.2
+   "pm2_5": 9.0
   },
   {
    "lat": 12.0,
    "lon": 122.0,
-   "pm2_5": 8.5
+   "pm2_5": 8.6
   },
   {
    "lat": 12.0,
    "lon": 123.0,
-   "pm2_5": 7.6
+   "pm2_5": 8.1
   },
   {
    "lat": 12.0,
    "lon": 124.0,
-   "pm2_5": 10.7
+   "pm2_5": 10.8
   },
   {
    "lat": 12.0,
    "lon": 125.0,
-   "pm2_5": 12.0
+   "pm2_5": 12.2
   },
   {
    "lat": 12.0,
    "lon": 126.0,
-   "pm2_5": 12.0
+   "pm2_5": 11.6
   },
   {
    "lat": 12.0,
    "lon": 127.0,
-   "pm2_5": 10.4
+   "pm2_5": 10.2
   },
   {
    "lat": 13.0,
    "lon": 116.0,
-   "pm2_5": 15.4
+   "pm2_5": 15.0
   },
   {
    "lat": 13.0,
    "lon": 117.0,
-   "pm2_5": 12.0
+   "pm2_5": 11.8
   },
   {
    "lat": 13.0,
    "lon": 118.0,
-   "pm2_5": 10.5
+   "pm2_5": 10.4
   },
   {
    "lat": 13.0,
    "lon": 119.0,
-   "pm2_5": 9.7
+   "pm2_5": 10.0
   },
   {
    "lat": 13.0,
@@ -1756,32 +7473,32 @@
   {
    "lat": 13.0,
    "lon": 121.0,
-   "pm2_5": 6.1
+   "pm2_5": 7.9
   },
   {
    "lat": 13.0,
    "lon": 122.0,
-   "pm2_5": 4.5
+   "pm2_5": 4.4
   },
   {
    "lat": 13.0,
    "lon": 123.0,
-   "pm2_5": 6.7
+   "pm2_5": 7.4
   },
   {
    "lat": 13.0,
    "lon": 124.0,
-   "pm2_5": 6.7
+   "pm2_5": 8.0
   },
   {
    "lat": 13.0,
    "lon": 125.0,
-   "pm2_5": 12.7
+   "pm2_5": 12.0
   },
   {
    "lat": 13.0,
    "lon": 126.0,
-   "pm2_5": 13.2
+   "pm2_5": 12.5
   },
   {
    "lat": 13.0,
@@ -1791,147 +7508,147 @@
   {
    "lat": 14.0,
    "lon": 116.0,
-   "pm2_5": 14.6
+   "pm2_5": 14.2
   },
   {
    "lat": 14.0,
    "lon": 117.0,
-   "pm2_5": 11.1
+   "pm2_5": 11.6
   },
   {
    "lat": 14.0,
    "lon": 118.0,
-   "pm2_5": 10.9
+   "pm2_5": 10.4
   },
   {
    "lat": 14.0,
    "lon": 119.0,
-   "pm2_5": 9.5
+   "pm2_5": 9.8
   },
   {
    "lat": 14.0,
    "lon": 120.0,
-   "pm2_5": 7.6
+   "pm2_5": 7.1
   },
   {
    "lat": 14.0,
    "lon": 121.0,
-   "pm2_5": 8.8
+   "pm2_5": 13.8
   },
   {
    "lat": 14.0,
    "lon": 122.0,
-   "pm2_5": 4.7
+   "pm2_5": 4.3
   },
   {
    "lat": 14.0,
    "lon": 123.0,
+   "pm2_5": 6.6
+  },
+  {
+   "lat": 14.0,
+   "lon": 124.0,
    "pm2_5": 5.2
   },
   {
    "lat": 14.0,
-   "lon": 124.0,
-   "pm2_5": 5.5
-  },
-  {
-   "lat": 14.0,
    "lon": 125.0,
-   "pm2_5": 12.8
+   "pm2_5": 12.2
   },
   {
    "lat": 14.0,
    "lon": 126.0,
-   "pm2_5": 13.4
+   "pm2_5": 13.1
   },
   {
    "lat": 14.0,
    "lon": 127.0,
-   "pm2_5": 10.3
+   "pm2_5": 10.0
   },
   {
    "lat": 15.0,
    "lon": 116.0,
-   "pm2_5": 14.9
+   "pm2_5": 14.6
   },
   {
    "lat": 15.0,
    "lon": 117.0,
-   "pm2_5": 12.0
+   "pm2_5": 11.6
   },
   {
    "lat": 15.0,
    "lon": 118.0,
-   "pm2_5": 10.6
+   "pm2_5": 10.4
   },
   {
    "lat": 15.0,
    "lon": 119.0,
-   "pm2_5": 8.2
+   "pm2_5": 8.9
   },
   {
    "lat": 15.0,
    "lon": 120.0,
-   "pm2_5": 4.6
+   "pm2_5": 5.1
   },
   {
    "lat": 15.0,
    "lon": 121.0,
-   "pm2_5": 6.7
+   "pm2_5": 6.9
   },
   {
    "lat": 15.0,
    "lon": 122.0,
-   "pm2_5": 5.8
+   "pm2_5": 5.7
   },
   {
    "lat": 15.0,
    "lon": 123.0,
-   "pm2_5": 6.7
+   "pm2_5": 5.7
   },
   {
    "lat": 15.0,
    "lon": 124.0,
-   "pm2_5": 7.7
+   "pm2_5": 7.0
   },
   {
    "lat": 15.0,
    "lon": 125.0,
-   "pm2_5": 15.0
+   "pm2_5": 12.9
   },
   {
    "lat": 15.0,
    "lon": 126.0,
-   "pm2_5": 14.7
+   "pm2_5": 13.7
   },
   {
    "lat": 15.0,
    "lon": 127.0,
-   "pm2_5": 12.2
+   "pm2_5": 11.7
   },
   {
    "lat": 16.0,
    "lon": 116.0,
-   "pm2_5": 10.1
+   "pm2_5": 9.7
   },
   {
    "lat": 16.0,
    "lon": 117.0,
-   "pm2_5": 11.2
-  },
-  {
-   "lat": 16.0,
-   "lon": 118.0,
    "pm2_5": 10.0
   },
   {
    "lat": 16.0,
+   "lon": 118.0,
+   "pm2_5": 9.5
+  },
+  {
+   "lat": 16.0,
    "lon": 119.0,
-   "pm2_5": 7.9
+   "pm2_5": 8.1
   },
   {
    "lat": 16.0,
    "lon": 120.0,
-   "pm2_5": 7.4
+   "pm2_5": 8.1
   },
   {
    "lat": 16.0,
@@ -1941,7 +7658,7 @@
   {
    "lat": 16.0,
    "lon": 122.0,
-   "pm2_5": 3.8
+   "pm2_5": 3.5
   },
   {
    "lat": 16.0,
@@ -1956,12 +7673,12 @@
   {
    "lat": 16.0,
    "lon": 125.0,
-   "pm2_5": 13.6
+   "pm2_5": 14.8
   },
   {
    "lat": 16.0,
    "lon": 126.0,
-   "pm2_5": 15.8
+   "pm2_5": 15.0
   },
   {
    "lat": 16.0,
@@ -1971,12 +7688,12 @@
   {
    "lat": 17.0,
    "lon": 116.0,
-   "pm2_5": 11.1
+   "pm2_5": 9.7
   },
   {
    "lat": 17.0,
    "lon": 117.0,
-   "pm2_5": 10.3
+   "pm2_5": 9.4
   },
   {
    "lat": 17.0,
@@ -1986,7 +7703,7 @@
   {
    "lat": 17.0,
    "lon": 119.0,
-   "pm2_5": 7.6
+   "pm2_5": 8.1
   },
   {
    "lat": 17.0,
@@ -2001,77 +7718,77 @@
   {
    "lat": 17.0,
    "lon": 122.0,
-   "pm2_5": 8.7
+   "pm2_5": 13.0
   },
   {
    "lat": 17.0,
    "lon": 123.0,
-   "pm2_5": 10.9
+   "pm2_5": 10.5
   },
   {
    "lat": 17.0,
    "lon": 124.0,
-   "pm2_5": 10.1
+   "pm2_5": 9.2
   },
   {
    "lat": 17.0,
    "lon": 125.0,
-   "pm2_5": 12.6
+   "pm2_5": 13.7
   },
   {
    "lat": 17.0,
    "lon": 126.0,
-   "pm2_5": 12.9
+   "pm2_5": 14.7
   },
   {
    "lat": 17.0,
    "lon": 127.0,
-   "pm2_5": 9.4
+   "pm2_5": 9.8
   },
   {
    "lat": 18.0,
    "lon": 116.0,
-   "pm2_5": 11.7
+   "pm2_5": 11.4
   },
   {
    "lat": 18.0,
    "lon": 117.0,
-   "pm2_5": 8.2
+   "pm2_5": 8.6
   },
   {
    "lat": 18.0,
    "lon": 118.0,
-   "pm2_5": 5.7
+   "pm2_5": 6.2
   },
   {
    "lat": 18.0,
    "lon": 119.0,
-   "pm2_5": 5.7
+   "pm2_5": 5.6
   },
   {
    "lat": 18.0,
    "lon": 120.0,
-   "pm2_5": 6.5
+   "pm2_5": 5.2
   },
   {
    "lat": 18.0,
    "lon": 121.0,
-   "pm2_5": 3.8
+   "pm2_5": 2.2
   },
   {
    "lat": 18.0,
    "lon": 122.0,
-   "pm2_5": 9.3
+   "pm2_5": 10.2
   },
   {
    "lat": 18.0,
    "lon": 123.0,
-   "pm2_5": 11.7
+   "pm2_5": 10.9
   },
   {
    "lat": 18.0,
    "lon": 124.0,
-   "pm2_5": 10.7
+   "pm2_5": 11.5
   },
   {
    "lat": 18.0,
@@ -2081,7 +7798,7 @@
   {
    "lat": 18.0,
    "lon": 126.0,
-   "pm2_5": 9.2
+   "pm2_5": 10.7
   },
   {
    "lat": 18.0,
@@ -2091,117 +7808,117 @@
   {
    "lat": 19.0,
    "lon": 116.0,
-   "pm2_5": 12.9
+   "pm2_5": 12.2
   },
   {
    "lat": 19.0,
    "lon": 117.0,
-   "pm2_5": 9.3
+   "pm2_5": 9.1
   },
   {
    "lat": 19.0,
    "lon": 118.0,
-   "pm2_5": 7.0
+   "pm2_5": 6.3
   },
   {
    "lat": 19.0,
    "lon": 119.0,
-   "pm2_5": 7.2
+   "pm2_5": 6.3
   },
   {
    "lat": 19.0,
    "lon": 120.0,
-   "pm2_5": 7.7
-  },
-  {
-   "lat": 19.0,
-   "lon": 121.0,
    "pm2_5": 7.2
   },
   {
    "lat": 19.0,
+   "lon": 121.0,
+   "pm2_5": 6.3
+  },
+  {
+   "lat": 19.0,
    "lon": 122.0,
-   "pm2_5": 8.6
+   "pm2_5": 8.4
   },
   {
    "lat": 19.0,
    "lon": 123.0,
-   "pm2_5": 12.5
+   "pm2_5": 12.3
   },
   {
    "lat": 19.0,
    "lon": 124.0,
-   "pm2_5": 10.7
+   "pm2_5": 10.9
   },
   {
    "lat": 19.0,
    "lon": 125.0,
-   "pm2_5": 10.1
+   "pm2_5": 10.8
   },
   {
    "lat": 19.0,
    "lon": 126.0,
-   "pm2_5": 11.0
+   "pm2_5": 10.5
   },
   {
    "lat": 19.0,
    "lon": 127.0,
-   "pm2_5": 7.8
+   "pm2_5": 7.7
   },
   {
    "lat": 20.0,
    "lon": 116.0,
-   "pm2_5": 15.0
+   "pm2_5": 14.4
   },
   {
    "lat": 20.0,
    "lon": 117.0,
-   "pm2_5": 9.5
+   "pm2_5": 9.3
   },
   {
    "lat": 20.0,
    "lon": 118.0,
-   "pm2_5": 7.9
+   "pm2_5": 8.1
   },
   {
    "lat": 20.0,
    "lon": 119.0,
-   "pm2_5": 9.6
+   "pm2_5": 8.6
   },
   {
    "lat": 20.0,
    "lon": 120.0,
-   "pm2_5": 9.1
+   "pm2_5": 8.0
   },
   {
    "lat": 20.0,
    "lon": 121.0,
-   "pm2_5": 11.1
+   "pm2_5": 10.4
   },
   {
    "lat": 20.0,
    "lon": 122.0,
-   "pm2_5": 8.9
+   "pm2_5": 8.7
   },
   {
    "lat": 20.0,
    "lon": 123.0,
-   "pm2_5": 15.4
+   "pm2_5": 14.4
   },
   {
    "lat": 20.0,
    "lon": 124.0,
-   "pm2_5": 11.7
+   "pm2_5": 11.1
   },
   {
    "lat": 20.0,
    "lon": 125.0,
-   "pm2_5": 9.6
+   "pm2_5": 9.3
   },
   {
    "lat": 20.0,
    "lon": 126.0,
-   "pm2_5": 10.5
+   "pm2_5": 10.4
   },
   {
    "lat": 20.0,

@@ -44,6 +44,7 @@ def city_payload(city, models, now_ph):
     return {
         "id": city["id"], "name": city["name"],
         "lat": city["lat"], "lon": city["lon"],
+        "featured": any(c["id"] == city["id"] for c in C.CITIES),
         "now": {"time": latest["time"].strftime("%Y-%m-%dT%H:%M"),
                 "pm2_5": round(now_pm, 1), **C.pm25_to_aqi(now_pm)},
         "history": history,
@@ -74,7 +75,7 @@ def main():
     now_ph = pd.Timestamp(datetime.now(PH_TZ).replace(tzinfo=None))
 
     cities = []
-    for city in C.CITIES:
+    for city in C.ALL_CITIES:
         print(f"forecasting {city['name']} ...")
         cities.append(city_payload(city, models, now_ph))
 

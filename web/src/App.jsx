@@ -178,7 +178,9 @@ function TrustPanel({ backtest }) {
           time" so the model can never peek at the answer. "Miss" is the mean
           absolute error in micrograms of PM2.5 per cubic meter of air. Honest
           caveat: for 1 hour ahead, the lazy guess is nearly as good — the model
-          really earns its keep further out.
+          really earns its keep further out. Accuracy was verified on the 5 big
+          metros; the other 24 cities use the same model but weren't part of
+          that test.
         </p>
       </details>
     </div>
@@ -220,12 +222,12 @@ export default function App() {
         <header className="hero">
           <h1>How's the air <span className="grad">hangin'</span>?</h1>
           <p className="tagline">
-            <em>Hangin</em> is Tagalog for wind. We watch the air in 5 Philippine
-            metros and predict where it's heading over the next 24 hours — in words
+            <em>Hangin</em> is Tagalog for wind. We watch the air in 29 Philippine
+            cities and predict where it's heading over the next 24 hours — in words
             anyone can understand, with the receipts to back it up.
           </p>
           <div className="chips">
-            <span className="chip"><b>5</b> PH metros</span>
+            <span className="chip"><b>29</b> PH cities</span>
             <span className="chip">predicts <b>24h</b> ahead</span>
             <span className="chip">built on <b>3 years</b> of data</span>
             <span className="chip">free & open source</span>
@@ -237,7 +239,7 @@ export default function App() {
           <CityMap cities={data.cities} grid={data.grid ?? []} activeId={city.id}
                    onPick={pick} follow={followMap} />
           <div className="citylist row">
-            {data.cities.map((c) => {
+            {data.cities.filter((c) => c.featured).map((c) => {
               const meta = catMeta(c.now.category);
               return (
                 <button key={c.id} className={c.id === city.id ? "active" : ""}
@@ -249,6 +251,18 @@ export default function App() {
                 </button>
               );
             })}
+            <select className="cityselect" aria-label="More cities"
+                    value={city.featured ? "" : city.id}
+                    onChange={(e) => e.target.value && pick(e.target.value)}>
+              <option value="">More cities…</option>
+              {data.cities.filter((c) => !c.featured)
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map((c) => (
+                  <option key={c.id} value={c.id}>
+                    {c.name} — {c.now.aqi} · {catMeta(c.now.category).word}
+                  </option>
+                ))}
+            </select>
           </div>
         </div>
 

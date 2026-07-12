@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 WEB_PUBLIC = ROOT / "web" / "public"
 
-# 5 PH metros — pooled into one model with location features
+# 5 PH metros — pooled into one model with location features (training set)
 CITIES = [
     {"id": "manila",      "name": "Manila",      "lat": 14.60, "lon": 120.98},
     {"id": "quezon_city", "name": "Quezon City", "lat": 14.68, "lon": 121.05},
@@ -22,6 +22,37 @@ CITIES = [
     {"id": "davao",       "name": "Davao City",  "lat":  7.19, "lon": 125.46},
     {"id": "baguio",      "name": "Baguio",      "lat": 16.41, "lon": 120.60},
 ]
+
+# More PH cities served at inference time. The pooled model generalizes via its
+# lat/lon + weather features, but accuracy is only *verified* on the 5 above.
+EXTRA_CITIES = [
+    {"id": "angeles",         "name": "Angeles",         "lat": 15.15, "lon": 120.59},
+    {"id": "bacolod",         "name": "Bacolod",         "lat": 10.68, "lon": 122.95},
+    {"id": "batangas",        "name": "Batangas City",   "lat": 13.76, "lon": 121.06},
+    {"id": "butuan",          "name": "Butuan",          "lat":  8.95, "lon": 125.54},
+    {"id": "cagayan_de_oro",  "name": "Cagayan de Oro",  "lat":  8.48, "lon": 124.65},
+    {"id": "cotabato",        "name": "Cotabato City",   "lat":  7.22, "lon": 124.25},
+    {"id": "dagupan",         "name": "Dagupan",         "lat": 16.04, "lon": 120.33},
+    {"id": "dumaguete",       "name": "Dumaguete",       "lat":  9.31, "lon": 123.31},
+    {"id": "general_santos",  "name": "General Santos",  "lat":  6.11, "lon": 125.17},
+    {"id": "iligan",          "name": "Iligan",          "lat":  8.23, "lon": 124.24},
+    {"id": "iloilo",          "name": "Iloilo City",     "lat": 10.72, "lon": 122.56},
+    {"id": "laoag",           "name": "Laoag",           "lat": 18.20, "lon": 120.59},
+    {"id": "legazpi",         "name": "Legazpi",         "lat": 13.14, "lon": 123.74},
+    {"id": "lucena",          "name": "Lucena",          "lat": 13.94, "lon": 121.62},
+    {"id": "naga",            "name": "Naga",            "lat": 13.62, "lon": 123.19},
+    {"id": "olongapo",        "name": "Olongapo",        "lat": 14.83, "lon": 120.28},
+    {"id": "puerto_princesa", "name": "Puerto Princesa", "lat":  9.74, "lon": 118.74},
+    {"id": "roxas",           "name": "Roxas",           "lat": 11.59, "lon": 122.75},
+    {"id": "surigao",         "name": "Surigao",         "lat":  9.79, "lon": 125.49},
+    {"id": "tacloban",        "name": "Tacloban",        "lat": 11.24, "lon": 125.00},
+    {"id": "tagbilaran",      "name": "Tagbilaran",      "lat":  9.65, "lon": 123.85},
+    {"id": "tuguegarao",      "name": "Tuguegarao",      "lat": 17.61, "lon": 121.73},
+    {"id": "vigan",           "name": "Vigan",           "lat": 17.57, "lon": 120.39},
+    {"id": "zamboanga",       "name": "Zamboanga",       "lat":  6.91, "lon": 122.08},
+]
+
+ALL_CITIES = CITIES + EXTRA_CITIES
 
 HORIZONS = [1, 6, 12, 24]  # hours ahead
 

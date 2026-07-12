@@ -2,65 +2,125 @@ import { MapContainer, TileLayer, Marker, useMap } from "react-leaflet";
 import { useEffect } from "react";
 import L from "leaflet";
 import { catMeta } from "./aqi.js";
+import PH from "./ph.geo.json";
 
-// Dark basemap (CARTO, free with attribution)
-const TILES = "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png";
-const ATTRIB =
-  '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>';
+// Esri satellite imagery + CARTO label overlay (both free with attribution)
+const TILES = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}";
+const LABELS = "https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png";
+const ATTRIB = "&copy; Esri, Maxar, Earthstar Geographics | &copy; OpenStreetMap &copy; CARTO";
 
-// PM2.5 (µg/m³) -> overlay color, following the EPA breakpoints the rest of
-// the app uses. Values here are µg/m³, not AQI.
-const pmColor = (pm) =>
-  pm <= 12 ? "#4dd179" :
-  pm <= 35.4 ? "#f5d442" :
-  pm <= 55.4 ? "#f5a35c" :
-  pm <= 150.4 ? "#e66767" :
-  pm <= 250.4 ? "#a678b8" : "#b05c6e";
+// Continuous PM2.5 (µg/m³) -> color ramp. Anchored on the EPA thresholds the
+// rest of the app uses, but interpolated so nearby values get visibly
+// different shades (light green -> deep green -> yellow -> orange -> red).
+const RAMP = [
+  [0,    [196, 240, 194]],
+  [4,    [136, 216, 144]],
+  [8,    [72, 187, 110]],
+  [12,   [30, 148, 82]],
+  [16,   [120, 190, 70]],
+  [20,   [190, 205, 62]],
+  [27,   [232, 212, 58]],
+  [35.4, [245, 198, 66]],
+  [45,   [245, 163, 92]],
+  [55.4, [240, 120, 70]],
+  [100,  [230, 103, 103]],
+  [150.4,[200, 60, 60]],
+  [250,  [166, 120, 184]],
+];
+function rampColor(v) {
+  if (v <= RAMP[0][0]) return RAMP[0][1];
+  for (let i = 1; i < RAMP.length; i++) {
+    if (v <= RAMP[i][0]) {
+      const [v0, c0] = RAMP[i - 1], [v1, c1] = RAMP[i];
+      const t = (v - v0) / (v1 - v0);
+      return [0, 1, 2].map((k) => Math.round(c0[k] + (c1[k] - c0[k]) * t));
+    }
+  }
+  return RAMP[RAMP.length - 1][1];
+}
 
-// Renders the PM2.5 grid as one smooth translucent "pollution cloud":
-// each grid point becomes a soft radial gradient on an offscreen canvas,
-// which is draped over the archipelago as a single image overlay.
+// Grid geometry must match ml/forecast.py fetch_grid()
+const G = { lat0: 4, lat1: 20, lon0: 116, lon1: 127, step: 1 };
+
+// Renders the PM2.5 grid as a smooth color field, bilinearly interpolated
+// between grid points and clipped to the Philippine landmass.
 function HeatOverlay({ grid }) {
   const map = useMap();
   useEffect(() => {
     if (!grid.length) return;
+
+    const nLat = Math.round((G.lat1 - G.lat0) / G.step) + 1;
+    const nLon = Math.round((G.lon1 - G.lon0) / G.step) + 1;
+    const vals = Array.from({ length: nLat }, () => new Array(nLon).fill(null));
+    for (const g of grid) {
+      const i = Math.round((g.lat - G.lat0) / G.step);
+      const j = Math.round((g.lon - G.lon0) / G.step);
+      if (vals[i]) vals[i][j] = g.pm2_5;
+    }
+    const at = (i, j) => {
+      const v = vals[Math.max(0, Math.min(nLat - 1, i))]?.[Math.max(0, Math.min(nLon - 1, j))];
+      return v ?? 8; // sparse fallback
+    };
+    const sample = (lat, lon) => {
+      const fi = (lat - G.lat0) / G.step, fj = (lon - G.lon0) / G.step;
+      const i = Math.floor(fi), j = Math.floor(fj);
+      const ti = fi - i, tj = fj - j;
+      const a = at(i, j) * (1 - tj) + at(i, j + 1) * tj;
+      const b = at(i + 1, j) * (1 - tj) + at(i + 1, j + 1) * tj;
+      return a * (1 - ti) + b * ti;
+    };
+
     const B = { s: 4.2, n: 19.8, w: 116.2, e: 127.0 };
-    const W = 640, H = 900;
+    const W = 720, H = 1000;
+    const X = (lon) => ((lon - B.w) / (B.e - B.w)) * W;
+    const Y = (lat) => ((B.n - lat) / (B.n - B.s)) * H;
+
+    // 1) smooth color field
+    const field = document.createElement("canvas");
+    field.width = W; field.height = H;
+    const fctx = field.getContext("2d");
+    const img = fctx.createImageData(W, H);
+    for (let y = 0; y < H; y++) {
+      const lat = B.n - (y / H) * (B.n - B.s);
+      for (let x = 0; x < W; x++) {
+        const lon = B.w + (x / W) * (B.e - B.w);
+        const v = sample(lat, lon);
+        const [r, g, b] = rampColor(v);
+        const k = (y * W + x) * 4;
+        img.data[k] = r; img.data[k + 1] = g; img.data[k + 2] = b;
+        img.data[k + 3] = 235;
+      }
+    }
+    fctx.putImageData(img, 0, 0);
+
+    // 2) clip to the landmass
     const cv = document.createElement("canvas");
     cv.width = W; cv.height = H;
     const ctx = cv.getContext("2d");
-    const r = 72; // px — grid step is 1° ≈ 59px wide, so discs blend
-    for (const g of grid) {
-      const x = ((g.lon - B.w) / (B.e - B.w)) * W;
-      const y = ((B.n - g.lat) / (B.n - B.s)) * H;
-      const col = pmColor(g.pm2_5);
-      // heavier air -> denser color
-      const alpha = Math.round(120 + Math.min(g.pm2_5 / 100, 1) * 110)
-        .toString(16).padStart(2, "0");
-      const grad = ctx.createRadialGradient(x, y, 0, x, y, r);
-      grad.addColorStop(0, col + alpha);
-      grad.addColorStop(0.65, col + "55");
-      grad.addColorStop(1, col + "00");
-      ctx.fillStyle = grad;
-      ctx.fillRect(x - r, y - r, 2 * r, 2 * r);
+    ctx.beginPath();
+    for (const f of PH.features) {
+      const polys = f.geometry.type === "Polygon"
+        ? [f.geometry.coordinates] : f.geometry.coordinates;
+      for (const poly of polys) {
+        for (const ring of poly) {
+          ring.forEach(([lon, lat], idx) => {
+            const x = X(lon), y = Y(lat);
+            idx === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+          });
+          ctx.closePath();
+        }
+      }
     }
-    // dissolve the rectangle's edges so the cloud fades into the ocean
-    // instead of ending in a hard vertical curtain
-    ctx.globalCompositeOperation = "destination-out";
-    const F = 90;
-    for (const [x0, y0, x1, y1] of [
-      [0, 0, F, 0], [W, 0, W - F, 0], [0, 0, 0, F], [0, H, 0, H - F],
-    ]) {
-      const m = ctx.createLinearGradient(x0, y0, x1, y1);
-      m.addColorStop(0, "rgba(0,0,0,1)");
-      m.addColorStop(1, "rgba(0,0,0,0)");
-      ctx.fillStyle = m;
-      ctx.fillRect(0, 0, W, H);
-    }
-    ctx.globalCompositeOperation = "source-over";
+    ctx.clip();
+    // darken the land first so the air colors read against a neutral base
+    // instead of competing with green jungle in the satellite imagery
+    ctx.fillStyle = "rgba(8, 11, 16, 0.85)";
+    ctx.fillRect(0, 0, W, H);
+    ctx.filter = "blur(2px)";
+    ctx.drawImage(field, 0, 0);
 
     const overlay = L.imageOverlay(cv.toDataURL(),
-      [[B.s, B.w], [B.n, B.e]], { opacity: 0.45, interactive: false });
+      [[B.s, B.w], [B.n, B.e]], { opacity: 0.8, interactive: false });
     overlay.addTo(map);
     return () => overlay.remove();
   }, [grid, map]);
@@ -69,13 +129,14 @@ function HeatOverlay({ grid }) {
 
 const markerIcon = (city, active) => {
   const meta = catMeta(city.now.category);
-  const size = active ? 42 : 32;
+  const size = active ? 42 : city.featured ? 32 : 22;
   return L.divIcon({
     className: "",
     iconSize: [size, size],
     iconAnchor: [size / 2, size / 2],
-    html: `<div class="citymarker${active ? " active" : ""}" style="--mk:${meta.bg}"
-                title="${city.name}: AQI ${city.now.aqi}">${city.now.aqi}</div>`,
+    html: `<div class="citymarker${active ? " active" : ""}${city.featured || active ? "" : " mini"}"
+                style="--mk:${meta.bg}" title="${city.name}: AQI ${city.now.aqi}">${
+                  city.featured || active ? city.now.aqi : ""}</div>`,
   });
 };
 
@@ -94,24 +155,22 @@ export default function CityMap({ cities, grid = [], activeId, onPick, follow })
       <MapContainer center={[12.6, 122.0]} zoom={6} minZoom={5} scrollWheelZoom={false}
                     maxBounds={[[2, 110], [23, 134]]} maxBoundsViscosity={0.8}
                     attributionControl={true}>
-        <TileLayer url={TILES} attribution={ATTRIB} subdomains="abcd" />
+        <TileLayer url={TILES} attribution={ATTRIB} />
+        <TileLayer url={LABELS} subdomains="abcd" />
         <HeatOverlay grid={grid} />
         {follow && active && <FlyTo city={active} />}
         {cities.map((c) => (
           <Marker key={`${c.id}-${c.id === activeId}`} position={[c.lat, c.lon]}
-                  icon={markerIcon(c, c.id === activeId)} zIndexOffset={1000}
+                  icon={markerIcon(c, c.id === activeId)}
+                  zIndexOffset={c.id === activeId ? 2000 : c.featured ? 1000 : 500}
                   eventHandlers={{ click: () => onPick(c.id) }} />
         ))}
       </MapContainer>
 
       <div className="maplegend">
-        <span className="cap">Air right now</span>
-        <span className="swatches">
-          <i style={{ background: "#4dd179" }} /> clean
-          <i style={{ background: "#f5d442" }} /> okay
-          <i style={{ background: "#f5a35c" }} /> risky
-          <i style={{ background: "#e66767" }} /> dirty
-        </span>
+        <span className="cap">Air over land</span>
+        <span className="ramp" />
+        <span className="ends">clean → dirty</span>
       </div>
     </div>
   );
