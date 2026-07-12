@@ -51,6 +51,23 @@ def city_payload(city, models, now_ph):
     }
 
 
+def fetch_grid():
+    """Current PM2.5 on a ~1° grid over the PH archipelago, for the map overlay."""
+    lats, lons = [], []
+    for la in range(40, 210, 10):        # 4.0 .. 20.0
+        for lo in range(1160, 1280, 10):  # 116.0 .. 127.0
+            lats.append(la / 10)
+            lons.append(lo / 10)
+    res = C._get(C.AQ_URL, {
+        "latitude": ",".join(map(str, lats)), "longitude": ",".join(map(str, lons)),
+        "current": "pm2_5", "timezone": "Asia/Manila"})
+    if isinstance(res, dict):
+        res = [res]
+    return [{"lat": r["latitude"], "lon": r["longitude"],
+             "pm2_5": round(r["current"]["pm2_5"], 1)}
+            for r in res if r.get("current", {}).get("pm2_5") is not None]
+
+
 def main():
     models = load_models()
     backtest = json.load(open(C.DATA / "backtest.json"))
@@ -61,9 +78,13 @@ def main():
         print(f"forecasting {city['name']} ...")
         cities.append(city_payload(city, models, now_ph))
 
+    print("fetching PM2.5 grid for map overlay ...")
+    grid = fetch_grid()
+
     out = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "cities": cities,
+        "grid": grid,
         "backtest": backtest,
     }
     C.WEB_PUBLIC.mkdir(parents=True, exist_ok=True)

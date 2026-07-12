@@ -124,11 +124,29 @@ header.hero .tagline em { color: var(--ink); }
 
 /* ---------- map + city picker ---------- */
 .mapbox {
+  position: relative;
   border-radius: 14px; overflow: hidden;
   border: 1px solid var(--border-strong);
   height: 330px;
   box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.4);
 }
+.mapbox.big { height: 520px; }
+@media (max-width: 700px) { .mapbox.big { height: 380px; } }
+
+.maplegend {
+  position: absolute; z-index: 1000; right: 12px; top: 12px;
+  display: flex; align-items: center; gap: 10px;
+  background: rgba(11, 15, 20, 0.82); backdrop-filter: blur(8px);
+  border: 1px solid var(--border-strong); border-radius: 10px;
+  padding: 8px 12px; font-size: 11.5px; color: var(--ink-2);
+}
+.maplegend .cap { font-weight: 650; color: var(--ink); }
+.maplegend .swatches { display: inline-flex; align-items: center; gap: 6px; }
+.maplegend i {
+  width: 12px; height: 12px; border-radius: 4px; display: inline-block;
+  margin-left: 6px;
+}
+.maplegend i:first-child { margin-left: 0; }
 .leaflet-container { height: 100%; width: 100%; background: #0b0f14; font: inherit; }
 .leaflet-control-attribution {
   background: rgba(11, 15, 20, 0.75) !important;
@@ -151,6 +169,16 @@ header.hero .tagline em { color: var(--ink); }
 .citymarker.active { outline: 3px solid rgba(255, 255, 255, 0.4); outline-offset: 2px; }
 
 .citylist { display: flex; flex-direction: column; gap: 6px; margin-top: 14px; }
+.citylist.row { flex-direction: row; flex-wrap: wrap; gap: 10px; }
+.citylist.row button {
+  flex: 1 1 180px; justify-content: space-between;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+}
+.citylist.row button.active {
+  background: linear-gradient(90deg, rgba(77, 163, 255, 0.16), rgba(77, 163, 255, 0.05));
+  border-color: rgba(77, 163, 255, 0.45);
+}
 .citylist button {
   display: flex; justify-content: space-between; align-items: center; gap: 8px;
   font: inherit; font-size: 14.5px; text-align: left;

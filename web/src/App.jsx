@@ -232,37 +232,35 @@ export default function App() {
           </div>
         </header>
 
-        <div className="grid">
-          <div className="card">
-            <h2>Pick your city</h2>
-            <CityMap cities={data.cities} activeId={city.id} onPick={pick}
-                     follow={followMap} />
-            <div className="citylist">
-              {data.cities.map((c) => {
-                const meta = catMeta(c.now.category);
-                return (
-                  <button key={c.id} className={c.id === city.id ? "active" : ""}
-                          onClick={() => pick(c.id)}>
-                    <span>{c.name}</span>
-                    <span className="pill" style={{ background: meta.bg }}>
-                      {c.now.aqi} · {meta.word}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
+        <div className="card mapcard">
+          <h2>The air across the country — pick your city</h2>
+          <CityMap cities={data.cities} grid={data.grid ?? []} activeId={city.id}
+                   onPick={pick} follow={followMap} />
+          <div className="citylist row">
+            {data.cities.map((c) => {
+              const meta = catMeta(c.now.category);
+              return (
+                <button key={c.id} className={c.id === city.id ? "active" : ""}
+                        onClick={() => pick(c.id)}>
+                  <span>{c.name}</span>
+                  <span className="pill" style={{ background: meta.bg }}>
+                    {c.now.aqi} · {meta.word}
+                  </span>
+                </button>
+              );
+            })}
           </div>
+        </div>
 
-          <div className="stack">
-            <NowPanel city={city} />
-            <div className="card">
-              <h2>The last 2 days — and the next 24 hours</h2>
-              <ForecastChart city={city} />
-            </div>
-            <ForecastStrip city={city} />
-            <DataPanel backtest={data.backtest} />
-            <TrustPanel backtest={data.backtest} />
+        <div className="stack" style={{ marginTop: 18 }}>
+          <NowPanel city={city} />
+          <div className="card">
+            <h2>The last 2 days — and the next 24 hours</h2>
+            <ForecastChart city={city} />
           </div>
+          <ForecastStrip city={city} />
+          <DataPanel backtest={data.backtest} />
+          <TrustPanel backtest={data.backtest} />
         </div>
 
         <footer className="site">
