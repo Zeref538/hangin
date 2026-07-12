@@ -239,12 +239,7 @@ header.hero .tagline em { color: var(--ink); }
 .citymenu .empty { padding: 12px; font-size: 13px; color: var(--muted); }
 
 /* nav logo image */
-.logoimg {
-  width: 36px; height: 36px; border-radius: 10px; display: block;
-  padding: 3px;
-  background: linear-gradient(135deg, rgba(126, 200, 255, 0.35), rgba(77, 163, 255, 0.12));
-  border: 1px solid var(--border-strong);
-}
+.logoimg { width: 38px; height: 38px; display: block; }
 
 /* weather chips inside now panel */
 .wxchips { display: flex; gap: 6px; flex-wrap: wrap; margin: 2px 0 10px; }
