@@ -43,12 +43,17 @@ FEATURES = BASE_COLS + TIME_COLS + LAG_COLS + ROLL_COLS + GEO_COLS
 
 
 def _get(url, params):
+    err = None
     for attempt in range(5):
-        r = requests.get(url, params=params, timeout=60)
-        if r.status_code == 200:
-            return r.json()
+        try:
+            r = requests.get(url, params=params, timeout=60)
+            if r.status_code == 200:
+                return r.json()
+            err = requests.HTTPError(f"{r.status_code} for {url}")
+        except requests.RequestException as e:
+            err = e
         time.sleep(2 * (attempt + 1))
-    r.raise_for_status()
+    raise err
 
 
 def fetch_history(city, start, end):
