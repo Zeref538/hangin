@@ -7,3 +7,6 @@ web/dist/
 .env
 .env.local
 data/*.parquet
+
+.vercel
+.env*
