@@ -1,5 +1,5 @@
 import {
-  ResponsiveContainer, LineChart, Line, XAxis, YAxis,
+  ResponsiveContainer, ComposedChart, Area, Line, XAxis, YAxis,
   CartesianGrid, Tooltip, ReferenceLine,
 } from "recharts";
 import { fmtTime, fmtHour } from "./aqi.js";
@@ -9,9 +9,9 @@ function ChartTooltip({ active, payload, label }) {
   return (
     <div className="tt">
       <div className="t">{fmtTime(label)}</div>
-      {payload.filter((p) => p.value != null).map((p) => (
+      {payload.filter((p) => p.value != null && p.dataKey !== "actualArea").map((p) => (
         <div key={p.dataKey}>
-          {p.dataKey === "actual" ? "Observed" : "Forecast"}:{" "}
+          {p.dataKey === "actual" ? "Measured" : "Our prediction"}:{" "}
           <b>{p.value} µg/m³</b>
         </div>
       ))}
@@ -23,7 +23,9 @@ export default function ForecastChart({ city }) {
   const nowT = city.now.time;
   const nowMs = new Date(nowT).getTime();
 
-  const rows = city.history.map((h) => ({ t: h.time, actual: h.pm2_5 }));
+  const rows = city.history.map((h) => ({
+    t: h.time, actual: h.pm2_5, actualArea: h.pm2_5,
+  }));
   // bridge the two series at "now" so the forecast line connects
   rows[rows.length - 1].predicted = city.now.pm2_5;
   for (const f of city.forecast) {
@@ -36,30 +38,38 @@ export default function ForecastChart({ city }) {
   return (
     <>
       <div className="legend">
-        <span className="key"><span className="line" /> Observed (last 48h)</span>
-        <span className="key"><span className="line dash" /> Model forecast (+1/6/12/24h)</span>
+        <span className="key"><span className="line" /> What we measured (last 2 days)</span>
+        <span className="key"><span className="line dash" /> What we predict (next 24h)</span>
       </div>
-      <ResponsiveContainer width="100%" height={260}>
-        <LineChart data={rows} margin={{ top: 6, right: 12, left: -14, bottom: 0 }}>
+      <ResponsiveContainer width="100%" height={270}>
+        <ComposedChart data={rows} margin={{ top: 8, right: 14, left: -12, bottom: 0 }}>
+          <defs>
+            <linearGradient id="actualFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="var(--actual)" stopOpacity={0.28} />
+              <stop offset="100%" stopColor="var(--actual)" stopOpacity={0} />
+            </linearGradient>
+          </defs>
           <CartesianGrid stroke="var(--grid)" vertical={false} />
-          <XAxis dataKey="t" tickFormatter={fmtHour} minTickGap={40}
+          <XAxis dataKey="t" tickFormatter={fmtHour} minTickGap={44}
                  tick={{ fontSize: 11, fill: "var(--muted)" }}
-                 stroke="var(--baseline)" tickLine={false} />
+                 stroke="var(--border-strong)" tickLine={false} />
           <YAxis tick={{ fontSize: 11, fill: "var(--muted)" }}
                  stroke="transparent" tickLine={false}
                  label={{ value: "PM2.5 µg/m³", angle: -90, position: "insideLeft",
                           offset: 22, style: { fontSize: 11, fill: "var(--muted)" } }} />
-          <Tooltip content={<ChartTooltip />} cursor={{ stroke: "var(--baseline)" }} />
-          <ReferenceLine x={nowT} stroke="var(--baseline)" strokeDasharray="2 3"
+          <Tooltip content={<ChartTooltip />} cursor={{ stroke: "var(--border-strong)" }} />
+          <ReferenceLine x={nowT} stroke="var(--border-strong)" strokeDasharray="2 3"
                          label={{ value: "now", position: "insideTopLeft", fontSize: 11,
                                   fill: "var(--muted)" }} />
-          <Line dataKey="actual" stroke="var(--actual)" strokeWidth={2}
+          <Area dataKey="actualArea" stroke="none" fill="url(#actualFill)"
+                isAnimationActive={false} tooltipType="none" />
+          <Line dataKey="actual" stroke="var(--actual)" strokeWidth={2.5}
                 dot={false} activeDot={{ r: 4 }} isAnimationActive={false} />
-          <Line dataKey="predicted" stroke="var(--predicted)" strokeWidth={2}
-                strokeDasharray="5 4" isAnimationActive={false}
-                dot={{ r: 4, fill: "var(--predicted)", stroke: "var(--surface)", strokeWidth: 2 }}
-                activeDot={{ r: 5 }} />
-        </LineChart>
+          <Line dataKey="predicted" stroke="var(--predicted)" strokeWidth={2.5}
+                strokeDasharray="6 5" isAnimationActive={false}
+                dot={{ r: 4.5, fill: "var(--predicted)", stroke: "#0b0f14", strokeWidth: 2 }}
+                activeDot={{ r: 5.5 }} />
+        </ComposedChart>
       </ResponsiveContainer>
     </>
   );
