@@ -17,7 +17,11 @@
     "temperature_2m",
     "relative_humidity_2m",
     "wind_speed_10m",
-    "wind_direction_10m",
+    "wind_dir_sin",
+    "wind_dir_cos",
+    "wind_u",
+    "wind_v",
+    "ventilation",
     "precipitation",
     "surface_pressure",
     "boundary_layer_height",
@@ -27,6 +31,8 @@
     "dow_cos",
     "month_sin",
     "month_cos",
+    "is_weekend",
+    "is_fireworks",
     "pm2_5_lag1",
     "pm2_5_lag2",
     "pm2_5_lag3",
@@ -39,45 +45,49 @@
     "pm2_5_roll6",
     "pm2_5_roll24",
     "pm2_5_std24",
+    "pm2_5_diff1",
+    "pm2_5_diff24",
+    "pm2_5_rel24",
     "lat",
-    "lon"
+    "lon",
+    "city_code"
   ],
   "horizons": [
     {
       "horizon_h": 1,
-      "n_train": 66880,
-      "n_test": 16715,
-      "model_mae": 0.875,
-      "model_r2": 0.9441,
-      "persistence_mae": 0.953,
-      "lift_pct": 8.2
+      "n_train": 84540,
+      "n_test": 21130,
+      "model_mae": 0.767,
+      "model_r2": 0.9569,
+      "persistence_mae": 0.944,
+      "lift_pct": 18.8
     },
     {
       "horizon_h": 6,
-      "n_train": 66860,
-      "n_test": 16710,
-      "model_mae": 2.877,
-      "model_r2": 0.7236,
-      "persistence_mae": 3.441,
-      "lift_pct": 16.4
+      "n_train": 84520,
+      "n_test": 21125,
+      "model_mae": 2.678,
+      "model_r2": 0.7368,
+      "persistence_mae": 3.372,
+      "lift_pct": 20.6
     },
     {
       "horizon_h": 12,
-      "n_train": 66835,
-      "n_test": 16705,
-      "model_mae": 3.61,
-      "model_r2": 0.5634,
-      "persistence_mae": 4.566,
-      "lift_pct": 20.9
+      "n_train": 84495,
+      "n_test": 21120,
+      "model_mae": 3.423,
+      "model_r2": 0.5681,
+      "persistence_mae": 4.447,
+      "lift_pct": 23.0
     },
     {
       "horizon_h": 24,
-      "n_train": 66785,
-      "n_test": 16695,
-      "model_mae": 4.05,
-      "model_r2": 0.4295,
-      "persistence_mae": 4.655,
-      "lift_pct": 13.0
+      "n_train": 84445,
+      "n_test": 21110,
+      "model_mae": 3.755,
+      "model_r2": 0.4468,
+      "persistence_mae": 4.447,
+      "lift_pct": 15.6
     }
   ],
   "tuned": true
