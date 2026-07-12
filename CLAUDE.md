@@ -48,12 +48,10 @@ Honest narrative: naive guessing is fine for +1h; the model's real value shows a
 
 ## Phases
 - [x] **Phase 1** — single-city forecaster + backtest (proof of signal).
-- [x] **Phase 2 (in progress)** — pooled 5-city multi-horizon models + EPA AQI/health mapping.
-      DONE: `common.py`, `train.py`, models + backtest.json.
-      TODO next: `ml/forecast.py` — for each city call `fetch_recent()`, build features on the
-      latest row, load the 4 models, predict 1/6/12/24h, map each to AQI+advice via
-      `pm25_to_aqi`, and also emit the recent 48h actual series. Write to
-      `web/public/forecasts.json` (shape: `{generated_at, cities:[{id,name,now,history[],
+- [x] **Phase 2** — pooled 5-city multi-horizon models + EPA AQI/health mapping.
+      DONE: `common.py`, `train.py`, models + backtest.json, and `ml/forecast.py`
+      (live inference → `web/public/forecasts.json` with shape
+      `{generated_at, cities:[{id,name,lat,lon,now,history[48],
       forecast:[{horizon_h, pm2_5, aqi, category, advice}]}], backtest}`).
 - [ ] **Phase 3** — React+Vite dashboard in `web/`: city picker + map, "now" AQI gauge,
       multi-horizon forecast line chart (Recharts), health advisory card, and a
