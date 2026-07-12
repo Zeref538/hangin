@@ -1,4 +1,7 @@
-# Hangin — build context & instructions (read this first)
+# Hangin' — build context & instructions (read this first)
+
+Brand name is **Hangin'** (with apostrophe): *hangin* = Tagalog for wind/air, plus
+"how's it hangin'?". The GitHub repo slug stays `hangin` (no apostrophes allowed).
 
 This file is the handoff for continuing the build in a fresh Claude Code session
 opened **on this `Hangin` folder** (kept separate from the portfolio repo to save tokens).
@@ -6,7 +9,7 @@ opened **on this `Hangin` folder** (kept separate from the portfolio repo to sav
 ## What we're building
 A web dashboard that forecasts **PM2.5 for 5 Philippine metros 1–24 hours ahead** and
 turns it into plain-language health advice. The differentiator vs. existing PH air
-trackers: they only show the current reading — Hangin **predicts where air quality is
+trackers: they only show the current reading — Hangin' **predicts where air quality is
 heading** and shows its own model's accuracy honestly (backtested vs a naive baseline).
 
 Owner: **John Andrei Martinez** (GitHub `Zeref538`). This becomes a portfolio project at
@@ -53,7 +56,8 @@ Honest narrative: naive guessing is fine for +1h; the model's real value shows a
       (live inference → `web/public/forecasts.json` with shape
       `{generated_at, cities:[{id,name,lat,lon,now,history[48],
       forecast:[{horizon_h, pm2_5, aqi, category, advice}]}], backtest}`).
-- [ ] **Phase 3** — React+Vite dashboard in `web/`: city picker + map, "now" AQI gauge,
+- [~] **Phase 3 (first layout built — awaiting user layout sign-off before polish)** —
+      React+Vite dashboard in `web/`: city picker + map, "now" AQI gauge,
       multi-horizon forecast line chart (Recharts), health advisory card, and a
       model-performance panel that shows the backtest table (the ML proof). Consumes
       `forecasts.json`. **Gate: confirm layout with user before polishing.**

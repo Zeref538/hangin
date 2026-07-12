@@ -1,0 +1,118 @@
+:root {
+  --page: #f9f9f7;
+  --surface: #fcfcfb;
+  --ink: #0b0b0b;
+  --ink-2: #52514e;
+  --muted: #898781;
+  --grid: #e1e0d9;
+  --baseline: #c3c2b7;
+  --border: rgba(11, 11, 11, 0.1);
+  --actual: #2a78d6;
+  --predicted: #eb6834;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page: #0d0d0d;
+    --surface: #1a1a19;
+    --ink: #ffffff;
+    --ink-2: #c3c2b7;
+    --muted: #898781;
+    --grid: #2c2c2a;
+    --baseline: #383835;
+    --border: rgba(255, 255, 255, 0.1);
+    --actual: #3987e5;
+    --predicted: #d95926;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--page);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { max-width: 1100px; margin: 0 auto; padding: 24px 20px 64px; }
+
+header.site { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+header.site h1 { font-size: 28px; margin: 0; letter-spacing: -0.02em; }
+header.site .tagline { color: var(--ink-2); font-size: 14px; }
+.stamp { color: var(--muted); font-size: 12px; margin: 0 0 20px; }
+
+.grid { display: grid; grid-template-columns: 300px 1fr; gap: 16px; align-items: start; }
+@media (max-width: 820px) { .grid { grid-template-columns: 1fr; } }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+}
+.card h2 { font-size: 13px; font-weight: 600; color: var(--ink-2); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 12px; }
+
+/* city picker + map */
+.citylist { display: flex; flex-direction: column; gap: 4px; margin-top: 12px; }
+.citylist button {
+  display: flex; justify-content: space-between; align-items: center;
+  font: inherit; font-size: 14px; text-align: left;
+  padding: 8px 10px; border-radius: 8px; border: none;
+  background: transparent; color: var(--ink); cursor: pointer;
+}
+.citylist button:hover { background: var(--grid); }
+.citylist button.active { background: var(--grid); font-weight: 600; }
+.citylist .pm { color: var(--ink-2); font-size: 13px; }
+
+.phmap { display: block; width: 100%; }
+.phmap .dot { cursor: pointer; }
+
+/* now panel */
+.nowrow { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.aqi-badge {
+  min-width: 96px; padding: 12px 16px; border-radius: 12px;
+  text-align: center; color: #0b0b0b;
+}
+.aqi-badge .num { font-size: 40px; font-weight: 700; line-height: 1; }
+.aqi-badge .lbl { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 4px; }
+.nowmeta { flex: 1; min-width: 220px; }
+.nowmeta .cat { font-size: 18px; font-weight: 650; margin: 0 0 4px; }
+.nowmeta .advice { font-size: 14px; color: var(--ink-2); margin: 0 0 6px; line-height: 1.45; }
+.nowmeta .sub { font-size: 12px; color: var(--muted); margin: 0; }
+
+/* forecast strip */
+.fstrip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+@media (max-width: 560px) { .fstrip { grid-template-columns: repeat(2, 1fr); } }
+.fcell { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; }
+.fcell .h { font-size: 12px; color: var(--muted); }
+.fcell .v { font-size: 22px; font-weight: 700; margin: 2px 0; }
+.fcell .v small { font-size: 12px; font-weight: 400; color: var(--muted); }
+.fcell .c { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--ink-2); }
+.fcell .swatch { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+
+/* legend */
+.legend { display: flex; gap: 18px; font-size: 12px; color: var(--ink-2); margin-bottom: 8px; }
+.legend .key { display: inline-flex; align-items: center; gap: 6px; }
+.legend .line { width: 18px; height: 0; border-top: 2px solid var(--actual); }
+.legend .line.dash { border-top-style: dashed; border-color: var(--predicted); }
+
+/* backtest table */
+table.bt { width: 100%; border-collapse: collapse; font-size: 13px; }
+table.bt th, table.bt td { padding: 7px 10px; text-align: right; font-variant-numeric: tabular-nums; }
+table.bt th:first-child, table.bt td:first-child { text-align: left; }
+table.bt thead th { color: var(--muted); font-weight: 600; border-bottom: 1px solid var(--baseline); }
+table.bt tbody tr + tr td { border-top: 1px solid var(--grid); }
+table.bt .lift { color: #006300; font-weight: 600; }
+@media (prefers-color-scheme: dark) { table.bt .lift { color: #0ca30c; } }
+.btnote { font-size: 12px; color: var(--muted); line-height: 1.5; margin: 10px 0 0; }
+
+footer.site { margin-top: 28px; font-size: 12px; color: var(--muted); line-height: 1.6; }
+footer.site a { color: var(--ink-2); }
+
+/* recharts tooltip */
+.tt {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 8px 10px; font-size: 12px; color: var(--ink);
+}
+.tt .t { color: var(--muted); margin-bottom: 3px; }
