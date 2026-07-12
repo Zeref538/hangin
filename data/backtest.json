@@ -1,22 +1,83 @@
 {
-  "city": "Manila",
-  "horizon_h": 24,
-  "results": [
-    {
-      "model": "HistGradientBoosting (ours)",
-      "mae": 7.611,
-      "r2": 0.1956
-    },
-    {
-      "model": "persistence (naive t+24=t)",
-      "mae": 8.326,
-      "r2": -0.0499
-    },
-    {
-      "model": "climatology (train mean)",
-      "mae": 8.882,
-      "r2": -0.0
-    }
+  "cities": [
+    "Manila",
+    "Quezon City",
+    "Cebu City",
+    "Davao City",
+    "Baguio"
   ],
-  "lift_vs_persistence_pct": 8.6
+  "train_period": "2022-01-01..2024-12-31",
+  "features": [
+    "pm2_5",
+    "pm10",
+    "carbon_monoxide",
+    "nitrogen_dioxide",
+    "ozone",
+    "sulphur_dioxide",
+    "temperature_2m",
+    "relative_humidity_2m",
+    "wind_speed_10m",
+    "wind_direction_10m",
+    "precipitation",
+    "surface_pressure",
+    "boundary_layer_height",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "month_sin",
+    "month_cos",
+    "pm2_5_lag1",
+    "pm2_5_lag2",
+    "pm2_5_lag3",
+    "pm2_5_lag6",
+    "pm2_5_lag12",
+    "pm2_5_lag24",
+    "pm2_5_lag48",
+    "pm10_lag1",
+    "pm10_lag24",
+    "pm2_5_roll6",
+    "pm2_5_roll24",
+    "pm2_5_std24",
+    "lat",
+    "lon"
+  ],
+  "horizons": [
+    {
+      "horizon_h": 1,
+      "n_train": 66880,
+      "n_test": 16715,
+      "model_mae": 0.876,
+      "model_r2": 0.9465,
+      "persistence_mae": 0.953,
+      "lift_pct": 8.1
+    },
+    {
+      "horizon_h": 6,
+      "n_train": 66860,
+      "n_test": 16710,
+      "model_mae": 2.878,
+      "model_r2": 0.7247,
+      "persistence_mae": 3.441,
+      "lift_pct": 16.4
+    },
+    {
+      "horizon_h": 12,
+      "n_train": 66835,
+      "n_test": 16705,
+      "model_mae": 3.63,
+      "model_r2": 0.5638,
+      "persistence_mae": 4.566,
+      "lift_pct": 20.5
+    },
+    {
+      "horizon_h": 24,
+      "n_train": 66785,
+      "n_test": 16695,
+      "model_mae": 4.075,
+      "model_r2": 0.4234,
+      "persistence_mae": 4.655,
+      "lift_pct": 12.5
+    }
+  ]
 }
