@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import CityMap from "./CityMap.jsx";
 import ForecastChart from "./ForecastChart.jsx";
-import { NationalStats, CityRanking, PollutantPanel } from "./Panels.jsx";
-import { catMeta, fmtTime, horizonLabel } from "./aqi.js";
+import { NationalStats, CityRanking, PollutantPanel, ActivityGuide } from "./Panels.jsx";
+import { catMeta, fmtTime, horizonLabel, haversineKm } from "./aqi.js";
 
 const GitHubIcon = () => (
   <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
@@ -200,7 +200,7 @@ function DataPanel({ backtest }) {
           <div className="d">metros learned together — patterns in one help the others</div>
         </div>
         <div className="tile">
-          <div className="n">33</div>
+          <div className="n">{backtest.features?.length ?? 33}</div>
           <div className="d">signals behind every prediction</div>
         </div>
         <div className="tile">
@@ -215,11 +215,12 @@ function DataPanel({ backtest }) {
         free public archives — the same satellite-and-station data used by weather apps.
       </p>
       <p className="datap">
-        For every prediction it weighs <b>33 signals</b>: the pollution in the air right
-        now (PM2.5, PM10, ozone, and other gases), the weather (wind, rain, humidity,
-        temperature, air pressure), the rhythm of the clock and calendar (rush hours,
-        weekdays vs. weekends, seasons), and how the air has been trending over the
-        past two days in that specific city.
+        For every prediction it weighs <b>{backtest.features?.length ?? 33} signals</b>:
+        the pollution in the air right now (PM2.5, PM10, ozone, and other gases), the
+        weather (wind direction and speed, rain, humidity, temperature, air pressure,
+        and how well the atmosphere can flush pollution away), the rhythm of the clock
+        and calendar (rush hours, weekends, seasons, even New Year fireworks), and how
+        the air has been trending over the past two days in that specific city.
       </p>
     </div>
   );
@@ -313,6 +314,24 @@ export default function App() {
   const [err, setErr] = useState(null);
   const [cityId, setCityId] = useState("manila");
   const [followMap, setFollowMap] = useState(false);
+  const [userLoc, setUserLoc] = useState(null); // {lat, lon, km, cityName} | "asking" | "denied"
+
+  const locate = () => {
+    if (!navigator.geolocation || !data) return;
+    setUserLoc("asking");
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const me = { lat: pos.coords.latitude, lon: pos.coords.longitude };
+        const nearest = data.cities.reduce((a, b) =>
+          haversineKm(me, b) < haversineKm(me, a) ? b : a);
+        setUserLoc({ ...me, km: Math.round(haversineKm(me, nearest)),
+                     cityName: nearest.name });
+        setCityId(nearest.id);
+        setFollowMap(true);
+      },
+      () => setUserLoc("denied"),
+      { timeout: 10000 });
+  };
 
   useEffect(() => {
     fetch("/forecasts.json")
@@ -362,9 +381,23 @@ export default function App() {
       {/* full-bleed live map */}
       <section className="mapsection" aria-label="Live air quality map">
         <CityMap cities={data.cities} grid={data.grid ?? []} activeId={city.id}
-                 onPick={pick} follow={followMap} full />
+                 onPick={pick} follow={followMap} full
+                 userLoc={typeof userLoc === "object" ? userLoc : null} />
         <div className="mapcontrols">
           <div className="citylist row">
+            <button className="locbtn" onClick={locate}
+                    disabled={userLoc === "asking"}>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" strokeWidth="2" strokeLinecap="round"
+                   aria-hidden="true">
+                <circle cx="12" cy="12" r="3.5" />
+                <path d="M12 2v3.5M12 18.5V22M2 12h3.5M18.5 12H22" />
+              </svg>
+              {userLoc === "asking" ? "Locating…"
+                : userLoc === "denied" ? "Location blocked"
+                : userLoc ? `${userLoc.cityName} · ${userLoc.km} km from you`
+                : "Use my location"}
+            </button>
             {data.cities.filter((c) => c.featured).map((c) => {
               const meta = catMeta(c.now.category);
               return (
@@ -386,6 +419,7 @@ export default function App() {
         <div className="stack" style={{ marginTop: 18 }}>
           <NationalStats cities={data.cities} />
           <NowPanel city={city} />
+          <ActivityGuide city={city} />
           <div className="card">
             <h2>The last 2 days — and the next 24 hours</h2>
             <ForecastChart city={city} />

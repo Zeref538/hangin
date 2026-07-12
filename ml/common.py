@@ -61,16 +61,30 @@ WX_VARS = ("temperature_2m,relative_humidity_2m,wind_speed_10m,wind_direction_10
            "precipitation,surface_pressure,boundary_layer_height")
 
 # feature columns fed to the model (built by make_features)
+# wind direction is delivered as raw degrees (0..360) which trees read as a
+# discontinuous number (359 vs 1) — encoded instead as sin/cos + u/v components
 BASE_COLS = [
     "pm2_5", "pm10", "carbon_monoxide", "nitrogen_dioxide", "ozone", "sulphur_dioxide",
-    "temperature_2m", "relative_humidity_2m", "wind_speed_10m", "wind_direction_10m",
+    "temperature_2m", "relative_humidity_2m", "wind_speed_10m",
+    "wind_dir_sin", "wind_dir_cos", "wind_u", "wind_v", "ventilation",
     "precipitation", "surface_pressure", "boundary_layer_height",
 ]
-TIME_COLS = ["hour_sin", "hour_cos", "dow_sin", "dow_cos", "month_sin", "month_cos"]
+TIME_COLS = ["hour_sin", "hour_cos", "dow_sin", "dow_cos", "month_sin", "month_cos",
+             "is_weekend", "is_fireworks"]
 LAG_COLS = [f"pm2_5_lag{l}" for l in (1, 2, 3, 6, 12, 24, 48)] + ["pm10_lag1", "pm10_lag24"]
-ROLL_COLS = ["pm2_5_roll6", "pm2_5_roll24", "pm2_5_std24"]
-GEO_COLS = ["lat", "lon"]
+ROLL_COLS = ["pm2_5_roll6", "pm2_5_roll24", "pm2_5_std24",
+             "pm2_5_diff1", "pm2_5_diff24", "pm2_5_rel24"]
+GEO_COLS = ["lat", "lon", "city_code"]
 FEATURES = BASE_COLS + TIME_COLS + LAG_COLS + ROLL_COLS + GEO_COLS
+
+# city as a native categorical for HistGradientBoosting (index into FEATURES);
+# cities outside the training five get NaN -> treated as missing, which HGB handles
+CITY_CODE = {c["id"]: i for i, c in enumerate(CITIES)}
+CAT_IDX = [FEATURES.index("city_code")]
+
+# physical sanity caps for cleaning (µg/m³)
+_CAPS = {"pm2_5": 1000, "pm10": 2000, "nitrogen_dioxide": 1000, "ozone": 1000,
+         "sulphur_dioxide": 2000, "carbon_monoxide": 50000}
 
 
 def _get(url, params):
@@ -118,12 +132,34 @@ def fetch_recent(city, past_days=3):
     return df.sort_values("time").reset_index(drop=True)
 
 
+def clean_city(g):
+    """Per-city cleaning: dedupe, physical caps, hourly reindex so lags align
+    across archive gaps, and interpolation of short (<=3h) holes."""
+    g = g.sort_values("time").drop_duplicates(subset="time", keep="last")
+    num_cols = [c for c in g.columns if c not in ("time", "city")]
+    # negative concentrations are sensor/model noise; absurd spikes are glitches
+    for col, cap in _CAPS.items():
+        if col in g:
+            g[col] = g[col].clip(lower=0, upper=cap)
+    # reindex to a continuous hourly grid: gaps become explicit NaN rows so
+    # shift(k) is always exactly k hours (previously gaps silently misaligned lags)
+    g = g.set_index("time").reindex(
+        pd.date_range(g["time"].min(), g["time"].max(), freq="h"))
+    g.index.name = "time"
+    # bridge short gaps only; long outages stay NaN (HGB handles missing natively)
+    g[num_cols] = g[num_cols].interpolate(limit=3, limit_area="inside")
+    for col in ("city", "lat", "lon"):
+        if col in g:
+            g[col] = g[col].ffill().bfill()
+    return g.reset_index()
+
+
 def make_features(df, horizon=None):
-    """Add time/lag/rolling features. If horizon is set, add the shifted target.
-    Operates per-city so lags never cross city boundaries."""
+    """Clean + add time/lag/rolling/physics features. If horizon is set, add
+    the shifted target. Operates per-city so lags never cross city boundaries."""
     out = []
     for _, g in df.groupby("city", sort=False):
-        g = g.sort_values("time").copy()
+        g = clean_city(g)
         t = g["time"].dt
         g["hour_sin"] = np.sin(2 * np.pi * t.hour / 24)
         g["hour_cos"] = np.cos(2 * np.pi * t.hour / 24)
@@ -131,13 +167,30 @@ def make_features(df, horizon=None):
         g["dow_cos"] = np.cos(2 * np.pi * t.dayofweek / 7)
         g["month_sin"] = np.sin(2 * np.pi * t.month / 12)
         g["month_cos"] = np.cos(2 * np.pi * t.month / 12)
+        g["is_weekend"] = (t.dayofweek >= 5).astype(float)
+        # PH New Year fireworks: the one predictable extreme-PM event of the year
+        g["is_fireworks"] = (((t.month == 12) & (t.day == 31)) |
+                             ((t.month == 1) & (t.day == 1))).astype(float)
+        # cyclic + vector wind, and ventilation index (wind x mixing height):
+        # the standard meteorological dispersion measure — low = smog traps
+        wd = np.deg2rad(g["wind_direction_10m"])
+        g["wind_dir_sin"] = np.sin(wd)
+        g["wind_dir_cos"] = np.cos(wd)
+        g["wind_u"] = g["wind_speed_10m"] * np.sin(wd)
+        g["wind_v"] = g["wind_speed_10m"] * np.cos(wd)
+        g["ventilation"] = g["wind_speed_10m"] * g["boundary_layer_height"]
         for lag in (1, 2, 3, 6, 12, 24, 48):
             g[f"pm2_5_lag{lag}"] = g["pm2_5"].shift(lag)
         for lag in (1, 24):
             g[f"pm10_lag{lag}"] = g["pm10"].shift(lag)
-        g["pm2_5_roll6"] = g["pm2_5"].rolling(6).mean()
-        g["pm2_5_roll24"] = g["pm2_5"].rolling(24).mean()
-        g["pm2_5_std24"] = g["pm2_5"].rolling(24).std()
+        g["pm2_5_roll6"] = g["pm2_5"].rolling(6, min_periods=3).mean()
+        g["pm2_5_roll24"] = g["pm2_5"].rolling(24, min_periods=12).mean()
+        g["pm2_5_std24"] = g["pm2_5"].rolling(24, min_periods=12).std()
+        # short-term momentum and how elevated we are vs the 24h norm
+        g["pm2_5_diff1"] = g["pm2_5"] - g["pm2_5_lag1"]
+        g["pm2_5_diff24"] = g["pm2_5"] - g["pm2_5_lag24"]
+        g["pm2_5_rel24"] = g["pm2_5"] / (g["pm2_5_roll24"] + 1.0)
+        g["city_code"] = float(CITY_CODE.get(g["city"].iloc[0], np.nan))
         if horizon is not None:
             g["target"] = g["pm2_5"].shift(-horizon)
         out.append(g)

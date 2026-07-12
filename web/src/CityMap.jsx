@@ -148,7 +148,7 @@ function FlyTo({ city }) {
   return null;
 }
 
-export default function CityMap({ cities, grid = [], activeId, onPick, follow, full }) {
+export default function CityMap({ cities, grid = [], activeId, onPick, follow, full, userLoc }) {
   const active = cities.find((c) => c.id === activeId);
   return (
     <div className={full ? "mapbox full" : "mapbox big"}>
@@ -159,6 +159,12 @@ export default function CityMap({ cities, grid = [], activeId, onPick, follow, f
         <TileLayer url={LABELS} subdomains="abcd" />
         <HeatOverlay grid={grid} />
         {follow && active && <FlyTo city={active} />}
+        {userLoc && (
+          <Marker position={[userLoc.lat, userLoc.lon]} zIndexOffset={3000}
+                  icon={L.divIcon({ className: "", iconSize: [46, 20],
+                    iconAnchor: [23, 10],
+                    html: '<div class="youmarker">You</div>' })} />
+        )}
         {cities.map((c) => (
           <Marker key={`${c.id}-${c.id === activeId}`} position={[c.lat, c.lon]}
                   icon={markerIcon(c, c.id === activeId)}

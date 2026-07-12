@@ -1,7 +1,54 @@
 import {
   ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, Cell, ReferenceLine,
 } from "recharts";
-import { catMeta } from "./aqi.js";
+import { catMeta, severity, horizonLabel } from "./aqi.js";
+
+/* ---------- activity guide: concrete go / caution / skip advice ---------- */
+// thresholds are severity ranks: [max OK, max CAUTION]; above that = skip
+const ACTIVITIES = [
+  { label: "Jogging / outdoor exercise", ok: 1, caution: 2 },
+  { label: "Kids playing outside", ok: 1, caution: 2 },
+  { label: "Windows open at home", ok: 1, caution: 3 },
+  { label: "Open-air commute (jeepney, moto)", ok: 1, caution: 3 },
+  { label: "Hanging laundry outside", ok: 2, caution: 3 },
+  { label: "Outdoor errands if asthmatic / elderly / pregnant", ok: 0, caution: 2 },
+];
+const STATUS = {
+  ok: { word: "Go", color: "#4dd179" },
+  caution: { word: "Take it easy", color: "#f5d442" },
+  skip: { word: "Skip it", color: "#e66767" },
+};
+
+export function ActivityGuide({ city }) {
+  const sev = severity(city.now.category);
+  // cleanest moment in the next 24h from our own forecast
+  const options = [{ h: 0, pm: city.now.pm2_5 },
+                   ...city.forecast.map((f) => ({ h: f.horizon_h, pm: f.pm2_5 }))];
+  const best = options.reduce((a, b) => (b.pm < a.pm ? b : a));
+  return (
+    <div className="card">
+      <h2>Can I go outside in {city.name}?</h2>
+      <div className="actgrid">
+        {ACTIVITIES.map((a) => {
+          const s = sev <= a.ok ? STATUS.ok : sev <= a.caution ? STATUS.caution : STATUS.skip;
+          return (
+            <div className="act" key={a.label}>
+              <span className="al">{a.label}</span>
+              <span className="as" style={{ color: s.color, borderColor: s.color }}>
+                {s.word}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+      <p className="btnote besttime">
+        {best.h === 0
+          ? "Bonus: the air is at its cleanest right now compared to the next 24 hours — if you're heading out, now is the time."
+          : `Bonus: of the next 24 hours, the cleanest air we predict is ${horizonLabel(best.h).toLowerCase()} (~${best.pm} µg/m³) — a good window for that run or errand.`}
+      </p>
+    </div>
+  );
+}
 
 /* ---------- national stat tiles ---------- */
 export function NationalStats({ cities }) {

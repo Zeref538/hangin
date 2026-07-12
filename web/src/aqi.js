@@ -46,3 +46,15 @@ export const fmtHour = (iso) => {
 // "in 1 hour", "in 6 hours", "this time tomorrow"
 export const horizonLabel = (h) =>
   h === 24 ? "This time tomorrow" : h === 1 ? "In 1 hour" : `In ${h} hours`;
+
+// severity rank 0 (Good) .. 5 (Hazardous) for activity advice
+const CAT_ORDER = Object.keys(AQI_META);
+export const severity = (category) => Math.max(0, CAT_ORDER.indexOf(category));
+
+export const haversineKm = (a, b) => {
+  const R = 6371, d = Math.PI / 180;
+  const dLat = (b.lat - a.lat) * d, dLon = (b.lon - a.lon) * d;
+  const s = Math.sin(dLat / 2) ** 2 +
+    Math.cos(a.lat * d) * Math.cos(b.lat * d) * Math.sin(dLon / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(s));
+};

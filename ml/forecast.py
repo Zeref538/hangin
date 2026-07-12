@@ -28,11 +28,13 @@ def city_payload(city, models, now_ph):
     # keep only observed hours (fetch_recent also returns forecast rows)
     df = df[(df["time"] <= now_ph) & df["pm2_5"].notna()]
     feat = C.make_features(df)
-    latest = feat.dropna(subset=C.FEATURES).iloc[-1]
+    feat = feat[feat["pm2_5"].notna()]  # model tolerates NaN features, not a NaN "now"
+    latest = feat.iloc[-1]
 
     forecast = []
+    X = latest[C.FEATURES].to_frame().T.astype(float)
     for h in C.HORIZONS:
-        pm = max(0.0, float(models[h].predict(latest[C.FEATURES].to_frame().T)[0]))
+        pm = max(0.0, float(models[h].predict(X)[0]))
         aqi = C.pm25_to_aqi(pm)
         forecast.append({"horizon_h": h, "pm2_5": round(pm, 1), **aqi})
 

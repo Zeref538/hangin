@@ -238,6 +238,41 @@ header.hero .tagline em { color: var(--ink); }
 .citymenu button.hi { background: rgba(255, 255, 255, 0.08); }
 .citymenu .empty { padding: 12px; font-size: 13px; color: var(--muted); }
 
+/* locate button + user marker */
+.locbtn {
+  display: inline-flex; align-items: center; gap: 7px;
+  font: inherit; font-size: 13.5px; font-weight: 600;
+  padding: 11px 14px; min-height: 46px; border-radius: 12px;
+  border: 1px solid rgba(77, 163, 255, 0.45);
+  background: rgba(77, 163, 255, 0.12); color: var(--ink); cursor: pointer;
+  transition: background 160ms ease;
+  flex: 0 0 auto;
+}
+.locbtn:hover { background: rgba(77, 163, 255, 0.2); }
+.locbtn:disabled { opacity: 0.6; cursor: wait; }
+.locbtn svg { color: var(--actual); }
+.youmarker {
+  display: grid; place-items: center; width: 100%; height: 100%;
+  font: 700 10.5px/1 var(--font-body); color: #0b0f14;
+  background: #fff; border-radius: 999px;
+  box-shadow: 0 0 0 3px rgba(77, 163, 255, 0.65), 0 0 16px rgba(77, 163, 255, 0.8);
+}
+
+/* activity guide */
+.actgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 18px; }
+@media (max-width: 640px) { .actgrid { grid-template-columns: 1fr; } }
+.act {
+  display: flex; justify-content: space-between; align-items: center; gap: 10px;
+  padding: 9px 2px; border-bottom: 1px solid var(--grid);
+  font-size: 14px;
+}
+.act .al { color: var(--ink-2); }
+.act .as {
+  font-size: 11.5px; font-weight: 700; letter-spacing: 0.03em;
+  border: 1px solid; border-radius: 999px; padding: 3px 10px; white-space: nowrap;
+}
+.besttime { margin-top: 14px; font-size: 13px; color: var(--ink-2); }
+
 /* nav logo image */
 .logoimg { width: 38px; height: 38px; display: block; }
 

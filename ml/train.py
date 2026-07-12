@@ -32,7 +32,7 @@ def load_all():
 
 def train_horizon(df, horizon):
     feat = C.make_features(df, horizon=horizon).dropna(
-        subset=C.FEATURES + ["target"]).reset_index(drop=True)
+        subset=["target", "pm2_5", "pm2_5_lag1"]).reset_index(drop=True)
     # chronological split by time (last 20% across all cities)
     cutoff = feat["time"].quantile(0.8)
     tr = feat[feat["time"] <= cutoff]
@@ -42,7 +42,8 @@ def train_horizon(df, horizon):
 
     model = HistGradientBoostingRegressor(
         max_iter=600, learning_rate=0.05, max_depth=8,
-        l2_regularization=1.0, early_stopping=True, random_state=42)
+        l2_regularization=1.0, early_stopping=True, random_state=42,
+        categorical_features=C.CAT_IDX)
     model.fit(Xtr, ytr)
     pred = model.predict(Xte)
     persistence = te["pm2_5"].values

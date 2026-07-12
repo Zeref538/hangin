@@ -27,6 +27,8 @@ SEED = 42
 MODELS_DIR = C.DATA / "models"
 
 SPACE = {
+    # absolute_error directly optimizes the MAE we report; squared kept as rival
+    "loss": ["squared_error", "absolute_error"],
     "learning_rate": [0.02, 0.03, 0.05, 0.08, 0.12],
     "max_iter": [400, 800, 1200, 2000],
     "max_depth": [None, 6, 8, 10, 12],
@@ -54,8 +56,10 @@ def load_history():
 
 
 def tune_horizon(df, horizon, current_mae, rng):
+    # HGB handles missing feature values natively — only the target and the
+    # persistence baseline need to exist, so gap-adjacent rows stay usable
     feat = C.make_features(df, horizon=horizon).dropna(
-        subset=C.FEATURES + ["target"]).reset_index(drop=True)
+        subset=["target", "pm2_5", "pm2_5_lag1"]).reset_index(drop=True)
     t60 = feat["time"].quantile(0.6)
     t80 = feat["time"].quantile(0.8)
     tr = feat[feat["time"] <= t60]
@@ -73,6 +77,7 @@ def tune_horizon(df, horizon, current_mae, rng):
         t0 = time.time()
         model = HistGradientBoostingRegressor(
             random_state=SEED, early_stopping=True,
+            categorical_features=C.CAT_IDX,
             validation_fraction=0.1, n_iter_no_change=30, **params)
         model.fit(Xtr, ytr)
         mae = mean_absolute_error(yva, model.predict(Xva))
@@ -92,6 +97,7 @@ def tune_horizon(df, horizon, current_mae, rng):
     Xfull = pd.concat([Xtr, Xva]); yfull = pd.concat([ytr, yva])
     final = HistGradientBoostingRegressor(
         random_state=SEED, early_stopping=True,
+        categorical_features=C.CAT_IDX,
         validation_fraction=0.1, n_iter_no_change=30, **best["params"])
     final.fit(Xfull, yfull)
     pred = final.predict(te[C.FEATURES])
@@ -100,9 +106,13 @@ def tune_horizon(df, horizon, current_mae, rng):
     persistence = float(mean_absolute_error(te["target"], te["pm2_5"]))
     improved = test_mae < current_mae
 
-    print(f"  h{horizon} FINAL test MAE {test_mae:.4f} (prod {current_mae}) "
+    # the feature pipeline changed, so the old pickles are incompatible:
+    # always ship the retrained model, but report the comparison honestly
+    print(f"  h{horizon} FINAL test MAE {test_mae:.4f} (prev prod {current_mae}) "
           f"R2 {test_r2:.4f} persistence {persistence:.4f} -> "
-          f"{'REPLACING prod model' if improved else 'keeping prod model'}", flush=True)
+          f"{'improved' if improved else 'NOT improved (shipped anyway: new pipeline)'}",
+          flush=True)
+    improved = True
 
     result = {
         "horizon_h": horizon, "best_params": best["params"],
@@ -142,6 +152,7 @@ def main():
                 if row["horizon_h"] == res["horizon_h"]:
                     backtest["horizons"][i] = res["backtest_row"]
     backtest["tuned"] = True
+    backtest["features"] = C.FEATURES
     json.dump(backtest, open(C.DATA / "backtest.json", "w"), indent=2)
     json.dump({"seed": SEED, "n_trials": N_TRIALS,
                "total_minutes": round((time.time() - t0) / 60, 1),
