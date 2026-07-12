@@ -133,6 +133,29 @@ header.hero .tagline em { color: var(--ink); }
 .mapbox.big { height: 520px; }
 @media (max-width: 700px) { .mapbox.big { height: 380px; } }
 
+/* full-bleed map section */
+.mapsection { position: relative; width: 100%; }
+.mapbox.full {
+  height: min(78vh, 820px); border-radius: 0; border-left: none; border-right: none;
+}
+@media (max-width: 700px) { .mapbox.full { height: 65vh; } }
+.mapcontrols {
+  position: absolute; z-index: 1100; left: 0; right: 0; bottom: 16px;
+  display: flex; justify-content: center; pointer-events: none; padding: 0 16px;
+}
+.mapcontrols .citylist.row {
+  pointer-events: auto; margin-top: 0; max-width: 1080px; width: 100%;
+  background: rgba(11, 15, 20, 0.82); backdrop-filter: blur(14px);
+  border: 1px solid var(--border-strong); border-radius: 16px;
+  padding: 10px; box-shadow: 0 16px 44px rgba(0, 0, 0, 0.45);
+}
+.mapcontrols .citymenu { top: auto; bottom: calc(100% + 6px); }
+@media (max-width: 700px) {
+  .mapcontrols { position: static; padding: 12px 16px 0; }
+  .mapcontrols .citylist.row { background: var(--surface-solid); box-shadow: none; }
+  .mapcontrols .citymenu { top: calc(100% + 6px); bottom: auto; }
+}
+
 .maplegend {
   position: absolute; z-index: 1000; right: 12px; top: 12px;
   display: flex; align-items: center; gap: 10px;
@@ -212,7 +235,60 @@ header.hero .tagline em { color: var(--ink); }
 }
 .citymenu button:hover { background: rgba(255, 255, 255, 0.06); }
 .citymenu button.active { background: rgba(77, 163, 255, 0.12); font-weight: 600; }
+.citymenu button.hi { background: rgba(255, 255, 255, 0.08); }
 .citymenu .empty { padding: 12px; font-size: 13px; color: var(--muted); }
+
+/* nav logo image */
+.logoimg { width: 34px; height: 34px; border-radius: 10px; display: block; }
+
+/* weather chips inside now panel */
+.wxchips { display: flex; gap: 6px; flex-wrap: wrap; margin: 2px 0 10px; }
+.wxchips .chip { font-size: 11.5px; padding: 4px 10px; }
+
+/* "why cleaner than it feels" note */
+.whynote { margin-top: 14px; position: relative; }
+.whynote summary {
+  cursor: pointer; font-size: 13.5px; font-weight: 600; color: var(--actual);
+  list-style: none; display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 0; min-height: 32px; user-select: none;
+}
+.whynote summary::-webkit-details-marker { display: none; }
+.whynote summary::after { content: "▾"; font-size: 11px; transition: transform 180ms ease; }
+.whynote[open] summary::after { transform: rotate(180deg); }
+.whynote p {
+  font-size: 13.5px; color: var(--ink-2); line-height: 1.65; margin: 6px 0 0;
+  padding: 12px 14px; border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03); border: 1px dashed var(--border-strong);
+}
+.whynote b { color: var(--ink); }
+
+/* national stat tiles accents */
+.tiles.nat { margin: 0; }
+.tiles.nat .n.good { background: none; -webkit-text-fill-color: currentcolor; color: #4dd179; }
+.tiles.nat .n.bad { background: none; -webkit-text-fill-color: currentcolor; color: #f5a35c; }
+
+/* side-by-side panels */
+.duo { display: grid; grid-template-columns: 1fr 1.2fr; gap: 18px; align-items: start; }
+@media (max-width: 900px) { .duo { grid-template-columns: 1fr; } }
+
+/* pollutant bars */
+.pols { display: grid; gap: 12px; margin-top: 6px; }
+.pol { display: grid; grid-template-columns: 150px 1fr 86px; gap: 12px; align-items: center; }
+@media (max-width: 560px) { .pol { grid-template-columns: 110px 1fr 76px; } }
+.pol .pl { font-size: 13px; }
+.pol .pl b { color: var(--ink); }
+.pol .pl span { color: var(--muted); display: block; font-size: 11.5px; }
+.pbar {
+  position: relative; height: 14px; border-radius: 7px;
+  background: rgba(255, 255, 255, 0.05); overflow: visible;
+}
+.pfill { height: 100%; border-radius: 7px; min-width: 3px; }
+.pwho {
+  position: absolute; top: -3px; bottom: -3px; left: 40%; width: 2px;
+  background: rgba(255, 255, 255, 0.85); border-radius: 1px;
+}
+.pol .pv { font-size: 13px; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+.pol .pv small { color: var(--muted); font-weight: 400; }
 
 /* simple/expert toggle */
 .trust h2 { justify-content: space-between; }

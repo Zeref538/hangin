@@ -148,10 +148,10 @@ function FlyTo({ city }) {
   return null;
 }
 
-export default function CityMap({ cities, grid = [], activeId, onPick, follow }) {
+export default function CityMap({ cities, grid = [], activeId, onPick, follow, full }) {
   const active = cities.find((c) => c.id === activeId);
   return (
-    <div className="mapbox big">
+    <div className={full ? "mapbox full" : "mapbox big"}>
       <MapContainer center={[12.6, 122.0]} zoom={6} minZoom={5} scrollWheelZoom={false}
                     maxBounds={[[2, 110], [23, 134]]} maxBoundsViscosity={0.8}
                     attributionControl={true}>

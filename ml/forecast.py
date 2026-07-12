@@ -45,6 +45,12 @@ def city_payload(city, models, now_ph):
         "id": city["id"], "name": city["name"],
         "lat": city["lat"], "lon": city["lon"],
         "featured": any(c["id"] == city["id"] for c in C.CITIES),
+        "pollutants": {k: round(float(latest[k]), 1) for k in (
+            "pm10", "nitrogen_dioxide", "ozone", "sulphur_dioxide",
+            "carbon_monoxide") if pd.notna(latest[k])},
+        "weather": {k: round(float(latest[k]), 1) for k in (
+            "temperature_2m", "relative_humidity_2m", "wind_speed_10m",
+            "precipitation") if pd.notna(latest[k])},
         "now": {"time": latest["time"].strftime("%Y-%m-%dT%H:%M"),
                 "pm2_5": round(now_pm, 1), **C.pm25_to_aqi(now_pm)},
         "history": history,
