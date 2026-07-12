@@ -15,10 +15,10 @@ persistence baseline by ~9–10% MAE at the 12–24h horizons that actually matt
 ## Backtest (5 PH metros pooled, ~1.9 yrs history, chronological holdout)
 | Horizon | Model MAE (µg/m³) | R² | Naive persistence MAE | Lift |
 |--------:|:-----------------:|:--:|:---------------------:|:----:|
-| 1 h  | 0.88 | 0.95 | 0.95 | +8.1% |
-| 6 h  | 2.88 | 0.72 | 3.44 | +16.4% |
-| 12 h | 3.63 | 0.56 | 4.57 | +20.5% |
-| 24 h | 4.08 | 0.42 | 4.66 | +12.5% |
+| 1 h  | 0.77 | 0.96 | 0.94 | +18.8% |
+| 6 h  | 2.68 | 0.74 | 3.37 | +20.6% |
+| 12 h | 3.42 | 0.57 | 4.45 | +23.0% |
+| 24 h | 3.76 | 0.45 | 4.45 | +15.6% |
 
 One pooled model across Manila, Quezon City, Cebu, Davao, and Baguio (with location
 features). Naive guessing is fine for the next hour, but the model's edge grows to

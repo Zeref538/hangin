@@ -40,14 +40,16 @@ web/          # React+Vite dashboard (NOT built yet) — web/public/ will hold g
 Run training: `pip install -r requirements.txt` then `python ml/train.py` (from repo root,
 or `cd ml && python train.py`). Takes ~2–4 min (fetches ~131k rows).
 
-## Backtest results so far (pooled, chronological holdout)
+## Backtest results (pipeline v2 + tuned, pooled, chronological holdout)
 | H | Model MAE | R² | Persistence MAE | Lift |
 |--|--|--|--|--|
-| 1h | 0.88 | 0.95 | 0.95 | +8.1% |
-| 6h | 2.88 | 0.72 | 3.44 | +16.4% |
-| 12h | 3.63 | 0.56 | 4.57 | +20.5% |
-| 24h | 4.08 | 0.42 | 4.66 | +12.5% |
-Honest narrative: naive guessing is fine for +1h; the model's real value shows at 6–24h.
+| 1h | 0.77 | 0.96 | 0.94 | +18.8% |
+| 6h | 2.68 | 0.74 | 3.37 | +20.6% |
+| 12h | 3.42 | 0.57 | 4.45 | +23.0% |
+| 24h | 3.76 | 0.45 | 4.45 | +15.6% |
+Pipeline v2 (`ml/tune.py`): hourly-grid cleaning, wind vectors + ventilation index,
+city categorical, absolute_error loss won every horizon; 40-trial random search per
+horizon, 60/20/20 chronological protocol, log in data/tuning.json.
 
 ## Phases
 - [x] **Phase 1** — single-city forecaster + backtest (proof of signal).
