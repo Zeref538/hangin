@@ -63,11 +63,14 @@ horizon, 60/20/20 chronological protocol, log in data/tuning.json.
       multi-horizon forecast line chart (Recharts), health advisory card, and a
       model-performance panel that shows the backtest table (the ML proof). Consumes
       `forecasts.json`. **Gate: confirm layout with user before polishing.**
-- [ ] **Phase 4** — automate refresh (GitHub Actions cron runs `forecast.py`, commits JSON),
-      deploy `web/` to Vercel, then add the project to the portfolio `src/data.js`
-      (title, tags: Python/scikit-learn/Time-Series/Open-Meteo/React, metric like
-      "+20% MAE vs naive @12h", demo + repo links, 3 screenshots in public/projects/).
-      **Gate: user sign-off before it goes live / into the portfolio.**
+- [~] **Phase 4 (nearly done)** — DONE: GitHub Actions hourly refresh
+      (`.github/workflows/refresh.yml`, cron :20, commits forecasts.json as Zeref538);
+      Vercel deploy live + public at https://hangin-acra1.vercel.app (project `hangin`,
+      team acra1, git-connected → auto-redeploys on push, deployment protection off);
+      3 screenshots in portfolio `public/projects/hangin-{1,2,3}.jpg`.
+      TODO: portfolio `src/data.js` entry + skillIcons (Time-Series/Open-Meteo/Leaflet)
+      — edits were blocked by a transient permission-service outage; retry then deploy
+      portfolio. **Gate: user sign-off before portfolio goes live.**
 
 ## Conventions (match the portfolio repo)
 - Commit author must be the GitHub-linked noreply email so contributions count:
