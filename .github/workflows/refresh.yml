@@ -31,8 +31,8 @@ jobs:
 
       - name: Commit updated forecasts.json
         run: |
-          git config user.name "Zeref538"
-          git config user.email "238805789+Zeref538@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add web/public/forecasts.json
           git diff --cached --quiet && echo "no changes" || \
             (git commit -m "chore: hourly forecast refresh" && git push)
