@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-15T07:15:17Z",
+ "generated_at": "2026-08-15T07:59:11Z",
  "cities": [
   {
    "id": "manila",
@@ -15,9 +15,9 @@
     "carbon_monoxide": 243.0
    },
    "weather": {
-    "temperature_2m": 29.3,
-    "relative_humidity_2m": 76.0,
-    "wind_speed_10m": 20.6,
+    "temperature_2m": 29.1,
+    "relative_humidity_2m": 78.0,
+    "wind_speed_10m": 22.9,
     "precipitation": 0.0
    },
    "now": {
@@ -231,22 +231,22 @@
     },
     {
      "horizon_h": 6,
-     "pm2_5": 12.9,
-     "aqi": 53,
+     "pm2_5": 12.6,
+     "aqi": 52,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 13.5,
-     "aqi": 54,
+     "pm2_5": 13.2,
+     "aqi": 53,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 11.0,
-     "aqi": 46,
+     "pm2_5": 10.8,
+     "aqi": 45,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
@@ -266,10 +266,10 @@
     "carbon_monoxide": 278.0
    },
    "weather": {
-    "temperature_2m": 29.6,
-    "relative_humidity_2m": 75.0,
-    "wind_speed_10m": 16.3,
-    "precipitation": 0.1
+    "temperature_2m": 29.5,
+    "relative_humidity_2m": 78.0,
+    "wind_speed_10m": 18.7,
+    "precipitation": 0.3
    },
    "now": {
     "time": "2026-08-15T15:00",
@@ -475,31 +475,31 @@
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 10.1,
-     "aqi": 42,
+     "pm2_5": 9.9,
+     "aqi": 41,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 11.4,
-     "aqi": 48,
+     "pm2_5": 11.2,
+     "aqi": 47,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 10.9,
-     "aqi": 45,
+     "pm2_5": 10.2,
+     "aqi": 43,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 12.1,
-     "aqi": 51,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+     "pm2_5": 11.8,
+     "aqi": 49,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
    ]
   },
@@ -517,9 +517,9 @@
     "carbon_monoxide": 184.0
    },
    "weather": {
-    "temperature_2m": 32.9,
-    "relative_humidity_2m": 61.0,
-    "wind_speed_10m": 16.1,
+    "temperature_2m": 33.4,
+    "relative_humidity_2m": 57.0,
+    "wind_speed_10m": 16.4,
     "precipitation": 0.3
    },
    "now": {
@@ -733,8 +733,8 @@
     },
     {
      "horizon_h": 6,
-     "pm2_5": 16.1,
-     "aqi": 59,
+     "pm2_5": 16.3,
+     "aqi": 60,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
@@ -747,10 +747,10 @@
     },
     {
      "horizon_h": 24,
-     "pm2_5": 12.4,
-     "aqi": 52,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+     "pm2_5": 11.7,
+     "aqi": 49,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
    ]
   },
@@ -768,9 +768,9 @@
     "carbon_monoxide": 166.0
    },
    "weather": {
-    "temperature_2m": 29.6,
+    "temperature_2m": 29.5,
     "relative_humidity_2m": 71.0,
-    "wind_speed_10m": 9.9,
+    "wind_speed_10m": 10.1,
     "precipitation": 0.0
    },
    "now": {
@@ -984,8 +984,8 @@
     },
     {
      "horizon_h": 6,
-     "pm2_5": 10.5,
-     "aqi": 44,
+     "pm2_5": 10.4,
+     "aqi": 43,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
@@ -1019,10 +1019,10 @@
     "carbon_monoxide": 185.0
    },
    "weather": {
-    "temperature_2m": 19.1,
+    "temperature_2m": 18.0,
     "relative_humidity_2m": 95.0,
-    "wind_speed_10m": 16.1,
-    "precipitation": 0.9
+    "wind_speed_10m": 12.6,
+    "precipitation": 1.7
    },
    "now": {
     "time": "2026-08-15T15:00",
@@ -1249,8 +1249,8 @@
     },
     {
      "horizon_h": 24,
-     "pm2_5": 6.9,
-     "aqi": 29,
+     "pm2_5": 6.7,
+     "aqi": 28,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
@@ -1270,10 +1270,10 @@
     "carbon_monoxide": 296.0
    },
    "weather": {
-    "temperature_2m": 27.9,
-    "relative_humidity_2m": 82.0,
-    "wind_speed_10m": 9.5,
-    "precipitation": 1.4
+    "temperature_2m": 29.9,
+    "relative_humidity_2m": 72.0,
+    "wind_speed_10m": 6.5,
+    "precipitation": 0.3
    },
    "now": {
     "time": "2026-08-15T15:00",
@@ -1486,22 +1486,22 @@
     },
     {
      "horizon_h": 6,
-     "pm2_5": 9.5,
-     "aqi": 40,
+     "pm2_5": 9.8,
+     "aqi": 41,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 11.2,
-     "aqi": 46,
+     "pm2_5": 11.5,
+     "aqi": 48,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 9.0,
-     "aqi": 38,
+     "pm2_5": 8.7,
+     "aqi": 36,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
@@ -1521,9 +1521,9 @@
     "carbon_monoxide": 176.0
    },
    "weather": {
-    "temperature_2m": 31.3,
+    "temperature_2m": 31.4,
     "relative_humidity_2m": 69.0,
-    "wind_speed_10m": 21.8,
+    "wind_speed_10m": 20.9,
     "precipitation": 0.1
    },
    "now": {
@@ -1730,22 +1730,22 @@
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 10.8,
+     "pm2_5": 10.9,
      "aqi": 45,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 12.2,
-     "aqi": 51,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+     "pm2_5": 12.0,
+     "aqi": 50,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 11.6,
-     "aqi": 48,
+     "pm2_5": 11.7,
+     "aqi": 49,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
@@ -1774,7 +1774,7 @@
    "weather": {
     "temperature_2m": 29.8,
     "relative_humidity_2m": 75.0,
-    "wind_speed_10m": 22.1,
+    "wind_speed_10m": 18.4,
     "precipitation": 0.0
    },
    "now": {
@@ -1981,8 +1981,8 @@
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 10.9,
-     "aqi": 45,
+     "pm2_5": 11.0,
+     "aqi": 46,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
@@ -1995,15 +1995,15 @@
     },
     {
      "horizon_h": 12,
-     "pm2_5": 10.0,
-     "aqi": 42,
+     "pm2_5": 10.2,
+     "aqi": 43,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 10.4,
-     "aqi": 43,
+     "pm2_5": 10.6,
+     "aqi": 44,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
@@ -2023,9 +2023,9 @@
     "carbon_monoxide": 177.0
    },
    "weather": {
-    "temperature_2m": 34.2,
-    "relative_humidity_2m": 48.0,
-    "wind_speed_10m": 16.3,
+    "temperature_2m": 33.6,
+    "relative_humidity_2m": 49.0,
+    "wind_speed_10m": 15.8,
     "precipitation": 0.0
    },
    "now": {
@@ -2232,22 +2232,22 @@
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 12.1,
+     "pm2_5": 12.2,
      "aqi": 51,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 14.1,
-     "aqi": 55,
+     "pm2_5": 14.4,
+     "aqi": 56,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 14.4,
-     "aqi": 56,
+     "pm2_5": 15.1,
+     "aqi": 57,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
@@ -2274,9 +2274,9 @@
     "carbon_monoxide": 168.0
    },
    "weather": {
-    "temperature_2m": 32.7,
-    "relative_humidity_2m": 54.0,
-    "wind_speed_10m": 7.5,
+    "temperature_2m": 32.3,
+    "relative_humidity_2m": 55.0,
+    "wind_speed_10m": 8.8,
     "precipitation": 0.1
    },
    "now": {
@@ -2490,14 +2490,14 @@
     },
     {
      "horizon_h": 6,
-     "pm2_5": 16.2,
-     "aqi": 60,
+     "pm2_5": 16.0,
+     "aqi": 59,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 13.7,
+     "pm2_5": 13.8,
      "aqi": 54,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
@@ -2525,9 +2525,9 @@
     "carbon_monoxide": 149.0
    },
    "weather": {
-    "temperature_2m": 31.1,
-    "relative_humidity_2m": 60.0,
-    "wind_speed_10m": 15.9,
+    "temperature_2m": 31.8,
+    "relative_humidity_2m": 58.0,
+    "wind_speed_10m": 16.1,
     "precipitation": 0.0
    },
    "now": {
@@ -2734,14 +2734,14 @@
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 7.3,
+     "pm2_5": 7.2,
      "aqi": 30,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 9.9,
+     "pm2_5": 9.8,
      "aqi": 41,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
@@ -2755,7 +2755,7 @@
     },
     {
      "horizon_h": 24,
-     "pm2_5": 8.4,
+     "pm2_5": 8.3,
      "aqi": 35,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
@@ -2776,9 +2776,9 @@
     "carbon_monoxide": 189.0
    },
    "weather": {
-    "temperature_2m": 28.5,
-    "relative_humidity_2m": 80.0,
-    "wind_speed_10m": 12.3,
+    "temperature_2m": 29.0,
+    "relative_humidity_2m": 78.0,
+    "wind_speed_10m": 8.2,
     "precipitation": 1.1
    },
    "now": {
@@ -2985,28 +2985,28 @@
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 9.5,
+     "pm2_5": 9.6,
      "aqi": 40,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 16.1,
-     "aqi": 59,
+     "pm2_5": 16.2,
+     "aqi": 60,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 12.0,
-     "aqi": 51,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+     "pm2_5": 11.9,
+     "aqi": 49,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 9.9,
+     "pm2_5": 9.8,
      "aqi": 41,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
@@ -3027,9 +3027,9 @@
     "carbon_monoxide": 171.0
    },
    "weather": {
-    "temperature_2m": 33.0,
-    "relative_humidity_2m": 60.0,
-    "wind_speed_10m": 6.9,
+    "temperature_2m": 33.3,
+    "relative_humidity_2m": 59.0,
+    "wind_speed_10m": 5.6,
     "precipitation": 0.0
    },
    "now": {
@@ -3243,21 +3243,21 @@
     },
     {
      "horizon_h": 6,
-     "pm2_5": 12.5,
+     "pm2_5": 12.6,
      "aqi": 52,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 10.6,
+     "pm2_5": 10.5,
      "aqi": 44,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 9.6,
+     "pm2_5": 9.5,
      "aqi": 40,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
@@ -3280,7 +3280,7 @@
    "weather": {
     "temperature_2m": 30.4,
     "relative_humidity_2m": 65.0,
-    "wind_speed_10m": 16.8,
+    "wind_speed_10m": 19.5,
     "precipitation": 0.9
    },
    "now": {
@@ -3531,7 +3531,7 @@
    "weather": {
     "temperature_2m": 33.4,
     "relative_humidity_2m": 54.0,
-    "wind_speed_10m": 13.8,
+    "wind_speed_10m": 12.4,
     "precipitation": 0.5
    },
    "now": {
@@ -3738,15 +3738,15 @@
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 12.6,
+     "pm2_5": 12.7,
      "aqi": 52,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 16.5,
-     "aqi": 60,
+     "pm2_5": 16.9,
+     "aqi": 61,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
@@ -3759,8 +3759,8 @@
     },
     {
      "horizon_h": 24,
-     "pm2_5": 10.4,
-     "aqi": 43,
+     "pm2_5": 10.6,
+     "aqi": 44,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
@@ -3782,7 +3782,7 @@
    "weather": {
     "temperature_2m": 30.4,
     "relative_humidity_2m": 72.0,
-    "wind_speed_10m": 22.8,
+    "wind_speed_10m": 22.6,
     "precipitation": 0.0
    },
    "now": {
@@ -3996,7 +3996,7 @@
     },
     {
      "horizon_h": 6,
-     "pm2_5": 11.2,
+     "pm2_5": 11.3,
      "aqi": 47,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
@@ -4033,7 +4033,7 @@
    "weather": {
     "temperature_2m": 27.4,
     "relative_humidity_2m": 87.0,
-    "wind_speed_10m": 15.1,
+    "wind_speed_10m": 18.0,
     "precipitation": 1.7
    },
    "now": {
@@ -4240,22 +4240,22 @@
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 7.7,
+     "pm2_5": 7.6,
      "aqi": 32,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 9.5,
-     "aqi": 40,
+     "pm2_5": 9.2,
+     "aqi": 38,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 9.5,
-     "aqi": 40,
+     "pm2_5": 9.3,
+     "aqi": 39,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
@@ -4284,7 +4284,7 @@
    "weather": {
     "temperature_2m": 31.1,
     "relative_humidity_2m": 70.0,
-    "wind_speed_10m": 21.9,
+    "wind_speed_10m": 20.0,
     "precipitation": 0.2
    },
    "now": {
@@ -4491,7 +4491,7 @@
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 9.6,
+     "pm2_5": 9.5,
      "aqi": 40,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
@@ -4505,15 +4505,15 @@
     },
     {
      "horizon_h": 12,
-     "pm2_5": 9.7,
-     "aqi": 40,
+     "pm2_5": 9.8,
+     "aqi": 41,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 9.3,
-     "aqi": 39,
+     "pm2_5": 9.1,
+     "aqi": 38,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
@@ -4535,7 +4535,7 @@
    "weather": {
     "temperature_2m": 30.6,
     "relative_humidity_2m": 73.0,
-    "wind_speed_10m": 15.5,
+    "wind_speed_10m": 16.3,
     "precipitation": 0.2
    },
    "now": {
@@ -4749,8 +4749,8 @@
     },
     {
      "horizon_h": 6,
-     "pm2_5": 13.8,
-     "aqi": 55,
+     "pm2_5": 13.7,
+     "aqi": 54,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
@@ -4763,7 +4763,7 @@
     },
     {
      "horizon_h": 24,
-     "pm2_5": 12.5,
+     "pm2_5": 12.6,
      "aqi": 52,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
@@ -4786,7 +4786,7 @@
    "weather": {
     "temperature_2m": 30.7,
     "relative_humidity_2m": 74.0,
-    "wind_speed_10m": 20.6,
+    "wind_speed_10m": 19.9,
     "precipitation": 0.2
    },
    "now": {
@@ -5000,14 +5000,14 @@
     },
     {
      "horizon_h": 6,
-     "pm2_5": 10.5,
+     "pm2_5": 10.6,
      "aqi": 44,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 10.0,
+     "pm2_5": 10.1,
      "aqi": 42,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
@@ -5037,7 +5037,7 @@
    "weather": {
     "temperature_2m": 27.9,
     "relative_humidity_2m": 91.0,
-    "wind_speed_10m": 12.0,
+    "wind_speed_10m": 13.4,
     "precipitation": 0.7
    },
    "now": {
@@ -5251,22 +5251,22 @@
     },
     {
      "horizon_h": 6,
-     "pm2_5": 9.2,
-     "aqi": 38,
+     "pm2_5": 9.3,
+     "aqi": 39,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 10.3,
-     "aqi": 43,
+     "pm2_5": 10.9,
+     "aqi": 45,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 7.2,
-     "aqi": 30,
+     "pm2_5": 7.8,
+     "aqi": 33,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
@@ -5288,7 +5288,7 @@
    "weather": {
     "temperature_2m": 30.7,
     "relative_humidity_2m": 71.0,
-    "wind_speed_10m": 13.1,
+    "wind_speed_10m": 12.9,
     "precipitation": 0.2
    },
    "now": {
@@ -5502,7 +5502,7 @@
     },
     {
      "horizon_h": 6,
-     "pm2_5": 15.8,
+     "pm2_5": 15.9,
      "aqi": 59,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
