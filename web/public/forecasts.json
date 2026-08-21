@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-08-21T11:01:56Z",
+ "generated_at": "2026-08-21T11:56:33Z",
  "cities": [
   {
    "id": "manila",
@@ -8,30 +8,26 @@
    "lon": 120.98,
    "featured": true,
    "pollutants": {
-    "pm10": 25.1,
-    "nitrogen_dioxide": 9.2,
-    "ozone": 65.0,
-    "sulphur_dioxide": 4.7,
-    "carbon_monoxide": 420.0
+    "pm10": 25.6,
+    "nitrogen_dioxide": 12.2,
+    "ozone": 58.0,
+    "sulphur_dioxide": 6.0,
+    "carbon_monoxide": 404.0
    },
    "weather": {
     "temperature_2m": 28.5,
-    "relative_humidity_2m": 77.0,
-    "wind_speed_10m": 16.8,
+    "relative_humidity_2m": 78.0,
+    "wind_speed_10m": 17.1,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 19.3,
-    "aqi": 66,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 20.0,
+    "aqi": 68,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 15.4
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 19.2
@@ -219,34 +215,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 19.3
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 20.0
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 17.4,
-     "aqi": 62,
+     "pm2_5": 19.9,
+     "aqi": 67,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 17.2,
-     "aqi": 62,
+     "pm2_5": 16.7,
+     "aqi": 61,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 18.3,
-     "aqi": 64,
+     "pm2_5": 17.9,
+     "aqi": 63,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 14.7,
-     "aqi": 57,
+     "pm2_5": 16.2,
+     "aqi": 60,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -259,30 +259,26 @@
    "lon": 121.05,
    "featured": true,
    "pollutants": {
-    "pm10": 21.5,
-    "nitrogen_dioxide": 10.9,
-    "ozone": 66.0,
-    "sulphur_dioxide": 6.5,
-    "carbon_monoxide": 489.0
+    "pm10": 20.7,
+    "nitrogen_dioxide": 14.1,
+    "ozone": 57.0,
+    "sulphur_dioxide": 7.4,
+    "carbon_monoxide": 499.0
    },
    "weather": {
-    "temperature_2m": 28.5,
-    "relative_humidity_2m": 77.0,
-    "wind_speed_10m": 12.1,
+    "temperature_2m": 28.3,
+    "relative_humidity_2m": 79.0,
+    "wind_speed_10m": 10.3,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 17.8,
-    "aqi": 63,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 17.3,
+    "aqi": 62,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 14.4
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 16.8
@@ -470,34 +466,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 17.8
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 17.3
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
+     "pm2_5": 17.1,
+     "aqi": 61,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
      "pm2_5": 16.1,
      "aqi": 59,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
-     "horizon_h": 6,
-     "pm2_5": 17.2,
-     "aqi": 62,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
-    },
-    {
      "horizon_h": 12,
-     "pm2_5": 16.4,
-     "aqi": 60,
+     "pm2_5": 15.3,
+     "aqi": 58,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 14.8,
-     "aqi": 57,
+     "pm2_5": 15.4,
+     "aqi": 58,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -510,30 +510,26 @@
    "lon": 123.9,
    "featured": true,
    "pollutants": {
-    "pm10": 25.0,
-    "nitrogen_dioxide": 6.7,
-    "ozone": 112.0,
-    "sulphur_dioxide": 4.5,
-    "carbon_monoxide": 222.0
+    "pm10": 24.9,
+    "nitrogen_dioxide": 8.1,
+    "ozone": 101.0,
+    "sulphur_dioxide": 5.1,
+    "carbon_monoxide": 207.0
    },
    "weather": {
-    "temperature_2m": 29.5,
+    "temperature_2m": 29.1,
     "relative_humidity_2m": 74.0,
-    "wind_speed_10m": 7.7,
+    "wind_speed_10m": 9.4,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 21.1,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 21.0,
     "aqi": 70,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 23.5
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 25.0
@@ -721,34 +717,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 21.1
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 21.0
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 20.7,
-     "aqi": 69,
+     "pm2_5": 20.9,
+     "aqi": 70,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 18.7,
-     "aqi": 65,
+     "pm2_5": 15.2,
+     "aqi": 57,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 11.9,
-     "aqi": 50,
+     "pm2_5": 11.5,
+     "aqi": 48,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 16.6,
-     "aqi": 60,
+     "pm2_5": 14.7,
+     "aqi": 56,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -761,30 +761,26 @@
    "lon": 125.46,
    "featured": true,
    "pollutants": {
-    "pm10": 25.3,
-    "nitrogen_dioxide": 13.5,
-    "ozone": 85.0,
-    "sulphur_dioxide": 5.4,
-    "carbon_monoxide": 343.0
+    "pm10": 27.2,
+    "nitrogen_dioxide": 18.8,
+    "ozone": 69.0,
+    "sulphur_dioxide": 6.6,
+    "carbon_monoxide": 404.0
    },
    "weather": {
-    "temperature_2m": 25.3,
+    "temperature_2m": 25.2,
     "relative_humidity_2m": 98.0,
-    "wind_speed_10m": 1.8,
-    "precipitation": 0.2
+    "wind_speed_10m": 1.3,
+    "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 21.8,
-    "aqi": 71,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 23.7,
+    "aqi": 75,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 8.8
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 9.1
@@ -972,34 +968,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 21.8
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 23.7
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 23.1,
-     "aqi": 74,
+     "pm2_5": 24.5,
+     "aqi": 77,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 19.6,
+     "pm2_5": 19.8,
      "aqi": 67,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 17.3,
-     "aqi": 62,
+     "pm2_5": 17.9,
+     "aqi": 63,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 15.6,
-     "aqi": 58,
+     "pm2_5": 16.1,
+     "aqi": 59,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -1012,30 +1012,26 @@
    "lon": 120.6,
    "featured": true,
    "pollutants": {
-    "pm10": 14.2,
-    "nitrogen_dioxide": 4.9,
-    "ozone": 66.0,
-    "sulphur_dioxide": 3.5,
-    "carbon_monoxide": 178.0
+    "pm10": 11.3,
+    "nitrogen_dioxide": 7.2,
+    "ozone": 55.0,
+    "sulphur_dioxide": 3.9,
+    "carbon_monoxide": 177.0
    },
    "weather": {
-    "temperature_2m": 17.4,
-    "relative_humidity_2m": 98.0,
-    "wind_speed_10m": 9.3,
-    "precipitation": 1.8
+    "temperature_2m": 17.3,
+    "relative_humidity_2m": 100.0,
+    "wind_speed_10m": 10.0,
+    "precipitation": 0.6
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 11.5,
-    "aqi": 48,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 9.9,
+    "aqi": 41,
     "category": "Good",
     "advice": "Air quality is good \u2014 enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 6.5
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 8.6
@@ -1223,34 +1219,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 11.5
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 9.9
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 11.1,
-     "aqi": 46,
+     "pm2_5": 9.9,
+     "aqi": 41,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 12.4,
-     "aqi": 52,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
-    },
-    {
-     "horizon_h": 12,
      "pm2_5": 10.2,
      "aqi": 43,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
+     "horizon_h": 12,
+     "pm2_5": 9.3,
+     "aqi": 39,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
      "horizon_h": 24,
-     "pm2_5": 9.1,
-     "aqi": 38,
+     "pm2_5": 7.9,
+     "aqi": 33,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
@@ -1263,30 +1263,26 @@
    "lon": 120.59,
    "featured": false,
    "pollutants": {
-    "pm10": 22.5,
-    "nitrogen_dioxide": 10.4,
-    "ozone": 55.0,
-    "sulphur_dioxide": 3.0,
-    "carbon_monoxide": 621.0
+    "pm10": 27.9,
+    "nitrogen_dioxide": 19.6,
+    "ozone": 42.0,
+    "sulphur_dioxide": 5.0,
+    "carbon_monoxide": 983.0
    },
    "weather": {
-    "temperature_2m": 27.5,
-    "relative_humidity_2m": 84.0,
-    "wind_speed_10m": 3.3,
+    "temperature_2m": 26.4,
+    "relative_humidity_2m": 90.0,
+    "wind_speed_10m": 3.8,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 17.8,
-    "aqi": 63,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 22.9,
+    "aqi": 74,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 12.8
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 20.8
@@ -1474,34 +1470,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 17.8
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 22.9
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
+     "pm2_5": 25.7,
+     "aqi": 80,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 25.5,
+     "aqi": 79,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 12,
      "pm2_5": 20.2,
      "aqi": 68,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
-     "horizon_h": 6,
-     "pm2_5": 23.2,
-     "aqi": 74,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
-    },
-    {
-     "horizon_h": 12,
-     "pm2_5": 20.4,
-     "aqi": 68,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
-    },
-    {
      "horizon_h": 24,
-     "pm2_5": 19.9,
-     "aqi": 67,
+     "pm2_5": 22.7,
+     "aqi": 73,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -1514,30 +1514,26 @@
    "lon": 122.95,
    "featured": false,
    "pollutants": {
-    "pm10": 14.5,
-    "nitrogen_dioxide": 4.3,
-    "ozone": 56.0,
-    "sulphur_dioxide": 1.8,
-    "carbon_monoxide": 305.0
+    "pm10": 14.7,
+    "nitrogen_dioxide": 5.8,
+    "ozone": 51.0,
+    "sulphur_dioxide": 2.2,
+    "carbon_monoxide": 332.0
    },
    "weather": {
-    "temperature_2m": 28.9,
-    "relative_humidity_2m": 79.0,
-    "wind_speed_10m": 12.5,
+    "temperature_2m": 28.5,
+    "relative_humidity_2m": 80.0,
+    "wind_speed_10m": 10.8,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 12.3,
-    "aqi": 51,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 12.4,
+    "aqi": 52,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 15.3
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 15.5
@@ -1725,34 +1721,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 12.3
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 12.4
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 11.6,
-     "aqi": 48,
-     "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "pm2_5": 13.0,
+     "aqi": 53,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 12.6,
+     "pm2_5": 12.5,
      "aqi": 52,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 11.6,
-     "aqi": 49,
+     "pm2_5": 11.5,
+     "aqi": 48,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 13.5,
-     "aqi": 54,
+     "pm2_5": 14.1,
+     "aqi": 55,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -1765,30 +1765,26 @@
    "lon": 121.06,
    "featured": false,
    "pollutants": {
-    "pm10": 21.8,
-    "nitrogen_dioxide": 3.8,
-    "ozone": 84.0,
+    "pm10": 21.5,
+    "nitrogen_dioxide": 4.0,
+    "ozone": 79.0,
     "sulphur_dioxide": 2.1,
     "carbon_monoxide": 393.0
    },
    "weather": {
-    "temperature_2m": 28.9,
-    "relative_humidity_2m": 72.0,
-    "wind_speed_10m": 15.2,
+    "temperature_2m": 28.5,
+    "relative_humidity_2m": 75.0,
+    "wind_speed_10m": 13.7,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 17.1,
-    "aqi": 62,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 16.8,
+    "aqi": 61,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 10.5
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 13.8
@@ -1976,34 +1972,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 17.1
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 16.8
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 15.9,
+     "pm2_5": 16.1,
      "aqi": 59,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 15.8,
-     "aqi": 59,
+     "pm2_5": 15.4,
+     "aqi": 58,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 17.5,
-     "aqi": 62,
+     "pm2_5": 17.1,
+     "aqi": 61,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 13.0,
-     "aqi": 53,
+     "pm2_5": 13.8,
+     "aqi": 55,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -2016,30 +2016,26 @@
    "lon": 125.54,
    "featured": false,
    "pollutants": {
-    "pm10": 17.8,
-    "nitrogen_dioxide": 2.4,
-    "ozone": 76.0,
-    "sulphur_dioxide": 1.3,
-    "carbon_monoxide": 252.0
+    "pm10": 18.2,
+    "nitrogen_dioxide": 3.4,
+    "ozone": 69.0,
+    "sulphur_dioxide": 1.5,
+    "carbon_monoxide": 302.0
    },
    "weather": {
-    "temperature_2m": 30.4,
+    "temperature_2m": 30.3,
     "relative_humidity_2m": 64.0,
-    "wind_speed_10m": 13.0,
+    "wind_speed_10m": 9.8,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 15.5,
-    "aqi": 58,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 15.9,
+    "aqi": 59,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 16.8
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 16.7
@@ -2227,34 +2223,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 15.5
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 15.9
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 15.0,
-     "aqi": 57,
+     "pm2_5": 15.3,
+     "aqi": 58,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 15.4,
+     "pm2_5": 15.2,
      "aqi": 58,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 14.0,
-     "aqi": 55,
+     "pm2_5": 12.7,
+     "aqi": 52,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 12.8,
-     "aqi": 53,
+     "pm2_5": 13.4,
+     "aqi": 54,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -2267,30 +2267,26 @@
    "lon": 124.65,
    "featured": false,
    "pollutants": {
-    "pm10": 19.8,
-    "nitrogen_dioxide": 6.6,
-    "ozone": 66.0,
-    "sulphur_dioxide": 2.3,
-    "carbon_monoxide": 305.0
+    "pm10": 22.5,
+    "nitrogen_dioxide": 12.1,
+    "ozone": 50.0,
+    "sulphur_dioxide": 3.4,
+    "carbon_monoxide": 312.0
    },
    "weather": {
-    "temperature_2m": 26.8,
-    "relative_humidity_2m": 80.0,
-    "wind_speed_10m": 6.9,
+    "temperature_2m": 27.0,
+    "relative_humidity_2m": 82.0,
+    "wind_speed_10m": 7.0,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 17.5,
-    "aqi": 62,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 20.2,
+    "aqi": 68,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 21.9
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 17.9
@@ -2478,34 +2474,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 17.5
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 20.2
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 17.9,
-     "aqi": 63,
+     "pm2_5": 21.4,
+     "aqi": 71,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 20.1,
-     "aqi": 68,
+     "pm2_5": 20.9,
+     "aqi": 70,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 20.0,
-     "aqi": 68,
+     "pm2_5": 17.8,
+     "aqi": 63,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 17.0,
-     "aqi": 61,
+     "pm2_5": 17.7,
+     "aqi": 63,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -2518,30 +2518,26 @@
    "lon": 124.25,
    "featured": false,
    "pollutants": {
-    "pm10": 18.3,
-    "nitrogen_dioxide": 7.0,
-    "ozone": 42.0,
-    "sulphur_dioxide": 1.7,
-    "carbon_monoxide": 179.0
+    "pm10": 20.4,
+    "nitrogen_dioxide": 8.7,
+    "ozone": 37.0,
+    "sulphur_dioxide": 2.0,
+    "carbon_monoxide": 185.0
    },
    "weather": {
     "temperature_2m": 25.1,
-    "relative_humidity_2m": 96.0,
-    "wind_speed_10m": 7.1,
-    "precipitation": 0.4
+    "relative_humidity_2m": 97.0,
+    "wind_speed_10m": 2.9,
+    "precipitation": 0.1
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 15.5,
-    "aqi": 58,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 17.3,
+    "aqi": 62,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 14.7
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 12.9
@@ -2729,36 +2725,40 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 15.5
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 17.3
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 15.8,
-     "aqi": 59,
+     "pm2_5": 17.6,
+     "aqi": 63,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
      "pm2_5": 17.1,
-     "aqi": 61,
+     "aqi": 62,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 16.5,
-     "aqi": 60,
+     "pm2_5": 13.9,
+     "aqi": 55,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 12.0,
-     "aqi": 50,
-     "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "pm2_5": 13.9,
+     "aqi": 55,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
    ]
   },
@@ -2769,30 +2769,26 @@
    "lon": 120.33,
    "featured": false,
    "pollutants": {
-    "pm10": 22.0,
-    "nitrogen_dioxide": 9.7,
-    "ozone": 66.0,
-    "sulphur_dioxide": 7.5,
-    "carbon_monoxide": 230.0
+    "pm10": 23.1,
+    "nitrogen_dioxide": 14.0,
+    "ozone": 52.0,
+    "sulphur_dioxide": 8.4,
+    "carbon_monoxide": 271.0
    },
    "weather": {
-    "temperature_2m": 28.9,
-    "relative_humidity_2m": 77.0,
-    "wind_speed_10m": 4.4,
+    "temperature_2m": 28.3,
+    "relative_humidity_2m": 81.0,
+    "wind_speed_10m": 6.1,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 17.2,
-    "aqi": 62,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 18.9,
+    "aqi": 65,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 17.1
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 21.9
@@ -2980,34 +2976,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 17.2
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 18.9
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 17.6,
-     "aqi": 63,
+     "pm2_5": 21.0,
+     "aqi": 70,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 23.3,
-     "aqi": 74,
+     "pm2_5": 24.1,
+     "aqi": 76,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 17.3,
-     "aqi": 62,
+     "pm2_5": 18.7,
+     "aqi": 65,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 16.0,
-     "aqi": 59,
+     "pm2_5": 18.6,
+     "aqi": 65,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -3020,30 +3020,26 @@
    "lon": 123.31,
    "featured": false,
    "pollutants": {
-    "pm10": 16.4,
-    "nitrogen_dioxide": 1.5,
-    "ozone": 64.0,
+    "pm10": 16.2,
+    "nitrogen_dioxide": 2.3,
+    "ozone": 57.0,
     "sulphur_dioxide": 1.1,
-    "carbon_monoxide": 242.0
+    "carbon_monoxide": 299.0
    },
    "weather": {
-    "temperature_2m": 28.6,
-    "relative_humidity_2m": 89.0,
-    "wind_speed_10m": 1.5,
-    "precipitation": 0.1
+    "temperature_2m": 28.4,
+    "relative_humidity_2m": 88.0,
+    "wind_speed_10m": 0.2,
+    "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 13.1,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 13.0,
     "aqi": 53,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 12.1
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 13.0
@@ -3231,34 +3227,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 13.1
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 13.0
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 12.5,
-     "aqi": 52,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
-    },
-    {
-     "horizon_h": 6,
      "pm2_5": 13.7,
      "aqi": 54,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
+     "horizon_h": 6,
+     "pm2_5": 13.5,
+     "aqi": 54,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
      "horizon_h": 12,
-     "pm2_5": 10.9,
-     "aqi": 45,
+     "pm2_5": 11.3,
+     "aqi": 47,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 12.9,
-     "aqi": 53,
+     "pm2_5": 12.6,
+     "aqi": 52,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -3271,30 +3271,26 @@
    "lon": 125.17,
    "featured": false,
    "pollutants": {
-    "pm10": 18.5,
-    "nitrogen_dioxide": 9.5,
-    "ozone": 51.0,
-    "sulphur_dioxide": 2.6,
-    "carbon_monoxide": 292.0
+    "pm10": 20.0,
+    "nitrogen_dioxide": 12.8,
+    "ozone": 44.0,
+    "sulphur_dioxide": 3.1,
+    "carbon_monoxide": 332.0
    },
    "weather": {
-    "temperature_2m": 26.2,
-    "relative_humidity_2m": 93.0,
-    "wind_speed_10m": 3.1,
-    "precipitation": 0.9
+    "temperature_2m": 26.4,
+    "relative_humidity_2m": 91.0,
+    "wind_speed_10m": 1.6,
+    "precipitation": 0.7
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 14.9,
-    "aqi": 57,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 16.5,
+    "aqi": 60,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 11.9
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 12.1
@@ -3482,34 +3478,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 14.9
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 16.5
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 14.7,
-     "aqi": 56,
+     "pm2_5": 17.4,
+     "aqi": 62,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 17.7,
-     "aqi": 63,
+     "pm2_5": 18.4,
+     "aqi": 64,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 17.1,
-     "aqi": 61,
+     "pm2_5": 16.0,
+     "aqi": 59,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 13.7,
-     "aqi": 54,
+     "pm2_5": 15.3,
+     "aqi": 58,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -3522,30 +3522,26 @@
    "lon": 124.24,
    "featured": false,
    "pollutants": {
-    "pm10": 24.0,
-    "nitrogen_dioxide": 4.7,
-    "ozone": 99.0,
-    "sulphur_dioxide": 3.4,
-    "carbon_monoxide": 309.0
+    "pm10": 26.0,
+    "nitrogen_dioxide": 7.6,
+    "ozone": 91.0,
+    "sulphur_dioxide": 4.2,
+    "carbon_monoxide": 344.0
    },
    "weather": {
-    "temperature_2m": 27.8,
-    "relative_humidity_2m": 81.0,
-    "wind_speed_10m": 11.0,
+    "temperature_2m": 27.1,
+    "relative_humidity_2m": 80.0,
+    "wind_speed_10m": 8.3,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 20.5,
-    "aqi": 69,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 22.6,
+    "aqi": 73,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 17.3
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 14.5
@@ -3733,34 +3729,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 20.5
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 22.6
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
+     "pm2_5": 23.8,
+     "aqi": 76,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 6,
+     "pm2_5": 22.0,
+     "aqi": 72,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 12,
      "pm2_5": 20.4,
      "aqi": 68,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
-     "horizon_h": 6,
-     "pm2_5": 21.7,
-     "aqi": 71,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
-    },
-    {
-     "horizon_h": 12,
-     "pm2_5": 19.8,
-     "aqi": 67,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
-    },
-    {
      "horizon_h": 24,
-     "pm2_5": 18.6,
-     "aqi": 65,
+     "pm2_5": 20.6,
+     "aqi": 69,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -3773,30 +3773,26 @@
    "lon": 122.56,
    "featured": false,
    "pollutants": {
-    "pm10": 14.5,
-    "nitrogen_dioxide": 3.8,
-    "ozone": 50.0,
-    "sulphur_dioxide": 1.3,
-    "carbon_monoxide": 243.0
+    "pm10": 15.0,
+    "nitrogen_dioxide": 5.7,
+    "ozone": 44.0,
+    "sulphur_dioxide": 1.7,
+    "carbon_monoxide": 259.0
    },
    "weather": {
-    "temperature_2m": 28.2,
+    "temperature_2m": 28.0,
     "relative_humidity_2m": 77.0,
-    "wind_speed_10m": 15.8,
+    "wind_speed_10m": 13.7,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 12.2,
-    "aqi": 51,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 12.8,
+    "aqi": 52,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 14.3
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 14.3
@@ -3984,34 +3980,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 12.2
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 12.8
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 11.6,
-     "aqi": 48,
-     "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "pm2_5": 13.5,
+     "aqi": 54,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 13.0,
+     "pm2_5": 13.1,
      "aqi": 53,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 12.3,
+     "pm2_5": 12.0,
      "aqi": 51,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 11.2,
-     "aqi": 47,
+     "pm2_5": 11.5,
+     "aqi": 48,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
@@ -4024,30 +4024,26 @@
    "lon": 120.59,
    "featured": false,
    "pollutants": {
-    "pm10": 20.8,
-    "nitrogen_dioxide": 1.5,
-    "ozone": 81.0,
+    "pm10": 20.4,
+    "nitrogen_dioxide": 1.4,
+    "ozone": 78.0,
     "sulphur_dioxide": 0.8,
-    "carbon_monoxide": 190.0
+    "carbon_monoxide": 187.0
    },
    "weather": {
-    "temperature_2m": 27.4,
+    "temperature_2m": 26.8,
     "relative_humidity_2m": 84.0,
-    "wind_speed_10m": 16.2,
-    "precipitation": 0.0
+    "wind_speed_10m": 14.1,
+    "precipitation": 0.2
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 14.1,
-    "aqi": 55,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 13.6,
+    "aqi": 54,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 6.7
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 8.5
@@ -4235,27 +4231,31 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 14.1
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 13.6
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 13.1,
-     "aqi": 53,
+     "pm2_5": 13.6,
+     "aqi": 54,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 14.9,
-     "aqi": 57,
+     "pm2_5": 13.7,
+     "aqi": 54,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 12.5,
-     "aqi": 52,
+     "pm2_5": 12.9,
+     "aqi": 53,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
@@ -4275,30 +4275,26 @@
    "lon": 123.74,
    "featured": false,
    "pollutants": {
-    "pm10": 16.6,
-    "nitrogen_dioxide": 1.6,
-    "ozone": 75.0,
-    "sulphur_dioxide": 0.8,
-    "carbon_monoxide": 267.0
+    "pm10": 15.8,
+    "nitrogen_dioxide": 2.2,
+    "ozone": 72.0,
+    "sulphur_dioxide": 1.0,
+    "carbon_monoxide": 290.0
    },
    "weather": {
-    "temperature_2m": 28.5,
-    "relative_humidity_2m": 82.0,
-    "wind_speed_10m": 13.3,
+    "temperature_2m": 27.8,
+    "relative_humidity_2m": 86.0,
+    "wind_speed_10m": 13.2,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 14.4,
-    "aqi": 56,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 13.9,
+    "aqi": 55,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 11.8
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 13.0
@@ -4486,34 +4482,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 14.4
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 13.9
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 12.5,
-     "aqi": 52,
+     "pm2_5": 13.6,
+     "aqi": 54,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 13.5,
-     "aqi": 54,
+     "pm2_5": 13.2,
+     "aqi": 53,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 12.1,
-     "aqi": 51,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+     "pm2_5": 11.6,
+     "aqi": 48,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 13.5,
-     "aqi": 54,
+     "pm2_5": 12.1,
+     "aqi": 51,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -4526,30 +4526,26 @@
    "lon": 121.62,
    "featured": false,
    "pollutants": {
-    "pm10": 22.6,
-    "nitrogen_dioxide": 5.8,
-    "ozone": 85.0,
-    "sulphur_dioxide": 4.9,
-    "carbon_monoxide": 359.0
+    "pm10": 21.8,
+    "nitrogen_dioxide": 7.6,
+    "ozone": 73.0,
+    "sulphur_dioxide": 5.7,
+    "carbon_monoxide": 361.0
    },
    "weather": {
-    "temperature_2m": 28.7,
-    "relative_humidity_2m": 68.0,
-    "wind_speed_10m": 12.9,
+    "temperature_2m": 28.1,
+    "relative_humidity_2m": 69.0,
+    "wind_speed_10m": 10.4,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 18.0,
-    "aqi": 63,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 17.4,
+    "aqi": 62,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 11.2
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 13.9
@@ -4737,34 +4733,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 18.0
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 17.4
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 16.9,
-     "aqi": 61,
+     "pm2_5": 17.1,
+     "aqi": 62,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 16.9,
-     "aqi": 61,
+     "pm2_5": 15.3,
+     "aqi": 58,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 16.5,
-     "aqi": 60,
+     "pm2_5": 15.8,
+     "aqi": 59,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 13.6,
-     "aqi": 54,
+     "pm2_5": 14.6,
+     "aqi": 56,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -4777,30 +4777,26 @@
    "lon": 123.19,
    "featured": false,
    "pollutants": {
-    "pm10": 17.2,
-    "nitrogen_dioxide": 1.8,
-    "ozone": 71.0,
-    "sulphur_dioxide": 0.8,
-    "carbon_monoxide": 322.0
+    "pm10": 17.8,
+    "nitrogen_dioxide": 2.8,
+    "ozone": 65.0,
+    "sulphur_dioxide": 1.2,
+    "carbon_monoxide": 330.0
    },
    "weather": {
     "temperature_2m": 28.8,
-    "relative_humidity_2m": 79.0,
-    "wind_speed_10m": 10.7,
+    "relative_humidity_2m": 77.0,
+    "wind_speed_10m": 9.4,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 15.0,
-    "aqi": 57,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 15.9,
+    "aqi": 59,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 11.0
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 12.5
@@ -4988,34 +4984,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 15.0
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 15.9
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 14.1,
-     "aqi": 55,
+     "pm2_5": 16.0,
+     "aqi": 59,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 14.4,
-     "aqi": 56,
+     "pm2_5": 15.9,
+     "aqi": 59,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 13.4,
+     "pm2_5": 13.6,
      "aqi": 54,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 14.4,
-     "aqi": 56,
+     "pm2_5": 14.9,
+     "aqi": 57,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -5028,30 +5028,26 @@
    "lon": 120.28,
    "featured": false,
    "pollutants": {
-    "pm10": 24.0,
-    "nitrogen_dioxide": 2.6,
-    "ozone": 69.0,
-    "sulphur_dioxide": 1.1,
-    "carbon_monoxide": 232.0
+    "pm10": 22.8,
+    "nitrogen_dioxide": 3.2,
+    "ozone": 66.0,
+    "sulphur_dioxide": 1.2,
+    "carbon_monoxide": 212.0
    },
    "weather": {
-    "temperature_2m": 27.4,
-    "relative_humidity_2m": 84.0,
-    "wind_speed_10m": 10.8,
-    "precipitation": 0.4
+    "temperature_2m": 26.2,
+    "relative_humidity_2m": 90.0,
+    "wind_speed_10m": 8.5,
+    "precipitation": 0.5
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 17.6,
-    "aqi": 63,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 16.6,
+    "aqi": 60,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 12.5
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 14.7
@@ -5239,34 +5235,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 17.6
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 16.6
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 16.8,
-     "aqi": 61,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
-    },
-    {
-     "horizon_h": 6,
-     "pm2_5": 17.3,
-     "aqi": 62,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
-    },
-    {
-     "horizon_h": 12,
-     "pm2_5": 16.5,
+     "pm2_5": 16.6,
      "aqi": 60,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
+     "horizon_h": 6,
+     "pm2_5": 14.5,
+     "aqi": 56,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 14.8,
+     "aqi": 57,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
      "horizon_h": 24,
-     "pm2_5": 14.0,
-     "aqi": 55,
+     "pm2_5": 13.4,
+     "aqi": 54,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -5279,30 +5279,26 @@
    "lon": 118.74,
    "featured": false,
    "pollutants": {
-    "pm10": 11.7,
+    "pm10": 10.8,
     "nitrogen_dioxide": 0.8,
     "ozone": 84.0,
-    "sulphur_dioxide": 0.6,
-    "carbon_monoxide": 369.0
+    "sulphur_dioxide": 0.7,
+    "carbon_monoxide": 390.0
    },
    "weather": {
-    "temperature_2m": 28.0,
-    "relative_humidity_2m": 84.0,
-    "wind_speed_10m": 8.8,
-    "precipitation": 0.1
+    "temperature_2m": 27.2,
+    "relative_humidity_2m": 88.0,
+    "wind_speed_10m": 6.9,
+    "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 8.5,
-    "aqi": 35,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 7.9,
+    "aqi": 33,
     "category": "Good",
     "advice": "Air quality is good \u2014 enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 19.4
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 16.8
@@ -5490,36 +5486,40 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 8.5
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 7.9
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 8.7,
-     "aqi": 36,
+     "pm2_5": 9.7,
+     "aqi": 40,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 11.2,
-     "aqi": 47,
+     "pm2_5": 10.4,
+     "aqi": 43,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 12.9,
-     "aqi": 53,
+     "pm2_5": 12.1,
+     "aqi": 51,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 12.6,
-     "aqi": 52,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+     "pm2_5": 11.9,
+     "aqi": 50,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
    ]
   },
@@ -5530,30 +5530,26 @@
    "lon": 122.75,
    "featured": false,
    "pollutants": {
-    "pm10": 18.0,
-    "nitrogen_dioxide": 2.2,
-    "ozone": 79.0,
-    "sulphur_dioxide": 1.3,
-    "carbon_monoxide": 267.0
+    "pm10": 18.7,
+    "nitrogen_dioxide": 3.5,
+    "ozone": 72.0,
+    "sulphur_dioxide": 1.7,
+    "carbon_monoxide": 308.0
    },
    "weather": {
-    "temperature_2m": 30.2,
-    "relative_humidity_2m": 72.0,
-    "wind_speed_10m": 8.8,
+    "temperature_2m": 29.8,
+    "relative_humidity_2m": 74.0,
+    "wind_speed_10m": 5.8,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 15.0,
-    "aqi": 57,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 15.8,
+    "aqi": 59,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 19.3
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 21.4
@@ -5741,34 +5737,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 15.0
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 15.8
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 14.5,
-     "aqi": 56,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
-    },
-    {
-     "horizon_h": 6,
-     "pm2_5": 15.7,
+     "pm2_5": 16.1,
      "aqi": 59,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
+     "horizon_h": 6,
+     "pm2_5": 16.9,
+     "aqi": 61,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
      "horizon_h": 12,
-     "pm2_5": 14.5,
+     "pm2_5": 14.6,
      "aqi": 56,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 14.8,
-     "aqi": 57,
+     "pm2_5": 14.3,
+     "aqi": 56,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -5782,29 +5782,25 @@
    "featured": false,
    "pollutants": {
     "pm10": 16.4,
-    "nitrogen_dioxide": 2.0,
-    "ozone": 74.0,
+    "nitrogen_dioxide": 2.4,
+    "ozone": 69.0,
     "sulphur_dioxide": 1.2,
-    "carbon_monoxide": 174.0
+    "carbon_monoxide": 176.0
    },
    "weather": {
-    "temperature_2m": 29.1,
-    "relative_humidity_2m": 75.0,
-    "wind_speed_10m": 14.8,
+    "temperature_2m": 28.9,
+    "relative_humidity_2m": 76.0,
+    "wind_speed_10m": 13.7,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 13.6,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 13.5,
     "aqi": 54,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 19.5
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 19.3
@@ -5992,33 +5988,37 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 13.6
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 13.5
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 12.3,
-     "aqi": 51,
+     "pm2_5": 13.1,
+     "aqi": 53,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 12.8,
+     "pm2_5": 12.7,
      "aqi": 52,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 10.7,
-     "aqi": 45,
+     "pm2_5": 10.5,
+     "aqi": 44,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 10.4,
+     "pm2_5": 10.3,
      "aqi": 43,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
@@ -6032,30 +6032,26 @@
    "lon": 125.0,
    "featured": false,
    "pollutants": {
-    "pm10": 19.3,
-    "nitrogen_dioxide": 2.2,
-    "ozone": 85.0,
-    "sulphur_dioxide": 2.1,
-    "carbon_monoxide": 253.0
+    "pm10": 20.0,
+    "nitrogen_dioxide": 2.8,
+    "ozone": 81.0,
+    "sulphur_dioxide": 2.4,
+    "carbon_monoxide": 262.0
    },
    "weather": {
-    "temperature_2m": 29.9,
-    "relative_humidity_2m": 62.0,
-    "wind_speed_10m": 9.9,
+    "temperature_2m": 29.3,
+    "relative_humidity_2m": 64.0,
+    "wind_speed_10m": 10.6,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 16.5,
-    "aqi": 60,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 17.2,
+    "aqi": 62,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 18.2
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 19.5
@@ -6243,34 +6239,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 16.5
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 17.2
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 15.4,
-     "aqi": 58,
+     "pm2_5": 17.1,
+     "aqi": 61,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 16.0,
+     "pm2_5": 16.1,
      "aqi": 59,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 14.6,
-     "aqi": 56,
+     "pm2_5": 14.2,
+     "aqi": 55,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 13.3,
-     "aqi": 54,
+     "pm2_5": 14.6,
+     "aqi": 56,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -6283,30 +6283,26 @@
    "lon": 123.85,
    "featured": false,
    "pollutants": {
-    "pm10": 16.1,
-    "nitrogen_dioxide": 2.9,
-    "ozone": 77.0,
-    "sulphur_dioxide": 1.6,
-    "carbon_monoxide": 199.0
+    "pm10": 15.5,
+    "nitrogen_dioxide": 4.1,
+    "ozone": 67.0,
+    "sulphur_dioxide": 1.7,
+    "carbon_monoxide": 200.0
    },
    "weather": {
-    "temperature_2m": 29.8,
+    "temperature_2m": 29.9,
     "relative_humidity_2m": 70.0,
-    "wind_speed_10m": 12.3,
+    "wind_speed_10m": 11.7,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 13.2,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 12.9,
     "aqi": 53,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 16.8
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 13.3
@@ -6494,34 +6490,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 13.2
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 12.9
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 11.6,
-     "aqi": 48,
-     "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
-    },
-    {
-     "horizon_h": 6,
-     "pm2_5": 13.1,
+     "pm2_5": 13.0,
      "aqi": 53,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
+     "horizon_h": 6,
+     "pm2_5": 12.2,
+     "aqi": 51,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+    },
+    {
      "horizon_h": 12,
-     "pm2_5": 11.5,
-     "aqi": 48,
+     "pm2_5": 11.3,
+     "aqi": 47,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 11.5,
-     "aqi": 48,
+     "pm2_5": 11.3,
+     "aqi": 47,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
@@ -6534,30 +6534,26 @@
    "lon": 121.73,
    "featured": false,
    "pollutants": {
-    "pm10": 24.1,
-    "nitrogen_dioxide": 6.0,
-    "ozone": 51.0,
-    "sulphur_dioxide": 1.9,
-    "carbon_monoxide": 264.0
+    "pm10": 26.3,
+    "nitrogen_dioxide": 9.8,
+    "ozone": 36.0,
+    "sulphur_dioxide": 2.3,
+    "carbon_monoxide": 330.0
    },
    "weather": {
-    "temperature_2m": 30.2,
-    "relative_humidity_2m": 76.0,
-    "wind_speed_10m": 2.2,
+    "temperature_2m": 29.0,
+    "relative_humidity_2m": 80.0,
+    "wind_speed_10m": 4.1,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 20.4,
-    "aqi": 68,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 23.2,
+    "aqi": 74,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 15.8
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 16.1
@@ -6745,34 +6741,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 20.4
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 23.2
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 22.0,
-     "aqi": 72,
+     "pm2_5": 24.6,
+     "aqi": 77,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 25.8,
-     "aqi": 80,
+     "pm2_5": 24.5,
+     "aqi": 77,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 22.3,
+     "pm2_5": 22.8,
      "aqi": 73,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 21.9,
-     "aqi": 72,
+     "pm2_5": 23.7,
+     "aqi": 75,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -6785,30 +6785,26 @@
    "lon": 120.39,
    "featured": false,
    "pollutants": {
-    "pm10": 19.2,
-    "nitrogen_dioxide": 1.3,
-    "ozone": 84.0,
+    "pm10": 17.3,
+    "nitrogen_dioxide": 1.5,
+    "ozone": 79.0,
     "sulphur_dioxide": 1.6,
-    "carbon_monoxide": 154.0
+    "carbon_monoxide": 158.0
    },
    "weather": {
-    "temperature_2m": 25.8,
-    "relative_humidity_2m": 92.0,
-    "wind_speed_10m": 21.5,
-    "precipitation": 0.9
+    "temperature_2m": 26.0,
+    "relative_humidity_2m": 91.0,
+    "wind_speed_10m": 20.5,
+    "precipitation": 0.5
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 14.2,
-    "aqi": 55,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 12.7,
+    "aqi": 52,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 6.9
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 7.9
@@ -6996,34 +6992,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 14.2
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 12.7
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 12.7,
-     "aqi": 52,
+     "pm2_5": 12.3,
+     "aqi": 51,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 13.5,
-     "aqi": 54,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
-    },
-    {
-     "horizon_h": 12,
      "pm2_5": 11.8,
      "aqi": 49,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
+     "horizon_h": 12,
+     "pm2_5": 11.4,
+     "aqi": 47,
+     "category": "Good",
+     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    },
+    {
      "horizon_h": 24,
-     "pm2_5": 11.8,
-     "aqi": 49,
+     "pm2_5": 10.9,
+     "aqi": 45,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
@@ -7036,30 +7036,26 @@
    "lon": 122.08,
    "featured": false,
    "pollutants": {
-    "pm10": 16.2,
+    "pm10": 15.3,
     "nitrogen_dioxide": 2.4,
-    "ozone": 75.0,
+    "ozone": 67.0,
     "sulphur_dioxide": 1.7,
-    "carbon_monoxide": 184.0
+    "carbon_monoxide": 202.0
    },
    "weather": {
-    "temperature_2m": 28.3,
-    "relative_humidity_2m": 71.0,
-    "wind_speed_10m": 6.9,
+    "temperature_2m": 27.8,
+    "relative_humidity_2m": 78.0,
+    "wind_speed_10m": 7.7,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-08-21T18:00",
-    "pm2_5": 13.0,
-    "aqi": 53,
+    "time": "2026-08-21T19:00",
+    "pm2_5": 12.2,
+    "aqi": 51,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-08-19T19:00",
-     "pm2_5": 12.2
-    },
     {
      "time": "2026-08-19T20:00",
      "pm2_5": 11.4
@@ -7247,34 +7243,38 @@
     {
      "time": "2026-08-21T18:00",
      "pm2_5": 13.0
+    },
+    {
+     "time": "2026-08-21T19:00",
+     "pm2_5": 12.2
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 12.3,
-     "aqi": 51,
+     "pm2_5": 12.6,
+     "aqi": 52,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 13.0,
-     "aqi": 53,
+     "pm2_5": 12.4,
+     "aqi": 52,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 11.0,
-     "aqi": 46,
+     "pm2_5": 10.5,
+     "aqi": 44,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 10.0,
-     "aqi": 42,
+     "pm2_5": 10.5,
+     "aqi": 44,
      "category": "Good",
      "advice": "Air quality is good \u2014 enjoy outdoor activity."
     }
