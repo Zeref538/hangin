@@ -244,7 +244,7 @@ function LiveScore({ live }) {
       <h3 className="subh">Live scorecard — forecasts graded after the fact</h3>
       <table className="bt">
         <thead>
-          <tr><th>Ahead</th><th>Our miss</th><th>Open-Meteo's miss</th>
+          <tr><th>Ahead</th><th>Our miss</th>
               <th>"Stays the same" miss</th><th>Inside our band</th><th>Graded</th></tr>
         </thead>
         <tbody>
@@ -252,7 +252,6 @@ function LiveScore({ live }) {
             <tr key={h.horizon_h}>
               <td>+{h.horizon_h}h</td>
               <td>{h.model_mae.toFixed(2)}</td>
-              <td>{h.openmeteo_mae != null ? h.openmeteo_mae.toFixed(2) : "–"}</td>
               <td>{h.naive_mae.toFixed(2)}</td>
               <td>{h.band_coverage_pct}%</td>
               <td>{h.n}</td>
@@ -262,8 +261,9 @@ function LiveScore({ live }) {
       </table>
       <p className="btnote">
         Average miss in µg/m³ (lower is better) since {fmtTime(live.since)}, 5 main
-        cities. Open-Meteo's own forecast is logged at the same moment as ours. Small
-        counts early on are noisy — give it a few weeks.
+        cities. Small counts early on are noisy — give it a few weeks. We don't show
+        a column for Open-Meteo's own forecast: the "real" values here come from the
+        same CAMS model behind that forecast, so it would be graded against itself.
       </p>
     </>
   );

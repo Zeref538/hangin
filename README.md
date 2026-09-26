@@ -48,13 +48,19 @@ calibrated, they hit 81–83% on the unseen year.
 
 ### Live scorecard
 Every hourly forecast is logged to [`data/forecast_log.csv`](data/forecast_log.csv)
-next to **Open-Meteo's own forecast** and the naive guess for the same hour, then
-graded once that hour arrives. The dashboard shows the last 30 days. It started on
-2026-09-27, so early numbers rest on few samples.
+with the naive guess for the same hour, then graded once that hour arrives. The
+dashboard shows the last 30 days. It started on 2026-09-27, so early numbers rest on
+few samples.
+
+Open-Meteo's own forecast is logged too, but **not scored**. The "real" values come
+from the same CAMS model that produces that forecast, so it would be graded against
+itself (its first 5 graded forecasts all missed by exactly 0.00).
 
 ## Limitations
 - **Inputs are modelled, not sensor readings.** Open-Meteo's PM2.5 comes from the
-  CAMS atmosphere model, so this forecasts CAMS, not a street-level monitor.
+  CAMS atmosphere model, so this forecasts CAMS, not a street-level monitor. CAMS
+  also publishes its own forecast, so the claim here is "beats a naive guess", not
+  "beats the free forecast". That needs ground-sensor data, which isn't wired in yet.
 - **24 h is the weak spot:** +13.6% over naive, and the band is ±5 µg/m³ wide.
 - **Band leans low on spikes:** misses are ~11% above the band vs ~7% below it.
 - **Only the 5 training metros are verified.** The other 24 cities on the map use
