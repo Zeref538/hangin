@@ -4,10 +4,11 @@ import L from "leaflet";
 import { catMeta } from "./aqi.js";
 import PH from "./ph.geo.json";
 
-// Esri satellite imagery + CARTO label overlay (both free with attribution)
+// Esri satellite imagery + Esri place labels (both free with attribution).
+// CARTO labels were dropped: since 2026 they return an "API KEY REQUIRED" stamp.
 const TILES = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}";
-const LABELS = "https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png";
-const ATTRIB = "&copy; Esri, Maxar, Earthstar Geographics | &copy; OpenStreetMap &copy; CARTO";
+const LABELS = "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}";
+const ATTRIB = "&copy; Esri, Maxar, Earthstar Geographics, and the GIS User Community";
 
 // Continuous PM2.5 (µg/m³) -> color ramp. Anchored on the EPA thresholds the
 // rest of the app uses, but interpolated so nearby values get visibly
@@ -156,7 +157,7 @@ export default function CityMap({ cities, grid = [], activeId, onPick, follow, f
                     maxBounds={[[2, 110], [23, 134]]} maxBoundsViscosity={0.8}
                     attributionControl={true}>
         <TileLayer url={TILES} attribution={ATTRIB} />
-        <TileLayer url={LABELS} subdomains="abcd" />
+        <TileLayer url={LABELS} />
         <HeatOverlay grid={grid} />
         {follow && active && <FlyTo city={active} />}
         {userLoc && (

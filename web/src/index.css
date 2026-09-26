@@ -410,6 +410,8 @@ header.hero .tagline em { color: var(--ink); }
 .legend .line { width: 20px; height: 0; border-top: 2.5px solid var(--actual); border-radius: 2px; }
 .legend .line.dash { border-top-style: dashed; border-color: var(--predicted); }
 .legend .zone { width: 14px; height: 10px; border-radius: 3px; background: rgba(77, 209, 121, 0.12); border: 1px solid rgba(77, 209, 121, 0.3); }
+.legend .zone.band { background: rgba(255, 161, 77, 0.2); border-color: rgba(255, 161, 77, 0.45); }
+.trust .subh { font-size: 15px; margin: 22px 0 8px; }
 
 /* ---------- forecast strip ---------- */
 .fstrip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }

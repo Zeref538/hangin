@@ -1,0 +1,46 @@
+{
+ "test_period": "2025-09-20..2026-09-20",
+ "band": "10th..90th percentile, conformally widened on the 90 days before the test year",
+ "horizons": [
+  {
+   "horizon_h": 1,
+   "n_test": 43800,
+   "raw_coverage_pct": 73.2,
+   "margin": 0.182,
+   "coverage_pct": 82.8,
+   "below_pct": 7.4,
+   "above_pct": 9.8,
+   "median_width": 1.93
+  },
+  {
+   "horizon_h": 6,
+   "n_test": 43775,
+   "raw_coverage_pct": 71.7,
+   "margin": 0.701,
+   "coverage_pct": 81.3,
+   "below_pct": 6.9,
+   "above_pct": 11.8,
+   "median_width": 8.23
+  },
+  {
+   "horizon_h": 12,
+   "n_test": 43745,
+   "raw_coverage_pct": 73.5,
+   "margin": 0.757,
+   "coverage_pct": 82.2,
+   "below_pct": 6.5,
+   "above_pct": 11.3,
+   "median_width": 10.15
+  },
+  {
+   "horizon_h": 24,
+   "n_test": 43685,
+   "raw_coverage_pct": 73.7,
+   "margin": 0.666,
+   "coverage_pct": 81.0,
+   "below_pct": 7.3,
+   "above_pct": 11.7,
+   "median_width": 10.54
+  }
+ ]
+}

@@ -9,7 +9,9 @@ function ChartTooltip({ active, payload, label }) {
   return (
     <div className="tt">
       <div className="t">{fmtTime(label)}</div>
-      {payload.filter((p) => p.value != null && p.dataKey !== "actualArea").map((p) => (
+      {payload.filter((p) => p.value != null && p.dataKey !== "actualArea").map((p) => p.dataKey === "band" ? (
+        <div key="band">Likely range: <b>{p.value[0]}–{p.value[1]} µg/m³</b></div>
+      ) : (
         <div key={p.dataKey}>
           {p.dataKey === "actual" ? "Measured" : "Our prediction"}:{" "}
           <b>{p.value} µg/m³</b>
@@ -28,11 +30,12 @@ export default function ForecastChart({ city }) {
   }));
   // bridge the two series at "now" so the forecast line connects
   rows[rows.length - 1].predicted = city.now.pm2_5;
+  rows[rows.length - 1].band = [city.now.pm2_5, city.now.pm2_5];
   for (const f of city.forecast) {
     const t = new Date(nowMs + f.horizon_h * 3600_000);
     // API times are naive local (Asia/Manila) — format the same way
     const iso = `${t.getFullYear()}-${String(t.getMonth() + 1).padStart(2, "0")}-${String(t.getDate()).padStart(2, "0")}T${String(t.getHours()).padStart(2, "0")}:${String(t.getMinutes()).padStart(2, "0")}`;
-    rows.push({ t: iso, predicted: f.pm2_5 });
+    rows.push({ t: iso, predicted: f.pm2_5, band: f.low != null ? [f.low, f.high] : undefined });
   }
 
   return (
@@ -40,6 +43,7 @@ export default function ForecastChart({ city }) {
       <div className="legend">
         <span className="key"><span className="line" /> What we measured (last 2 days)</span>
         <span className="key"><span className="line dash" /> What we predict (next 24h)</span>
+        <span className="key"><span className="zone band" /> 80% likely range</span>
         <span className="key"><span className="zone" /> Clean-air zone (0–12 µg/m³)</span>
       </div>
       <ResponsiveContainer width="100%" height={270}>
@@ -68,6 +72,8 @@ export default function ForecastChart({ city }) {
                 isAnimationActive={false} tooltipType="none" />
           <Line dataKey="actual" stroke="var(--actual)" strokeWidth={2.5}
                 dot={false} activeDot={{ r: 4 }} isAnimationActive={false} />
+          <Area dataKey="band" stroke="none" fill="var(--predicted)" fillOpacity={0.16}
+                isAnimationActive={false} connectNulls />
           <Line dataKey="predicted" stroke="var(--predicted)" strokeWidth={2.5}
                 strokeDasharray="6 5" isAnimationActive={false}
                 dot={{ r: 4.5, fill: "var(--predicted)", stroke: "#0b0f14", strokeWidth: 2 }}

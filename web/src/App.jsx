@@ -185,16 +185,15 @@ function ForecastStrip({ city }) {
   );
 }
 
-function DataPanel({ backtest }) {
-  const h1 = backtest.horizons[0];
-  const totalRows = (h1.n_train + h1.n_test).toLocaleString();
+function DataPanel({ backtest, model }) {
+  const totalRows = model.n_rows?.toLocaleString() ?? "–";
   return (
     <div className="card">
       <h2>What the model learned from</h2>
       <div className="tiles">
         <div className="tile">
           <div className="n">{totalRows}</div>
-          <div className="d">hourly air snapshots from 2022–2024</div>
+          <div className="d">hourly air snapshots, {model.data_start?.slice(0, 4)} to now</div>
         </div>
         <div className="tile">
           <div className="n">5</div>
@@ -206,14 +205,17 @@ function DataPanel({ backtest }) {
         </div>
         <div className="tile">
           <div className="n">4</div>
-          <div className="d">specialist models — one each for 1h, 6h, 12h and 24h ahead</div>
+          <div className="d">horizons (1h, 6h, 12h, 24h), each with its own model plus a likely-range pair</div>
         </div>
       </div>
       <p className="datap">
-        The model trained on <b>three years of hour-by-hour history</b> for Manila,
+        The model trained on <b>hour-by-hour history since mid-2022</b> (when Open-Meteo's
+        air archive begins) for Manila,
         Quezon City, Cebu, Davao and Baguio, pulled from{" "}
         <a href="https://open-meteo.com/" style={{ color: "var(--actual)" }}>Open-Meteo</a>'s
-        free public archives — the same satellite-and-station data used by weather apps.
+        free public archives. The air readings come from CAMS, the European Copernicus
+        atmosphere model, not from street-level sensors. It's retrained every month
+        (latest data used: {model.trained_through}).
       </p>
       <p className="datap">
         For every prediction it weighs <b>{backtest.features?.length ?? 33} signals</b>:
@@ -229,10 +231,52 @@ function DataPanel({ backtest }) {
 
 const toPoints = (ug) => Math.round(ug * (50 / 12));
 
-function TrustPanel({ backtest }) {
+function LiveScore({ live }) {
+  const rows = live?.horizons ?? [];
+  if (!rows.length) return (
+    <p className="btnote">
+      <b>Live scorecard:</b> every hourly forecast is now logged, then graded once
+      that hour actually arrives. Scores appear here as they come in.
+    </p>
+  );
+  return (
+    <>
+      <h3 className="subh">Live scorecard — forecasts graded after the fact</h3>
+      <table className="bt">
+        <thead>
+          <tr><th>Ahead</th><th>Our miss</th><th>Open-Meteo's miss</th>
+              <th>"Stays the same" miss</th><th>Inside our band</th><th>Graded</th></tr>
+        </thead>
+        <tbody>
+          {rows.map((h) => (
+            <tr key={h.horizon_h}>
+              <td>+{h.horizon_h}h</td>
+              <td>{h.model_mae.toFixed(2)}</td>
+              <td>{h.openmeteo_mae != null ? h.openmeteo_mae.toFixed(2) : "–"}</td>
+              <td>{h.naive_mae.toFixed(2)}</td>
+              <td>{h.band_coverage_pct}%</td>
+              <td>{h.n}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <p className="btnote">
+        Average miss in µg/m³ (lower is better) since {fmtTime(live.since)}, 5 main
+        cities. Open-Meteo's own forecast is logged at the same moment as ours. Small
+        counts early on are noisy — give it a few weeks.
+      </p>
+    </>
+  );
+}
+
+function TrustPanel({ data }) {
   const [expert, setExpert] = useState(false);
-  const h12 = backtest.horizons.find((h) => h.horizon_h === 12);
-  const bestLift = Math.max(...backtest.horizons.map((h) => h.lift_pct));
+  const wf = data.walkforward;
+  const band = Object.fromEntries(data.intervals.horizons.map((h) => [h.horizon_h, h]));
+  const h1 = wf.horizons.find((h) => h.horizon_h === 1);
+  const h12 = wf.horizons.find((h) => h.horizon_h === 12);
+  const covs = data.intervals.horizons.map((h) => h.coverage_pct);
+  const [from, to] = wf.test_period.split("..");
   return (
     <div className="card trust">
       <h2>
@@ -252,60 +296,61 @@ function TrustPanel({ backtest }) {
       {!expert ? (
         <>
           <p className="big">
-            We made the model "predict" months of past days it had never seen, then
-            checked its answers. Looking half a day ahead, its guess for the air
-            score was off by only about <b>{toPoints(h12.model_mae)} points out of
-            500</b> on average — roughly the difference between a score of 30 and{" "}
-            {30 + toPoints(h12.model_mae)}, which you wouldn't even feel.
+            We hid a whole year of air ({from} to {to}, every season) from the model,
+            then made it forecast that year and checked its answers. Half a day ahead,
+            it was off by about <b>{toPoints(h12.retrained_mae_mean)} points out of 500</b> on
+            the air score, and <b>{h12.retrained_lift_pct}% closer</b> than just assuming
+            "the air will stay like it is now".
           </p>
           <p className="big">
-            And compared to simply assuming "the air will stay like it is now", our
-            predictions are up to <b>{bestLift}% more accurate</b> — with the biggest
-            edge 6–24 hours ahead, exactly when a heads-up helps you plan.
+            The shaded band on the chart is the range we're 80% sure about. On that
+            hidden year, reality landed inside it <b>{Math.min(...covs)}–{Math.max(...covs)}%</b> of
+            the time — so the band means what it says.
           </p>
-          <p className="btnote">
-            Verified on the 5 big metros using 2022–2024 data. The other 24 cities
-            use the same model but weren't part of that test.
+          <p className="big">
+            We retrain every month. We learned the hard way: a model trained once on
+            2022–2024 had lost almost all of its 1-hour edge by 2026 ({h1.shipped_lift_pct}%
+            better than the simple guess, vs {h1.retrained_lift_pct}% after retraining).
           </p>
         </>
       ) : (
         <>
           <p className="big">
-            Chronological backtest, last 20% of 2022–2024 held out (~17k hourly
-            samples across the 5 metros), pooled HistGradientBoostingRegressor per
-            horizon vs. a persistence baseline. At +12h: <b>MAE{" "}
-            {h12.model_mae.toFixed(2)} µg/m³</b> vs. persistence{" "}
-            {h12.persistence_mae.toFixed(2)} µg/m³.
+            Walk-forward test: same hyperparameters, trained on all hours before {from},
+            tested on the full year after (purged so no target crosses the split),
+            3 seeds. "2024 model" = the original model, never retrained.
           </p>
           <table className="bt">
             <thead>
               <tr>
-                <th>Horizon</th><th>Model MAE (µg/m³)</th><th>R²</th>
-                <th>Persistence MAE</th><th>Lift</th>
+                <th>Horizon</th><th>Retrained MAE (± seeds)</th><th>2024 model MAE</th>
+                <th>Persistence MAE</th><th>Lift</th><th>80% band hit</th>
               </tr>
             </thead>
             <tbody>
-              {backtest.horizons.map((h) => (
+              {wf.horizons.map((h) => (
                 <tr key={h.horizon_h}>
                   <td>+{h.horizon_h}h</td>
-                  <td>{h.model_mae.toFixed(2)}</td>
-                  <td>{h.model_r2.toFixed(2)}</td>
-                  <td>{h.persistence_mae.toFixed(2)}</td>
-                  <td className="lift">+{h.lift_pct}%</td>
+                  <td>{h.retrained_mae_mean.toFixed(2)} ± {h.retrained_mae_std.toFixed(3)}</td>
+                  <td>{h.shipped_mae.toFixed(2)}</td>
+                  <td>{h.naive_mae.toFixed(2)}</td>
+                  <td className="lift">+{h.retrained_lift_pct}%</td>
+                  <td>{band[h.horizon_h]?.coverage_pct}%</td>
                 </tr>
               ))}
             </tbody>
           </table>
           <p className="btnote">
-            Strictly forward-in-time evaluation — no leakage; features use only
-            data available at prediction time. Persistence ≈ model at +1h (as
-            expected for a slow-mixing process); the model's edge grows with
-            horizon. Metrics computed on the 5 training metros only; the 24 extra
-            cities are served by the same pooled model (lat/lon features) without
-            city-specific verification.
+            Band = 10th/90th-percentile HistGradientBoosting models, widened by a
+            conformal margin fitted on the 90 days before the test year. Live model
+            trained through {data.model.trained_through}; retrained monthly, shipped
+            only if it beats the current model on the latest 30 days. Metrics are
+            for the 5 training metros; the other cities use the same pooled model
+            without city-specific verification.
           </p>
         </>
       )}
+      <LiveScore live={data.live} />
     </div>
   );
 }
@@ -375,7 +420,7 @@ export default function App() {
           <div className="chips">
             <span className="chip"><b>{data.cities.length}</b> PH cities</span>
             <span className="chip">predicts <b>24h</b> ahead</span>
-            <span className="chip">built on <b>2+ years</b> of data</span>
+            <span className="chip">data since <b>2022</b>, retrained monthly</span>
             <span className="chip">free & open source</span>
           </div>
         </header>
@@ -432,8 +477,8 @@ export default function App() {
             <PollutantPanel city={city} />
             <CityRanking cities={data.cities} activeId={city.id} onPick={pick} />
           </div>
-          <DataPanel backtest={data.backtest} />
-          <TrustPanel backtest={data.backtest} />
+          <DataPanel backtest={data.backtest} model={data.model} />
+          <TrustPanel data={data} />
         </div>
 
         <footer className="site">

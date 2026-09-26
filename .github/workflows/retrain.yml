@@ -1,0 +1,48 @@
+name: Retrain models
+
+on:
+  schedule:
+    - cron: "0 3 2 * *" # 03:00 UTC on the 2nd of each month
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: retrain
+  cancel-in-progress: false
+
+jobs:
+  retrain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      # scikit-learn pinned: the hourly job must unpickle what this job saves
+      - run: pip install "pandas>=2.3" "numpy>=1.26" "scikit-learn==1.9.0" "requests>=2.31" "pyarrow>=15.0"
+
+      - name: Download live models
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: gh release download models -D data/models --clobber
+
+      # refit.py exits 3 when the candidate loses the gate: keep the old models, job stays green
+      - name: Retrain and gate
+        id: refit
+        run: |
+          set +e
+          python ml/refit.py
+          code=$?
+          if [ $code -eq 0 ]; then echo "ship=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if [ $code -eq 3 ]; then echo "ship=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          exit $code
+
+      - name: Upload new models
+        if: steps.refit.outputs.ship == 'true'
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: gh release upload models data/models/*.pkl data/models/meta.json --clobber

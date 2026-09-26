@@ -1,0 +1,682 @@
+{
+ "period": "2025-01-01..2026-09-20",
+ "note": "saved models replayed on hours after training ended",
+ "horizons": [
+  {
+   "horizon_h": 1,
+   "n": 75350,
+   "model_mae": 1.253,
+   "persistence_mae": 1.281,
+   "lift_pct": 2.2
+  },
+  {
+   "horizon_h": 6,
+   "n": 75325,
+   "model_mae": 3.711,
+   "persistence_mae": 4.882,
+   "lift_pct": 24.0
+  },
+  {
+   "horizon_h": 12,
+   "n": 75295,
+   "model_mae": 4.323,
+   "persistence_mae": 6.615,
+   "lift_pct": 34.6
+  },
+  {
+   "horizon_h": 24,
+   "n": 75235,
+   "model_mae": 4.276,
+   "persistence_mae": 4.664,
+   "lift_pct": 8.3
+  }
+ ],
+ "by_city": [
+  {
+   "horizon_h": 1,
+   "city": "Baguio",
+   "model_mae": 1.093,
+   "persistence_mae": 1.192,
+   "lift_pct": 8.3
+  },
+  {
+   "horizon_h": 1,
+   "city": "Cebu City",
+   "model_mae": 0.512,
+   "persistence_mae": 0.533,
+   "lift_pct": 3.9
+  },
+  {
+   "horizon_h": 1,
+   "city": "Davao City",
+   "model_mae": 1.126,
+   "persistence_mae": 1.228,
+   "lift_pct": 8.3
+  },
+  {
+   "horizon_h": 1,
+   "city": "Manila",
+   "model_mae": 2.24,
+   "persistence_mae": 2.115,
+   "lift_pct": -5.9
+  },
+  {
+   "horizon_h": 1,
+   "city": "Quezon City",
+   "model_mae": 1.293,
+   "persistence_mae": 1.336,
+   "lift_pct": 3.2
+  },
+  {
+   "horizon_h": 6,
+   "city": "Baguio",
+   "model_mae": 3.204,
+   "persistence_mae": 4.831,
+   "lift_pct": 33.7
+  },
+  {
+   "horizon_h": 6,
+   "city": "Cebu City",
+   "model_mae": 1.789,
+   "persistence_mae": 1.923,
+   "lift_pct": 7.0
+  },
+  {
+   "horizon_h": 6,
+   "city": "Davao City",
+   "model_mae": 3.346,
+   "persistence_mae": 4.804,
+   "lift_pct": 30.3
+  },
+  {
+   "horizon_h": 6,
+   "city": "Manila",
+   "model_mae": 6.318,
+   "persistence_mae": 7.766,
+   "lift_pct": 18.7
+  },
+  {
+   "horizon_h": 6,
+   "city": "Quezon City",
+   "model_mae": 3.898,
+   "persistence_mae": 5.085,
+   "lift_pct": 23.3
+  },
+  {
+   "horizon_h": 12,
+   "city": "Baguio",
+   "model_mae": 3.714,
+   "persistence_mae": 6.692,
+   "lift_pct": 44.5
+  },
+  {
+   "horizon_h": 12,
+   "city": "Cebu City",
+   "model_mae": 2.298,
+   "persistence_mae": 2.517,
+   "lift_pct": 8.7
+  },
+  {
+   "horizon_h": 12,
+   "city": "Davao City",
+   "model_mae": 3.882,
+   "persistence_mae": 6.537,
+   "lift_pct": 40.6
+  },
+  {
+   "horizon_h": 12,
+   "city": "Manila",
+   "model_mae": 7.236,
+   "persistence_mae": 10.422,
+   "lift_pct": 30.6
+  },
+  {
+   "horizon_h": 12,
+   "city": "Quezon City",
+   "model_mae": 4.487,
+   "persistence_mae": 6.908,
+   "lift_pct": 35.0
+  },
+  {
+   "horizon_h": 24,
+   "city": "Baguio",
+   "model_mae": 3.531,
+   "persistence_mae": 3.637,
+   "lift_pct": 2.9
+  },
+  {
+   "horizon_h": 24,
+   "city": "Cebu City",
+   "model_mae": 2.543,
+   "persistence_mae": 2.766,
+   "lift_pct": 8.1
+  },
+  {
+   "horizon_h": 24,
+   "city": "Davao City",
+   "model_mae": 3.749,
+   "persistence_mae": 4.246,
+   "lift_pct": 11.7
+  },
+  {
+   "horizon_h": 24,
+   "city": "Manila",
+   "model_mae": 6.946,
+   "persistence_mae": 7.53,
+   "lift_pct": 7.8
+  },
+  {
+   "horizon_h": 24,
+   "city": "Quezon City",
+   "model_mae": 4.611,
+   "persistence_mae": 5.143,
+   "lift_pct": 10.4
+  }
+ ],
+ "by_month": [
+  {
+   "horizon_h": 1,
+   "month": "2025-01",
+   "n": 3715,
+   "lift_pct": 17.1
+  },
+  {
+   "horizon_h": 1,
+   "month": "2025-02",
+   "n": 3360,
+   "lift_pct": 15.9
+  },
+  {
+   "horizon_h": 1,
+   "month": "2025-03",
+   "n": 3720,
+   "lift_pct": 14.3
+  },
+  {
+   "horizon_h": 1,
+   "month": "2025-04",
+   "n": 3600,
+   "lift_pct": -2.3
+  },
+  {
+   "horizon_h": 1,
+   "month": "2025-05",
+   "n": 3720,
+   "lift_pct": 3.0
+  },
+  {
+   "horizon_h": 1,
+   "month": "2025-06",
+   "n": 3600,
+   "lift_pct": -5.5
+  },
+  {
+   "horizon_h": 1,
+   "month": "2025-07",
+   "n": 3720,
+   "lift_pct": -2.1
+  },
+  {
+   "horizon_h": 1,
+   "month": "2025-08",
+   "n": 3720,
+   "lift_pct": -7.1
+  },
+  {
+   "horizon_h": 1,
+   "month": "2025-09",
+   "n": 3600,
+   "lift_pct": 6.9
+  },
+  {
+   "horizon_h": 1,
+   "month": "2025-10",
+   "n": 3720,
+   "lift_pct": 5.4
+  },
+  {
+   "horizon_h": 1,
+   "month": "2025-11",
+   "n": 3600,
+   "lift_pct": 8.4
+  },
+  {
+   "horizon_h": 1,
+   "month": "2025-12",
+   "n": 3720,
+   "lift_pct": 13.6
+  },
+  {
+   "horizon_h": 1,
+   "month": "2026-01",
+   "n": 3720,
+   "lift_pct": 10.3
+  },
+  {
+   "horizon_h": 1,
+   "month": "2026-02",
+   "n": 3360,
+   "lift_pct": 16.6
+  },
+  {
+   "horizon_h": 1,
+   "month": "2026-03",
+   "n": 3720,
+   "lift_pct": 10.7
+  },
+  {
+   "horizon_h": 1,
+   "month": "2026-04",
+   "n": 3600,
+   "lift_pct": -13.6
+  },
+  {
+   "horizon_h": 1,
+   "month": "2026-05",
+   "n": 3720,
+   "lift_pct": 1.4
+  },
+  {
+   "horizon_h": 1,
+   "month": "2026-06",
+   "n": 3600,
+   "lift_pct": 0.2
+  },
+  {
+   "horizon_h": 1,
+   "month": "2026-07",
+   "n": 3720,
+   "lift_pct": -1.4
+  },
+  {
+   "horizon_h": 1,
+   "month": "2026-08",
+   "n": 3720,
+   "lift_pct": -9.9
+  },
+  {
+   "horizon_h": 1,
+   "month": "2026-09",
+   "n": 2395,
+   "lift_pct": 2.1
+  },
+  {
+   "horizon_h": 6,
+   "month": "2025-01",
+   "n": 3715,
+   "lift_pct": 27.5
+  },
+  {
+   "horizon_h": 6,
+   "month": "2025-02",
+   "n": 3360,
+   "lift_pct": 25.1
+  },
+  {
+   "horizon_h": 6,
+   "month": "2025-03",
+   "n": 3720,
+   "lift_pct": 28.7
+  },
+  {
+   "horizon_h": 6,
+   "month": "2025-04",
+   "n": 3600,
+   "lift_pct": 27.1
+  },
+  {
+   "horizon_h": 6,
+   "month": "2025-05",
+   "n": 3720,
+   "lift_pct": 25.4
+  },
+  {
+   "horizon_h": 6,
+   "month": "2025-06",
+   "n": 3600,
+   "lift_pct": 23.5
+  },
+  {
+   "horizon_h": 6,
+   "month": "2025-07",
+   "n": 3720,
+   "lift_pct": 23.3
+  },
+  {
+   "horizon_h": 6,
+   "month": "2025-08",
+   "n": 3720,
+   "lift_pct": 23.2
+  },
+  {
+   "horizon_h": 6,
+   "month": "2025-09",
+   "n": 3600,
+   "lift_pct": 21.0
+  },
+  {
+   "horizon_h": 6,
+   "month": "2025-10",
+   "n": 3720,
+   "lift_pct": 25.6
+  },
+  {
+   "horizon_h": 6,
+   "month": "2025-11",
+   "n": 3600,
+   "lift_pct": 22.8
+  },
+  {
+   "horizon_h": 6,
+   "month": "2025-12",
+   "n": 3720,
+   "lift_pct": 28.5
+  },
+  {
+   "horizon_h": 6,
+   "month": "2026-01",
+   "n": 3720,
+   "lift_pct": 22.5
+  },
+  {
+   "horizon_h": 6,
+   "month": "2026-02",
+   "n": 3360,
+   "lift_pct": 29.1
+  },
+  {
+   "horizon_h": 6,
+   "month": "2026-03",
+   "n": 3720,
+   "lift_pct": 25.8
+  },
+  {
+   "horizon_h": 6,
+   "month": "2026-04",
+   "n": 3600,
+   "lift_pct": 18.1
+  },
+  {
+   "horizon_h": 6,
+   "month": "2026-05",
+   "n": 3720,
+   "lift_pct": 24.9
+  },
+  {
+   "horizon_h": 6,
+   "month": "2026-06",
+   "n": 3600,
+   "lift_pct": 26.2
+  },
+  {
+   "horizon_h": 6,
+   "month": "2026-07",
+   "n": 3720,
+   "lift_pct": 25.6
+  },
+  {
+   "horizon_h": 6,
+   "month": "2026-08",
+   "n": 3720,
+   "lift_pct": 10.2
+  },
+  {
+   "horizon_h": 6,
+   "month": "2026-09",
+   "n": 2370,
+   "lift_pct": 15.4
+  },
+  {
+   "horizon_h": 12,
+   "month": "2025-01",
+   "n": 3715,
+   "lift_pct": 31.4
+  },
+  {
+   "horizon_h": 12,
+   "month": "2025-02",
+   "n": 3360,
+   "lift_pct": 31.9
+  },
+  {
+   "horizon_h": 12,
+   "month": "2025-03",
+   "n": 3720,
+   "lift_pct": 37.6
+  },
+  {
+   "horizon_h": 12,
+   "month": "2025-04",
+   "n": 3600,
+   "lift_pct": 38.5
+  },
+  {
+   "horizon_h": 12,
+   "month": "2025-05",
+   "n": 3720,
+   "lift_pct": 37.1
+  },
+  {
+   "horizon_h": 12,
+   "month": "2025-06",
+   "n": 3600,
+   "lift_pct": 38.4
+  },
+  {
+   "horizon_h": 12,
+   "month": "2025-07",
+   "n": 3720,
+   "lift_pct": 35.0
+  },
+  {
+   "horizon_h": 12,
+   "month": "2025-08",
+   "n": 3720,
+   "lift_pct": 33.9
+  },
+  {
+   "horizon_h": 12,
+   "month": "2025-09",
+   "n": 3600,
+   "lift_pct": 31.4
+  },
+  {
+   "horizon_h": 12,
+   "month": "2025-10",
+   "n": 3720,
+   "lift_pct": 34.7
+  },
+  {
+   "horizon_h": 12,
+   "month": "2025-11",
+   "n": 3600,
+   "lift_pct": 26.6
+  },
+  {
+   "horizon_h": 12,
+   "month": "2025-12",
+   "n": 3720,
+   "lift_pct": 35.9
+  },
+  {
+   "horizon_h": 12,
+   "month": "2026-01",
+   "n": 3720,
+   "lift_pct": 27.8
+  },
+  {
+   "horizon_h": 12,
+   "month": "2026-02",
+   "n": 3360,
+   "lift_pct": 30.8
+  },
+  {
+   "horizon_h": 12,
+   "month": "2026-03",
+   "n": 3720,
+   "lift_pct": 33.0
+  },
+  {
+   "horizon_h": 12,
+   "month": "2026-04",
+   "n": 3600,
+   "lift_pct": 28.5
+  },
+  {
+   "horizon_h": 12,
+   "month": "2026-05",
+   "n": 3720,
+   "lift_pct": 39.1
+  },
+  {
+   "horizon_h": 12,
+   "month": "2026-06",
+   "n": 3600,
+   "lift_pct": 42.2
+  },
+  {
+   "horizon_h": 12,
+   "month": "2026-07",
+   "n": 3720,
+   "lift_pct": 40.2
+  },
+  {
+   "horizon_h": 12,
+   "month": "2026-08",
+   "n": 3720,
+   "lift_pct": 18.4
+  },
+  {
+   "horizon_h": 12,
+   "month": "2026-09",
+   "n": 2340,
+   "lift_pct": 22.4
+  },
+  {
+   "horizon_h": 24,
+   "month": "2025-01",
+   "n": 3715,
+   "lift_pct": 12.0
+  },
+  {
+   "horizon_h": 24,
+   "month": "2025-02",
+   "n": 3360,
+   "lift_pct": 9.9
+  },
+  {
+   "horizon_h": 24,
+   "month": "2025-03",
+   "n": 3720,
+   "lift_pct": 5.3
+  },
+  {
+   "horizon_h": 24,
+   "month": "2025-04",
+   "n": 3600,
+   "lift_pct": 9.4
+  },
+  {
+   "horizon_h": 24,
+   "month": "2025-05",
+   "n": 3720,
+   "lift_pct": 8.2
+  },
+  {
+   "horizon_h": 24,
+   "month": "2025-06",
+   "n": 3600,
+   "lift_pct": 4.3
+  },
+  {
+   "horizon_h": 24,
+   "month": "2025-07",
+   "n": 3720,
+   "lift_pct": 5.7
+  },
+  {
+   "horizon_h": 24,
+   "month": "2025-08",
+   "n": 3720,
+   "lift_pct": -1.1
+  },
+  {
+   "horizon_h": 24,
+   "month": "2025-09",
+   "n": 3600,
+   "lift_pct": 16.3
+  },
+  {
+   "horizon_h": 24,
+   "month": "2025-10",
+   "n": 3720,
+   "lift_pct": 14.1
+  },
+  {
+   "horizon_h": 24,
+   "month": "2025-11",
+   "n": 3600,
+   "lift_pct": 19.0
+  },
+  {
+   "horizon_h": 24,
+   "month": "2025-12",
+   "n": 3720,
+   "lift_pct": 2.3
+  },
+  {
+   "horizon_h": 24,
+   "month": "2026-01",
+   "n": 3720,
+   "lift_pct": 6.4
+  },
+  {
+   "horizon_h": 24,
+   "month": "2026-02",
+   "n": 3360,
+   "lift_pct": 9.3
+  },
+  {
+   "horizon_h": 24,
+   "month": "2026-03",
+   "n": 3720,
+   "lift_pct": 4.2
+  },
+  {
+   "horizon_h": 24,
+   "month": "2026-04",
+   "n": 3600,
+   "lift_pct": 7.6
+  },
+  {
+   "horizon_h": 24,
+   "month": "2026-05",
+   "n": 3720,
+   "lift_pct": 7.4
+  },
+  {
+   "horizon_h": 24,
+   "month": "2026-06",
+   "n": 3600,
+   "lift_pct": 10.0
+  },
+  {
+   "horizon_h": 24,
+   "month": "2026-07",
+   "n": 3720,
+   "lift_pct": 11.4
+  },
+  {
+   "horizon_h": 24,
+   "month": "2026-08",
+   "n": 3720,
+   "lift_pct": 5.5
+  },
+  {
+   "horizon_h": 24,
+   "month": "2026-09",
+   "n": 2280,
+   "lift_pct": 9.1
+  }
+ ]
+}

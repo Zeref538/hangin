@@ -119,10 +119,10 @@ def fetch_history(city, start, end):
 def fetch_recent(city, past_days=3):
     """Latest hours for live inference (air quality + weather, past_days back)."""
     aq = _get(AQ_URL, {"latitude": city["lat"], "longitude": city["lon"],
-                       "hourly": AQ_VARS, "past_days": past_days, "forecast_days": 1,
+                       "hourly": AQ_VARS, "past_days": past_days, "forecast_days": 2,
                        "timezone": "Asia/Manila"})["hourly"]
     wx = _get(WX_FORECAST_URL, {"latitude": city["lat"], "longitude": city["lon"],
-                                "hourly": WX_VARS, "past_days": past_days, "forecast_days": 1,
+                                "hourly": WX_VARS, "past_days": past_days, "forecast_days": 2,
                                 "timezone": "Asia/Manila"})["hourly"]
     df = pd.DataFrame(aq).merge(pd.DataFrame(wx), on="time", how="inner")
     df["time"] = pd.to_datetime(df["time"])

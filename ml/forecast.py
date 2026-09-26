@@ -7,24 +7,36 @@ web/public/forecasts.json together with the last 48h of actuals and the
 backtest metadata (the honest-evaluation panel on the dashboard).
 """
 import json
+import os
 import pickle
 from datetime import datetime, timezone, timedelta
 
+import numpy as np
 import pandas as pd
 
 import common as C
 
 MODELS_DIR = C.DATA / "models"
 PH_TZ = timezone(timedelta(hours=8))
+LOG = C.DATA / "forecast_log.csv"
+LOG_KEEP_DAYS = 45
+SCORE_DAYS = 30
 
 
 def load_models():
-    return {h: pickle.load(open(MODELS_DIR / f"model_h{h}.pkl", "rb"))
-            for h in C.HORIZONS}
+    ld = lambda n: pickle.load(open(MODELS_DIR / f"{n}.pkl", "rb"))
+    meta = json.load(open(MODELS_DIR / "meta.json"))
+    return {h: {"mid": ld(f"model_h{h}"), "lo": ld(f"q10_h{h}"), "hi": ld(f"q90_h{h}"),
+                "margin": meta["margins"][str(h)]} for h in C.HORIZONS}, meta
 
 
-def city_payload(city, models, now_ph):
-    df = C.fetch_recent(city, past_days=3)
+def city_payload(city, models, now_ph, log_rows, actuals):
+    raw = C.fetch_recent(city, past_days=3)
+    # Open-Meteo's own forecast for the coming hours, to score ours against
+    om = raw[raw["time"] > now_ph].set_index("time")["pm2_5"]
+    df = raw
+    for t, v in raw[(raw["time"] <= now_ph) & raw["pm2_5"].notna()][["time", "pm2_5"]].values:
+        actuals[(city["id"], pd.Timestamp(t))] = float(v)
     # keep only observed hours (fetch_recent also returns forecast rows)
     df = df[(df["time"] <= now_ph) & df["pm2_5"].notna()]
     feat = C.make_features(df)
@@ -33,12 +45,22 @@ def city_payload(city, models, now_ph):
 
     forecast = []
     X = latest[C.FEATURES].to_frame().T.astype(float)
-    for h in C.HORIZONS:
-        pm = max(0.0, float(models[h].predict(X)[0]))
-        aqi = C.pm25_to_aqi(pm)
-        forecast.append({"horizon_h": h, "pm2_5": round(pm, 1), **aqi})
-
     now_pm = float(latest["pm2_5"])
+    for h in C.HORIZONS:
+        m = models[h]
+        pm = max(0.0, float(m["mid"].predict(X)[0]))
+        lo = max(0.0, float(m["lo"].predict(X)[0]) - m["margin"])
+        hi = max(pm, float(m["hi"].predict(X)[0]) + m["margin"])
+        lo = min(lo, pm)
+        aqi = C.pm25_to_aqi(pm)
+        forecast.append({"horizon_h": h, "pm2_5": round(pm, 1),
+                         "low": round(lo, 1), "high": round(hi, 1), **aqi})
+        if any(c["id"] == city["id"] for c in C.CITIES):
+            target = latest["time"] + pd.Timedelta(hours=h)
+            log_rows.append({"made_for": latest["time"], "city": city["id"], "horizon_h": h,
+                             "target_time": target, "model": round(pm, 2),
+                             "low": round(lo, 2), "high": round(hi, 2), "naive": round(now_pm, 2),
+                             "openmeteo": round(float(om[target]), 2) if pd.notna(om.get(target)) else np.nan})
     hist = feat.tail(48)
     history = [{"time": t.strftime("%Y-%m-%dT%H:%M"), "pm2_5": round(float(v), 1)}
                for t, v in zip(hist["time"], hist["pm2_5"])]
@@ -77,15 +99,53 @@ def fetch_grid():
             for r in res if r.get("current", {}).get("pm2_5") is not None]
 
 
+def update_log(new_rows, actuals):
+    """Append this run's forecasts, fill in actuals that have arrived, trim, save."""
+    cols = ["made_for", "city", "horizon_h", "target_time", "model", "low", "high",
+            "naive", "openmeteo", "actual"]
+    log = (pd.read_csv(LOG, parse_dates=["made_for", "target_time"]) if LOG.exists()
+           else pd.DataFrame(columns=cols))
+    log = pd.concat([log, pd.DataFrame(new_rows)], ignore_index=True)
+    # the same hour can be forecast by several runs: keep the first issue (no hindsight)
+    log = log.drop_duplicates(subset=["made_for", "city", "horizon_h"], keep="first")
+    got = [actuals.get((c, t)) for c, t in zip(log["city"], log["target_time"])]
+    log["actual"] = log["actual"].where(log["actual"].notna(), pd.Series(got, index=log.index, dtype=float))
+    log = log[log["made_for"] >= log["made_for"].max() - pd.Timedelta(days=LOG_KEEP_DAYS)]
+    tmp = LOG.with_suffix(".csv.tmp")
+    log[cols].sort_values(["made_for", "city", "horizon_h"]).to_csv(tmp, index=False)
+    os.replace(tmp, LOG)
+    return log
+
+
+def live_score(log):
+    """Scorecard over forecasts whose real value is now known (last SCORE_DAYS)."""
+    done = log[log["actual"].notna()]
+    done = done[done["target_time"] >= done["target_time"].max() - pd.Timedelta(days=SCORE_DAYS)] if len(done) else done
+    out = []
+    for h in C.HORIZONS:
+        d = done[done["horizon_h"] == h]
+        if d.empty:
+            continue
+        err = lambda col: round(float((d[col] - d["actual"]).abs().mean()), 3)
+        both = d[d["openmeteo"].notna()]
+        out.append({"horizon_h": h, "n": len(d), "model_mae": err("model"), "naive_mae": err("naive"),
+                    "openmeteo_mae": round(float((both["openmeteo"] - both["actual"]).abs().mean()), 3) if len(both) else None,
+                    "openmeteo_n": len(both),
+                    "band_coverage_pct": round(100 * float(((d["actual"] >= d["low"]) & (d["actual"] <= d["high"])).mean()), 1)})
+    first = done["target_time"].min() if len(done) else None
+    return {"since": first.strftime("%Y-%m-%dT%H:%M") if first is not None else None, "horizons": out}
+
+
 def main():
-    models = load_models()
+    models, meta = load_models()
     backtest = json.load(open(C.DATA / "backtest.json"))
     now_ph = pd.Timestamp(datetime.now(PH_TZ).replace(tzinfo=None))
 
-    cities = []
+    cities, log_rows, actuals = [], [], {}
     for city in C.ALL_CITIES:
         print(f"forecasting {city['name']} ...")
-        cities.append(city_payload(city, models, now_ph))
+        cities.append(city_payload(city, models, now_ph, log_rows, actuals))
+    live = live_score(update_log(log_rows, actuals))
 
     print("fetching PM2.5 grid for map overlay ...")
     grid = fetch_grid()
@@ -95,10 +155,17 @@ def main():
         "cities": cities,
         "grid": grid,
         "backtest": backtest,
+        "model": {k: meta.get(k) for k in ("trained_through", "data_start", "n_rows", "band")},
+        "live": live,
+        # full-year out-of-sample test + band coverage (ml/walkforward.py, ml/intervals.py)
+        "walkforward": json.load(open(C.DATA / "walkforward.json")),
+        "intervals": json.load(open(C.DATA / "intervals.json")),
     }
     C.WEB_PUBLIC.mkdir(parents=True, exist_ok=True)
     path = C.WEB_PUBLIC / "forecasts.json"
-    json.dump(out, open(path, "w"), indent=1)
+    tmp = path.with_suffix(".json.tmp")
+    json.dump(out, open(tmp, "w"), indent=1)
+    os.replace(tmp, path)
     print(f"wrote {path}")
 
 

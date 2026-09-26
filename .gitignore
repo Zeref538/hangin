@@ -10,3 +10,7 @@ data/*.parquet
 
 .vercel
 .env*
+.playwright-mcp/
+
+# models are published as the "models" GitHub Release (see retrain.yml)
+data/models/

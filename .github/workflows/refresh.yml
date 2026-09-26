@@ -26,6 +26,11 @@ jobs:
       # scikit-learn pinned to the version that pickled the models
       - run: pip install "pandas>=2.3" "numpy>=1.26" "scikit-learn==1.9.0" "requests>=2.31" "pyarrow>=15.0"
 
+      # models live in the "models" GitHub Release, not git (retrain.yml replaces them monthly)
+      - name: Download models
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: gh release download models -D data/models --clobber
+
       - name: Generate forecasts
         run: python ml/forecast.py
 
@@ -33,6 +38,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add web/public/forecasts.json
+          git add web/public/forecasts.json data/forecast_log.csv
           git diff --cached --quiet && echo "no changes" || \
             (git commit -m "chore: hourly forecast refresh" && git push)
