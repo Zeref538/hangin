@@ -101,6 +101,7 @@ function NowPanel({ city }) {
         <div className="nowmeta">
           <p className="cat" style={{ color: meta.bg }}>{meta.word}</p>
           <p className="advice">{meta.plain}</p>
+          <p className="sub">General guidance based on US EPA air-quality bands, not medical advice. If you have a health condition, follow your doctor.</p>
           <div className="wxchips">
             {WX_CHIPS.filter((c) => wx[c.key] != null).map((c) => (
               <span className="chip" key={c.key}>{c.label(wx[c.key])}</span>
@@ -345,6 +346,8 @@ export default function App() {
   if (err) return <div className="wrap"><p>Couldn't load the forecasts — try refreshing. ({String(err)})</p></div>;
   if (!data) return <div className="wrap"><p style={{ color: "var(--muted)", padding: "40px 0" }}>Checking the air…</p></div>;
 
+  // GitHub delays scheduled runs, so a few hours old is normal; past 8h the refresh job has likely failed
+  const ageH = (Date.now() - Date.parse(data.generated_at)) / 36e5;
   const city = data.cities.find((c) => c.id === cityId) ?? data.cities[0];
 
   return (
@@ -356,7 +359,7 @@ export default function App() {
             Hangin<span>'</span>
           </a>
           <div className="spacer" />
-          <span className="stamp">Last checked: {fmtTime(data.generated_at)} PHT</span>
+          <span className="stamp">Last checked: {fmtTime(data.generated_at)} PHT{ageH > 8 && <b style={{ color: "#e5484d" }}> · {Math.round(ageH)}h old, may be out of date</b>}</span>
           <a className="gh" href="https://github.com/Zeref538/hangin"><GitHubIcon /> Source</a>
         </div>
       </nav>
@@ -372,7 +375,7 @@ export default function App() {
           <div className="chips">
             <span className="chip"><b>{data.cities.length}</b> PH cities</span>
             <span className="chip">predicts <b>24h</b> ahead</span>
-            <span className="chip">built on <b>3 years</b> of data</span>
+            <span className="chip">built on <b>2+ years</b> of data</span>
             <span className="chip">free & open source</span>
           </div>
         </header>

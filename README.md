@@ -7,12 +7,15 @@ plain-language health advice. Unlike existing PH air trackers, which only show t
 current reading, Hangin' **predicts where air quality is heading** — and shows its own
 model's accuracy honestly, backtested against a naive baseline.
 
-## Why it's different
-Most junior ML portfolios use static, clichéd datasets. Hangin' uses **live, free public
-data** and ships a real forecasting model plus an honest evaluation: it beats a
-persistence baseline by ~9–10% MAE at the 12–24h horizons that actually matter.
+![Backtest: model vs naive baseline](docs/backtest.png)
 
-## Backtest (5 PH metros pooled, ~1.9 yrs history, chronological holdout)
+**Live:** https://hangin-acra1.vercel.app — refreshed by a scheduled GitHub Action.
+
+## Result
+On ~21,000 held-out hours (the last 20% of the data, never seen in training), the model's
+average error is **15.6–23.0% lower** than a naive "air stays the same" guess at every
+horizon from 1 to 24 hours.
+
 | Horizon | Model MAE (µg/m³) | R² | Naive persistence MAE | Lift |
 |--------:|:-----------------:|:--:|:---------------------:|:----:|
 | 1 h  | 0.77 | 0.96 | 0.94 | +18.8% |
@@ -20,9 +23,20 @@ persistence baseline by ~9–10% MAE at the 12–24h horizons that actually matt
 | 12 h | 3.42 | 0.57 | 4.45 | +23.0% |
 | 24 h | 3.76 | 0.45 | 4.45 | +15.6% |
 
-One pooled model across Manila, Quezon City, Cebu, Davao, and Baguio (with location
-features). Naive guessing is fine for the next hour, but the model's edge grows to
-+12–20% at the 6–24h horizons — exactly where a forecast is useful.
+One pooled model across Manila, Quezon City, Cebu, Davao and Baguio, trained on
+~2.4 years of hourly data per city (mid-2022 to end-2024; Open-Meteo's archive starts
+mid-2022). Split is chronological 60/20/20 (train / tune / test). Source of truth:
+[`data/backtest.json`](data/backtest.json); the chart is rebuilt from it by
+`python ml/make_figure.py`.
+
+## Limitations
+- **One training run, one seed.** There is no run-to-run spread yet, so small gaps
+  between horizons may be noise.
+- **R² falls to 0.45 at 24 h.** The model beats the naive guess there, but still misses
+  a lot of the day-ahead swing.
+- **Inputs are modelled, not sensor readings.** Open-Meteo's PM2.5 comes from the
+  CAMS atmospheric model, so the model learns to forecast that — not a ground monitor.
+- **Not medical advice.** The health tips follow the US EPA AQI bands.
 
 ## Data (all free, no API key)
 - **Open-Meteo Air-Quality API** — PM2.5/PM10/NO₂/O₃/CO/SO₂, hourly history + forecast
@@ -36,5 +50,11 @@ features). Naive guessing is fine for the next hour, but the model's edge grows 
 ## Run the model
 ```bash
 pip install -r requirements.txt
-python ml/train.py   # fetches data, trains, writes data/backtest.json
+python ml/train.py        # fetches ~131k rows, trains 4 models, writes data/backtest.json
+python ml/forecast.py     # live forecast -> web/public/forecasts.json
+python ml/make_figure.py  # rebuilds docs/backtest.png
 ```
+Training takes about 2–4 minutes on a laptop CPU (no GPU, no cost; the data is free).
+
+## License
+MIT — see [LICENSE](LICENSE).

@@ -1,5 +1,6 @@
 pandas>=2.0
 numpy>=1.26
-scikit-learn>=1.4
+scikit-learn==1.9.0  # must match the version that pickled data/models/*.pkl
 requests>=2.31
 pyarrow>=15.0
+matplotlib>=3.8
