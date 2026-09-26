@@ -40,16 +40,21 @@ web/          # React+Vite dashboard (NOT built yet) — web/public/ will hold g
 Run training: `pip install -r requirements.txt` then `python ml/train.py` (from repo root,
 or `cd ml && python train.py`). Takes ~2–4 min (fetches ~131k rows).
 
-## Backtest results (pipeline v2 + tuned, pooled, chronological holdout)
-| H | Model MAE | R² | Persistence MAE | Lift |
-|--|--|--|--|--|
-| 1h | 0.77 | 0.96 | 0.94 | +18.8% |
-| 6h | 2.68 | 0.74 | 3.37 | +20.6% |
-| 12h | 3.42 | 0.57 | 4.45 | +23.0% |
-| 24h | 3.76 | 0.45 | 4.45 | +15.6% |
-Pipeline v2 (`ml/tune.py`): hourly-grid cleaning, wind vectors + ventilation index,
-city categorical, absolute_error loss won every horizon; 40-trial random search per
-horizon, 60/20/20 chronological protocol, log in data/tuning.json.
+## Model results (read before quoting numbers anywhere)
+The original 2022–2024 holdout (+18.8% at 1h) was flattering: it covered mostly easy
+dry-season months. The honest headline is the **full-year walk-forward test**
+(`ml/walkforward.py` → `data/walkforward.json`, test 2025-09-20..2026-09-20, 3 seeds):
+| H | Retrained MAE | 2024-model MAE | Naive MAE | Lift | 80% band hit |
+|--|--|--|--|--|--|
+| 1h | 0.93 | 1.23 | 1.26 | +26.3% | 82.8% |
+| 6h | 3.17 | 3.68 | 4.80 | +34.0% | 81.3% |
+| 12h | 3.81 | 4.29 | 6.46 | +41.0% | 82.2% |
+| 24h | 4.09 | 4.28 | 4.74 | +13.6% | 81.0% |
+- Models go stale: `retrain.yml` runs `ml/refit.py` monthly; ships only if better on
+  average vs the live model on the last 30 days (≤2% worse on any one horizon).
+- Models live in the `models` GitHub Release, NOT git. `gh release download models -D data/models`.
+- Live scorecard: `data/forecast_log.csv` (ours vs Open-Meteo vs naive), started 2026-09-27.
+- Map labels are Esri: CARTO tiles began returning an "API KEY REQUIRED" stamp.
 
 ## Phases
 - [x] **Phase 1** — single-city forecaster + backtest (proof of signal).
