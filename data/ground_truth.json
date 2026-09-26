@@ -1,0 +1,11 @@
+{
+ "period": "2025-09-20..2026-09-19",
+ "hours": 8735,
+ "sensors": 63,
+ "ground_mean": 18.4,
+ "cams_mean": 19.2,
+ "correlation_hourly": 0.464,
+ "correlation_daily": 0.667,
+ "cams_mae_vs_ground": 8.58,
+ "naive24_mae_vs_ground": 8.46
+}
