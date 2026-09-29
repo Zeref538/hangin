@@ -9,7 +9,7 @@ model's accuracy honestly, backtested against a naive baseline.
 
 ![Backtest: model vs naive baseline](docs/backtest.png)
 
-**Live:** https://hangin-acra1.vercel.app — refreshed by a scheduled GitHub Action.
+**Live:** https://hangin-zeref.vercel.app — refreshed by a scheduled GitHub Action.
 
 ## Result
 Tested on **one full year the model never saw** (2025-09-20 → 2026-09-20, every

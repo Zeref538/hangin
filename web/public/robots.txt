@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hangin-acra1.vercel.app/sitemap.xml
+Sitemap: https://hangin-zeref.vercel.app/sitemap.xml
