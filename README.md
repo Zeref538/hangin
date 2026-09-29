@@ -56,6 +56,14 @@ Open-Meteo's own forecast is logged too, but **not scored**. The "real" values c
 from the same CAMS model that produces that forecast, so it would be graded against
 itself (its first 5 graded forecasts all missed by exactly 0.00).
 
+### Tried and not shipped: improving the 24 h forecast
+A pre-registered attempt ([`docs/ATTEMPT_NEXT.md`](docs/ATTEMPT_NEXT.md)) added
+(1) the day-ahead forecast of wind and rain at the target hour, as it was issued at the
+time, and (2) the average PM2.5 at the same hour over the past 7 days. Both together cut
+24 h error from 4.09 to 4.02 (3 seeds), which is real but only 1.8%, under the 2% bar set
+before running. The live model stays. The same features helped 6 h and 12 h more
+(+1.5 and +1.7 points of lift), which is left for a separate test.
+
 ## Limitations
 - **Inputs are modelled, not sensor readings.** Open-Meteo's PM2.5 comes from the
   CAMS atmosphere model, so this forecasts CAMS, not a street-level monitor. CAMS
