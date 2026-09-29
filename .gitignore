@@ -15,3 +15,4 @@ data/*.parquet
 # models are published as the "models" GitHub Release (see retrain.yml)
 data/models/
 data/openaq_parts/
+.pytest_cache/
