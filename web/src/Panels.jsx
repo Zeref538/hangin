@@ -14,9 +14,9 @@ const ACTIVITIES = [
   { label: "Outdoor errands if asthmatic / elderly / pregnant", ok: 0, caution: 2 },
 ];
 const STATUS = {
-  ok: { word: "Go", color: "#4dd179" },
-  caution: { word: "Take it easy", color: "#f5d442" },
-  skip: { word: "Skip it", color: "#e66767" },
+  ok: { word: "Go", color: "var(--cat-good)" },
+  caution: { word: "Take it easy", color: "var(--cat-moderate)" },
+  skip: { word: "Skip it", color: "var(--cat-unhealthy)" },
 };
 
 export function ActivityGuide({ city }) {
@@ -112,7 +112,7 @@ export function CityRanking({ cities, activeId, onPick }) {
           <YAxis type="category" dataKey="name" width={110}
                  tick={{ fontSize: 11.5, fill: "var(--ink-2)" }}
                  stroke="transparent" tickLine={false} interval={0} />
-          <Tooltip content={<RankTooltip />} cursor={{ fill: "rgba(255,255,255,0.04)" }} />
+          <Tooltip content={<RankTooltip />} cursor={{ fill: "rgba(var(--tint-rgb),0.04)" }} />
           <ReferenceLine x={9} stroke="rgba(77,209,121,0.45)" strokeDasharray="3 4"
                          label={{ value: "clean-air limit", position: "top",
                                   fontSize: 10, fill: "var(--muted)" }} />
@@ -122,7 +122,7 @@ export function CityRanking({ cities, activeId, onPick }) {
             {rows.map((r) => (
               <Cell key={r.id} fill={r.fill}
                     fillOpacity={r.id === activeId ? 1 : 0.55}
-                    stroke={r.id === activeId ? "#fff" : "none"} strokeWidth={1} />
+                    stroke={r.id === activeId ? "var(--ink)" : "none"} strokeWidth={1} />
             ))}
           </Bar>
         </BarChart>
@@ -148,7 +148,7 @@ export function PollutantPanel({ city }) {
       <h2>What's in {city.name}'s air right now</h2>
       <p className="datap">
         Each bar compares a pollutant to the <b>World Health Organization's daily
-        safe guideline</b> — under the white line means within safe levels.
+        safe guideline</b> — under the marker line means within safe levels.
       </p>
       <div className="pols">
         {POLLUTANTS.filter((p) => values[p.key] != null).map((p) => {
@@ -170,7 +170,7 @@ export function PollutantPanel({ city }) {
         })}
       </div>
       <p className="btnote">
-        The white line marks 100% of the WHO daily guideline
+        The marker line shows 100% of the WHO daily guideline
         (PM2.5 15 · PM10 45 · NO₂ 25 · O₃ 100 · SO₂ 40 · CO 4000 µg/m³).
       </p>
     </div>

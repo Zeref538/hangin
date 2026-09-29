@@ -1,5 +1,25 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import CityMap from "./CityMap.jsx";
+
+function ThemeButton() {
+  const [theme, setTheme] = useState(() => document.documentElement.getAttribute("data-theme") || "dark");
+  const next = theme === "dark" ? "light" : "dark";
+  const flip = () => {
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) { /* private mode: still switches, just not remembered */ }
+    setTheme(next);
+  };
+  return (
+    <button className="themebtn" onClick={flip} aria-label={`Switch to ${next} mode`} title={`Switch to ${next} mode`}>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+           strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        {theme === "dark"
+          ? <><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></>
+          : <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />}
+      </svg>
+    </button>
+  );
+}
 import ForecastChart from "./ForecastChart.jsx";
 import { NationalStats, CityRanking, PollutantPanel, ActivityGuide } from "./Panels.jsx";
 import { catMeta, fmtTime, horizonLabel, haversineKm } from "./aqi.js";
@@ -99,7 +119,7 @@ function NowPanel({ city }) {
           <div className="lbl">Air score</div>
         </div>
         <div className="nowmeta">
-          <p className="cat" style={{ color: meta.bg }}>{meta.word}</p>
+          <p className="cat" style={{ color: meta.ink }}>{meta.word}</p>
           <p className="advice">{meta.plain}</p>
           <p className="sub">General guidance based on US EPA air-quality bands, not medical advice. If you have a health condition, follow your doctor.</p>
           <div className="wxchips">
@@ -174,8 +194,8 @@ function ForecastStrip({ city }) {
                 {horizonLabel(f.horizon_h)}
                 <Delta from={city.now.pm2_5} to={f.pm2_5} />
               </div>
-              <div className="v" style={{ color: meta.bg }}>{f.aqi}</div>
-              <div className="word" style={{ color: meta.bg }}>{meta.word}</div>
+              <div className="v" style={{ color: meta.ink }}>{f.aqi}</div>
+              <div className="word" style={{ color: meta.ink }}>{meta.word}</div>
               <div className="c">{f.pm2_5} µg/m³ of PM2.5</div>
             </div>
           );
@@ -405,7 +425,8 @@ export default function App() {
             Hangin<span>'</span>
           </a>
           <div className="spacer" />
-          <span className="stamp">Last checked: {fmtTime(data.generated_at)} PHT{ageH > 8 && <b style={{ color: "#e5484d" }}> · {Math.round(ageH)}h old, may be out of date</b>}</span>
+          <span className="stamp">Last checked: {fmtTime(data.generated_at)} PHT{ageH > 8 && <b style={{ color: "var(--warn)" }}> · {Math.round(ageH)}h old, may be out of date</b>}</span>
+          <ThemeButton />
           <a className="gh" href="https://github.com/Zeref538/hangin"><GitHubIcon /> Source</a>
         </div>
       </nav>

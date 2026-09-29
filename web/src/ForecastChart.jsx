@@ -76,7 +76,7 @@ export default function ForecastChart({ city }) {
                 isAnimationActive={false} connectNulls />
           <Line dataKey="predicted" stroke="var(--predicted)" strokeWidth={2.5}
                 strokeDasharray="6 5" isAnimationActive={false}
-                dot={{ r: 4.5, fill: "var(--predicted)", stroke: "#0b0f14", strokeWidth: 2 }}
+                dot={{ r: 4.5, fill: "var(--predicted)", stroke: "var(--bg)", strokeWidth: 2 }}
                 activeDot={{ r: 5.5 }} />
         </ComposedChart>
       </ResponsiveContainer>
