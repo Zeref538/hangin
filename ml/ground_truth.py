@@ -49,7 +49,7 @@ def fetch(start, end):
         for s in loc["sensors"]:
             if s["parameter"]["name"] != "pm25":
                 continue
-            part = PARTS / f"{s['id']}.parquet"
+            part = PARTS / f"{s['id']}_{start}_{end}.parquet"  # keyed by range: one sensor, many windows
             if part.exists():
                 frames.append(pd.read_parquet(part))
                 continue
