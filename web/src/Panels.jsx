@@ -113,7 +113,7 @@ export function CityRanking({ cities, activeId, onPick }) {
                  tick={{ fontSize: 11.5, fill: "var(--ink-2)" }}
                  stroke="transparent" tickLine={false} interval={0} />
           <Tooltip content={<RankTooltip />} cursor={{ fill: "rgba(255,255,255,0.04)" }} />
-          <ReferenceLine x={12} stroke="rgba(77,209,121,0.45)" strokeDasharray="3 4"
+          <ReferenceLine x={9} stroke="rgba(77,209,121,0.45)" strokeDasharray="3 4"
                          label={{ value: "clean-air limit", position: "top",
                                   fontSize: 10, fill: "var(--muted)" }} />
           <Bar dataKey="pm" radius={[0, 4, 4, 0]} barSize={13} isAnimationActive={false}

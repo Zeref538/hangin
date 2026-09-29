@@ -44,7 +44,7 @@ export default function ForecastChart({ city }) {
         <span className="key"><span className="line" /> What we measured (last 2 days)</span>
         <span className="key"><span className="line dash" /> What we predict (next 24h)</span>
         <span className="key"><span className="zone band" /> 80% likely range</span>
-        <span className="key"><span className="zone" /> Clean-air zone (0–12 µg/m³)</span>
+        <span className="key"><span className="zone" /> Clean-air zone (0–9 µg/m³)</span>
       </div>
       <ResponsiveContainer width="100%" height={270}>
         <ComposedChart data={rows} margin={{ top: 8, right: 14, left: -12, bottom: 0 }}>
@@ -55,7 +55,7 @@ export default function ForecastChart({ city }) {
             </linearGradient>
           </defs>
           <CartesianGrid stroke="var(--grid)" vertical={false} />
-          <ReferenceArea y1={0} y2={12} fill="rgba(77, 209, 121, 0.06)"
+          <ReferenceArea y1={0} y2={9} fill="rgba(77, 209, 121, 0.06)"
                          stroke="rgba(77, 209, 121, 0.18)" strokeDasharray="3 4" />
           <XAxis dataKey="t" tickFormatter={fmtHour} minTickGap={44}
                  tick={{ fontSize: 11, fill: "var(--muted)" }}

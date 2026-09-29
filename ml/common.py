@@ -197,19 +197,21 @@ def make_features(df, horizon=None):
     return pd.concat(out).sort_values(["time", "city"]).reset_index(drop=True)
 
 
-# US EPA PM2.5 AQI breakpoints: (Clow, Chigh, Ilow, Ihigh, category, advice)
+# US EPA PM2.5 AQI breakpoints, 2024 revision ("Good" ends at 9.0, was 12.0):
+# https://aqs.epa.gov/aqsweb/documents/codetables/aqi_breakpoints.html
+# (Clow, Chigh, Ilow, Ihigh, category, advice)
 AQI_BP = [
-    (0.0,  12.0,   0,  50,  "Good",
+    (0.0,   9.0,   0,  50,  "Good",
      "Air quality is good — enjoy outdoor activity."),
-    (12.1, 35.4,  51, 100,  "Moderate",
+    (9.1,  35.4,  51, 100,  "Moderate",
      "Acceptable. Unusually sensitive people should watch for symptoms."),
     (35.5, 55.4, 101, 150,  "Unhealthy for Sensitive Groups",
      "Sensitive groups (asthma, elderly, children, outdoor workers) should limit prolonged exertion."),
-    (55.5, 150.4, 151, 200, "Unhealthy",
+    (55.5, 125.4, 151, 200, "Unhealthy",
      "Everyone may feel effects; sensitive groups should avoid outdoor exertion."),
-    (150.5, 250.4, 201, 300, "Very Unhealthy",
+    (125.5, 225.4, 201, 300, "Very Unhealthy",
      "Health alert — avoid outdoor activity; wear a mask if you must go out."),
-    (250.5, 500.4, 301, 500, "Hazardous",
+    (225.5, 325.4, 301, 500, "Hazardous",
      "Emergency conditions — stay indoors with filtered air."),
 ]
 

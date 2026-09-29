@@ -229,7 +229,8 @@ function DataPanel({ backtest, model }) {
   );
 }
 
-const toPoints = (ug) => Math.round(ug * (50 / 12));
+// slope of the EPA "Good" band (0-9 ug/m3 -> 0-50 points, 2024 table)
+const toPoints = (ug) => Math.round(ug * (50 / 9));
 
 function LiveScore({ live }) {
   const rows = live?.horizons ?? [];
