@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en" data-view="plain">
+<head>
+<meta charset="utf-8">
+<script src="/theme-init.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hangin': Forecasting Philippine Air, Honestly</title>
+<meta name="description" content="Case study: a PM2.5 forecaster for 5 Philippine cities, 1 to 24 hours ahead, tested on a full year it never saw, retrained monthly, and graded live.">
+<link rel="icon" type="image/png" href="/hangin-logo.png">
+<style>
+/*%%CSS%%*/
+</style>
+</head>
+<body>
+<canvas class="dot-field" aria-hidden="true"></canvas>
+
+<div class="bar">
+  <div class="wrap">
+    <a class="mark" href="https://johnandrei.vercel.app" aria-label="zeref. portfolio home">zeref<span>.</span></a>
+    <div class="brand"><span class="sep">/</span> Hangin'</div>
+    <div class="seg" role="group" aria-label="Reading level">
+      <button type="button" id="m-plain" aria-pressed="true">Simple</button>
+      <button type="button" id="m-expert" aria-pressed="false">Technical</button>
+    </div>
+    <button type="button" class="iconbtn" id="theme" aria-label="Switch colour theme">◐</button>
+  </div>
+</div>
+
+<header class="hero">
+<div class="console">
+  <div class="console-head">
+    <span class="step-no">01</span><span class="caps">Case study</span>
+  </div>
+  <div class="console-body">
+    <div class="console-side">
+      <div class="hero-kick">
+        <p class="caps lined">Air-quality forecaster</p>
+      </div>
+      <h1>Hangin'</h1>
+      <p class="spec it">5 metros &middot; 1 to 24 h ahead &middot; retrained monthly</p>
+  <p class="lede side-lede" data-mode="plain">
+    Air trackers in the Philippines tell you how dirty the air is right now. Hangin'
+    predicts where it is heading over the next day, in plain words, and shows how often
+    it is right. I tested it on a full year of air it had never seen, against the
+    simplest possible rival: "the air will stay like it is now".
+  </p>
+  <p class="lede side-lede" data-mode="expert">
+    Pooled HistGradientBoosting forecasters for PM2.5 at 1, 6, 12 and 24 h across five
+    metros, on free Open-Meteo data (CAMS air quality plus weather). Scored by a
+    walk-forward test on the 12 months after training ended, purged at the split, three
+    seeds, against persistence. Conformal 80% intervals, monthly retraining behind a
+    ship gate, and every live forecast graded after the fact.
+  </p>
+
+      <dl class="specs">
+        <div><dt>12 h error vs naive guess</dt><dd>&minus;{{lift12}}%</dd></div>
+        <div><dt>24 h error vs naive guess</dt><dd>&minus;{{lift24}}%</dd></div>
+        <div><dt>80% range caught reality</dt><dd>{{cov_min}}&ndash;{{cov_max}}%</dd></div>
+        <div><dt>Test: hours never seen</dt><dd>{{n_test}}</dd></div>
+      </dl>
+      <div class="side-cta">
+        <a class="pill" href="/">Open the live forecast</a>
+        <p class="small muted">Refreshed about every hour. Free, no login.</p>
+      </div>
+    </div>
+    <div class="console-main">
+      <p class="caps">What this project shows</p>
+      <p class="display">A forecast is only worth what it beats. <span class="it">So it is graded on air it never saw.</span></p>
+      <ol class="steps">
+        <li><span class="it">01</span><b>Fetch</b>Free air and weather data for 5 cities, every hour.</li>
+        <li><span class="it">02</span><b>Forecast</b>One model per horizon, with a likely range around each guess.</li>
+        <li><span class="it">03</span><b>Grade</b>Every forecast is scored once its hour arrives.</li>
+      </ol>
+      <p class="caps try">The forecast, running live <span class="it">pick a city</span></p>
+  <div class="scorer" id="live">
+    <div class="scorer-head">
+      <p class="small muted" style="margin:0" id="live-when">Loading the latest forecast...</p>
+      <div class="chips" id="live-cities"></div>
+    </div>
+    <div class="live-body" id="live-body"></div>
+  </div>
+    </div>
+  </div>
+</div>
+</header>
+
+<div class="page-grid">
+<nav class="rail" aria-label="Chapters"><p class="caps rail-h">Contents</p></nav>
+<main>
+
+<section class="panel-sec" id="result">
+<div class="console">
+  <div class="console-head"><span class="step-no">01</span><span class="caps">The result</span></div>
+  <div class="console-body">
+    <div class="console-side"><div class="side-stick">
+    <h2 data-mode="plain">Half a day ahead, it misses by {{lift12}}% less than a naive guess</h2>
+    <h2 data-mode="expert">Walk-forward MAE beats persistence at every horizon, by {{lift24}}% to {{lift12}}%</h2>
+    </div></div>
+    <div class="console-main">
+
+  <div class="headline-num">
+    <span class="x">{{lift12}}%</span>
+    <p>less error than "the air stays the same", 12 hours ahead, over one full year the model never saw.</p>
+  </div>
+
+  <p data-mode="plain">
+    The test year runs from {{wf_start}} to {{wf_end}}: every season, rainy and dry, in
+    Manila, Quezon City, Cebu, Davao and Baguio. The model trained only on the hours
+    before it, then forecast every hour of that year. Each forecast was compared with
+    what actually happened.
+  </p>
+  <p data-mode="expert">
+    Test window {{wf_start}} to {{wf_end}}, {{n_test}} hourly targets per horizon pooled
+    over five cities. Training rows are purged so no target falls inside the test year.
+    Same hyperparameters as the live model (sklearn <code>clone</code>), seeds 0, 1 and 2;
+    the spread across seeds is at most {{seed_std_max}} &micro;g/m&sup3;.
+  </p>
+
+  <figure>
+    <div class="legend"><span><i style="background:var(--proj)"></i>Retrained model</span><span><i style="background:none;border:1.5px solid var(--ink-2);height:9px;width:11px;box-sizing:border-box"></i>Trained once (2024)</span><span><i style="background:var(--tide)"></i>Naive guess</span></div>
+    <div id="chart-mae"></div>
+    <figcaption>Average miss in &micro;g/m&sup3; of PM2.5, lower is better. Each bar is one method over the whole test year.</figcaption>
+  </figure>
+
+  <figure class="doc-fig">
+    <a href="case-study/img/results.png" class="fig-open"><img src="case-study/img/results.png" alt="Table of the full-year test: for each horizon, the retrained model's error, the once-trained model's error, the naive guess's error, the lift, and the 80% range hit rate" loading="lazy"></a>
+    <figcaption>Drawn from <code>data/walkforward.json</code> and <code>data/intervals.json</code> by <code>docs/make_figures.py</code>.</figcaption>
+  </figure>
+
+  <div class="note">
+    <p class="kicker">What "naive guess" means, and why it is the right rival</p>
+    <p style="margin:0">
+      Persistence says the air in 6 hours will be exactly what it is now. It sounds lazy,
+      but air changes slowly, so it is hard to beat over the next hour. A forecaster
+      that cannot beat it is not worth running. At 1 hour the model is {{lift1}}% better;
+      its lead grows to {{lift12}}% at 12 hours and falls back to {{lift24}}% at 24 hours.
+    </p>
+  </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="panel-sec" id="premise">
+<div class="console">
+  <div class="console-head"><span class="step-no">02</span><span class="caps">The premise</span></div>
+  <div class="console-body">
+    <div class="console-side"><div class="side-stick">
+    <h2 data-mode="plain">Knowing the air now does not help you plan tomorrow</h2>
+    <h2 data-mode="expert">Nowcasts are common; honest short-range forecasts are not</h2>
+    </div></div>
+    <div class="console-main">
+  <p data-mode="plain">
+    If you jog, walk kids to school, or have asthma, the useful question is not "how is
+    the air?" but "when is it cleanest today?". Most Philippine air trackers only show
+    the current reading. Hangin' forecasts 1, 6, 12 and 24 hours ahead and turns each
+    number into advice anyone can act on, like "take it easy outside".
+  </p>
+  <p data-mode="expert">
+    Target: PM2.5 in &micro;g/m&sup3;, mapped to the 2024 US EPA AQI bands for the advice
+    text. Horizons 1, 6, 12 and 24 h. The value of a forecast is its skill over a
+    trivial baseline, so every claim on this page is skill over persistence on held-out
+    time, never in-sample fit.
+  </p>
+  <div class="note">
+    <p class="kicker">Not medical advice</p>
+    <p style="margin:0">The tips follow US EPA air-quality bands. They are general guidance, not a doctor's advice.</p>
+  </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="panel-sec" id="how">
+<div class="console">
+  <div class="console-head"><span class="step-no">03</span><span class="caps">How it works</span></div>
+  <div class="console-body">
+    <div class="console-side"><div class="side-stick">
+    <h2 data-mode="plain">One model per horizon, learning from five cities at once</h2>
+    <h2 data-mode="expert">Pooled gradient-boosted trees with lag, weather and calendar features</h2>
+    </div></div>
+    <div class="console-main">
+  <p data-mode="plain">
+    For each forecast the model looks at {{n_features}} signals: the pollution right now
+    and over the past two days, the weather (wind, rain, humidity, how well the air can
+    mix and clear), and the clock and calendar (rush hour, weekends, seasons, even New
+    Year fireworks). The five cities train one shared model, so a pattern learned in
+    Cebu can help Davao.
+  </p>
+  <p data-mode="expert">
+    <code>HistGradientBoostingRegressor</code> with absolute-error loss, one per horizon,
+    {{n_features}} features: pollutant levels, PM2.5 lags 1 to 48 h, rolling means and
+    spread, wind vectors, a ventilation index (wind &times; boundary-layer height), cyclic
+    time encodings, a fireworks flag, and a categorical city code. Hyperparameters from a
+    40-trial random search per horizon. Data is reindexed to a strict hourly grid per
+    city so every lag is exactly its stated length.
+  </p>
+  <ul>
+    <li><b>Data:</b> Open-Meteo, free and keyless: CAMS air quality plus weather archive and forecast.</li>
+    <li><b>Live:</b> a GitHub Action runs the forecast about every hour and republishes the dashboard.</li>
+    <li><b>Monthly:</b> a second Action retrains the models and ships them only if they beat the live ones on the latest 30 days.</li>
+  </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="panel-sec" id="stale">
+<div class="console">
+  <div class="console-head"><span class="step-no">04</span><span class="caps">It went stale</span></div>
+  <div class="console-body">
+    <div class="console-side"><div class="side-stick">
+    <h2 data-mode="plain">The first version looked great, then quietly stopped beating the naive guess</h2>
+    <h2 data-mode="expert">Distribution shift and a seasonal holdout inflated the original 1 h score</h2>
+    </div></div>
+    <div class="console-main">
+  <p data-mode="plain">
+    The first model was trained once, on 2022 to 2024, and scored {{orig_lift1}}% better
+    than naive at 1 hour on its own test. When I replayed it on 2025 and 2026, air it had
+    never seen, that lead fell to {{live_lift1}}%. In the hot months it was worse than
+    simply guessing "same as now".
+  </p>
+  <p data-mode="expert">
+    Original chronological holdout (last 20% of 2022 to 2024): +{{orig_lift1}}% at 1 h.
+    Replayed on 2025-01 to 2026-09 without retraining: +{{live_lift1}}%, negative in
+    several April to August months of both years. The holdout sat mostly in the easy
+    late-2024 dry season, so the headline was partly a calendar effect.
+  </p>
+  <figure>
+    <div id="chart-month"></div>
+    <figcaption>1-hour lead over the naive guess, by month, for the model trained once on 2022 to 2024. Below the line means it lost.</figcaption>
+  </figure>
+  <p>
+    Retraining the same recipe on newer data brought the 1-hour lead back to
+    <b>{{lift1}}%</b> on the full test year, against {{shipped_lift1}}% for the stale model.
+    So the model is now retrained every month, and a new one only replaces the live one
+    if it is better on the latest 30 days.
+  </p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="panel-sec" id="range">
+<div class="console">
+  <div class="console-head"><span class="step-no">05</span><span class="caps">The likely range</span></div>
+  <div class="console-body">
+    <div class="console-side"><div class="side-stick">
+    <h2 data-mode="plain">When it says "80% sure", reality lands inside {{cov_min}} to {{cov_max}}% of the time</h2>
+    <h2 data-mode="expert">Quantile models plus a conformal margin reach nominal coverage</h2>
+    </div></div>
+    <div class="console-main">
+  <p data-mode="plain">
+    Every forecast comes with a shaded range on the chart. A range is only honest if it
+    catches reality as often as it claims. The first version did not: it caught the real
+    value only {{raw_min}} to {{raw_max}}% of the time. Widening it by an amount measured
+    on the three months before the test fixed that.
+  </p>
+  <p data-mode="expert">
+    10th and 90th percentile HistGradientBoosting models, then a split-conformal margin:
+    the 80th percentile of the calibration misses on the 90 days before the test year.
+    Raw coverage {{raw_min}} to {{raw_max}}%, calibrated {{cov_min}} to {{cov_max}}% on the
+    test year. Misses lean high (real value above the band), which is where smoke spikes live.
+  </p>
+  <figure>
+    <div id="chart-cov"></div>
+    <figcaption>Share of test hours where the real value landed inside the 80% range, before and after calibration. The line marks 80%.</figcaption>
+  </figure>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="panel-sec" id="attempt">
+<div class="console">
+  <div class="console-head"><span class="step-no">06</span><span class="caps">Tried, not shipped</span></div>
+  <div class="console-body">
+    <div class="console-side"><div class="side-stick">
+    <h2 data-mode="plain">I tried to fix the weakest number and it did not clear the bar I set</h2>
+    <h2 data-mode="expert">A pre-registered 24 h attempt: real gain, below the 2% threshold</h2>
+    </div></div>
+    <div class="console-main">
+  <p>
+    The 24-hour lead ({{lift24}}%) is the number a skeptic points at first. Before running
+    anything I wrote down the one target, two ideas, and the rule for "it won": at least
+    2% less error at 24 h, and more than three times the seed-to-seed noise. Then I ran it
+    exactly once.
+  </p>
+  <ul>
+    <li><b>Idea 1:</b> the weather forecast for the target hour (wind and rain), as it was issued a day earlier, never the weather that actually happened.</li>
+    <li><b>Idea 2:</b> what the air was like at that same hour over the past week.</li>
+  </ul>
+  <div class="tw"><table>
+    <thead><tr><th>24 h, 3 seeds</th><th class="num">Mean error</th><th class="num">Better by</th></tr></thead>
+    <tbody>
+      <tr><td>Current model</td><td class="num">{{att_base}}</td><td class="num">&nbsp;</td></tr>
+      <tr><td>+ forecast wind and rain</td><td class="num">{{att_a1}}</td><td class="num">{{att_a1_pct}}%</td></tr>
+      <tr><td>+ same hour, past 7 days</td><td class="num">{{att_a2}}</td><td class="num">{{att_a2_pct}}%</td></tr>
+      <tr><td>Both</td><td class="num">{{att_a12}}</td><td class="num">{{att_a12_pct}}%</td></tr>
+    </tbody>
+  </table></div>
+  <p>
+    Both together helped by {{att_a12_pct}}%, a real gain, but under the 2% bar. So the live
+    model stays. I did not move the bar after seeing the result. The same features helped
+    6 h and 12 h more, which needs its own test before it can be claimed.
+  </p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="panel-sec" id="limits">
+<div class="console">
+  <div class="console-head"><span class="step-no">07</span><span class="caps">What it cannot do</span></div>
+  <div class="console-body">
+    <div class="console-side"><div class="side-stick">
+    <h2 data-mode="plain">It forecasts a model of the air, not a street sensor</h2>
+    <h2 data-mode="expert">The target is CAMS, and CAMS tracks Manila's sensors loosely</h2>
+    </div></div>
+    <div class="console-main">
+  <p data-mode="plain">
+    The "real" air values Hangin' learns from come from CAMS, a European computer model of
+    the atmosphere, not from sensors on the street. So I checked CAMS against
+    {{gt_sensors}} low-cost sensors around Manila for a year. It gets which days are dirty
+    mostly right, but hour to hour it follows them loosely, and on average it missed the
+    sensors by about as much as "same as yesterday" did.
+  </p>
+  <p data-mode="expert">
+    Median of {{gt_sensors}} outdoor OpenAQ low-cost sensors within 25 km of Manila,
+    {{gt_hours}} hours. CAMS vs sensors: r = {{gt_r_hour}} hourly, {{gt_r_day}} daily;
+    MAE {{gt_cams}} &micro;g/m&sup3; vs {{gt_naive}} for yesterday's sensor value at the
+    same hour. Low-cost sensors read high in humid air, so this is a check, not a verdict.
+  </p>
+  <ul>
+    <li><b>So the claim is "beats a naive guess", not "beats the free forecast".</b> CAMS publishes its own forecast of the same numbers, and a fair contest against it needs sensor truth.</li>
+    <li><b>24 hours is the weak spot:</b> {{lift24}}% better than naive, with a wide range.</li>
+    <li><b>It under-calls sudden spikes.</b> Smoke and traffic spikes land above the range more often than below it.</li>
+    <li><b>Only the 5 training cities are tested.</b> The other cities on the map use the same model without their own test.</li>
+  </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="panel-sec" id="broke">
+<div class="console">
+  <div class="console-head"><span class="step-no">08</span><span class="caps">What broke</span></div>
+  <div class="console-body">
+    <div class="console-side"><div class="side-stick">
+    <h2 data-mode="plain">Six things that looked fine while being wrong</h2>
+    <h2 data-mode="expert">Silent failures, each caught by measuring rather than assuming</h2>
+    </div></div>
+    <div class="console-main">
+  <h3>A test window that flattered the model</h3>
+  <p>The original holdout sat in the easy dry months. The score was real, and misleading. Only replaying a new year showed it.</p>
+  <h3>A rival graded against its own answers</h3>
+  <p>I logged Open-Meteo's own forecast to compare against. Its first five graded forecasts missed by exactly 0.00, because the "real" values come from the same model. The column was removed rather than shown.</p>
+  <h3>A map stamped "API KEY REQUIRED"</h3>
+  <p>The free label tiles started returning a watermark instead of labels. Nothing errored; the map just looked broken. The labels now come from Esri's free layer.</p>
+  <h3>A retrain gate too strict to ever pass</h3>
+  <p>"No worse on any horizon" blocked a near-tie on its first run. Near-identical models always differ by noise somewhere, so that rule would have let the model go stale again. It now ships when better on average, with 2% slack on any one horizon.</p>
+  <h3>An hourly job that failed when anyone else pushed</h3>
+  <p>The refresh job takes about ten minutes, so any commit in that window made its push bounce. It now rebases before pushing; I proved the fix by pushing mid-run on purpose.</p>
+  <h3>Health bands from an old table</h3>
+  <p>The air score used the 2012 EPA table, so 9 to 12 &micro;g/m&sup3; was labelled "Good". The 2024 revision ends "Good" at 9.0. A test now pins every band edge to the EPA's current table.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="panel-sec" id="repro">
+<div class="console">
+  <div class="console-head"><span class="step-no">09</span><span class="caps">Reproduce it</span></div>
+  <div class="console-body">
+    <div class="console-side"><div class="side-stick">
+    <h2>Run it yourself</h2>
+    </div></div>
+    <div class="console-main">
+  <p>Everything runs on a laptop CPU with free data and no API keys. Times were measured on one laptop.</p>
+  <pre><code>git clone https://github.com/Zeref538/hangin &amp;&amp; cd hangin
+pip install -r requirements.txt
+python -m pytest -q                     # AQI table and feature timing checks
+gh release download models -D data/models   # the live models
+
+python ml/live_eval.py     # replay the 2024 models on 2025-2026 (~1 min)
+python ml/walkforward.py   # full-year test, 3 seeds (~4 min)
+python ml/intervals.py     # likely-range coverage (~4 min)
+python ml/forecast.py      # a live forecast
+python docs/make_figures.py &amp;&amp; python docs/build_case_study.py   # this page</code></pre>
+  <p class="small muted">
+    <b>Stack:</b> Python, pandas, scikit-learn, React and Vite, GitHub Actions, Vercel.
+    Source: <a href="https://github.com/Zeref538/hangin">github.com/Zeref538/hangin</a>.
+  </p>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+</div>
+
+<section class="closing">
+  <p class="display closing-line">Graded on air it never saw. <span class="it">Made for people who breathe it.</span></p>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div>
+      <div class="author">
+        <img src="case-study/img/john.jpg" alt="" width="56" height="56">
+        <div>
+          <p class="author-name">John Andrei Martinez</p>
+          <p class="author-role">Builds and measures machine-learning projects. This page is one of his case studies.</p>
+          <a class="author-link" href="https://johnandrei.vercel.app">Visit my portfolio</a>
+        </div>
+      </div>
+    </div>
+    <nav aria-label="More">
+      <p class="foot-h">This project</p>
+      <a href="/">Live forecast</a>
+      <a href="https://github.com/Zeref538/hangin">Source code</a>
+      <a href="https://github.com/Zeref538/hangin/releases/tag/models">Live models</a>
+    </nav>
+    <nav aria-label="Elsewhere">
+      <p class="foot-h">More work</p>
+      <a href="https://johnandrei.vercel.app">Portfolio</a>
+      <a href="https://zeref538.github.io/liitllm/">LiitLLM</a>
+      <a href="https://github.com/Zeref538">GitHub</a>
+    </nav>
+  </div>
+  <div class="foot-strip caps">
+    <span>Hangin' case study</span><span>scikit-learn &middot; Open-Meteo &middot; GitHub Actions</span><span>Not medical advice</span>
+  </div>
+  <div class="wrap foot-base small">
+    Air and weather data: Open-Meteo (CAMS), CC BY 4.0. Sensor check: OpenAQ. Fonts: Schibsted Grotesk, Newsreader and Sora, SIL OFL.
+  </div>
+</footer>
+
+<script src="case-study/app.js"></script>
+</body>
+</html>

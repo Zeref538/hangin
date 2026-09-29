@@ -507,7 +507,8 @@ export default function App() {
           Air & weather data from <a href="https://open-meteo.com/">Open-Meteo</a> ·
           Predictions from our own machine-learning model (scikit-learn) ·
           Health levels follow the US EPA air-quality index ·
-          A portfolio project by <a href="https://github.com/Zeref538/hangin">John Andrei Martinez</a>.
+          A portfolio project by <a href="https://github.com/Zeref538/hangin">John Andrei Martinez</a>.{" "}
+          <a href="/case-study.html">Read the case study</a>.
           Forecasts are estimates, not official government readings.
         </footer>
       </div>

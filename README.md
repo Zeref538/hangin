@@ -10,6 +10,7 @@ model's accuracy honestly, backtested against a naive baseline.
 ![Backtest: model vs naive baseline](docs/backtest.png)
 
 **Live:** https://hangin-zeref.vercel.app — refreshed by a scheduled GitHub Action.
+**Case study:** https://hangin-zeref.vercel.app/case-study.html (how it was tested, what broke, and what did not work)
 
 ## Result
 Tested on **one full year the model never saw** (2025-09-20 → 2026-09-20, every
