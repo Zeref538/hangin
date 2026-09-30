@@ -3,8 +3,8 @@
 Brand name is **Hangin'** (with apostrophe): *hangin* = Tagalog for wind/air, plus
 "how's it hangin'?". The GitHub repo slug stays `hangin` (no apostrophes allowed).
 
-This file is the handoff for continuing the build in a fresh Claude Code session
-opened **on this `Hangin` folder** (kept separate from the portfolio repo to save tokens).
+Project-only rules. The global rules in `~/.claude/CLAUDE.md` also apply and are not
+repeated here.
 
 ## What we're building
 A web dashboard that forecasts **PM2.5 for 5 Philippine metros 1–24 hours ahead** and
@@ -56,36 +56,17 @@ dry-season months. The honest headline is the **full-year walk-forward test**
 - Live scorecard: `data/forecast_log.csv` (ours vs Open-Meteo vs naive), started 2026-09-27.
 - Map labels are Esri: CARTO tiles began returning an "API KEY REQUIRED" stamp.
 
-## Phases
-- [x] **Phase 1** — single-city forecaster + backtest (proof of signal).
-- [x] **Phase 2** — pooled 5-city multi-horizon models + EPA AQI/health mapping.
-      DONE: `common.py`, `train.py`, models + backtest.json, and `ml/forecast.py`
-      (live inference → `web/public/forecasts.json` with shape
-      `{generated_at, cities:[{id,name,lat,lon,now,history[48],
-      forecast:[{horizon_h, pm2_5, aqi, category, advice}]}], backtest}`).
-- [~] **Phase 3 (first layout built — awaiting user layout sign-off before polish)** —
-      React+Vite dashboard in `web/`: city picker + map, "now" AQI gauge,
-      multi-horizon forecast line chart (Recharts), health advisory card, and a
-      model-performance panel that shows the backtest table (the ML proof). Consumes
-      `forecasts.json`. **Gate: confirm layout with user before polishing.**
-- [~] **Phase 4 (nearly done)** — DONE: GitHub Actions hourly refresh
-      (`.github/workflows/refresh.yml`, cron :20, commits forecasts.json as Zeref538);
-      Vercel deploy live + public at https://hangin-acra1.vercel.app (project `hangin`,
-      team acra1, git-connected → auto-redeploys on push, deployment protection off);
-      3 screenshots in portfolio `public/projects/hangin-{1,2,3}.jpg`.
-      TODO: portfolio `src/data.js` entry + skillIcons (Time-Series/Open-Meteo/Leaflet)
-      — edits were blocked by a transient permission-service outage; retry then deploy
-      portfolio. **Gate: user sign-off before portfolio goes live.**
+## Status
+
+Phase status and open work live in [TODO.md](TODO.md), not here: status goes stale.
 
 ## Conventions (match the portfolio repo)
 - Commit author must be the GitHub-linked noreply email so contributions count:
   `git -c user.email="238805789+Zeref538@users.noreply.github.com" -c user.name="Zeref538" commit ...`
-- **Never** add `Co-Authored-By: Claude` trailers.
 - sklearn only for ML (Python 3.14 here has no xgboost/lightgbm wheels;
   `HistGradientBoostingRegressor` is the chosen model). pyarrow is available.
 - Keep the honest-evaluation framing — do not inflate metrics.
 
-## When done, to wire into the portfolio
+## Portfolio wiring
 The portfolio lives at `../Portfolio`. Add an entry to `src/data.js` `projects` array and
-skill/issuer icons in `src/skillIcons.jsx` if new tech is introduced. Deploy hook for the
-portfolio Vercel build is documented in that repo's session memory.
+skill/issuer icons in `src/skillIcons.jsx` if new tech is introduced.
