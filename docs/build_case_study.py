@@ -43,6 +43,9 @@ def main():
     A = att["results"]
     pct = lambda arm: 100 * (A["base"]["24"]["mean"] - A[arm]["24"]["mean"]) / A["base"]["24"]["mean"]
     start, end = wf["test_period"].split("..")
+    sm = ld("sensor_model.json")
+    S = {r["horizon_h"]: r for r in sm["horizons"]}
+    sm_lifts = [r["model_a_vs_best_baseline_pct"] for r in S.values()]
 
     v = {
         **{f"lift{h}": f"{W[h]['retrained_lift_pct']:.1f}" for h in (1, 6, 12, 24)},
@@ -61,6 +64,10 @@ def main():
         "gt_sensors": str(gt["sensors"]), "gt_hours": f"{gt['hours']:,}",
         "gt_r_hour": f"{gt['correlation_hourly']:.2f}", "gt_r_day": f"{gt['correlation_daily']:.2f}",
         "gt_cams": f"{gt['cams_mae_vs_ground']:.2f}", "gt_naive": f"{gt['naive24_mae_vs_ground']:.2f}",
+        "sm_train": sm["train"].replace("..", " to "),
+        "sm_a6": f"{S[6]['model_a_mae']:.2f}",
+        "sm_best6": f"{min(S[6][k] for k in ('persist_mae', 'yday_mae', 'cams_mae')):.2f}",
+        "sm_lift_min": f"{min(sm_lifts):.1f}", "sm_lift_max": f"{max(sm_lifts):.1f}",
     }
 
     # the prose makes these claims; if the data stops supporting one, stop the build
@@ -72,6 +79,7 @@ def main():
     assert att["ship"] is None and 0 < pct("a12") < 2, "attempt outcome changed"
     assert gt["correlation_daily"] > gt["correlation_hourly"], "sensor check story changed"
     assert abs(gt["cams_mae_vs_ground"] - gt["naive24_mae_vs_ground"]) < 0.5, "'about as much' no longer true"
+    assert min(sm_lifts) > 0, "sensor-trained model no longer beats every simple guess"
     assert any(m["lift_pct"] < 0 for m in le["by_month"] if m["horizon_h"] == 1), "no losing month"
 
     html = (DOCS / "case_study.html").read_text(encoding="utf-8")

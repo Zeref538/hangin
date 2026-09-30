@@ -333,6 +333,7 @@
   </p>
   <ul>
     <li><b>So the claim is "beats a naive guess", not "beats the free forecast".</b> CAMS publishes its own forecast of the same numbers, and a fair contest against it needs sensor truth.</li>
+    <li><b>Trained on the sensors instead, it still beats the simple guesses.</b> A Manila-only model trained on sensor readings ({{sm_train}}) and scored on the same test year missed by {{sm_a6}} &micro;g/m&sup3; at 6 h, against {{sm_best6}} for the best simple guess: {{sm_lift_min}}% to {{sm_lift_max}}% less error across 1 to 24 h. One city and one seed, so a pointer, not a headline.</li>
     <li><b>24 hours is the weak spot:</b> {{lift24}}% better than naive, with a wide range.</li>
     <li><b>It under-calls sudden spikes.</b> Smoke and traffic spikes land above the range more often than below it.</li>
     <li><b>Only the 5 training cities are tested.</b> The other cities on the map use the same model without their own test.</li>

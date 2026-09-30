@@ -1,0 +1,72 @@
+{
+ "truth": "hourly median of >=3 outdoor OpenAQ sensors within 25 km of Manila",
+ "train": "2024-08-01..2025-09-20",
+ "test_from": "2025-09-20",
+ "note": "model_b and cams use CAMS archive values for the target hour: optimistic",
+ "horizons": [
+  {
+   "horizon_h": 1,
+   "n_train": 7029,
+   "n_test": 8717,
+   "persist_mae": 3.675,
+   "persist_n": 8717,
+   "yday_mae": 8.454,
+   "yday_n": 8694,
+   "cams_mae": 8.576,
+   "cams_n": 8717,
+   "model_a_mae": 3.627,
+   "model_a_n": 8717,
+   "model_b_mae": 3.621,
+   "model_b_n": 8717,
+   "model_a_vs_best_baseline_pct": 1.3
+  },
+  {
+   "horizon_h": 6,
+   "n_train": 6878,
+   "n_test": 8704,
+   "persist_mae": 8.006,
+   "persist_n": 8704,
+   "yday_mae": 8.452,
+   "yday_n": 8680,
+   "cams_mae": 8.564,
+   "cams_n": 8704,
+   "model_a_mae": 6.655,
+   "model_a_n": 8704,
+   "model_b_mae": 6.55,
+   "model_b_n": 8704,
+   "model_a_vs_best_baseline_pct": 16.9
+  },
+  {
+   "horizon_h": 12,
+   "n_train": 6846,
+   "n_test": 8698,
+   "persist_mae": 8.358,
+   "persist_n": 8698,
+   "yday_mae": 8.455,
+   "yday_n": 8674,
+   "cams_mae": 8.559,
+   "cams_n": 8698,
+   "model_a_mae": 7.011,
+   "model_a_n": 8698,
+   "model_b_mae": 6.719,
+   "model_b_n": 8698,
+   "model_a_vs_best_baseline_pct": 16.1
+  },
+  {
+   "horizon_h": 24,
+   "n_train": 6811,
+   "n_test": 8687,
+   "persist_mae": 8.461,
+   "persist_n": 8687,
+   "yday_mae": 8.461,
+   "yday_n": 8687,
+   "cams_mae": 8.577,
+   "cams_n": 8687,
+   "model_a_mae": 7.545,
+   "model_a_n": 8687,
+   "model_b_mae": 6.975,
+   "model_b_n": 8687,
+   "model_a_vs_best_baseline_pct": 10.8
+  }
+ ]
+}

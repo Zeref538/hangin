@@ -70,6 +70,9 @@ before running. The live model stays. The same features helped 6 h and 12 h more
   CAMS atmosphere model, so this forecasts CAMS, not a street-level monitor. CAMS
   also publishes its own forecast, so the claim here is "beats a naive guess", not
   "beats the free forecast". That needs ground-sensor data, which isn't wired in yet.
+  A first check (`ml/sensor_model.py`, Manila only, one seed): a model trained on
+  OpenAQ sensor readings beat the best simple guess by 1.3% to 16.9% across 1-24 h
+  on the same test year (`data/sensor_model.json`).
 - **24 h is the weak spot:** +13.6% over naive, and the band is ±5 µg/m³ wide.
 - **Band leans low on spikes:** misses are ~11% above the band vs ~7% below it.
 - **Only the 5 training metros are verified.** The other 24 cities on the map use

@@ -12,15 +12,13 @@ Moved out of CLAUDE.md on 2026-09-30 (status goes stale there).
 - [x] 2024 US EPA AQI bands, tests, light theme, case study page (live 2026-09-30)
 - [x] Portfolio screenshots `hangin-{1..4}.jpg` and `hangin-light-{1..4}.jpg`
 
-## Claude AI
+- [x] Sensor-trained Manila model (`ml/sensor_model.py`): beats the best simple guess by 1.3-16.9% at 1-24 h, one seed; in README and case study
 
-- [ ] Commit `ml/sensor_model.py` with its result and add one line to the case study's "What it cannot do"
+## Claude Tasks
 
-## Pending
+- [ ] Push the sensor commit when John says "push"
 
-- [ ] `ml/sensor_model.py` run (John started it 2026-09-30; needs the OpenAQ key, so only John can run it)
-
-## Zeref Queue
+## Zeref Tasks
 
 - [ ] Phase 3: sign off the dashboard layout, then polish (last recorded as awaiting sign-off)
 - [ ] Portfolio card numbers are stale: metric should be 41.0% less error than naive at 12h, highlight 14-41% at 6-24h, test is one unseen year (2025-09-20..2026-09-20); add `hangin-4.jpg` to `images`
