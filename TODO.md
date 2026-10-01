@@ -13,6 +13,7 @@ Moved out of CLAUDE.md on 2026-09-30 (status goes stale there).
 - [x] Portfolio screenshots `hangin-{1..4}.jpg` and `hangin-light-{1..4}.jpg`
 - [x] Sensor-trained Manila model (`ml/sensor_model.py`): beats the best simple guess by 1.3-16.9% at 1-24 h, one seed; in README and case study
 - [x] Portfolio card: full-year numbers, case study link, light screenshots (live 2026-10-01)
+- [x] Hourly refresh survives one city's Open-Meteo timeout (4 of the last 200 runs failed that way)
 - [x] Phase 3 layout: John waived the sign-off on 2026-10-01
 
 ## Claude Tasks

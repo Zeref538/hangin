@@ -13,6 +13,7 @@ from datetime import datetime, timezone, timedelta
 
 import numpy as np
 import pandas as pd
+import requests
 
 import common as C
 
@@ -141,14 +142,31 @@ def main():
     backtest = json.load(open(C.DATA / "backtest.json"))
     now_ph = pd.Timestamp(datetime.now(PH_TZ).replace(tzinfo=None))
 
-    cities, log_rows, actuals = [], [], {}
+    path = C.WEB_PUBLIC / "forecasts.json"
+    # last good run: one city's weather call timing out used to fail the refresh for all 29
+    prev = json.load(open(path)) if path.exists() else {"cities": [], "grid": []}
+    prev_city = {c["id"]: c for c in prev["cities"]}
+
+    cities, log_rows, actuals, failed = [], [], {}, []
     for city in C.ALL_CITIES:
         print(f"forecasting {city['name']} ...")
-        cities.append(city_payload(city, models, now_ph, log_rows, actuals))
+        try:
+            cities.append(city_payload(city, models, now_ph, log_rows, actuals))
+        except requests.RequestException as e:  # the fetch is city_payload's first step, so nothing half-written
+            print(f"  FAILED ({e}); keeping its last forecast")
+            failed.append(city["id"])
+            if city["id"] in prev_city:
+                cities.append(prev_city[city["id"]])
+    if len(failed) > len(C.ALL_CITIES) // 2:
+        raise RuntimeError(f"{len(failed)} cities failed, Open-Meteo looks down: {failed}")
     live = live_score(update_log(log_rows, actuals))
 
     print("fetching PM2.5 grid for map overlay ...")
-    grid = fetch_grid()
+    try:
+        grid = fetch_grid()
+    except requests.RequestException as e:
+        print(f"  grid FAILED ({e}); keeping the last one")
+        grid = prev["grid"]
 
     out = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -162,7 +180,6 @@ def main():
         "intervals": json.load(open(C.DATA / "intervals.json")),
     }
     C.WEB_PUBLIC.mkdir(parents=True, exist_ok=True)
-    path = C.WEB_PUBLIC / "forecasts.json"
     tmp = path.with_suffix(".json.tmp")
     json.dump(out, open(tmp, "w"), indent=1)
     os.replace(tmp, path)
