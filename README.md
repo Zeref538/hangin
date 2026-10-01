@@ -1,15 +1,15 @@
-# Hangin' — Philippine Air-Quality Forecasting & Health-Risk Dashboard
+# Hangin': Philippine Air-Quality Forecasting & Health-Risk Dashboard
 
-> *hangin* (Tagalog: **wind, air**) — so… how's the air hangin'?
+> *hangin* (Tagalog: **wind, air**). So… how's the air hangin'?
 
 Forecasts PM2.5 for Philippine cities **1–24 hours ahead** and translates it into
 plain-language health advice. Unlike existing PH air trackers, which only show the
-current reading, Hangin' **predicts where air quality is heading** — and shows its own
+current reading, Hangin' **predicts where air quality is heading**, and shows its own
 model's accuracy honestly, backtested against a naive baseline.
 
 ![Backtest: model vs naive baseline](docs/backtest.png)
 
-**Live:** https://hangin-zeref.vercel.app — refreshed by a scheduled GitHub Action.
+**Live:** https://hangin-zeref.vercel.app, refreshed by a scheduled GitHub Action.
 **Case study:** https://hangin-zeref.vercel.app/case-study.html (how it was tested, what broke, and what did not work)
 
 ## Result
@@ -80,8 +80,8 @@ before running. The live model stays. The same features helped 6 h and 12 h more
 - **Not medical advice.** The health tips follow the US EPA AQI bands.
 
 ## Data (all free, no API key)
-- **Open-Meteo Air-Quality API** — PM2.5/PM10/NO₂/O₃/CO/SO₂, hourly history + forecast
-- **Open-Meteo Archive (weather)** — temperature, humidity, wind, rain, pressure, PBL height
+- **Open-Meteo Air-Quality API**: PM2.5/PM10/NO₂/O₃/CO/SO₂, hourly history + forecast
+- **Open-Meteo Archive (weather)**: temperature, humidity, wind, rain, pressure, PBL height
 
 ## Stack
 - **ML:** Python · pandas · scikit-learn (`HistGradientBoostingRegressor`)
@@ -104,4 +104,4 @@ are published as the [`models` release](https://github.com/Zeref538/hangin/relea
 `gh release download models -D data/models`.
 
 ## License
-MIT — see [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).

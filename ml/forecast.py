@@ -1,5 +1,5 @@
 """
-Hangin — live inference: predict PM2.5 1/6/12/24h ahead for the 5 metros.
+Hangin: live inference: predict PM2.5 1/6/12/24h ahead for the 5 metros.
 
 For each city: fetch the recent hours, build features on the latest row,
 run the 4 horizon models, map predictions to EPA AQI + advice, and emit

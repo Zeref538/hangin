@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 WEB_PUBLIC = ROOT / "web" / "public"
 
-# 5 PH metros — pooled into one model with location features (training set)
+# 5 PH metros, pooled into one model with location features (training set)
 CITIES = [
     {"id": "manila",      "name": "Manila",      "lat": 14.60, "lon": 120.98},
     {"id": "quezon_city", "name": "Quezon City", "lat": 14.68, "lon": 121.05},
@@ -62,7 +62,7 @@ WX_VARS = ("temperature_2m,relative_humidity_2m,wind_speed_10m,wind_direction_10
 
 # feature columns fed to the model (built by make_features)
 # wind direction is delivered as raw degrees (0..360) which trees read as a
-# discontinuous number (359 vs 1) — encoded instead as sin/cos + u/v components
+# discontinuous number (359 vs 1), so encoded instead as sin/cos + u/v components
 BASE_COLS = [
     "pm2_5", "pm10", "carbon_monoxide", "nitrogen_dioxide", "ozone", "sulphur_dioxide",
     "temperature_2m", "relative_humidity_2m", "wind_speed_10m",
@@ -172,7 +172,7 @@ def make_features(df, horizon=None):
         g["is_fireworks"] = (((t.month == 12) & (t.day == 31)) |
                              ((t.month == 1) & (t.day == 1))).astype(float)
         # cyclic + vector wind, and ventilation index (wind x mixing height):
-        # the standard meteorological dispersion measure — low = smog traps
+        # the standard meteorological dispersion measure: low = smog traps
         wd = np.deg2rad(g["wind_direction_10m"])
         g["wind_dir_sin"] = np.sin(wd)
         g["wind_dir_cos"] = np.cos(wd)
@@ -202,7 +202,7 @@ def make_features(df, horizon=None):
 # (Clow, Chigh, Ilow, Ihigh, category, advice)
 AQI_BP = [
     (0.0,   9.0,   0,  50,  "Good",
-     "Air quality is good — enjoy outdoor activity."),
+     "Air quality is good. Enjoy outdoor activity."),
     (9.1,  35.4,  51, 100,  "Moderate",
      "Acceptable. Unusually sensitive people should watch for symptoms."),
     (35.5, 55.4, 101, 150,  "Unhealthy for Sensitive Groups",
@@ -210,9 +210,9 @@ AQI_BP = [
     (55.5, 125.4, 151, 200, "Unhealthy",
      "Everyone may feel effects; sensitive groups should avoid outdoor exertion."),
     (125.5, 225.4, 201, 300, "Very Unhealthy",
-     "Health alert — avoid outdoor activity; wear a mask if you must go out."),
+     "Health alert: avoid outdoor activity; wear a mask if you must go out."),
     (225.5, 325.4, 301, 500, "Hazardous",
-     "Emergency conditions — stay indoors with filtered air."),
+     "Emergency conditions: stay indoors with filtered air."),
 ]
 
 

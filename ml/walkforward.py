@@ -1,5 +1,5 @@
 """
-Hangin — full-year test: shipped models vs the same recipe retrained on newer data.
+Hangin: full-year test: shipped models vs the same recipe retrained on newer data.
 
 Test year = the last 12 months in data/unseen.parquet (run live_eval.py first).
 Every season is in it, so no horizon gets flattered by an easy test window.

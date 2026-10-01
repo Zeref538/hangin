@@ -1,5 +1,5 @@
 """
-Hangin — long-running hyperparameter search for the PM2.5 forecasters.
+Hangin: long-running hyperparameter search for the PM2.5 forecasters.
 
 For each horizon (1/6/12/24h):
   - chronological split: 60% train / 20% validation / 20% final test
@@ -56,7 +56,7 @@ def load_history():
 
 
 def tune_horizon(df, horizon, current_mae, rng):
-    # HGB handles missing feature values natively — only the target and the
+    # HGB handles missing feature values natively; only the target and the
     # persistence baseline need to exist, so gap-adjacent rows stay usable
     feat = C.make_features(df, horizon=horizon).dropna(
         subset=["target", "pm2_5", "pm2_5_lag1"]).reset_index(drop=True)

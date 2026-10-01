@@ -134,18 +134,18 @@ function NowPanel({ city }) {
       </div>
       <AqiScale aqi={city.now.aqi} />
       <details className="whynote">
-        <summary>Wait — why does it look cleaner than it feels outside?</summary>
+        <summary>Wait, why does it look cleaner than it feels outside?</summary>
         <p>
           Three honest reasons. <b>Weather:</b>{" "}
           {raining
-            ? "it's raining there right now, and rain physically washes smoke and dust out of the sky — "
+            ? "it's raining there right now, and rain physically washes smoke and dust out of the sky, but "
             : windy
-            ? "it's windy there right now, and wind blows pollution away before it builds up — "
-            : "in the rainy season, monsoon rain and wind regularly scrub the air clean — "}
+            ? "it's windy there right now, and wind blows pollution away before it builds up, but "
+            : "in the rainy season, monsoon rain and wind regularly scrub the air clean, but "}
           the notorious smog months are the cool, windless ones (December–April).{" "}
           <b>Coverage:</b> our source measures an average over a wide area (~10–40 km),
           so a jeepney-choked road can be much worse than the city's average.{" "}
-          <b>What we track:</b> this score follows fine particles (PM2.5) — a lot of
+          <b>What we track:</b> this score follows fine particles (PM2.5). A lot of
           what makes traffic air <i>feel</i> awful (fumes, gases, smell) is other
           pollutants, which you can see in the "What's in the air" section below.
         </p>
@@ -165,7 +165,7 @@ function AqiScale({ aqi }) {
         <span>200</span><span>300</span><span>500</span>
       </div>
       <p className="cap">
-        <b>What's this score?</b> It's the US air-quality index — it tracks the tiny
+        <b>What's this score?</b> It's the US air-quality index. It tracks the tiny
         smoke and dust particles (PM2.5) that get deep into your lungs.
         <b> Under 50 is clean air</b>; the further right, the worse it gets.
       </p>
@@ -175,7 +175,7 @@ function AqiScale({ aqi }) {
 
 function Delta({ from, to }) {
   const d = to - from;
-  if (Math.abs(d) < 0.5) return <span className="delta flat">— steady</span>;
+  if (Math.abs(d) < 0.5) return <span className="delta flat">→ steady</span>;
   return d > 0
     ? <span className="delta up">▲ worse</span>
     : <span className="delta down">▼ better</span>;
@@ -217,7 +217,7 @@ function DataPanel({ backtest, model }) {
         </div>
         <div className="tile">
           <div className="n">5</div>
-          <div className="d">metros learned together — patterns in one help the others</div>
+          <div className="d">metros learned together, so patterns in one help the others</div>
         </div>
         <div className="tile">
           <div className="n">{backtest.features?.length ?? 33}</div>
@@ -262,7 +262,7 @@ function LiveScore({ live }) {
   );
   return (
     <>
-      <h3 className="subh">Live scorecard — forecasts graded after the fact</h3>
+      <h3 className="subh">Live scorecard: forecasts graded after the fact</h3>
       <table className="bt">
         <thead>
           <tr><th>Ahead</th><th>Our miss</th>
@@ -282,7 +282,7 @@ function LiveScore({ live }) {
       </table>
       <p className="btnote">
         Average miss in µg/m³ (lower is better) since {fmtTime(live.since)}, 5 main
-        cities. Small counts early on are noisy — give it a few weeks. We don't show
+        cities. Small counts early on are noisy, so give it a few weeks. We don't show
         a column for Open-Meteo's own forecast: the "real" values here come from the
         same CAMS model behind that forecast, so it would be graded against itself.
       </p>
@@ -326,7 +326,7 @@ function TrustPanel({ data }) {
           <p className="big">
             The shaded band on the chart is the range we're 80% sure about. On that
             hidden year, reality landed inside it <b>{Math.min(...covs)}–{Math.max(...covs)}%</b> of
-            the time — so the band means what it says.
+            the time, so the band means what it says.
           </p>
           <p className="big">
             We retrain every month. We learned the hard way: a model trained once on
@@ -409,7 +409,7 @@ export default function App() {
 
   const pick = (id) => { setCityId(id); setFollowMap(true); };
 
-  if (err) return <div className="wrap"><p>Couldn't load the forecasts — try refreshing. ({String(err)})</p></div>;
+  if (err) return <div className="wrap"><p>Couldn't load the forecasts. Try refreshing. ({String(err)})</p></div>;
   if (!data) return <div className="wrap"><p style={{ color: "var(--muted)", padding: "40px 0" }}>Checking the air…</p></div>;
 
   // GitHub delays scheduled runs, so a few hours old is normal; past 8h the refresh job has likely failed
@@ -436,7 +436,7 @@ export default function App() {
           <h1>How's the air <span className="grad">hangin'</span>?</h1>
           <p className="tagline">
             <em>Hangin</em> is Tagalog for wind. We watch the air in {data.cities.length}{" "}
-            Philippine cities and predict where it's heading over the next 24 hours —
+            Philippine cities and predict where it's heading over the next 24 hours,
             in words anyone can understand, with the receipts to back it up.
           </p>
           <div className="chips">
@@ -491,7 +491,7 @@ export default function App() {
           <NowPanel city={city} />
           <ActivityGuide city={city} />
           <div className="card">
-            <h2>The last 2 days — and the next 24 hours</h2>
+            <h2>The last 2 days, and the next 24 hours</h2>
             <ForecastChart city={city} />
           </div>
           <ForecastStrip city={city} />

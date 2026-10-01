@@ -43,8 +43,8 @@ export function ActivityGuide({ city }) {
       </div>
       <p className="btnote besttime">
         {best.h === 0
-          ? "Bonus: the air is at its cleanest right now compared to the next 24 hours — if you're heading out, now is the time."
-          : `Bonus: of the next 24 hours, the cleanest air we predict is ${horizonLabel(best.h).toLowerCase()} (~${best.pm} µg/m³) — a good window for that run or errand.`}
+          ? "Bonus: the air is at its cleanest right now compared to the next 24 hours. If you're heading out, now is the time."
+          : `Bonus: of the next 24 hours, the cleanest air we predict is ${horizonLabel(best.h).toLowerCase()} (~${best.pm} µg/m³), a good window for that run or errand.`}
       </p>
     </div>
   );
@@ -61,7 +61,7 @@ export function NationalStats({ cities }) {
     <div className="tiles nat">
       <div className="tile">
         <div className="n">{avg.toFixed(1)}</div>
-        <div className="d">µg/m³ — average PM2.5 across all {cities.length} cities right now</div>
+        <div className="d">µg/m³, the average PM2.5 across all {cities.length} cities right now</div>
       </div>
       <div className="tile">
         <div className="n good">{cleanest.name}</div>
@@ -101,7 +101,7 @@ export function CityRanking({ cities, activeId, onPick }) {
   return (
     <div className="card">
       <h2>All {cities.length} cities, cleanest to haziest</h2>
-      <p className="datap">Live PM2.5 in every city we watch — tap a bar to switch city.</p>
+      <p className="datap">Live PM2.5 in every city we watch. Tap a bar to switch city.</p>
       <ResponsiveContainer width="100%" height={rows.length * 24 + 40}>
         <BarChart data={rows} layout="vertical"
                   margin={{ top: 4, right: 40, left: 8, bottom: 4 }}>
@@ -148,7 +148,7 @@ export function PollutantPanel({ city }) {
       <h2>What's in {city.name}'s air right now</h2>
       <p className="datap">
         Each bar compares a pollutant to the <b>World Health Organization's daily
-        safe guideline</b> — under the marker line means within safe levels.
+        safe guideline</b>. Under the marker line means within safe levels.
       </p>
       <div className="pols">
         {POLLUTANTS.filter((p) => values[p.key] != null).map((p) => {

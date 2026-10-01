@@ -1,5 +1,5 @@
 """
-Hangin — the pre-registered attempt in docs/ATTEMPT_NEXT.md. Run once.
+Hangin: the pre-registered attempt in docs/ATTEMPT_NEXT.md. Run once.
 
 Arms (same test year, purge and hyperparameters as walkforward.py):
   base   current features

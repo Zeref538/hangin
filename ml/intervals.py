@@ -1,5 +1,5 @@
 """
-Hangin — does an 80% forecast band actually catch reality 80% of the time?
+Hangin: does an 80% forecast band actually catch reality 80% of the time?
 
 Trains 10th- and 90th-percentile (quantile loss) models with the shipped
 recipe on hours before the test year, then measures on the test year how often

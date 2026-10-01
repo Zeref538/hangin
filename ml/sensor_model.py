@@ -1,5 +1,5 @@
 """
-Hangin — Manila forecaster trained on real ground sensors, not CAMS.
+Hangin: Manila forecaster trained on real ground sensors, not CAMS.
 
 Truth = hourly median of outdoor OpenAQ sensors within 25 km of Manila
 (ground_truth.py). Train on 2024-08..2025-09-19, test on the walk-forward year.

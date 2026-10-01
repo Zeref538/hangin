@@ -1,5 +1,5 @@
 """
-Hangin — train pooled multi-horizon PM2.5 forecasters (1/6/12/24h).
+Hangin: train pooled multi-horizon PM2.5 forecasters (1/6/12/24h).
 
 Fetches ~3 years of history for 5 PH metros, pools them into one dataset with
 location features, and trains one HistGradientBoosting model per horizon.

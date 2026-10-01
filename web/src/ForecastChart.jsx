@@ -33,7 +33,7 @@ export default function ForecastChart({ city }) {
   rows[rows.length - 1].band = [city.now.pm2_5, city.now.pm2_5];
   for (const f of city.forecast) {
     const t = new Date(nowMs + f.horizon_h * 3600_000);
-    // API times are naive local (Asia/Manila) — format the same way
+    // API times are naive local (Asia/Manila), so format the same way
     const iso = `${t.getFullYear()}-${String(t.getMonth() + 1).padStart(2, "0")}-${String(t.getDate()).padStart(2, "0")}T${String(t.getHours()).padStart(2, "0")}:${String(t.getMinutes()).padStart(2, "0")}`;
     rows.push({ t: iso, predicted: f.pm2_5, band: f.low != null ? [f.low, f.high] : undefined });
   }

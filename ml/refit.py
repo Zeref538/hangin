@@ -1,5 +1,5 @@
 """
-Hangin — monthly retrain with a ship gate.
+Hangin: monthly retrain with a ship gate.
 
 Why: a model trained once goes stale (walkforward.py: the 2024 model's 1h lead
 fell from +26% to +3% on the next year; the same recipe retrained got it back).
@@ -38,7 +38,7 @@ def mae(a, b):
 
 
 def before(f, t, h):
-    """Rows whose target (time + h) is known strictly before t — no peeking."""
+    """Rows whose target (time + h) is known strictly before t, so no peeking."""
     return f[f["time"] + pd.Timedelta(hours=h) < t]
 
 

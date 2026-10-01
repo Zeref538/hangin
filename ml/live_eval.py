@@ -1,5 +1,5 @@
 """
-Hangin — out-of-sample check on data the model has never seen.
+Hangin: out-of-sample check on data the model has never seen.
 
 The shipped models were trained and tuned on 2022..2024. Everything from
 2025-01-01 up to a week ago is new to them, so replaying the saved models over

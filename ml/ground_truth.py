@@ -1,5 +1,5 @@
 """
-Hangin — how well does CAMS (our training data) match real ground sensors?
+Hangin: how well does CAMS (our training data) match real ground sensors?
 
 Pulls hourly PM2.5 from OpenAQ low-cost sensors within 25 km of Manila for the
 walk-forward test year, takes the median across sensors each hour, and compares

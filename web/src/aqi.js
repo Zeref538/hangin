@@ -16,7 +16,7 @@ export const AQI_META = {
   },
   "Unhealthy": {
     word: "Bad", bg: "#e66767", ink: "var(--cat-unhealthy)", glow: "rgba(230,103,103,.18)",
-    plain: "Not a good day to be outside for long. Anyone can start feeling it — consider a mask and keep windows closed.",
+    plain: "Not a good day to be outside for long. Anyone can start feeling it, so consider a mask and keep windows closed.",
   },
   "Very Unhealthy": {
     word: "Very bad", bg: "#a678b8", ink: "var(--cat-very)", glow: "rgba(166,120,184,.2)",
@@ -29,7 +29,7 @@ export const AQI_META = {
 };
 
 // bg = fill behind dark text (same in both themes); ink = the colour as TEXT (per theme)
-const FALLBACK = { word: "—", bg: "#7d8894", ink: "var(--muted)", glow: "transparent", plain: "" };
+const FALLBACK = { word: "n/a", bg: "#7d8894", ink: "var(--muted)", glow: "transparent", plain: "" };
 export const catMeta = (category) => AQI_META[category] ?? FALLBACK;
 
 export const fmtTime = (iso) => {
