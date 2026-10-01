@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-01T04:11:17Z",
+ "generated_at": "2026-10-01T04:26:14Z",
  "cities": [
   {
    "id": "manila",
@@ -284,7 +284,7 @@
     "pm2_5": 6.5,
     "aqi": 36,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -488,7 +488,7 @@
      "high": 6.7,
      "aqi": 33,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -497,7 +497,7 @@
      "high": 12.3,
      "aqi": 44,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -515,7 +515,7 @@
      "high": 13.5,
      "aqi": 37,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -543,7 +543,7 @@
     "pm2_5": 7.3,
     "aqi": 41,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -747,7 +747,7 @@
      "high": 8.0,
      "aqi": 42,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -756,7 +756,7 @@
      "high": 10.2,
      "aqi": 41,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -765,7 +765,7 @@
      "high": 12.9,
      "aqi": 44,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
@@ -774,7 +774,7 @@
      "high": 14.7,
      "aqi": 50,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -1061,7 +1061,7 @@
     "pm2_5": 5.8,
     "aqi": 32,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -1265,7 +1265,7 @@
      "high": 6.5,
      "aqi": 33,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -1274,7 +1274,7 @@
      "high": 10.4,
      "aqi": 43,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -1292,7 +1292,7 @@
      "high": 10.4,
      "aqi": 27,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -1320,7 +1320,7 @@
     "pm2_5": 7.6,
     "aqi": 42,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -1524,7 +1524,7 @@
      "high": 8.1,
      "aqi": 41,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -1551,7 +1551,7 @@
      "high": 15.2,
      "aqi": 45,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -1579,7 +1579,7 @@
     "pm2_5": 5.3,
     "aqi": 29,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -1783,7 +1783,7 @@
      "high": 6.1,
      "aqi": 30,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -1792,7 +1792,7 @@
      "high": 10.8,
      "aqi": 45,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -1810,7 +1810,7 @@
      "high": 10.5,
      "aqi": 35,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -1838,7 +1838,7 @@
     "pm2_5": 4.9,
     "aqi": 27,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -2042,7 +2042,7 @@
      "high": 5.8,
      "aqi": 29,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -2051,7 +2051,7 @@
      "high": 14.1,
      "aqi": 44,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -2069,7 +2069,7 @@
      "high": 13.8,
      "aqi": 41,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -2097,7 +2097,7 @@
     "pm2_5": 5.1,
     "aqi": 28,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -2301,7 +2301,7 @@
      "high": 5.4,
      "aqi": 27,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -2310,7 +2310,7 @@
      "high": 10.0,
      "aqi": 36,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -2328,7 +2328,7 @@
      "high": 8.9,
      "aqi": 27,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -2356,7 +2356,7 @@
     "pm2_5": 6.7,
     "aqi": 37,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -2560,7 +2560,7 @@
      "high": 7.2,
      "aqi": 37,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -2587,7 +2587,7 @@
      "high": 12.2,
      "aqi": 38,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -3133,7 +3133,7 @@
     "pm2_5": 4.1,
     "aqi": 23,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -3337,7 +3337,7 @@
      "high": 4.8,
      "aqi": 24,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -3346,7 +3346,7 @@
      "high": 7.7,
      "aqi": 33,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -3355,7 +3355,7 @@
      "high": 10.5,
      "aqi": 34,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
@@ -3364,7 +3364,7 @@
      "high": 9.8,
      "aqi": 37,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -3651,7 +3651,7 @@
     "pm2_5": 8.4,
     "aqi": 47,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -3855,7 +3855,7 @@
      "high": 9.0,
      "aqi": 46,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -3882,7 +3882,7 @@
      "high": 13.8,
      "aqi": 48,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -3910,7 +3910,7 @@
     "pm2_5": 3.9,
     "aqi": 22,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -4114,7 +4114,7 @@
      "high": 4.3,
      "aqi": 21,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -4123,7 +4123,7 @@
      "high": 11.6,
      "aqi": 37,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -4141,7 +4141,7 @@
      "high": 10.4,
      "aqi": 30,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -4169,7 +4169,7 @@
     "pm2_5": 5.2,
     "aqi": 29,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -4373,7 +4373,7 @@
      "high": 5.7,
      "aqi": 29,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -4382,7 +4382,7 @@
      "high": 8.3,
      "aqi": 31,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -4391,7 +4391,7 @@
      "high": 10.2,
      "aqi": 36,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
@@ -4400,7 +4400,7 @@
      "high": 9.5,
      "aqi": 34,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -4428,7 +4428,7 @@
     "pm2_5": 3.8,
     "aqi": 21,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -4632,7 +4632,7 @@
      "high": 5.0,
      "aqi": 25,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -4641,7 +4641,7 @@
      "high": 15.0,
      "aqi": 39,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -4659,7 +4659,7 @@
      "high": 12.3,
      "aqi": 32,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -4687,7 +4687,7 @@
     "pm2_5": 4.2,
     "aqi": 23,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -4891,7 +4891,7 @@
      "high": 5.8,
      "aqi": 27,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -4900,7 +4900,7 @@
      "high": 11.5,
      "aqi": 34,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -4909,7 +4909,7 @@
      "high": 16.4,
      "aqi": 45,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
@@ -4918,7 +4918,7 @@
      "high": 11.7,
      "aqi": 35,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -4946,7 +4946,7 @@
     "pm2_5": 2.6,
     "aqi": 14,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -5150,7 +5150,7 @@
      "high": 3.1,
      "aqi": 14,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -5159,7 +5159,7 @@
      "high": 8.0,
      "aqi": 30,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -5177,7 +5177,7 @@
      "high": 10.1,
      "aqi": 24,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -5464,7 +5464,7 @@
     "pm2_5": 5.3,
     "aqi": 29,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -5668,7 +5668,7 @@
      "high": 6.1,
      "aqi": 30,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -5677,7 +5677,7 @@
      "high": 10.3,
      "aqi": 37,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -5686,7 +5686,7 @@
      "high": 12.9,
      "aqi": 42,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
@@ -5695,7 +5695,7 @@
      "high": 10.7,
      "aqi": 36,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -5723,7 +5723,7 @@
     "pm2_5": 2.7,
     "aqi": 15,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -5927,7 +5927,7 @@
      "high": 3.3,
      "aqi": 16,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -5936,7 +5936,7 @@
      "high": 7.4,
      "aqi": 25,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -5945,7 +5945,7 @@
      "high": 11.4,
      "aqi": 37,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
@@ -5954,7 +5954,7 @@
      "high": 7.0,
      "aqi": 22,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -5982,7 +5982,7 @@
     "pm2_5": 2.8,
     "aqi": 16,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -6186,7 +6186,7 @@
      "high": 3.4,
      "aqi": 17,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -6195,7 +6195,7 @@
      "high": 6.8,
      "aqi": 22,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -6204,7 +6204,7 @@
      "high": 9.2,
      "aqi": 26,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
@@ -6213,7 +6213,7 @@
      "high": 7.5,
      "aqi": 25,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -6241,7 +6241,7 @@
     "pm2_5": 5.2,
     "aqi": 29,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -6445,7 +6445,7 @@
      "high": 6.0,
      "aqi": 31,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -6454,7 +6454,7 @@
      "high": 8.0,
      "aqi": 30,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -6463,7 +6463,7 @@
      "high": 9.0,
      "aqi": 32,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
@@ -6472,7 +6472,7 @@
      "high": 9.1,
      "aqi": 34,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -6500,7 +6500,7 @@
     "pm2_5": 2.8,
     "aqi": 16,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -6704,7 +6704,7 @@
      "high": 3.4,
      "aqi": 16,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -6713,7 +6713,7 @@
      "high": 7.3,
      "aqi": 27,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -6722,7 +6722,7 @@
      "high": 14.2,
      "aqi": 41,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
@@ -6731,7 +6731,7 @@
      "high": 7.9,
      "aqi": 30,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -6759,7 +6759,7 @@
     "pm2_5": 5.2,
     "aqi": 29,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -6963,7 +6963,7 @@
      "high": 6.0,
      "aqi": 29,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -6972,7 +6972,7 @@
      "high": 12.5,
      "aqi": 45,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -6990,7 +6990,7 @@
      "high": 10.2,
      "aqi": 30,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
@@ -7018,7 +7018,7 @@
     "pm2_5": 7.3,
     "aqi": 41,
     "category": "Good",
-    "advice": "Air quality is good \u2014 enjoy outdoor activity."
+    "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
     {
@@ -7222,7 +7222,7 @@
      "high": 7.8,
      "aqi": 40,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
@@ -7231,7 +7231,7 @@
      "high": 11.1,
      "aqi": 40,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
@@ -7240,7 +7240,7 @@
      "high": 13.6,
      "aqi": 50,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
@@ -7249,7 +7249,7 @@
      "high": 11.5,
      "aqi": 41,
      "category": "Good",
-     "advice": "Air quality is good \u2014 enjoy outdoor activity."
+     "advice": "Air quality is good. Enjoy outdoor activity."
     }
    ]
   },
