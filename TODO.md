@@ -25,4 +25,4 @@ LSTM vs HistGradientBoosting on the full-year test (`docs/LSTM_PLAN.md`):
 - [x] Log run 1 in `experiments.md`
 - [x] Run 2: predict the change from now (better at 1h, still a loss everywhere; logged)
 - [x] Results into README and the case study page, numbers copied from the log
-- [ ] Portfolio Hangin card: one line on the LSTM result
+- [x] Portfolio Hangin card: one line on the LSTM result (live 2026-10-07)
