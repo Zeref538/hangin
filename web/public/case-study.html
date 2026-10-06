@@ -880,6 +880,26 @@
     model stays. I did not move the bar after seeing the result. The same features helped
     6 h and 12 h more, which needs its own test before it can be claimed.
   </p>
+  <h3>An LSTM, on the same test</h3>
+  <p>
+    I also tried a neural network that reads the last 48 hours of raw readings and
+    learns its own patterns, with no hand-made lag or average features. Same year,
+    same rows, same scoring, and the rule for "it won" written down first. The better
+    of two versions learns how much the air will change from now.
+  </p>
+  <div class="tw"><table>
+    <thead><tr><th>Error, 3 seeds</th><th class="num">1 h</th><th class="num">6 h</th><th class="num">12 h</th><th class="num">24 h</th></tr></thead>
+    <tbody>
+      <tr><td>Naive guess</td><td class="num">1.26</td><td class="num">4.80</td><td class="num">6.46</td><td class="num">4.74</td></tr>
+      <tr><td>Live model (trees)</td><td class="num">0.93</td><td class="num">3.17</td><td class="num">3.81</td><td class="num">4.09</td></tr>
+      <tr><td>LSTM</td><td class="num">1.14</td><td class="num">3.37</td><td class="num">3.98</td><td class="num">4.20</td></tr>
+    </tbody>
+  </table></div>
+  <p>
+    It beats the naive guess everywhere and loses to the live model everywhere: 23%
+    more error at 1 hour, 3% at 24 hours. The trees stay. The features I built by hand
+    seem to hand the trees what the network has to work out on its own.
+  </p>
     </div>
   </div>
 </div>

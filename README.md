@@ -65,6 +65,25 @@ time, and (2) the average PM2.5 at the same hour over the past 7 days. Both toge
 before running. The live model stays. The same features helped 6 h and 12 h more
 (+1.5 and +1.7 points of lift), which is left for a separate test.
 
+### Tried and not shipped: an LSTM
+An LSTM read the last 48 hours of raw readings and predicted all four horizons at
+once, on the same full-year test, rows and MAE as the shipped model
+([`docs/LSTM_PLAN.md`](docs/LSTM_PLAN.md), win rule written first). The best of two
+runs learns the change from the current reading:
+
+| Horizon | Naive | Shipped trees | LSTM (3 seeds) |
+|--|--|--|--|
+| 1h | 1.26 | **0.93** | 1.14 ± 0.01 |
+| 6h | 4.80 | **3.17** | 3.37 ± 0.02 |
+| 12h | 6.46 | **3.81** | 3.98 ± 0.03 |
+| 24h | 4.74 | **4.09** | 4.20 ± 0.05 |
+
+It beats the naive guess everywhere but trails the trees at every horizon, by 23% at
+1h and 3% at 24h, so the trees stay. Hand-made lags and rolling means seem to give the
+trees what the LSTM has to learn from scratch. Every run is in
+[`experiments.md`](experiments.md); rerun with `pip install -r requirements-lstm.txt`
+and `python ml/lstm.py --delta` (about 3 minutes on a laptop CPU).
+
 ## Limitations
 - **Inputs are modelled, not sensor readings.** Open-Meteo's PM2.5 comes from the
   CAMS atmosphere model, so this forecasts CAMS, not a street-level monitor. CAMS
