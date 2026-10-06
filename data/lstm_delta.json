@@ -1,0 +1,149 @@
+{
+ "test_period": "2025-09-20..",
+ "window_h": 48,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "delta": true,
+ "inputs": [
+  "pm2_5",
+  "pm10",
+  "carbon_monoxide",
+  "nitrogen_dioxide",
+  "ozone",
+  "sulphur_dioxide",
+  "temperature_2m",
+  "relative_humidity_2m",
+  "wind_speed_10m",
+  "wind_dir_sin",
+  "wind_dir_cos",
+  "precipitation",
+  "surface_pressure",
+  "boundary_layer_height",
+  "hour_sin",
+  "hour_cos",
+  "dow_sin",
+  "dow_cos",
+  "month_sin",
+  "month_cos",
+  "is_fireworks"
+ ],
+ "runs": [
+  {
+   "seed": 0,
+   "epochs": 6,
+   "val_mae": 3.89,
+   "test_mae": {
+    "1": 1.146,
+    "6": 3.405,
+    "12": 4.0099,
+    "24": 4.2648
+   },
+   "n_test": {
+    "1": 43800,
+    "6": 43775,
+    "12": 43745,
+    "24": 43685
+   }
+  },
+  {
+   "seed": 1,
+   "epochs": 6,
+   "val_mae": 3.8373,
+   "test_mae": {
+    "1": 1.1473,
+    "6": 3.3699,
+    "12": 3.9886,
+    "24": 4.1834
+   },
+   "n_test": {
+    "1": 43800,
+    "6": 43775,
+    "12": 43745,
+    "24": 43685
+   }
+  },
+  {
+   "seed": 2,
+   "epochs": 7,
+   "val_mae": 3.8651,
+   "test_mae": {
+    "1": 1.135,
+    "6": 3.3458,
+    "12": 3.9491,
+    "24": 4.1595
+   },
+   "n_test": {
+    "1": 43800,
+    "6": 43775,
+    "12": 43745,
+    "24": 43685
+   }
+  }
+ ],
+ "horizons": [
+  {
+   "horizon_h": 1,
+   "n_test": 43800,
+   "naive_mae": 1.258,
+   "gbm_mae_mean": 0.928,
+   "gbm_mae_std": 0.001,
+   "lstm_mae_mean": 1.143,
+   "lstm_mae_std": 0.006,
+   "lstm_mae_seeds": [
+    1.146,
+    1.147,
+    1.135
+   ],
+   "verdict": "loss"
+  },
+  {
+   "horizon_h": 6,
+   "n_test": 43775,
+   "naive_mae": 4.804,
+   "gbm_mae_mean": 3.172,
+   "gbm_mae_std": 0.002,
+   "lstm_mae_mean": 3.374,
+   "lstm_mae_std": 0.024,
+   "lstm_mae_seeds": [
+    3.405,
+    3.37,
+    3.346
+   ],
+   "verdict": "loss"
+  },
+  {
+   "horizon_h": 12,
+   "n_test": 43745,
+   "naive_mae": 6.463,
+   "gbm_mae_mean": 3.811,
+   "gbm_mae_std": 0.001,
+   "lstm_mae_mean": 3.983,
+   "lstm_mae_std": 0.025,
+   "lstm_mae_seeds": [
+    4.01,
+    3.989,
+    3.949
+   ],
+   "verdict": "loss"
+  },
+  {
+   "horizon_h": 24,
+   "n_test": 43685,
+   "naive_mae": 4.738,
+   "gbm_mae_mean": 4.092,
+   "gbm_mae_std": 0.003,
+   "lstm_mae_mean": 4.203,
+   "lstm_mae_std": 0.045,
+   "lstm_mae_seeds": [
+    4.265,
+    4.183,
+    4.16
+   ],
+   "verdict": "loss"
+  }
+ ],
+ "minutes": 2.4
+}
