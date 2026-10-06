@@ -10,6 +10,7 @@ readings (no hand-made lags or rolling means) and predicts 1/6/12/24 h at once.
   pip install -r requirements-lstm.txt
   python ml/lstm.py --smoke    # 1 seed, 1 epoch, a few minutes: catches crashes first
   python ml/lstm.py            # 3 seeds, about 20 min on CPU -> data/lstm.json
+  python ml/lstm.py --delta    # run 2: predict the change from now -> data/lstm_delta.json
 """
 import json
 import os
@@ -25,6 +26,10 @@ import common as C
 
 SEEDS = [0, 1, 2]
 SMOKE = "--smoke" in sys.argv  # 1 seed, 1 epoch, nothing written: checks the code runs end to end
+# --delta: learn the change from the current reading instead of the level, so
+# "air stays the same" is the starting point rather than something to rediscover
+DELTA = "--delta" in sys.argv
+OUT = "lstm_delta.json" if DELTA else "lstm.json"
 WINDOW = 48                 # hours of history the network sees
 VAL_DAYS = 60               # early-stopping block, just before the test year
 EPOCHS, PATIENCE, BATCH = (1, 4, 512) if SMOKE else (30, 4, 512)
@@ -92,7 +97,9 @@ def main():
     sd = X[tr_idx].std(axis=0) + 1e-6
     Xs = torch.from_numpy(np.nan_to_num((X - mu) / sd))
     y_mu, y_sd = float(mu[0]), float(sd[0])           # pm2_5 is INPUTS[0]
-    Yt = torch.from_numpy(np.nan_to_num((Y - y_mu) / y_sd))
+    cur = X[:, :1]                                     # PM2.5 now, the persistence guess
+    base = cur if DELTA else np.full_like(cur, y_mu)
+    Yt = torch.from_numpy(np.nan_to_num((Y - base) / y_sd))
     cid = torch.from_numpy(f["cid"].to_numpy(np.int64))
     offs = torch.arange(-WINDOW + 1, 1)
 
@@ -107,7 +114,7 @@ def main():
             for i in range(0, len(idx), 4096):
                 x, c, _ = batch(idx[i:i + 4096])
                 out.append(model(x, c))
-        return torch.cat(out).numpy() * y_sd + y_mu
+        return torch.cat(out).numpy() * y_sd + base[idx]
 
     print(f"train {len(tr_idx):,}  val {len(va_idx):,}  test {len(te_idx):,}  "
           f"(test {test_start:%Y-%m-%d}..)  build {time.perf_counter() - t0:.0f}s")
@@ -168,13 +175,13 @@ def main():
     if SMOKE:
         print("smoke run ok, nothing written")
         return
-    out = {"test_period": f"{test_start:%Y-%m-%d}..", "window_h": WINDOW, "seeds": SEEDS,
+    out = {"test_period": f"{test_start:%Y-%m-%d}..", "window_h": WINDOW, "seeds": SEEDS, "delta": DELTA,
            "inputs": INPUTS, "runs": runs, "horizons": rows,
            "minutes": round((time.perf_counter() - t0) / 60, 1)}
-    tmp = C.DATA / "lstm.json.tmp"
+    tmp = C.DATA / (OUT + ".tmp")
     json.dump(out, open(tmp, "w"), indent=1)
-    os.replace(tmp, C.DATA / "lstm.json")
-    print(f"wrote data/lstm.json in {out['minutes']} min")
+    os.replace(tmp, C.DATA / OUT)
+    print(f"wrote data/{OUT} in {out['minutes']} min")
 
 
 if __name__ == "__main__":
