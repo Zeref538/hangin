@@ -18,4 +18,4 @@ Moved out of CLAUDE.md on 2026-09-30 (status goes stale there).
 
 ## Claude Tasks
 
-None.
+- [ ] LSTM vs HistGradientBoosting on the full-year test (`docs/LSTM_PLAN.md`), waiting on John's go
