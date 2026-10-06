@@ -1,0 +1,3 @@
+-r requirements.txt
+# only for ml/lstm.py; the refresh job and the dashboard stay sklearn-only
+torch>=2.12
