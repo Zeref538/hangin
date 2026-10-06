@@ -18,4 +18,11 @@ Moved out of CLAUDE.md on 2026-09-30 (status goes stale there).
 
 ## Claude Tasks
 
-- [ ] LSTM vs HistGradientBoosting on the full-year test (`docs/LSTM_PLAN.md`), waiting on John's go
+LSTM vs HistGradientBoosting on the full-year test (`docs/LSTM_PLAN.md`):
+
+- [x] Plan with win rule, `ml/lstm.py`, smoke test (rows match walkforward.py)
+- [x] Run 1: 3 seeds, plan as written (loss at every horizon, beats naive)
+- [x] Log run 1 in `experiments.md`
+- [ ] Run 2: the one change most likely to help, if run 1 loses (3 seeds, logged)
+- [ ] Results into README and the case study page, numbers copied from the log
+- [ ] Portfolio Hangin card: one line on the LSTM result

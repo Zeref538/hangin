@@ -16,3 +16,6 @@ data/*.parquet
 data/models/
 data/openaq_parts/
 .pytest_cache/
+
+# training run output (results live in data/*.json and experiments.md)
+data/*.log
