@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08T02:13:08Z",
+ "generated_at": "2026-10-08T09:15:26Z",
  "cities": [
   {
    "id": "manila",
@@ -8,54 +8,26 @@
    "lon": 120.98,
    "featured": true,
    "pollutants": {
-    "pm10": 10.6,
-    "nitrogen_dioxide": 7.2,
-    "ozone": 104.0,
-    "sulphur_dioxide": 8.5,
-    "carbon_monoxide": 692.0
+    "pm10": 13.4,
+    "nitrogen_dioxide": 12.7,
+    "ozone": 88.0,
+    "sulphur_dioxide": 8.4,
+    "carbon_monoxide": 730.0
    },
    "weather": {
-    "temperature_2m": 28.8,
-    "relative_humidity_2m": 74.0,
-    "wind_speed_10m": 2.7,
-    "precipitation": 0.0
+    "temperature_2m": 28.3,
+    "relative_humidity_2m": 81.0,
+    "wind_speed_10m": 4.9,
+    "precipitation": 0.2
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 9.5,
-    "aqi": 52,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 11.6,
+    "aqi": 56,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 13.3
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 17.3
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 19.6
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 20.8
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 21.0
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 20.6
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 19.7
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 19.0
@@ -219,42 +191,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 9.5
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 9.5
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 9.9
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 10.0
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 10.3
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 10.8
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 11.3
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 11.6
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 9.7,
-     "low": 8.3,
-     "high": 10.6,
-     "aqi": 52,
+     "pm2_5": 13.9,
+     "low": 11.6,
+     "high": 16.8,
+     "aqi": 60,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 11.5,
-     "low": 9.0,
-     "high": 19.4,
-     "aqi": 56,
+     "pm2_5": 21.6,
+     "low": 11.3,
+     "high": 37.1,
+     "aqi": 74,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 23.5,
-     "low": 9.0,
-     "high": 36.9,
-     "aqi": 78,
+     "pm2_5": 16.7,
+     "low": 8.9,
+     "high": 28.5,
+     "aqi": 65,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 10.6,
-     "low": 7.7,
-     "high": 16.1,
-     "aqi": 54,
+     "pm2_5": 14.5,
+     "low": 8.9,
+     "high": 21.7,
+     "aqi": 61,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -267,54 +267,26 @@
    "lon": 121.05,
    "featured": true,
    "pollutants": {
-    "pm10": 4.9,
-    "nitrogen_dioxide": 3.1,
-    "ozone": 83.0,
-    "sulphur_dioxide": 4.2,
-    "carbon_monoxide": 538.0
+    "pm10": 8.1,
+    "nitrogen_dioxide": 6.0,
+    "ozone": 68.0,
+    "sulphur_dioxide": 4.7,
+    "carbon_monoxide": 565.0
    },
    "weather": {
-    "temperature_2m": 28.7,
-    "relative_humidity_2m": 74.0,
-    "wind_speed_10m": 4.9,
-    "precipitation": 0.0
+    "temperature_2m": 29.5,
+    "relative_humidity_2m": 73.0,
+    "wind_speed_10m": 1.8,
+    "precipitation": 0.3
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 4.1,
-    "aqi": 23,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 6.3,
+    "aqi": 35,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 5.5
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 6.7
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 7.0
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 7.7
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 8.4
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 9.1
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 10.8
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 12.7
@@ -478,42 +450,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 4.1
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 4.1
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 4.1
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 4.4
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 4.7
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 5.0
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 5.4
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 6.3
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 3.9,
-     "low": 3.3,
-     "high": 4.4,
-     "aqi": 22,
+     "pm2_5": 8.3,
+     "low": 6.5,
+     "high": 9.7,
+     "aqi": 46,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 4.8,
-     "low": 3.2,
-     "high": 8.0,
-     "aqi": 27,
-     "category": "Good",
-     "advice": "Air quality is good. Enjoy outdoor activity."
-    },
-    {
-     "horizon_h": 12,
-     "pm2_5": 11.0,
+     "pm2_5": 13.1,
      "low": 6.7,
-     "high": 20.3,
-     "aqi": 55,
+     "high": 21.8,
+     "aqi": 58,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
+     "horizon_h": 12,
+     "pm2_5": 8.0,
+     "low": 4.4,
+     "high": 13.4,
+     "aqi": 44,
+     "category": "Good",
+     "advice": "Air quality is good. Enjoy outdoor activity."
+    },
+    {
      "horizon_h": 24,
-     "pm2_5": 5.6,
-     "low": 2.8,
-     "high": 9.2,
-     "aqi": 31,
+     "pm2_5": 7.5,
+     "low": 3.9,
+     "high": 12.3,
+     "aqi": 42,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -526,54 +526,26 @@
    "lon": 123.9,
    "featured": true,
    "pollutants": {
-    "pm10": 8.5,
-    "nitrogen_dioxide": 2.6,
-    "ozone": 104.0,
-    "sulphur_dioxide": 5.7,
-    "carbon_monoxide": 291.0
+    "pm10": 5.3,
+    "nitrogen_dioxide": 2.2,
+    "ozone": 72.0,
+    "sulphur_dioxide": 2.0,
+    "carbon_monoxide": 360.0
    },
    "weather": {
-    "temperature_2m": 29.4,
-    "relative_humidity_2m": 71.0,
-    "wind_speed_10m": 4.2,
+    "temperature_2m": 27.2,
+    "relative_humidity_2m": 90.0,
+    "wind_speed_10m": 2.9,
     "precipitation": 0.2
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 8.1,
-    "aqi": 45,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 4.0,
+    "aqi": 22,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 5.0
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 5.7
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 6.4
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 6.7
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 6.6
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 6.5
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 6.6
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 7.6
@@ -737,42 +709,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 8.1
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 7.3
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 6.4
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 4.3
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 4.0
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 8.4,
-     "low": 7.6,
-     "high": 9.1,
-     "aqi": 46,
+     "pm2_5": 4.0,
+     "low": 3.5,
+     "high": 5.0,
+     "aqi": 22,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 8.5,
-     "low": 5.0,
-     "high": 12.2,
-     "aqi": 47,
+     "pm2_5": 5.9,
+     "low": 2.3,
+     "high": 9.0,
+     "aqi": 33,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 9.4,
-     "low": 4.7,
-     "high": 14.5,
-     "aqi": 51,
-     "category": "Moderate",
-     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
+     "pm2_5": 4.6,
+     "low": 1.9,
+     "high": 9.4,
+     "aqi": 25,
+     "category": "Good",
+     "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 7.8,
-     "low": 3.4,
-     "high": 12.8,
-     "aqi": 43,
+     "pm2_5": 5.6,
+     "low": 2.4,
+     "high": 9.4,
+     "aqi": 31,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -785,54 +785,26 @@
    "lon": 125.46,
    "featured": true,
    "pollutants": {
-    "pm10": 4.3,
-    "nitrogen_dioxide": 2.1,
-    "ozone": 93.0,
-    "sulphur_dioxide": 2.8,
-    "carbon_monoxide": 460.0
+    "pm10": 7.7,
+    "nitrogen_dioxide": 13.4,
+    "ozone": 57.0,
+    "sulphur_dioxide": 3.7,
+    "carbon_monoxide": 397.0
    },
    "weather": {
-    "temperature_2m": 28.9,
-    "relative_humidity_2m": 79.0,
-    "wind_speed_10m": 4.8,
-    "precipitation": 0.2
+    "temperature_2m": 25.9,
+    "relative_humidity_2m": 94.0,
+    "wind_speed_10m": 3.6,
+    "precipitation": 0.3
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 4.2,
-    "aqi": 23,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 7.6,
+    "aqi": 42,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 3.6
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 3.6
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 4.5
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 3.8
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 4.2
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 5.6
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 7.0
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 9.5
@@ -996,44 +968,72 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 4.2
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 4.4
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 4.3
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 5.0
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 7.3
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 7.0
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 7.6
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 4.1,
-     "low": 3.5,
-     "high": 4.8,
-     "aqi": 23,
-     "category": "Good",
-     "advice": "Air quality is good. Enjoy outdoor activity."
+     "pm2_5": 9.3,
+     "low": 7.6,
+     "high": 11.0,
+     "aqi": 51,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 6.1,
-     "low": 3.8,
-     "high": 9.0,
-     "aqi": 34,
-     "category": "Good",
-     "advice": "Air quality is good. Enjoy outdoor activity."
-    },
-    {
-     "horizon_h": 12,
-     "pm2_5": 13.0,
-     "low": 6.5,
-     "high": 21.3,
+     "pm2_5": 12.8,
+     "low": 6.3,
+     "high": 18.4,
      "aqi": 58,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
-     "horizon_h": 24,
-     "pm2_5": 7.8,
-     "low": 2.5,
-     "high": 13.6,
-     "aqi": 43,
+     "horizon_h": 12,
+     "pm2_5": 8.0,
+     "low": 3.4,
+     "high": 14.9,
+     "aqi": 45,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 24,
+     "pm2_5": 9.4,
+     "low": 5.6,
+     "high": 17.6,
+     "aqi": 51,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
    ]
   },
@@ -1044,54 +1044,26 @@
    "lon": 120.6,
    "featured": true,
    "pollutants": {
-    "pm10": 2.9,
-    "nitrogen_dioxide": 1.0,
-    "ozone": 80.0,
-    "sulphur_dioxide": 1.6,
-    "carbon_monoxide": 177.0
+    "pm10": 5.1,
+    "nitrogen_dioxide": 2.7,
+    "ozone": 66.0,
+    "sulphur_dioxide": 1.9,
+    "carbon_monoxide": 246.0
    },
    "weather": {
-    "temperature_2m": 21.9,
-    "relative_humidity_2m": 76.0,
-    "wind_speed_10m": 0.7,
-    "precipitation": 0.1
+    "temperature_2m": 18.0,
+    "relative_humidity_2m": 95.0,
+    "wind_speed_10m": 2.7,
+    "precipitation": 0.5
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 2.4,
-    "aqi": 13,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 4.9,
+    "aqi": 27,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 2.4
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 2.7
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 2.8
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 3.5
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 3.4
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 3.9
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 4.4
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 5.2
@@ -1255,42 +1227,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 2.4
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 3.1
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 3.5
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 4.7
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 4.9
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 2.8,
-     "low": 2.5,
-     "high": 3.4,
-     "aqi": 16,
+     "pm2_5": 5.6,
+     "low": 4.7,
+     "high": 6.6,
+     "aqi": 31,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 5.5,
-     "low": 3.7,
-     "high": 8.3,
-     "aqi": 30,
+     "pm2_5": 7.4,
+     "low": 3.3,
+     "high": 12.4,
+     "aqi": 41,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 8.6,
-     "low": 5.0,
-     "high": 13.6,
-     "aqi": 48,
+     "pm2_5": 4.2,
+     "low": 2.1,
+     "high": 7.8,
+     "aqi": 24,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 3.1,
-     "low": 0.7,
-     "high": 6.4,
-     "aqi": 17,
+     "pm2_5": 5.1,
+     "low": 2.6,
+     "high": 8.3,
+     "aqi": 29,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -1303,54 +1303,26 @@
    "lon": 120.59,
    "featured": false,
    "pollutants": {
-    "pm10": 6.2,
-    "nitrogen_dioxide": 2.2,
-    "ozone": 88.0,
-    "sulphur_dioxide": 2.3,
-    "carbon_monoxide": 258.0
+    "pm10": 11.0,
+    "nitrogen_dioxide": 7.7,
+    "ozone": 78.0,
+    "sulphur_dioxide": 3.3,
+    "carbon_monoxide": 342.0
    },
    "weather": {
-    "temperature_2m": 28.7,
-    "relative_humidity_2m": 70.0,
-    "wind_speed_10m": 4.4,
-    "precipitation": 0.0
+    "temperature_2m": 25.3,
+    "relative_humidity_2m": 93.0,
+    "wind_speed_10m": 0.8,
+    "precipitation": 2.4
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 5.3,
-    "aqi": 29,
-    "category": "Good",
-    "advice": "Air quality is good. Enjoy outdoor activity."
+    "time": "2026-10-08T17:00",
+    "pm2_5": 9.9,
+    "aqi": 52,
+    "category": "Moderate",
+    "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 6.7
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 7.2
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 7.8
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 8.9
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 10.6
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 10.7
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 11.1
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 10.9
@@ -1514,44 +1486,72 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 5.3
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 5.1
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 5.4
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 6.4
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 7.1
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 9.1
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 9.9
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 4.8,
-     "low": 4.2,
-     "high": 5.7,
-     "aqi": 27,
-     "category": "Good",
-     "advice": "Air quality is good. Enjoy outdoor activity."
+     "pm2_5": 11.1,
+     "low": 9.5,
+     "high": 13.2,
+     "aqi": 55,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 6.9,
-     "low": 4.3,
-     "high": 11.4,
-     "aqi": 38,
-     "category": "Good",
-     "advice": "Air quality is good. Enjoy outdoor activity."
+     "pm2_5": 14.7,
+     "low": 7.8,
+     "high": 20.9,
+     "aqi": 61,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 12.6,
-     "low": 6.4,
-     "high": 20.8,
+     "pm2_5": 12.9,
+     "low": 6.7,
+     "high": 23.2,
      "aqi": 58,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 6.0,
-     "low": 1.9,
-     "high": 12.8,
-     "aqi": 33,
-     "category": "Good",
-     "advice": "Air quality is good. Enjoy outdoor activity."
+     "pm2_5": 10.0,
+     "low": 4.9,
+     "high": 15.2,
+     "aqi": 53,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
    ]
   },
@@ -1562,54 +1562,26 @@
    "lon": 122.95,
    "featured": false,
    "pollutants": {
-    "pm10": 7.6,
-    "nitrogen_dioxide": 1.7,
-    "ozone": 86.0,
-    "sulphur_dioxide": 4.0,
-    "carbon_monoxide": 250.0
+    "pm10": 6.4,
+    "nitrogen_dioxide": 5.2,
+    "ozone": 56.0,
+    "sulphur_dioxide": 3.8,
+    "carbon_monoxide": 296.0
    },
    "weather": {
-    "temperature_2m": 29.6,
-    "relative_humidity_2m": 75.0,
-    "wind_speed_10m": 3.5,
-    "precipitation": 0.1
+    "temperature_2m": 27.0,
+    "relative_humidity_2m": 86.0,
+    "wind_speed_10m": 13.9,
+    "precipitation": 0.3
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 6.9,
-    "aqi": 38,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 5.7,
+    "aqi": 32,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 5.0
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 5.2
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 5.4
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 5.6
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 5.3
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 4.7
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 4.4
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 5.2
@@ -1773,42 +1745,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 6.9
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 5.9
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 5.5
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 5.4
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 5.7
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 6.3,
-     "low": 5.5,
-     "high": 7.2,
-     "aqi": 35,
+     "pm2_5": 6.8,
+     "low": 5.4,
+     "high": 7.6,
+     "aqi": 38,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 7.8,
-     "low": 4.7,
-     "high": 11.7,
-     "aqi": 44,
-     "category": "Good",
-     "advice": "Air quality is good. Enjoy outdoor activity."
+     "pm2_5": 10.3,
+     "low": 4.8,
+     "high": 16.8,
+     "aqi": 53,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 12.3,
-     "low": 6.6,
-     "high": 19.0,
-     "aqi": 57,
+     "pm2_5": 9.1,
+     "low": 4.4,
+     "high": 18.2,
+     "aqi": 51,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 6.8,
-     "low": 2.8,
-     "high": 11.5,
-     "aqi": 38,
+     "pm2_5": 5.8,
+     "low": 3.1,
+     "high": 9.1,
+     "aqi": 32,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -1821,54 +1821,26 @@
    "lon": 121.06,
    "featured": false,
    "pollutants": {
-    "pm10": 4.4,
-    "nitrogen_dioxide": 2.3,
-    "ozone": 97.0,
-    "sulphur_dioxide": 4.0,
-    "carbon_monoxide": 230.0
+    "pm10": 7.4,
+    "nitrogen_dioxide": 4.3,
+    "ozone": 104.0,
+    "sulphur_dioxide": 5.2,
+    "carbon_monoxide": 301.0
    },
    "weather": {
-    "temperature_2m": 29.6,
-    "relative_humidity_2m": 77.0,
-    "wind_speed_10m": 4.5,
-    "precipitation": 0.0
+    "temperature_2m": 25.8,
+    "relative_humidity_2m": 96.0,
+    "wind_speed_10m": 2.6,
+    "precipitation": 1.5
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 3.3,
-    "aqi": 18,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 5.4,
+    "aqi": 30,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 9.6
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 10.4
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 11.3
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 12.0
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 12.3
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 12.7
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 13.1
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 13.6
@@ -2032,42 +2004,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 3.3
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 3.5
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 3.9
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 4.1
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 4.4
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 5.4
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 3.5,
-     "low": 3.2,
-     "high": 4.1,
-     "aqi": 20,
+     "pm2_5": 6.2,
+     "low": 5.2,
+     "high": 7.4,
+     "aqi": 34,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 5.9,
-     "low": 3.6,
-     "high": 9.1,
-     "aqi": 33,
-     "category": "Good",
-     "advice": "Air quality is good. Enjoy outdoor activity."
-    },
-    {
-     "horizon_h": 12,
-     "pm2_5": 9.9,
-     "low": 5.8,
-     "high": 15.1,
-     "aqi": 52,
+     "pm2_5": 9.1,
+     "low": 4.4,
+     "high": 15.9,
+     "aqi": 51,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
+     "horizon_h": 12,
+     "pm2_5": 6.9,
+     "low": 4.0,
+     "high": 12.3,
+     "aqi": 39,
+     "category": "Good",
+     "advice": "Air quality is good. Enjoy outdoor activity."
+    },
+    {
      "horizon_h": 24,
-     "pm2_5": 5.8,
-     "low": 2.7,
-     "high": 10.5,
-     "aqi": 32,
+     "pm2_5": 8.1,
+     "low": 3.8,
+     "high": 11.2,
+     "aqi": 45,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -2080,54 +2080,26 @@
    "lon": 125.54,
    "featured": false,
    "pollutants": {
-    "pm10": 3.2,
-    "nitrogen_dioxide": 0.9,
-    "ozone": 70.0,
+    "pm10": 4.0,
+    "nitrogen_dioxide": 2.1,
+    "ozone": 61.0,
     "sulphur_dioxide": 1.0,
-    "carbon_monoxide": 241.0
+    "carbon_monoxide": 237.0
    },
    "weather": {
-    "temperature_2m": 27.7,
-    "relative_humidity_2m": 84.0,
-    "wind_speed_10m": 10.0,
-    "precipitation": 0.3
+    "temperature_2m": 28.4,
+    "relative_humidity_2m": 77.0,
+    "wind_speed_10m": 7.8,
+    "precipitation": 0.1
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 2.9,
-    "aqi": 16,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 3.5,
+    "aqi": 19,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 3.2
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 3.2
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 3.3
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 3.2
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 3.0
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 3.1
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 3.6
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 4.3
@@ -2291,42 +2263,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 2.9
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 2.8
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 3.1
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 3.1
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 3.1
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 3.3
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 3.2
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 3.5
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 2.7,
-     "low": 2.2,
-     "high": 3.4,
-     "aqi": 15,
+     "pm2_5": 4.1,
+     "low": 3.3,
+     "high": 4.7,
+     "aqi": 23,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 3.8,
-     "low": 2.0,
-     "high": 6.8,
-     "aqi": 21,
+     "pm2_5": 6.9,
+     "low": 3.2,
+     "high": 9.9,
+     "aqi": 38,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 5.7,
-     "low": 2.8,
-     "high": 10.3,
-     "aqi": 32,
+     "pm2_5": 4.3,
+     "low": 2.0,
+     "high": 8.0,
+     "aqi": 24,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 4.7,
-     "low": 2.2,
-     "high": 8.3,
-     "aqi": 26,
+     "pm2_5": 5.1,
+     "low": 2.6,
+     "high": 7.9,
+     "aqi": 28,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -2339,54 +2339,26 @@
    "lon": 124.65,
    "featured": false,
    "pollutants": {
-    "pm10": 3.8,
-    "nitrogen_dioxide": 1.4,
-    "ozone": 78.0,
-    "sulphur_dioxide": 2.3,
-    "carbon_monoxide": 326.0
+    "pm10": 4.8,
+    "nitrogen_dioxide": 6.3,
+    "ozone": 60.0,
+    "sulphur_dioxide": 3.0,
+    "carbon_monoxide": 356.0
    },
    "weather": {
-    "temperature_2m": 28.5,
-    "relative_humidity_2m": 75.0,
-    "wind_speed_10m": 2.8,
-    "precipitation": 0.0
+    "temperature_2m": 24.5,
+    "relative_humidity_2m": 96.0,
+    "wind_speed_10m": 6.9,
+    "precipitation": 5.4
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 3.7,
-    "aqi": 21,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 4.7,
+    "aqi": 26,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 2.4
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 2.5
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 2.8
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 3.0
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 3.1
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 3.2
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 4.0
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 6.2
@@ -2550,42 +2522,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 3.7
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 3.9
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 3.7
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 3.7
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 3.6
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 3.6
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 4.1
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 4.7
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 3.9,
-     "low": 3.3,
-     "high": 4.3,
-     "aqi": 22,
+     "pm2_5": 6.0,
+     "low": 4.7,
+     "high": 7.6,
+     "aqi": 33,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 4.7,
-     "low": 2.9,
-     "high": 7.4,
-     "aqi": 26,
+     "pm2_5": 8.1,
+     "low": 3.3,
+     "high": 12.3,
+     "aqi": 45,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 8.7,
-     "low": 4.6,
-     "high": 15.2,
-     "aqi": 49,
+     "pm2_5": 5.3,
+     "low": 2.2,
+     "high": 9.5,
+     "aqi": 29,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 6.4,
-     "low": 2.6,
-     "high": 11.2,
-     "aqi": 36,
+     "pm2_5": 6.9,
+     "low": 3.7,
+     "high": 11.6,
+     "aqi": 38,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -2598,54 +2598,26 @@
    "lon": 124.25,
    "featured": false,
    "pollutants": {
-    "pm10": 2.5,
-    "nitrogen_dioxide": 1.1,
-    "ozone": 70.0,
-    "sulphur_dioxide": 0.9,
-    "carbon_monoxide": 454.0
+    "pm10": 4.0,
+    "nitrogen_dioxide": 5.1,
+    "ozone": 47.0,
+    "sulphur_dioxide": 1.2,
+    "carbon_monoxide": 383.0
    },
    "weather": {
-    "temperature_2m": 29.2,
-    "relative_humidity_2m": 72.0,
-    "wind_speed_10m": 1.6,
-    "precipitation": 0.2
+    "temperature_2m": 26.6,
+    "relative_humidity_2m": 82.0,
+    "wind_speed_10m": 17.0,
+    "precipitation": 0.1
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 2.1,
-    "aqi": 12,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 3.5,
+    "aqi": 19,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 3.4
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 3.7
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 4.1
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 4.5
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 5.5
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 6.1
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 6.8
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 9.4
@@ -2809,42 +2781,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 2.1
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 2.5
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 2.6
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 2.6
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 2.5
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 2.5
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 2.7
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 3.5
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 2.2,
-     "low": 1.8,
-     "high": 2.7,
-     "aqi": 12,
+     "pm2_5": 4.5,
+     "low": 3.4,
+     "high": 5.5,
+     "aqi": 25,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 3.3,
-     "low": 2.2,
-     "high": 4.9,
-     "aqi": 18,
+     "pm2_5": 6.5,
+     "low": 2.6,
+     "high": 10.2,
+     "aqi": 36,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 8.2,
-     "low": 4.2,
-     "high": 14.5,
-     "aqi": 46,
+     "pm2_5": 4.1,
+     "low": 1.4,
+     "high": 7.5,
+     "aqi": 23,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 5.4,
-     "low": 2.1,
-     "high": 8.9,
-     "aqi": 30,
+     "pm2_5": 5.0,
+     "low": 2.8,
+     "high": 7.7,
+     "aqi": 28,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -2857,54 +2857,26 @@
    "lon": 120.33,
    "featured": false,
    "pollutants": {
-    "pm10": 19.4,
-    "nitrogen_dioxide": 5.6,
-    "ozone": 110.0,
-    "sulphur_dioxide": 6.1,
-    "carbon_monoxide": 264.0
+    "pm10": 18.3,
+    "nitrogen_dioxide": 8.3,
+    "ozone": 101.0,
+    "sulphur_dioxide": 5.1,
+    "carbon_monoxide": 265.0
    },
    "weather": {
-    "temperature_2m": 29.7,
-    "relative_humidity_2m": 70.0,
-    "wind_speed_10m": 10.9,
-    "precipitation": 0.0
+    "temperature_2m": 27.6,
+    "relative_humidity_2m": 85.0,
+    "wind_speed_10m": 13.9,
+    "precipitation": 0.2
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 16.8,
-    "aqi": 65,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 17.6,
+    "aqi": 67,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 4.5
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 4.8
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 5.6
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 6.9
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 7.8
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 7.7
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 8.2
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 10.3
@@ -3068,42 +3040,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 16.8
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 15.5
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 14.8
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 15.6
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 16.1
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 18.0
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 17.7
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 17.6
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 14.9,
-     "low": 13.6,
-     "high": 17.0,
-     "aqi": 62,
+     "pm2_5": 19.2,
+     "low": 16.1,
+     "high": 21.4,
+     "aqi": 70,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 16.0,
-     "low": 11.0,
-     "high": 26.4,
-     "aqi": 64,
+     "pm2_5": 23.9,
+     "low": 12.5,
+     "high": 40.4,
+     "aqi": 79,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 24.2,
-     "low": 10.3,
-     "high": 35.8,
+     "pm2_5": 24.3,
+     "low": 11.3,
+     "high": 38.9,
      "aqi": 79,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 14.1,
-     "low": 6.7,
-     "high": 24.0,
-     "aqi": 60,
+     "pm2_5": 15.6,
+     "low": 7.0,
+     "high": 26.6,
+     "aqi": 63,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
@@ -3116,54 +3116,26 @@
    "lon": 123.31,
    "featured": false,
    "pollutants": {
-    "pm10": 5.3,
-    "nitrogen_dioxide": 0.7,
-    "ozone": 66.0,
-    "sulphur_dioxide": 1.6,
-    "carbon_monoxide": 200.0
+    "pm10": 3.9,
+    "nitrogen_dioxide": 1.4,
+    "ozone": 55.0,
+    "sulphur_dioxide": 1.0,
+    "carbon_monoxide": 219.0
    },
    "weather": {
-    "temperature_2m": 28.2,
-    "relative_humidity_2m": 85.0,
-    "wind_speed_10m": 7.1,
+    "temperature_2m": 27.6,
+    "relative_humidity_2m": 87.0,
+    "wind_speed_10m": 3.1,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 4.0,
-    "aqi": 22,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 3.0,
+    "aqi": 17,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 2.4
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 2.4
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 2.2
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 2.1
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 2.1
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 2.2
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 2.2
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 2.1
@@ -3327,42 +3299,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 4.0
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 3.8
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 3.4
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 2.9
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 3.0
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 4.2,
-     "low": 3.6,
-     "high": 4.6,
-     "aqi": 23,
+     "pm2_5": 3.3,
+     "low": 2.7,
+     "high": 4.3,
+     "aqi": 19,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 5.7,
-     "low": 2.7,
-     "high": 8.1,
-     "aqi": 31,
+     "pm2_5": 5.4,
+     "low": 2.5,
+     "high": 8.5,
+     "aqi": 30,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 6.6,
-     "low": 3.2,
-     "high": 9.4,
-     "aqi": 37,
+     "pm2_5": 3.9,
+     "low": 1.7,
+     "high": 7.0,
+     "aqi": 22,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 5.7,
-     "low": 2.6,
-     "high": 9.0,
-     "aqi": 32,
+     "pm2_5": 4.6,
+     "low": 2.2,
+     "high": 7.8,
+     "aqi": 25,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -3375,54 +3375,26 @@
    "lon": 125.17,
    "featured": false,
    "pollutants": {
-    "pm10": 5.2,
-    "nitrogen_dioxide": 1.4,
-    "ozone": 74.0,
-    "sulphur_dioxide": 1.2,
-    "carbon_monoxide": 470.0
+    "pm10": 7.0,
+    "nitrogen_dioxide": 7.3,
+    "ozone": 47.0,
+    "sulphur_dioxide": 1.5,
+    "carbon_monoxide": 506.0
    },
    "weather": {
-    "temperature_2m": 31.4,
-    "relative_humidity_2m": 54.0,
-    "wind_speed_10m": 8.1,
-    "precipitation": 0.0
+    "temperature_2m": 27.5,
+    "relative_humidity_2m": 82.0,
+    "wind_speed_10m": 6.2,
+    "precipitation": 0.1
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 4.8,
-    "aqi": 27,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 6.0,
+    "aqi": 33,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 7.6
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 8.9
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 9.9
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 10.5
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 11.1
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 12.5
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 13.1
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 14.6
@@ -3586,42 +3558,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 4.8
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 3.8
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 3.5
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 3.5
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 3.9
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 4.7
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 6.0
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 4.2,
-     "low": 3.6,
-     "high": 5.1,
-     "aqi": 23,
+     "pm2_5": 8.0,
+     "low": 6.1,
+     "high": 10.4,
+     "aqi": 44,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 5.7,
-     "low": 2.3,
-     "high": 12.4,
-     "aqi": 31,
-     "category": "Good",
-     "advice": "Air quality is good. Enjoy outdoor activity."
-    },
-    {
-     "horizon_h": 12,
-     "pm2_5": 14.8,
-     "low": 6.4,
-     "high": 28.1,
-     "aqi": 62,
+     "pm2_5": 11.3,
+     "low": 5.5,
+     "high": 19.1,
+     "aqi": 55,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
+     "horizon_h": 12,
+     "pm2_5": 9.0,
+     "low": 4.1,
+     "high": 17.3,
+     "aqi": 50,
+     "category": "Good",
+     "advice": "Air quality is good. Enjoy outdoor activity."
+    },
+    {
      "horizon_h": 24,
-     "pm2_5": 6.8,
-     "low": 2.7,
-     "high": 15.4,
-     "aqi": 38,
+     "pm2_5": 8.4,
+     "low": 4.7,
+     "high": 14.0,
+     "aqi": 46,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -3634,54 +3634,26 @@
    "lon": 124.24,
    "featured": false,
    "pollutants": {
-    "pm10": 3.6,
-    "nitrogen_dioxide": 1.7,
-    "ozone": 83.0,
-    "sulphur_dioxide": 2.9,
-    "carbon_monoxide": 420.0
+    "pm10": 4.0,
+    "nitrogen_dioxide": 3.5,
+    "ozone": 65.0,
+    "sulphur_dioxide": 2.1,
+    "carbon_monoxide": 342.0
    },
    "weather": {
-    "temperature_2m": 29.2,
-    "relative_humidity_2m": 78.0,
-    "wind_speed_10m": 6.9,
-    "precipitation": 0.0
+    "temperature_2m": 26.7,
+    "relative_humidity_2m": 94.0,
+    "wind_speed_10m": 4.7,
+    "precipitation": 0.9
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 3.5,
-    "aqi": 19,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 3.6,
+    "aqi": 20,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 3.0
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 3.3
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 3.4
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 3.2
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 3.1
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 3.4
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 3.8
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 4.5
@@ -3845,42 +3817,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 3.5
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 3.5
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 3.6
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 3.6
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 3.3
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 3.1
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 3.2
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 3.6
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 3.5,
-     "low": 3.1,
-     "high": 4.0,
-     "aqi": 19,
+     "pm2_5": 4.2,
+     "low": 3.5,
+     "high": 5.5,
+     "aqi": 24,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 4.1,
-     "low": 2.6,
-     "high": 6.1,
-     "aqi": 23,
+     "pm2_5": 6.6,
+     "low": 3.2,
+     "high": 10.4,
+     "aqi": 37,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 7.8,
-     "low": 3.9,
-     "high": 13.0,
-     "aqi": 44,
+     "pm2_5": 4.4,
+     "low": 1.9,
+     "high": 8.2,
+     "aqi": 24,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 6.5,
-     "low": 2.5,
-     "high": 11.8,
-     "aqi": 36,
+     "pm2_5": 6.1,
+     "low": 2.8,
+     "high": 9.5,
+     "aqi": 34,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -3893,54 +3893,26 @@
    "lon": 122.56,
    "featured": false,
    "pollutants": {
-    "pm10": 8.2,
-    "nitrogen_dioxide": 1.1,
-    "ozone": 83.0,
-    "sulphur_dioxide": 4.3,
-    "carbon_monoxide": 253.0
+    "pm10": 5.7,
+    "nitrogen_dioxide": 3.0,
+    "ozone": 58.0,
+    "sulphur_dioxide": 2.6,
+    "carbon_monoxide": 296.0
    },
    "weather": {
-    "temperature_2m": 29.9,
-    "relative_humidity_2m": 74.0,
-    "wind_speed_10m": 3.6,
-    "precipitation": 0.0
+    "temperature_2m": 25.0,
+    "relative_humidity_2m": 96.0,
+    "wind_speed_10m": 2.5,
+    "precipitation": 1.1
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 7.5,
-    "aqi": 42,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 5.3,
+    "aqi": 29,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 4.7
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 4.6
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 4.6
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 4.2
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 3.6
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 3.3
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 3.5
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 4.7
@@ -4104,42 +4076,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 7.5
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 7.4
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 7.2
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 7.3
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 6.9
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 5.3
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 7.6,
-     "low": 6.7,
-     "high": 8.2,
-     "aqi": 42,
+     "pm2_5": 5.6,
+     "low": 4.7,
+     "high": 6.8,
+     "aqi": 31,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 7.4,
-     "low": 4.2,
-     "high": 11.9,
-     "aqi": 41,
+     "pm2_5": 7.2,
+     "low": 3.9,
+     "high": 10.8,
+     "aqi": 40,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 7.8,
-     "low": 4.3,
-     "high": 12.3,
-     "aqi": 43,
+     "pm2_5": 6.3,
+     "low": 3.0,
+     "high": 10.8,
+     "aqi": 35,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 7.3,
-     "low": 3.4,
-     "high": 12.0,
-     "aqi": 41,
+     "pm2_5": 5.6,
+     "low": 2.7,
+     "high": 8.9,
+     "aqi": 31,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -4152,54 +4152,26 @@
    "lon": 120.59,
    "featured": false,
    "pollutants": {
-    "pm10": 16.2,
-    "nitrogen_dioxide": 0.4,
-    "ozone": 98.0,
-    "sulphur_dioxide": 0.4,
-    "carbon_monoxide": 156.0
+    "pm10": 22.1,
+    "nitrogen_dioxide": 0.6,
+    "ozone": 91.0,
+    "sulphur_dioxide": 0.3,
+    "carbon_monoxide": 151.0
    },
    "weather": {
-    "temperature_2m": 31.2,
-    "relative_humidity_2m": 61.0,
-    "wind_speed_10m": 8.7,
+    "temperature_2m": 28.9,
+    "relative_humidity_2m": 69.0,
+    "wind_speed_10m": 12.6,
     "precipitation": 0.0
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 9.7,
-    "aqi": 52,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 13.1,
+    "aqi": 58,
     "category": "Moderate",
     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 6.4
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 6.7
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 7.4
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 8.6
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 8.8
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 8.8
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 8.3
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 8.0
@@ -4363,44 +4335,72 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 9.7
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 10.0
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 10.4
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 11.2
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 11.9
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 12.7
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 13.4
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 13.1
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 10.5,
-     "low": 9.5,
-     "high": 11.1,
-     "aqi": 54,
+     "pm2_5": 12.7,
+     "low": 11.8,
+     "high": 13.5,
+     "aqi": 58,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 10.6,
-     "low": 6.5,
-     "high": 14.7,
-     "aqi": 54,
+     "pm2_5": 11.6,
+     "low": 7.3,
+     "high": 15.1,
+     "aqi": 56,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 8.8,
-     "low": 5.1,
-     "high": 13.1,
-     "aqi": 49,
+     "pm2_5": 8.1,
+     "low": 4.5,
+     "high": 14.1,
+     "aqi": 45,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 8.4,
-     "low": 5.1,
-     "high": 13.0,
-     "aqi": 47,
-     "category": "Good",
-     "advice": "Air quality is good. Enjoy outdoor activity."
+     "pm2_5": 9.3,
+     "low": 5.7,
+     "high": 15.8,
+     "aqi": 51,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
    ]
   },
@@ -4411,54 +4411,26 @@
    "lon": 123.74,
    "featured": false,
    "pollutants": {
-    "pm10": 3.0,
-    "nitrogen_dioxide": 0.6,
-    "ozone": 79.0,
-    "sulphur_dioxide": 1.8,
-    "carbon_monoxide": 163.0
+    "pm10": 4.3,
+    "nitrogen_dioxide": 2.3,
+    "ozone": 64.0,
+    "sulphur_dioxide": 1.1,
+    "carbon_monoxide": 183.0
    },
    "weather": {
-    "temperature_2m": 28.4,
-    "relative_humidity_2m": 80.0,
+    "temperature_2m": 26.6,
+    "relative_humidity_2m": 88.0,
     "wind_speed_10m": 16.2,
-    "precipitation": 0.2
+    "precipitation": 0.3
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 2.4,
-    "aqi": 13,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 3.4,
+    "aqi": 19,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 4.6
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 5.0
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 6.0
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 6.4
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 7.8
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 7.2
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 7.1
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 7.2
@@ -4622,42 +4594,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 2.4
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 2.4
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 2.8
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 3.3
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 3.8
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 4.0
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 3.4
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 2.3,
-     "low": 1.8,
-     "high": 3.0,
-     "aqi": 13,
+     "pm2_5": 3.4,
+     "low": 2.7,
+     "high": 4.2,
+     "aqi": 19,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 4.7,
-     "low": 2.1,
-     "high": 7.4,
-     "aqi": 26,
+     "pm2_5": 5.3,
+     "low": 2.3,
+     "high": 10.3,
+     "aqi": 29,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 6.8,
-     "low": 3.7,
-     "high": 13.6,
-     "aqi": 38,
+     "pm2_5": 4.0,
+     "low": 1.5,
+     "high": 7.8,
+     "aqi": 22,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 4.5,
-     "low": 2.1,
-     "high": 8.7,
-     "aqi": 25,
+     "pm2_5": 4.9,
+     "low": 2.5,
+     "high": 8.3,
+     "aqi": 27,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -4670,54 +4670,26 @@
    "lon": 121.62,
    "featured": false,
    "pollutants": {
-    "pm10": 3.8,
-    "nitrogen_dioxide": 2.3,
-    "ozone": 92.0,
-    "sulphur_dioxide": 3.8,
-    "carbon_monoxide": 170.0
+    "pm10": 7.7,
+    "nitrogen_dioxide": 4.1,
+    "ozone": 82.0,
+    "sulphur_dioxide": 4.5,
+    "carbon_monoxide": 173.0
    },
    "weather": {
-    "temperature_2m": 27.6,
-    "relative_humidity_2m": 80.0,
-    "wind_speed_10m": 20.9,
-    "precipitation": 0.5
+    "temperature_2m": 27.1,
+    "relative_humidity_2m": 81.0,
+    "wind_speed_10m": 14.7,
+    "precipitation": 0.0
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 2.8,
-    "aqi": 16,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 5.2,
+    "aqi": 29,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 4.2
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 4.9
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 5.6
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 6.3
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 6.6
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 6.8
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 6.8
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 6.7
@@ -4881,42 +4853,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 2.8
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 3.4
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 3.7
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 3.7
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 3.8
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 5.2
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 3.2,
-     "low": 2.7,
-     "high": 3.8,
-     "aqi": 18,
+     "pm2_5": 5.7,
+     "low": 4.9,
+     "high": 6.5,
+     "aqi": 31,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 4.6,
-     "low": 2.4,
+     "pm2_5": 6.7,
+     "low": 3.5,
+     "high": 11.2,
+     "aqi": 37,
+     "category": "Good",
+     "advice": "Air quality is good. Enjoy outdoor activity."
+    },
+    {
+     "horizon_h": 12,
+     "pm2_5": 4.7,
+     "low": 2.0,
      "high": 8.2,
      "aqi": 26,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
-     "horizon_h": 12,
-     "pm2_5": 7.1,
-     "low": 3.7,
-     "high": 12.3,
-     "aqi": 40,
-     "category": "Good",
-     "advice": "Air quality is good. Enjoy outdoor activity."
-    },
-    {
      "horizon_h": 24,
-     "pm2_5": 5.9,
-     "low": 2.7,
-     "high": 9.2,
-     "aqi": 33,
+     "pm2_5": 6.2,
+     "low": 3.2,
+     "high": 10.0,
+     "aqi": 34,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -4929,54 +4929,26 @@
    "lon": 123.19,
    "featured": false,
    "pollutants": {
-    "pm10": 4.0,
-    "nitrogen_dioxide": 0.3,
-    "ozone": 79.0,
-    "sulphur_dioxide": 0.5,
-    "carbon_monoxide": 163.0
+    "pm10": 5.8,
+    "nitrogen_dioxide": 1.5,
+    "ozone": 62.0,
+    "sulphur_dioxide": 0.6,
+    "carbon_monoxide": 187.0
    },
    "weather": {
-    "temperature_2m": 29.5,
-    "relative_humidity_2m": 76.0,
-    "wind_speed_10m": 14.5,
-    "precipitation": 0.2
+    "temperature_2m": 27.8,
+    "relative_humidity_2m": 77.0,
+    "wind_speed_10m": 14.2,
+    "precipitation": 0.0
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 2.9,
-    "aqi": 16,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 4.3,
+    "aqi": 24,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 3.9
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 4.0
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 6.1
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 4.4
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 4.7
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 4.6
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 4.9
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 5.9
@@ -5140,42 +5112,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 2.9
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 3.2
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 3.9
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 4.5
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 4.2
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 4.3
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 3.0,
-     "low": 2.6,
-     "high": 3.5,
-     "aqi": 17,
+     "pm2_5": 4.7,
+     "low": 4.0,
+     "high": 5.3,
+     "aqi": 26,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 5.5,
-     "low": 2.6,
-     "high": 8.1,
-     "aqi": 30,
+     "pm2_5": 7.4,
+     "low": 4.2,
+     "high": 11.7,
+     "aqi": 41,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 8.8,
-     "low": 5.0,
-     "high": 16.1,
-     "aqi": 49,
+     "pm2_5": 4.8,
+     "low": 2.5,
+     "high": 8.6,
+     "aqi": 27,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 4.9,
-     "low": 2.7,
-     "high": 8.0,
-     "aqi": 27,
+     "pm2_5": 5.1,
+     "low": 2.9,
+     "high": 7.9,
+     "aqi": 28,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -5188,54 +5188,26 @@
    "lon": 120.28,
    "featured": false,
    "pollutants": {
-    "pm10": 7.9,
-    "nitrogen_dioxide": 4.1,
-    "ozone": 101.0,
-    "sulphur_dioxide": 5.3,
-    "carbon_monoxide": 234.0
+    "pm10": 12.0,
+    "nitrogen_dioxide": 8.5,
+    "ozone": 92.0,
+    "sulphur_dioxide": 5.0,
+    "carbon_monoxide": 251.0
    },
    "weather": {
-    "temperature_2m": 29.7,
-    "relative_humidity_2m": 74.0,
-    "wind_speed_10m": 15.9,
-    "precipitation": 0.0
+    "temperature_2m": 26.6,
+    "relative_humidity_2m": 94.0,
+    "wind_speed_10m": 6.0,
+    "precipitation": 1.9
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 6.9,
-    "aqi": 38,
-    "category": "Good",
-    "advice": "Air quality is good. Enjoy outdoor activity."
+    "time": "2026-10-08T17:00",
+    "pm2_5": 10.2,
+    "aqi": 53,
+    "category": "Moderate",
+    "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 12.4
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 15.4
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 17.7
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 19.4
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 20.8
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 19.1
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 16.3
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 14.6
@@ -5399,44 +5371,72 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 6.9
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 7.9
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 8.8
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 9.4
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 9.7
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 10.1
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 10.9
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 10.2
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 7.5,
-     "low": 6.7,
-     "high": 8.1,
-     "aqi": 42,
-     "category": "Good",
-     "advice": "Air quality is good. Enjoy outdoor activity."
+     "pm2_5": 10.3,
+     "low": 8.8,
+     "high": 12.1,
+     "aqi": 53,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 8.0,
-     "low": 5.8,
-     "high": 14.1,
-     "aqi": 44,
-     "category": "Good",
-     "advice": "Air quality is good. Enjoy outdoor activity."
+     "pm2_5": 12.0,
+     "low": 5.6,
+     "high": 17.3,
+     "aqi": 56,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 10.8,
-     "low": 5.9,
-     "high": 19.3,
-     "aqi": 54,
+     "pm2_5": 10.0,
+     "low": 5.4,
+     "high": 18.3,
+     "aqi": 53,
      "category": "Moderate",
      "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 7.9,
-     "low": 3.9,
-     "high": 13.0,
-     "aqi": 44,
-     "category": "Good",
-     "advice": "Air quality is good. Enjoy outdoor activity."
+     "pm2_5": 10.8,
+     "low": 5.4,
+     "high": 15.9,
+     "aqi": 54,
+     "category": "Moderate",
+     "advice": "Acceptable. Unusually sensitive people should watch for symptoms."
     }
    ]
   },
@@ -5447,54 +5447,26 @@
    "lon": 118.74,
    "featured": false,
    "pollutants": {
-    "pm10": 4.6,
-    "nitrogen_dioxide": 0.8,
-    "ozone": 74.0,
-    "sulphur_dioxide": 1.1,
-    "carbon_monoxide": 224.0
+    "pm10": 4.0,
+    "nitrogen_dioxide": 1.2,
+    "ozone": 72.0,
+    "sulphur_dioxide": 0.8,
+    "carbon_monoxide": 260.0
    },
    "weather": {
-    "temperature_2m": 28.9,
-    "relative_humidity_2m": 83.0,
-    "wind_speed_10m": 2.3,
-    "precipitation": 0.1
+    "temperature_2m": 26.2,
+    "relative_humidity_2m": 95.0,
+    "wind_speed_10m": 4.9,
+    "precipitation": 0.7
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 3.3,
-    "aqi": 18,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 2.8,
+    "aqi": 16,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 3.7
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 3.6
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 3.6
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 3.6
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 3.5
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 3.4
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 3.1
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 2.9
@@ -5658,33 +5630,61 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 3.3
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 3.2
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 3.3
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 3.4
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 3.1
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 2.9
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 2.8
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 2.8
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 3.4,
-     "low": 3.0,
-     "high": 3.8,
-     "aqi": 19,
+     "pm2_5": 3.2,
+     "low": 2.5,
+     "high": 4.1,
+     "aqi": 18,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 4.6,
-     "low": 2.4,
-     "high": 7.2,
-     "aqi": 26,
+     "pm2_5": 5.4,
+     "low": 2.5,
+     "high": 7.5,
+     "aqi": 30,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 5.2,
-     "low": 2.7,
-     "high": 8.7,
-     "aqi": 29,
+     "pm2_5": 3.6,
+     "low": 1.8,
+     "high": 7.2,
+     "aqi": 20,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
@@ -5692,7 +5692,7 @@
      "horizon_h": 24,
      "pm2_5": 4.9,
      "low": 2.6,
-     "high": 8.1,
+     "high": 7.4,
      "aqi": 27,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
@@ -5706,54 +5706,26 @@
    "lon": 122.75,
    "featured": false,
    "pollutants": {
-    "pm10": 7.0,
-    "nitrogen_dioxide": 0.5,
-    "ozone": 75.0,
-    "sulphur_dioxide": 3.4,
-    "carbon_monoxide": 193.0
+    "pm10": 6.2,
+    "nitrogen_dioxide": 1.0,
+    "ozone": 71.0,
+    "sulphur_dioxide": 2.5,
+    "carbon_monoxide": 169.0
    },
    "weather": {
-    "temperature_2m": 29.6,
-    "relative_humidity_2m": 73.0,
-    "wind_speed_10m": 8.3,
-    "precipitation": 0.4
+    "temperature_2m": 29.3,
+    "relative_humidity_2m": 71.0,
+    "wind_speed_10m": 13.3,
+    "precipitation": 0.1
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 5.2,
-    "aqi": 29,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 4.6,
+    "aqi": 26,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 4.5
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 4.6
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 4.9
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 5.0
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 5.1
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 4.9
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 4.9
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 5.8
@@ -5917,42 +5889,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 5.2
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 5.0
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 5.0
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 5.3
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 5.1
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 4.6
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 5.1,
-     "low": 4.5,
-     "high": 5.7,
-     "aqi": 28,
+     "pm2_5": 4.6,
+     "low": 3.9,
+     "high": 5.3,
+     "aqi": 26,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 6.8,
-     "low": 3.6,
-     "high": 10.1,
-     "aqi": 38,
+     "pm2_5": 7.1,
+     "low": 4.1,
+     "high": 10.6,
+     "aqi": 39,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 8.8,
-     "low": 4.6,
-     "high": 13.4,
-     "aqi": 49,
+     "pm2_5": 7.0,
+     "low": 3.5,
+     "high": 11.3,
+     "aqi": 39,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 5.5,
-     "low": 2.3,
-     "high": 9.3,
-     "aqi": 31,
+     "pm2_5": 5.2,
+     "low": 2.4,
+     "high": 8.6,
+     "aqi": 29,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -5965,54 +5965,26 @@
    "lon": 125.49,
    "featured": false,
    "pollutants": {
-    "pm10": 3.7,
-    "nitrogen_dioxide": 0.8,
-    "ozone": 78.0,
-    "sulphur_dioxide": 1.0,
-    "carbon_monoxide": 181.0
+    "pm10": 5.4,
+    "nitrogen_dioxide": 3.6,
+    "ozone": 62.0,
+    "sulphur_dioxide": 1.5,
+    "carbon_monoxide": 201.0
    },
    "weather": {
-    "temperature_2m": 28.8,
-    "relative_humidity_2m": 81.0,
-    "wind_speed_10m": 11.4,
-    "precipitation": 0.1
+    "temperature_2m": 27.7,
+    "relative_humidity_2m": 89.0,
+    "wind_speed_10m": 7.3,
+    "precipitation": 0.0
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 3.3,
-    "aqi": 18,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 5.0,
+    "aqi": 28,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 2.8
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 2.9
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 2.9
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 2.8
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 2.7
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 2.5
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 2.5
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 2.7
@@ -6176,42 +6148,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 3.3
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 3.6
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 3.8
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 4.3
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 4.6
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 4.7
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 5.0
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 3.4,
-     "low": 3.0,
-     "high": 3.9,
-     "aqi": 19,
+     "pm2_5": 5.4,
+     "low": 4.7,
+     "high": 6.4,
+     "aqi": 30,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 4.4,
-     "low": 2.3,
-     "high": 7.2,
-     "aqi": 25,
+     "pm2_5": 6.8,
+     "low": 3.0,
+     "high": 10.4,
+     "aqi": 38,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 6.4,
-     "low": 3.2,
-     "high": 9.3,
-     "aqi": 36,
+     "pm2_5": 4.8,
+     "low": 2.1,
+     "high": 8.3,
+     "aqi": 27,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 5.1,
-     "low": 2.5,
-     "high": 8.2,
-     "aqi": 29,
+     "pm2_5": 5.6,
+     "low": 2.9,
+     "high": 8.9,
+     "aqi": 31,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -6224,54 +6224,26 @@
    "lon": 125.0,
    "featured": false,
    "pollutants": {
-    "pm10": 6.8,
-    "nitrogen_dioxide": 0.7,
-    "ozone": 76.0,
-    "sulphur_dioxide": 1.5,
-    "carbon_monoxide": 189.0
+    "pm10": 5.1,
+    "nitrogen_dioxide": 1.4,
+    "ozone": 58.0,
+    "sulphur_dioxide": 0.9,
+    "carbon_monoxide": 196.0
    },
    "weather": {
-    "temperature_2m": 30.2,
-    "relative_humidity_2m": 68.0,
-    "wind_speed_10m": 5.1,
+    "temperature_2m": 27.3,
+    "relative_humidity_2m": 84.0,
+    "wind_speed_10m": 3.6,
     "precipitation": 0.1
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 5.3,
-    "aqi": 29,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 4.2,
+    "aqi": 23,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 2.6
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 2.8
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 3.4
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 3.4
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 3.5
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 3.5
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 3.6
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 4.1
@@ -6435,42 +6407,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 5.3
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 5.0
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 4.8
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 4.4
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 4.2
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 5.3,
-     "low": 4.7,
-     "high": 5.9,
-     "aqi": 29,
+     "pm2_5": 4.3,
+     "low": 3.8,
+     "high": 5.2,
+     "aqi": 24,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
      "pm2_5": 6.1,
-     "low": 3.4,
-     "high": 9.1,
+     "low": 3.2,
+     "high": 9.3,
      "aqi": 34,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 6.6,
-     "low": 3.6,
-     "high": 10.5,
-     "aqi": 36,
+     "pm2_5": 5.6,
+     "low": 2.9,
+     "high": 9.9,
+     "aqi": 31,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 5.8,
-     "low": 2.3,
-     "high": 9.1,
-     "aqi": 32,
+     "pm2_5": 5.1,
+     "low": 2.7,
+     "high": 8.0,
+     "aqi": 28,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -6483,54 +6483,26 @@
    "lon": 123.85,
    "featured": false,
    "pollutants": {
-    "pm10": 6.3,
-    "nitrogen_dioxide": 1.1,
-    "ozone": 90.0,
-    "sulphur_dioxide": 2.7,
-    "carbon_monoxide": 216.0
+    "pm10": 6.9,
+    "nitrogen_dioxide": 4.4,
+    "ozone": 77.0,
+    "sulphur_dioxide": 2.6,
+    "carbon_monoxide": 283.0
    },
    "weather": {
-    "temperature_2m": 28.6,
-    "relative_humidity_2m": 79.0,
-    "wind_speed_10m": 6.0,
-    "precipitation": 0.0
+    "temperature_2m": 26.4,
+    "relative_humidity_2m": 93.0,
+    "wind_speed_10m": 2.4,
+    "precipitation": 4.1
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 5.9,
-    "aqi": 33,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 6.5,
+    "aqi": 36,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 2.7
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 2.7
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 2.9
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 2.8
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 2.4
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 1.8
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 1.6
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 2.0
@@ -6694,42 +6666,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 5.9
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 6.0
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 6.3
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 5.8
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 6.2
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 6.5
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 6.5
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 5.8,
-     "low": 5.1,
-     "high": 6.4,
-     "aqi": 32,
+     "pm2_5": 6.6,
+     "low": 5.6,
+     "high": 7.9,
+     "aqi": 37,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 6.9,
-     "low": 3.2,
-     "high": 10.3,
+     "pm2_5": 6.8,
+     "low": 3.4,
+     "high": 10.7,
      "aqi": 38,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 7.6,
-     "low": 3.9,
-     "high": 11.5,
-     "aqi": 42,
+     "pm2_5": 5.1,
+     "low": 2.3,
+     "high": 8.6,
+     "aqi": 28,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 7.3,
-     "low": 2.7,
-     "high": 11.6,
-     "aqi": 41,
+     "pm2_5": 6.7,
+     "low": 3.0,
+     "high": 10.3,
+     "aqi": 37,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -6742,54 +6742,26 @@
    "lon": 121.73,
    "featured": false,
    "pollutants": {
-    "pm10": 2.9,
-    "nitrogen_dioxide": 0.8,
-    "ozone": 81.0,
+    "pm10": 9.4,
+    "nitrogen_dioxide": 1.5,
+    "ozone": 70.0,
     "sulphur_dioxide": 0.7,
-    "carbon_monoxide": 146.0
+    "carbon_monoxide": 151.0
    },
    "weather": {
-    "temperature_2m": 28.6,
-    "relative_humidity_2m": 76.0,
-    "wind_speed_10m": 6.1,
-    "precipitation": 0.3
+    "temperature_2m": 27.9,
+    "relative_humidity_2m": 75.0,
+    "wind_speed_10m": 15.8,
+    "precipitation": 0.0
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 2.2,
-    "aqi": 12,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 6.7,
+    "aqi": 37,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 4.8
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 4.5
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 4.6
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 4.7
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 4.9
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 5.3
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 5.8
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 6.5
@@ -6953,42 +6925,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 2.2
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 2.8
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 3.4
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 3.8
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 4.5
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 5.2
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 5.7
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 6.7
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 2.6,
-     "low": 2.1,
-     "high": 3.2,
-     "aqi": 15,
+     "pm2_5": 7.4,
+     "low": 6.2,
+     "high": 8.3,
+     "aqi": 41,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 4.0,
-     "low": 2.4,
-     "high": 7.1,
-     "aqi": 22,
+     "pm2_5": 7.7,
+     "low": 4.2,
+     "high": 12.3,
+     "aqi": 43,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 5.6,
-     "low": 2.9,
-     "high": 8.6,
-     "aqi": 31,
+     "pm2_5": 6.3,
+     "low": 2.7,
+     "high": 9.8,
+     "aqi": 35,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 4.5,
-     "low": 2.4,
-     "high": 8.0,
-     "aqi": 25,
+     "pm2_5": 6.2,
+     "low": 3.5,
+     "high": 9.8,
+     "aqi": 35,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -7001,54 +7001,26 @@
    "lon": 120.39,
    "featured": false,
    "pollutants": {
-    "pm10": 2.8,
-    "nitrogen_dioxide": 0.8,
-    "ozone": 82.0,
-    "sulphur_dioxide": 0.9,
-    "carbon_monoxide": 160.0
+    "pm10": 8.2,
+    "nitrogen_dioxide": 0.9,
+    "ozone": 73.0,
+    "sulphur_dioxide": 0.7,
+    "carbon_monoxide": 173.0
    },
    "weather": {
-    "temperature_2m": 30.7,
-    "relative_humidity_2m": 68.0,
-    "wind_speed_10m": 9.3,
-    "precipitation": 0.0
+    "temperature_2m": 28.6,
+    "relative_humidity_2m": 82.0,
+    "wind_speed_10m": 4.3,
+    "precipitation": 0.1
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 2.2,
-    "aqi": 12,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 5.8,
+    "aqi": 32,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 4.0
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 4.3
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 4.7
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 5.1
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 4.9
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 4.9
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 4.9
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 4.1
@@ -7212,42 +7184,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 2.2
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 2.8
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 3.7
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 4.4
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 4.9
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 5.4
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 5.4
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 5.8
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 2.5,
-     "low": 2.0,
-     "high": 2.9,
-     "aqi": 14,
+     "pm2_5": 6.3,
+     "low": 5.4,
+     "high": 7.0,
+     "aqi": 35,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 3.8,
-     "low": 2.3,
-     "high": 6.9,
-     "aqi": 21,
+     "pm2_5": 7.7,
+     "low": 4.7,
+     "high": 11.2,
+     "aqi": 43,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 5.7,
-     "low": 2.9,
-     "high": 9.0,
+     "pm2_5": 5.8,
+     "low": 3.0,
+     "high": 8.6,
      "aqi": 32,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 4.0,
-     "low": 1.9,
-     "high": 7.3,
-     "aqi": 22,
+     "pm2_5": 6.0,
+     "low": 3.2,
+     "high": 9.3,
+     "aqi": 34,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -7260,54 +7260,26 @@
    "lon": 122.08,
    "featured": false,
    "pollutants": {
-    "pm10": 5.9,
-    "nitrogen_dioxide": 1.3,
-    "ozone": 72.0,
-    "sulphur_dioxide": 1.2,
-    "carbon_monoxide": 326.0
+    "pm10": 3.5,
+    "nitrogen_dioxide": 1.9,
+    "ozone": 68.0,
+    "sulphur_dioxide": 0.8,
+    "carbon_monoxide": 269.0
    },
    "weather": {
-    "temperature_2m": 28.1,
-    "relative_humidity_2m": 77.0,
-    "wind_speed_10m": 11.6,
-    "precipitation": 0.2
+    "temperature_2m": 27.1,
+    "relative_humidity_2m": 81.0,
+    "wind_speed_10m": 11.8,
+    "precipitation": 0.1
    },
    "now": {
-    "time": "2026-10-08T10:00",
-    "pm2_5": 4.5,
-    "aqi": 25,
+    "time": "2026-10-08T17:00",
+    "pm2_5": 2.5,
+    "aqi": 14,
     "category": "Good",
     "advice": "Air quality is good. Enjoy outdoor activity."
    },
    "history": [
-    {
-     "time": "2026-10-06T11:00",
-     "pm2_5": 9.6
-    },
-    {
-     "time": "2026-10-06T12:00",
-     "pm2_5": 8.9
-    },
-    {
-     "time": "2026-10-06T13:00",
-     "pm2_5": 9.0
-    },
-    {
-     "time": "2026-10-06T14:00",
-     "pm2_5": 9.0
-    },
-    {
-     "time": "2026-10-06T15:00",
-     "pm2_5": 8.8
-    },
-    {
-     "time": "2026-10-06T16:00",
-     "pm2_5": 8.5
-    },
-    {
-     "time": "2026-10-06T17:00",
-     "pm2_5": 8.5
-    },
     {
      "time": "2026-10-06T18:00",
      "pm2_5": 8.2
@@ -7471,42 +7443,70 @@
     {
      "time": "2026-10-08T10:00",
      "pm2_5": 4.5
+    },
+    {
+     "time": "2026-10-08T11:00",
+     "pm2_5": 4.1
+    },
+    {
+     "time": "2026-10-08T12:00",
+     "pm2_5": 3.3
+    },
+    {
+     "time": "2026-10-08T13:00",
+     "pm2_5": 2.8
+    },
+    {
+     "time": "2026-10-08T14:00",
+     "pm2_5": 2.4
+    },
+    {
+     "time": "2026-10-08T15:00",
+     "pm2_5": 2.2
+    },
+    {
+     "time": "2026-10-08T16:00",
+     "pm2_5": 2.3
+    },
+    {
+     "time": "2026-10-08T17:00",
+     "pm2_5": 2.5
     }
    ],
    "forecast": [
     {
      "horizon_h": 1,
-     "pm2_5": 4.3,
-     "low": 3.7,
-     "high": 5.0,
-     "aqi": 24,
+     "pm2_5": 3.0,
+     "low": 2.3,
+     "high": 3.8,
+     "aqi": 17,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 6,
-     "pm2_5": 4.8,
-     "low": 2.8,
+     "pm2_5": 5.2,
+     "low": 2.6,
      "high": 8.9,
-     "aqi": 27,
+     "aqi": 29,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 12,
-     "pm2_5": 7.8,
-     "low": 3.6,
-     "high": 11.4,
-     "aqi": 43,
+     "pm2_5": 4.7,
+     "low": 2.3,
+     "high": 8.8,
+     "aqi": 26,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     },
     {
      "horizon_h": 24,
-     "pm2_5": 6.0,
-     "low": 2.2,
-     "high": 10.2,
-     "aqi": 33,
+     "pm2_5": 4.5,
+     "low": 2.6,
+     "high": 8.3,
+     "aqi": 25,
      "category": "Good",
      "advice": "Air quality is good. Enjoy outdoor activity."
     }
@@ -7517,837 +7517,837 @@
   {
    "lat": 4.0,
    "lon": 116.0,
-   "pm2_5": 20.5
+   "pm2_5": 18.0
   },
   {
    "lat": 4.0,
    "lon": 117.0,
-   "pm2_5": 13.3
+   "pm2_5": 18.2
   },
   {
    "lat": 4.0,
    "lon": 118.0,
-   "pm2_5": 15.0
+   "pm2_5": 20.8
   },
   {
    "lat": 4.0,
    "lon": 119.0,
-   "pm2_5": 27.6
+   "pm2_5": 17.9
   },
   {
    "lat": 4.0,
    "lon": 120.0,
-   "pm2_5": 53.3
+   "pm2_5": 26.8
   },
   {
    "lat": 4.0,
    "lon": 121.0,
-   "pm2_5": 64.7
+   "pm2_5": 51.7
   },
   {
    "lat": 4.0,
    "lon": 122.0,
-   "pm2_5": 64.0
+   "pm2_5": 50.8
   },
   {
    "lat": 4.0,
    "lon": 123.0,
-   "pm2_5": 42.0
+   "pm2_5": 41.2
   },
   {
    "lat": 4.0,
    "lon": 124.0,
-   "pm2_5": 35.4
+   "pm2_5": 31.8
   },
   {
    "lat": 4.0,
    "lon": 125.0,
-   "pm2_5": 25.0
-  },
-  {
-   "lat": 4.0,
-   "lon": 126.0,
    "pm2_5": 25.1
   },
   {
    "lat": 4.0,
+   "lon": 126.0,
+   "pm2_5": 24.7
+  },
+  {
+   "lat": 4.0,
    "lon": 127.0,
-   "pm2_5": 24.2
+   "pm2_5": 24.1
   },
   {
    "lat": 5.0,
    "lon": 116.0,
-   "pm2_5": 17.6
+   "pm2_5": 12.0
   },
   {
    "lat": 5.0,
    "lon": 117.0,
-   "pm2_5": 13.7
+   "pm2_5": 13.4
   },
   {
    "lat": 5.0,
    "lon": 118.0,
-   "pm2_5": 10.1
-  },
-  {
-   "lat": 5.0,
-   "lon": 119.0,
-   "pm2_5": 7.1
-  },
-  {
-   "lat": 5.0,
-   "lon": 120.0,
    "pm2_5": 9.5
   },
   {
    "lat": 5.0,
+   "lon": 119.0,
+   "pm2_5": 6.2
+  },
+  {
+   "lat": 5.0,
+   "lon": 120.0,
+   "pm2_5": 6.4
+  },
+  {
+   "lat": 5.0,
    "lon": 121.0,
-   "pm2_5": 35.4
+   "pm2_5": 13.8
   },
   {
    "lat": 5.0,
    "lon": 122.0,
-   "pm2_5": 30.9
+   "pm2_5": 24.7
   },
   {
    "lat": 5.0,
    "lon": 123.0,
-   "pm2_5": 21.2
+   "pm2_5": 27.2
   },
   {
    "lat": 5.0,
    "lon": 124.0,
-   "pm2_5": 14.6
+   "pm2_5": 21.1
   },
   {
    "lat": 5.0,
    "lon": 125.0,
-   "pm2_5": 10.5
+   "pm2_5": 20.3
   },
   {
    "lat": 5.0,
    "lon": 126.0,
-   "pm2_5": 13.6
+   "pm2_5": 24.6
   },
   {
    "lat": 5.0,
    "lon": 127.0,
-   "pm2_5": 19.8
+   "pm2_5": 20.8
   },
   {
    "lat": 6.0,
    "lon": 116.0,
-   "pm2_5": 14.8
+   "pm2_5": 6.4
   },
   {
    "lat": 6.0,
    "lon": 117.0,
-   "pm2_5": 8.6
+   "pm2_5": 7.9
   },
   {
    "lat": 6.0,
    "lon": 118.0,
-   "pm2_5": 4.5
-  },
-  {
-   "lat": 6.0,
-   "lon": 119.0,
    "pm2_5": 5.5
   },
   {
    "lat": 6.0,
-   "lon": 120.0,
-   "pm2_5": 6.2
-  },
-  {
-   "lat": 6.0,
-   "lon": 121.0,
-   "pm2_5": 11.5
-  },
-  {
-   "lat": 6.0,
-   "lon": 122.0,
-   "pm2_5": 12.5
-  },
-  {
-   "lat": 6.0,
-   "lon": 123.0,
-   "pm2_5": 9.0
-  },
-  {
-   "lat": 6.0,
-   "lon": 124.0,
-   "pm2_5": 3.6
-  },
-  {
-   "lat": 6.0,
-   "lon": 125.0,
-   "pm2_5": 4.8
-  },
-  {
-   "lat": 6.0,
-   "lon": 126.0,
-   "pm2_5": 14.2
-  },
-  {
-   "lat": 6.0,
-   "lon": 127.0,
-   "pm2_5": 19.4
-  },
-  {
-   "lat": 7.0,
-   "lon": 116.0,
-   "pm2_5": 6.4
-  },
-  {
-   "lat": 7.0,
-   "lon": 117.0,
-   "pm2_5": 6.6
-  },
-  {
-   "lat": 7.0,
-   "lon": 118.0,
-   "pm2_5": 6.9
-  },
-  {
-   "lat": 7.0,
    "lon": 119.0,
-   "pm2_5": 4.7
+   "pm2_5": 5.0
   },
   {
-   "lat": 7.0,
+   "lat": 6.0,
    "lon": 120.0,
-   "pm2_5": 4.1
+   "pm2_5": 4.5
   },
   {
-   "lat": 7.0,
+   "lat": 6.0,
    "lon": 121.0,
-   "pm2_5": 3.9
+   "pm2_5": 3.1
   },
   {
-   "lat": 7.0,
-   "lon": 122.0,
-   "pm2_5": 3.6
-  },
-  {
-   "lat": 7.0,
-   "lon": 123.0,
-   "pm2_5": 1.8
-  },
-  {
-   "lat": 7.0,
-   "lon": 124.0,
-   "pm2_5": 1.9
-  },
-  {
-   "lat": 7.0,
-   "lon": 125.0,
-   "pm2_5": 2.7
-  },
-  {
-   "lat": 7.0,
-   "lon": 126.0,
-   "pm2_5": 4.4
-  },
-  {
-   "lat": 7.0,
-   "lon": 127.0,
-   "pm2_5": 6.4
-  },
-  {
-   "lat": 8.0,
-   "lon": 116.0,
-   "pm2_5": 8.5
-  },
-  {
-   "lat": 8.0,
-   "lon": 117.0,
-   "pm2_5": 4.0
-  },
-  {
-   "lat": 8.0,
-   "lon": 118.0,
-   "pm2_5": 4.6
-  },
-  {
-   "lat": 8.0,
-   "lon": 119.0,
-   "pm2_5": 3.4
-  },
-  {
-   "lat": 8.0,
-   "lon": 120.0,
-   "pm2_5": 3.7
-  },
-  {
-   "lat": 8.0,
-   "lon": 121.0,
-   "pm2_5": 2.9
-  },
-  {
-   "lat": 8.0,
-   "lon": 122.0,
-   "pm2_5": 2.1
-  },
-  {
-   "lat": 8.0,
-   "lon": 123.0,
-   "pm2_5": 2.5
-  },
-  {
-   "lat": 8.0,
-   "lon": 124.0,
-   "pm2_5": 3.4
-  },
-  {
-   "lat": 8.0,
-   "lon": 125.0,
-   "pm2_5": 3.9
-  },
-  {
-   "lat": 8.0,
-   "lon": 126.0,
-   "pm2_5": 4.7
-  },
-  {
-   "lat": 8.0,
-   "lon": 127.0,
-   "pm2_5": 6.1
-  },
-  {
-   "lat": 9.0,
-   "lon": 116.0,
-   "pm2_5": 8.5
-  },
-  {
-   "lat": 9.0,
-   "lon": 117.0,
-   "pm2_5": 8.0
-  },
-  {
-   "lat": 9.0,
-   "lon": 118.0,
-   "pm2_5": 5.9
-  },
-  {
-   "lat": 9.0,
-   "lon": 119.0,
-   "pm2_5": 2.5
-  },
-  {
-   "lat": 9.0,
-   "lon": 120.0,
-   "pm2_5": 3.0
-  },
-  {
-   "lat": 9.0,
-   "lon": 121.0,
-   "pm2_5": 2.7
-  },
-  {
-   "lat": 9.0,
+   "lat": 6.0,
    "lon": 122.0,
    "pm2_5": 3.1
   },
   {
-   "lat": 9.0,
+   "lat": 6.0,
    "lon": 123.0,
+   "pm2_5": 13.5
+  },
+  {
+   "lat": 6.0,
+   "lon": 124.0,
+   "pm2_5": 9.4
+  },
+  {
+   "lat": 6.0,
+   "lon": 125.0,
+   "pm2_5": 6.0
+  },
+  {
+   "lat": 6.0,
+   "lon": 126.0,
+   "pm2_5": 6.1
+  },
+  {
+   "lat": 6.0,
+   "lon": 127.0,
+   "pm2_5": 13.4
+  },
+  {
+   "lat": 7.0,
+   "lon": 116.0,
+   "pm2_5": 5.4
+  },
+  {
+   "lat": 7.0,
+   "lon": 117.0,
+   "pm2_5": 5.5
+  },
+  {
+   "lat": 7.0,
+   "lon": 118.0,
+   "pm2_5": 6.6
+  },
+  {
+   "lat": 7.0,
+   "lon": 119.0,
+   "pm2_5": 5.1
+  },
+  {
+   "lat": 7.0,
+   "lon": 120.0,
+   "pm2_5": 4.4
+  },
+  {
+   "lat": 7.0,
+   "lon": 121.0,
+   "pm2_5": 4.1
+  },
+  {
+   "lat": 7.0,
+   "lon": 122.0,
+   "pm2_5": 2.1
+  },
+  {
+   "lat": 7.0,
+   "lon": 123.0,
+   "pm2_5": 4.1
+  },
+  {
+   "lat": 7.0,
+   "lon": 124.0,
+   "pm2_5": 3.2
+  },
+  {
+   "lat": 7.0,
+   "lon": 125.0,
+   "pm2_5": 3.6
+  },
+  {
+   "lat": 7.0,
+   "lon": 126.0,
+   "pm2_5": 4.9
+  },
+  {
+   "lat": 7.0,
+   "lon": 127.0,
+   "pm2_5": 7.2
+  },
+  {
+   "lat": 8.0,
+   "lon": 116.0,
+   "pm2_5": 5.4
+  },
+  {
+   "lat": 8.0,
+   "lon": 117.0,
    "pm2_5": 4.0
   },
   {
-   "lat": 9.0,
+   "lat": 8.0,
+   "lon": 118.0,
+   "pm2_5": 4.0
+  },
+  {
+   "lat": 8.0,
+   "lon": 119.0,
+   "pm2_5": 3.5
+  },
+  {
+   "lat": 8.0,
+   "lon": 120.0,
+   "pm2_5": 3.1
+  },
+  {
+   "lat": 8.0,
+   "lon": 121.0,
+   "pm2_5": 3.6
+  },
+  {
+   "lat": 8.0,
+   "lon": 122.0,
+   "pm2_5": 2.4
+  },
+  {
+   "lat": 8.0,
+   "lon": 123.0,
+   "pm2_5": 3.1
+  },
+  {
+   "lat": 8.0,
    "lon": 124.0,
-   "pm2_5": 3.7
+   "pm2_5": 4.7
+  },
+  {
+   "lat": 8.0,
+   "lon": 125.0,
+   "pm2_5": 4.6
+  },
+  {
+   "lat": 8.0,
+   "lon": 126.0,
+   "pm2_5": 5.5
+  },
+  {
+   "lat": 8.0,
+   "lon": 127.0,
+   "pm2_5": 4.2
   },
   {
    "lat": 9.0,
-   "lon": 125.0,
+   "lon": 116.0,
+   "pm2_5": 7.3
+  },
+  {
+   "lat": 9.0,
+   "lon": 117.0,
+   "pm2_5": 7.9
+  },
+  {
+   "lat": 9.0,
+   "lon": 118.0,
+   "pm2_5": 3.4
+  },
+  {
+   "lat": 9.0,
+   "lon": 119.0,
    "pm2_5": 2.5
   },
   {
    "lat": 9.0,
-   "lon": 126.0,
-   "pm2_5": 2.2
+   "lon": 120.0,
+   "pm2_5": 2.6
   },
   {
    "lat": 9.0,
-   "lon": 127.0,
-   "pm2_5": 4.2
-  },
-  {
-   "lat": 10.0,
-   "lon": 116.0,
-   "pm2_5": 4.7
-  },
-  {
-   "lat": 10.0,
-   "lon": 117.0,
-   "pm2_5": 3.8
-  },
-  {
-   "lat": 10.0,
-   "lon": 118.0,
-   "pm2_5": 3.6
-  },
-  {
-   "lat": 10.0,
-   "lon": 119.0,
-   "pm2_5": 2.1
-  },
-  {
-   "lat": 10.0,
-   "lon": 120.0,
-   "pm2_5": 2.9
-  },
-  {
-   "lat": 10.0,
-   "lon": 121.0,
-   "pm2_5": 5.2
-  },
-  {
-   "lat": 10.0,
-   "lon": 122.0,
-   "pm2_5": 5.8
-  },
-  {
-   "lat": 10.0,
-   "lon": 123.0,
-   "pm2_5": 6.1
-  },
-  {
-   "lat": 10.0,
-   "lon": 124.0,
-   "pm2_5": 7.5
-  },
-  {
-   "lat": 10.0,
-   "lon": 125.0,
-   "pm2_5": 5.2
-  },
-  {
-   "lat": 10.0,
-   "lon": 126.0,
-   "pm2_5": 4.1
-  },
-  {
-   "lat": 10.0,
-   "lon": 127.0,
-   "pm2_5": 5.0
-  },
-  {
-   "lat": 11.0,
-   "lon": 116.0,
-   "pm2_5": 4.5
-  },
-  {
-   "lat": 11.0,
-   "lon": 117.0,
-   "pm2_5": 3.5
-  },
-  {
-   "lat": 11.0,
-   "lon": 118.0,
-   "pm2_5": 3.5
-  },
-  {
-   "lat": 11.0,
-   "lon": 119.0,
-   "pm2_5": 2.9
-  },
-  {
-   "lat": 11.0,
-   "lon": 120.0,
-   "pm2_5": 4.4
-  },
-  {
-   "lat": 11.0,
-   "lon": 121.0,
-   "pm2_5": 4.0
-  },
-  {
-   "lat": 11.0,
-   "lon": 122.0,
-   "pm2_5": 4.9
-  },
-  {
-   "lat": 11.0,
-   "lon": 123.0,
-   "pm2_5": 5.0
-  },
-  {
-   "lat": 11.0,
-   "lon": 124.0,
-   "pm2_5": 3.5
-  },
-  {
-   "lat": 11.0,
-   "lon": 125.0,
-   "pm2_5": 5.3
-  },
-  {
-   "lat": 11.0,
-   "lon": 126.0,
-   "pm2_5": 4.7
-  },
-  {
-   "lat": 11.0,
-   "lon": 127.0,
-   "pm2_5": 4.4
-  },
-  {
-   "lat": 12.0,
-   "lon": 116.0,
-   "pm2_5": 4.4
-  },
-  {
-   "lat": 12.0,
-   "lon": 117.0,
-   "pm2_5": 3.2
-  },
-  {
-   "lat": 12.0,
-   "lon": 118.0,
-   "pm2_5": 3.8
-  },
-  {
-   "lat": 12.0,
-   "lon": 119.0,
-   "pm2_5": 5.3
-  },
-  {
-   "lat": 12.0,
-   "lon": 120.0,
-   "pm2_5": 4.2
-  },
-  {
-   "lat": 12.0,
-   "lon": 121.0,
-   "pm2_5": 5.1
-  },
-  {
-   "lat": 12.0,
-   "lon": 122.0,
-   "pm2_5": 4.6
-  },
-  {
-   "lat": 12.0,
-   "lon": 123.0,
-   "pm2_5": 4.6
-  },
-  {
-   "lat": 12.0,
-   "lon": 124.0,
-   "pm2_5": 4.0
-  },
-  {
-   "lat": 12.0,
-   "lon": 125.0,
-   "pm2_5": 4.7
-  },
-  {
-   "lat": 12.0,
-   "lon": 126.0,
-   "pm2_5": 5.4
-  },
-  {
-   "lat": 12.0,
-   "lon": 127.0,
-   "pm2_5": 6.1
-  },
-  {
-   "lat": 13.0,
-   "lon": 116.0,
-   "pm2_5": 3.2
-  },
-  {
-   "lat": 13.0,
-   "lon": 117.0,
-   "pm2_5": 4.6
-  },
-  {
-   "lat": 13.0,
-   "lon": 118.0,
-   "pm2_5": 5.4
-  },
-  {
-   "lat": 13.0,
-   "lon": 119.0,
-   "pm2_5": 11.3
-  },
-  {
-   "lat": 13.0,
-   "lon": 120.0,
-   "pm2_5": 9.2
-  },
-  {
-   "lat": 13.0,
    "lon": 121.0,
    "pm2_5": 3.0
   },
   {
-   "lat": 13.0,
+   "lat": 9.0,
    "lon": 122.0,
-   "pm2_5": 2.0
+   "pm2_5": 3.9
   },
   {
-   "lat": 13.0,
+   "lat": 9.0,
    "lon": 123.0,
-   "pm2_5": 2.8
+   "pm2_5": 3.0
   },
   {
-   "lat": 13.0,
+   "lat": 9.0,
    "lon": 124.0,
-   "pm2_5": 2.0
+   "pm2_5": 4.4
   },
   {
-   "lat": 13.0,
+   "lat": 9.0,
    "lon": 125.0,
+   "pm2_5": 3.8
+  },
+  {
+   "lat": 9.0,
+   "lon": 126.0,
+   "pm2_5": 2.9
+  },
+  {
+   "lat": 9.0,
+   "lon": 127.0,
    "pm2_5": 4.9
   },
   {
-   "lat": 13.0,
-   "lon": 126.0,
-   "pm2_5": 4.8
-  },
-  {
-   "lat": 13.0,
-   "lon": 127.0,
-   "pm2_5": 6.2
-  },
-  {
-   "lat": 14.0,
+   "lat": 10.0,
    "lon": 116.0,
-   "pm2_5": 4.8
+   "pm2_5": 4.4
   },
   {
-   "lat": 14.0,
+   "lat": 10.0,
    "lon": 117.0,
-   "pm2_5": 6.3
+   "pm2_5": 4.7
   },
   {
-   "lat": 14.0,
+   "lat": 10.0,
    "lon": 118.0,
-   "pm2_5": 8.6
+   "pm2_5": 3.5
   },
   {
-   "lat": 14.0,
+   "lat": 10.0,
    "lon": 119.0,
-   "pm2_5": 13.7
+   "pm2_5": 1.7
   },
   {
-   "lat": 14.0,
+   "lat": 10.0,
    "lon": 120.0,
-   "pm2_5": 6.8
+   "pm2_5": 4.0
   },
   {
-   "lat": 14.0,
+   "lat": 10.0,
    "lon": 121.0,
    "pm2_5": 5.5
   },
   {
-   "lat": 14.0,
+   "lat": 10.0,
    "lon": 122.0,
-   "pm2_5": 2.9
+   "pm2_5": 7.0
   },
   {
-   "lat": 14.0,
+   "lat": 10.0,
    "lon": 123.0,
-   "pm2_5": 3.5
-  },
-  {
-   "lat": 14.0,
-   "lon": 124.0,
-   "pm2_5": 4.6
-  },
-  {
-   "lat": 14.0,
-   "lon": 125.0,
    "pm2_5": 5.4
   },
   {
-   "lat": 14.0,
-   "lon": 126.0,
-   "pm2_5": 5.0
+   "lat": 10.0,
+   "lon": 124.0,
+   "pm2_5": 5.9
   },
   {
-   "lat": 14.0,
+   "lat": 10.0,
+   "lon": 125.0,
+   "pm2_5": 4.9
+  },
+  {
+   "lat": 10.0,
+   "lon": 126.0,
+   "pm2_5": 4.8
+  },
+  {
+   "lat": 10.0,
+   "lon": 127.0,
+   "pm2_5": 5.4
+  },
+  {
+   "lat": 11.0,
+   "lon": 116.0,
+   "pm2_5": 3.7
+  },
+  {
+   "lat": 11.0,
+   "lon": 117.0,
+   "pm2_5": 3.7
+  },
+  {
+   "lat": 11.0,
+   "lon": 118.0,
+   "pm2_5": 3.1
+  },
+  {
+   "lat": 11.0,
+   "lon": 119.0,
+   "pm2_5": 3.2
+  },
+  {
+   "lat": 11.0,
+   "lon": 120.0,
+   "pm2_5": 4.3
+  },
+  {
+   "lat": 11.0,
+   "lon": 121.0,
+   "pm2_5": 3.5
+  },
+  {
+   "lat": 11.0,
+   "lon": 122.0,
+   "pm2_5": 4.3
+  },
+  {
+   "lat": 11.0,
+   "lon": 123.0,
+   "pm2_5": 4.8
+  },
+  {
+   "lat": 11.0,
+   "lon": 124.0,
+   "pm2_5": 3.5
+  },
+  {
+   "lat": 11.0,
+   "lon": 125.0,
+   "pm2_5": 4.2
+  },
+  {
+   "lat": 11.0,
+   "lon": 126.0,
+   "pm2_5": 5.7
+  },
+  {
+   "lat": 11.0,
+   "lon": 127.0,
+   "pm2_5": 6.0
+  },
+  {
+   "lat": 12.0,
+   "lon": 116.0,
+   "pm2_5": 3.4
+  },
+  {
+   "lat": 12.0,
+   "lon": 117.0,
+   "pm2_5": 3.4
+  },
+  {
+   "lat": 12.0,
+   "lon": 118.0,
+   "pm2_5": 4.1
+  },
+  {
+   "lat": 12.0,
+   "lon": 119.0,
+   "pm2_5": 4.8
+  },
+  {
+   "lat": 12.0,
+   "lon": 120.0,
+   "pm2_5": 5.4
+  },
+  {
+   "lat": 12.0,
+   "lon": 121.0,
+   "pm2_5": 2.4
+  },
+  {
+   "lat": 12.0,
+   "lon": 122.0,
+   "pm2_5": 2.1
+  },
+  {
+   "lat": 12.0,
+   "lon": 123.0,
+   "pm2_5": 3.9
+  },
+  {
+   "lat": 12.0,
+   "lon": 124.0,
+   "pm2_5": 2.2
+  },
+  {
+   "lat": 12.0,
+   "lon": 125.0,
+   "pm2_5": 2.6
+  },
+  {
+   "lat": 12.0,
+   "lon": 126.0,
+   "pm2_5": 5.2
+  },
+  {
+   "lat": 12.0,
+   "lon": 127.0,
+   "pm2_5": 6.2
+  },
+  {
+   "lat": 13.0,
+   "lon": 116.0,
+   "pm2_5": 3.6
+  },
+  {
+   "lat": 13.0,
+   "lon": 117.0,
+   "pm2_5": 5.3
+  },
+  {
+   "lat": 13.0,
+   "lon": 118.0,
+   "pm2_5": 11.3
+  },
+  {
+   "lat": 13.0,
+   "lon": 119.0,
+   "pm2_5": 10.7
+  },
+  {
+   "lat": 13.0,
+   "lon": 120.0,
+   "pm2_5": 7.5
+  },
+  {
+   "lat": 13.0,
+   "lon": 121.0,
+   "pm2_5": 3.8
+  },
+  {
+   "lat": 13.0,
+   "lon": 122.0,
+   "pm2_5": 2.8
+  },
+  {
+   "lat": 13.0,
+   "lon": 123.0,
+   "pm2_5": 3.4
+  },
+  {
+   "lat": 13.0,
+   "lon": 124.0,
+   "pm2_5": 3.7
+  },
+  {
+   "lat": 13.0,
+   "lon": 125.0,
+   "pm2_5": 5.3
+  },
+  {
+   "lat": 13.0,
+   "lon": 126.0,
+   "pm2_5": 5.2
+  },
+  {
+   "lat": 13.0,
    "lon": 127.0,
    "pm2_5": 5.2
   },
   {
-   "lat": 15.0,
+   "lat": 14.0,
    "lon": 116.0,
-   "pm2_5": 8.2
+   "pm2_5": 4.2
   },
   {
-   "lat": 15.0,
+   "lat": 14.0,
    "lon": 117.0,
-   "pm2_5": 8.8
+   "pm2_5": 9.5
   },
   {
-   "lat": 15.0,
-   "lon": 118.0,
-   "pm2_5": 9.8
-  },
-  {
-   "lat": 15.0,
-   "lon": 119.0,
-   "pm2_5": 13.2
-  },
-  {
-   "lat": 15.0,
-   "lon": 120.0,
-   "pm2_5": 11.1
-  },
-  {
-   "lat": 15.0,
-   "lon": 121.0,
-   "pm2_5": 3.6
-  },
-  {
-   "lat": 15.0,
-   "lon": 122.0,
-   "pm2_5": 5.6
-  },
-  {
-   "lat": 15.0,
-   "lon": 123.0,
-   "pm2_5": 10.6
-  },
-  {
-   "lat": 15.0,
-   "lon": 124.0,
-   "pm2_5": 13.6
-  },
-  {
-   "lat": 15.0,
-   "lon": 125.0,
-   "pm2_5": 9.7
-  },
-  {
-   "lat": 15.0,
-   "lon": 126.0,
-   "pm2_5": 8.3
-  },
-  {
-   "lat": 15.0,
-   "lon": 127.0,
-   "pm2_5": 8.2
-  },
-  {
-   "lat": 16.0,
-   "lon": 116.0,
-   "pm2_5": 7.9
-  },
-  {
-   "lat": 16.0,
-   "lon": 117.0,
-   "pm2_5": 9.9
-  },
-  {
-   "lat": 16.0,
+   "lat": 14.0,
    "lon": 118.0,
    "pm2_5": 12.0
   },
   {
+   "lat": 14.0,
+   "lon": 119.0,
+   "pm2_5": 13.9
+  },
+  {
+   "lat": 14.0,
+   "lon": 120.0,
+   "pm2_5": 10.5
+  },
+  {
+   "lat": 14.0,
+   "lon": 121.0,
+   "pm2_5": 7.0
+  },
+  {
+   "lat": 14.0,
+   "lon": 122.0,
+   "pm2_5": 4.8
+  },
+  {
+   "lat": 14.0,
+   "lon": 123.0,
+   "pm2_5": 6.0
+  },
+  {
+   "lat": 14.0,
+   "lon": 124.0,
+   "pm2_5": 5.8
+  },
+  {
+   "lat": 14.0,
+   "lon": 125.0,
+   "pm2_5": 6.9
+  },
+  {
+   "lat": 14.0,
+   "lon": 126.0,
+   "pm2_5": 6.7
+  },
+  {
+   "lat": 14.0,
+   "lon": 127.0,
+   "pm2_5": 5.6
+  },
+  {
+   "lat": 15.0,
+   "lon": 116.0,
+   "pm2_5": 6.8
+  },
+  {
+   "lat": 15.0,
+   "lon": 117.0,
+   "pm2_5": 11.5
+  },
+  {
+   "lat": 15.0,
+   "lon": 118.0,
+   "pm2_5": 12.9
+  },
+  {
+   "lat": 15.0,
+   "lon": 119.0,
+   "pm2_5": 17.3
+  },
+  {
+   "lat": 15.0,
+   "lon": 120.0,
+   "pm2_5": 19.2
+  },
+  {
+   "lat": 15.0,
+   "lon": 121.0,
+   "pm2_5": 5.4
+  },
+  {
+   "lat": 15.0,
+   "lon": 122.0,
+   "pm2_5": 12.1
+  },
+  {
+   "lat": 15.0,
+   "lon": 123.0,
+   "pm2_5": 14.3
+  },
+  {
+   "lat": 15.0,
+   "lon": 124.0,
+   "pm2_5": 13.8
+  },
+  {
+   "lat": 15.0,
+   "lon": 125.0,
+   "pm2_5": 10.9
+  },
+  {
+   "lat": 15.0,
+   "lon": 126.0,
+   "pm2_5": 9.1
+  },
+  {
+   "lat": 15.0,
+   "lon": 127.0,
+   "pm2_5": 7.4
+  },
+  {
+   "lat": 16.0,
+   "lon": 116.0,
+   "pm2_5": 8.8
+  },
+  {
+   "lat": 16.0,
+   "lon": 117.0,
+   "pm2_5": 11.4
+  },
+  {
+   "lat": 16.0,
+   "lon": 118.0,
+   "pm2_5": 11.2
+  },
+  {
    "lat": 16.0,
    "lon": 119.0,
-   "pm2_5": 17.2
+   "pm2_5": 15.9
   },
   {
    "lat": 16.0,
    "lon": 120.0,
-   "pm2_5": 14.4
+   "pm2_5": 12.1
   },
   {
    "lat": 16.0,
    "lon": 121.0,
-   "pm2_5": 1.3
+   "pm2_5": 2.8
   },
   {
    "lat": 16.0,
    "lon": 122.0,
-   "pm2_5": 2.2
+   "pm2_5": 11.3
   },
   {
    "lat": 16.0,
    "lon": 123.0,
-   "pm2_5": 14.1
+   "pm2_5": 16.9
   },
   {
    "lat": 16.0,
    "lon": 124.0,
-   "pm2_5": 15.3
+   "pm2_5": 16.1
   },
   {
    "lat": 16.0,
    "lon": 125.0,
-   "pm2_5": 15.4
+   "pm2_5": 14.3
   },
   {
    "lat": 16.0,
    "lon": 126.0,
-   "pm2_5": 12.9
+   "pm2_5": 12.5
   },
   {
    "lat": 16.0,
    "lon": 127.0,
-   "pm2_5": 10.6
+   "pm2_5": 8.6
   },
   {
    "lat": 17.0,
    "lon": 116.0,
-   "pm2_5": 7.0
+   "pm2_5": 8.7
   },
   {
    "lat": 17.0,
    "lon": 117.0,
-   "pm2_5": 7.9
+   "pm2_5": 8.0
   },
   {
    "lat": 17.0,
    "lon": 118.0,
-   "pm2_5": 7.3
+   "pm2_5": 10.7
   },
   {
    "lat": 17.0,
    "lon": 119.0,
-   "pm2_5": 11.1
+   "pm2_5": 11.5
   },
   {
    "lat": 17.0,
    "lon": 120.0,
-   "pm2_5": 7.3
+   "pm2_5": 6.2
   },
   {
    "lat": 17.0,
    "lon": 121.0,
-   "pm2_5": 1.0
+   "pm2_5": 2.7
   },
   {
    "lat": 17.0,
    "lon": 122.0,
-   "pm2_5": 3.5
+   "pm2_5": 6.2
   },
   {
    "lat": 17.0,
    "lon": 123.0,
-   "pm2_5": 14.9
+   "pm2_5": 15.2
   },
   {
    "lat": 17.0,
    "lon": 124.0,
-   "pm2_5": 16.4
+   "pm2_5": 15.1
   },
   {
    "lat": 17.0,
    "lon": 125.0,
-   "pm2_5": 15.9
+   "pm2_5": 14.7
   },
   {
    "lat": 17.0,
    "lon": 126.0,
-   "pm2_5": 14.4
+   "pm2_5": 14.7
   },
   {
    "lat": 17.0,
@@ -8357,97 +8357,97 @@
   {
    "lat": 18.0,
    "lon": 116.0,
-   "pm2_5": 7.1
+   "pm2_5": 6.9
   },
   {
    "lat": 18.0,
    "lon": 117.0,
-   "pm2_5": 7.1
+   "pm2_5": 12.9
   },
   {
    "lat": 18.0,
    "lon": 118.0,
-   "pm2_5": 7.5
+   "pm2_5": 18.5
   },
   {
    "lat": 18.0,
    "lon": 119.0,
-   "pm2_5": 9.9
+   "pm2_5": 18.2
   },
   {
    "lat": 18.0,
    "lon": 120.0,
-   "pm2_5": 7.6
+   "pm2_5": 14.4
   },
   {
    "lat": 18.0,
    "lon": 121.0,
-   "pm2_5": 4.1
+   "pm2_5": 7.2
   },
   {
    "lat": 18.0,
    "lon": 122.0,
-   "pm2_5": 8.3
+   "pm2_5": 7.4
   },
   {
    "lat": 18.0,
    "lon": 123.0,
-   "pm2_5": 15.3
+   "pm2_5": 15.2
   },
   {
    "lat": 18.0,
    "lon": 124.0,
-   "pm2_5": 16.5
+   "pm2_5": 15.6
   },
   {
    "lat": 18.0,
    "lon": 125.0,
-   "pm2_5": 15.1
+   "pm2_5": 15.9
   },
   {
    "lat": 18.0,
    "lon": 126.0,
-   "pm2_5": 13.7
+   "pm2_5": 14.5
   },
   {
    "lat": 18.0,
    "lon": 127.0,
-   "pm2_5": 14.7
+   "pm2_5": 15.0
   },
   {
    "lat": 19.0,
    "lon": 116.0,
-   "pm2_5": 10.3
+   "pm2_5": 10.6
   },
   {
    "lat": 19.0,
    "lon": 117.0,
-   "pm2_5": 12.7
+   "pm2_5": 16.2
   },
   {
    "lat": 19.0,
    "lon": 118.0,
-   "pm2_5": 15.1
+   "pm2_5": 19.3
   },
   {
    "lat": 19.0,
    "lon": 119.0,
-   "pm2_5": 16.9
+   "pm2_5": 17.9
   },
   {
    "lat": 19.0,
    "lon": 120.0,
-   "pm2_5": 17.0
+   "pm2_5": 15.8
   },
   {
    "lat": 19.0,
    "lon": 121.0,
-   "pm2_5": 13.7
+   "pm2_5": 11.4
   },
   {
    "lat": 19.0,
    "lon": 122.0,
-   "pm2_5": 13.5
+   "pm2_5": 11.6
   },
   {
    "lat": 19.0,
@@ -8457,82 +8457,82 @@
   {
    "lat": 19.0,
    "lon": 124.0,
-   "pm2_5": 15.1
+   "pm2_5": 18.1
   },
   {
    "lat": 19.0,
    "lon": 125.0,
-   "pm2_5": 14.1
+   "pm2_5": 18.6
   },
   {
    "lat": 19.0,
    "lon": 126.0,
-   "pm2_5": 14.4
+   "pm2_5": 18.9
   },
   {
    "lat": 19.0,
    "lon": 127.0,
-   "pm2_5": 14.0
+   "pm2_5": 15.0
   },
   {
    "lat": 20.0,
    "lon": 116.0,
-   "pm2_5": 14.3
+   "pm2_5": 11.2
   },
   {
    "lat": 20.0,
    "lon": 117.0,
-   "pm2_5": 16.9
-  },
-  {
-   "lat": 20.0,
-   "lon": 118.0,
-   "pm2_5": 17.1
-  },
-  {
-   "lat": 20.0,
-   "lon": 119.0,
    "pm2_5": 16.8
   },
   {
    "lat": 20.0,
+   "lon": 118.0,
+   "pm2_5": 17.9
+  },
+  {
+   "lat": 20.0,
+   "lon": 119.0,
+   "pm2_5": 17.1
+  },
+  {
+   "lat": 20.0,
    "lon": 120.0,
-   "pm2_5": 16.3
+   "pm2_5": 14.9
   },
   {
    "lat": 20.0,
    "lon": 121.0,
-   "pm2_5": 14.6
+   "pm2_5": 12.2
   },
   {
    "lat": 20.0,
    "lon": 122.0,
-   "pm2_5": 13.6
+   "pm2_5": 11.6
   },
   {
    "lat": 20.0,
    "lon": 123.0,
-   "pm2_5": 14.4
+   "pm2_5": 16.1
   },
   {
    "lat": 20.0,
    "lon": 124.0,
-   "pm2_5": 13.2
+   "pm2_5": 24.7
   },
   {
    "lat": 20.0,
    "lon": 125.0,
-   "pm2_5": 14.7
+   "pm2_5": 23.8
   },
   {
    "lat": 20.0,
    "lon": 126.0,
-   "pm2_5": 16.2
+   "pm2_5": 22.5
   },
   {
    "lat": 20.0,
    "lon": 127.0,
-   "pm2_5": 14.3
+   "pm2_5": 21.0
   }
  ],
  "backtest": {
@@ -8640,39 +8640,39 @@
   "horizons": [
    {
     "horizon_h": 1,
-    "n": 265,
-    "model_mae": 2.177,
-    "naive_mae": 2.493,
-    "openmeteo_mae": 1.574,
-    "openmeteo_n": 265,
-    "band_coverage_pct": 55.1
+    "n": 270,
+    "model_mae": 2.142,
+    "naive_mae": 2.451,
+    "openmeteo_mae": 1.545,
+    "openmeteo_n": 270,
+    "band_coverage_pct": 55.9
    },
    {
     "horizon_h": 6,
-    "n": 260,
-    "model_mae": 3.77,
-    "naive_mae": 5.033,
-    "openmeteo_mae": 2.018,
-    "openmeteo_n": 260,
-    "band_coverage_pct": 83.1
+    "n": 270,
+    "model_mae": 3.709,
+    "naive_mae": 4.952,
+    "openmeteo_mae": 1.944,
+    "openmeteo_n": 270,
+    "band_coverage_pct": 83.0
    },
    {
     "horizon_h": 12,
-    "n": 255,
-    "model_mae": 4.89,
-    "naive_mae": 7.108,
-    "openmeteo_mae": 3.367,
-    "openmeteo_n": 255,
-    "band_coverage_pct": 85.1
+    "n": 260,
+    "model_mae": 4.859,
+    "naive_mae": 7.087,
+    "openmeteo_mae": 3.327,
+    "openmeteo_n": 260,
+    "band_coverage_pct": 84.6
    },
    {
     "horizon_h": 24,
-    "n": 250,
-    "model_mae": 5.575,
-    "naive_mae": 6.002,
-    "openmeteo_mae": 3.432,
-    "openmeteo_n": 250,
-    "band_coverage_pct": 83.6
+    "n": 255,
+    "model_mae": 5.506,
+    "naive_mae": 5.933,
+    "openmeteo_mae": 3.386,
+    "openmeteo_n": 255,
+    "band_coverage_pct": 83.9
    }
   ]
  },
